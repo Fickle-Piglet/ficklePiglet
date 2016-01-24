@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-  <h1> Hello World!</h1>
-</body>
-</head>
+<html ng-app='shortly'>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fickle</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
+    <nav class="navigation"> 
+      <ul>
+        <li>
+          <h1>Piglet Search</h1>
+          <p>my auto bot</p>
+        </li>
+      </ul>
+    </nav>
+    <div ng-view></div>
+  </body>
 </html>

@@ -17,6 +17,19 @@
   },
   "homepage": "https://github.com/Fickle-Piglet/ficklePiglet#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "angular": "^1.4.9",
+    "browser-sync": "^2.11.1",
+    "express": "^4.13.4",
+    "gulp-nodemon": "^2.0.6",
+    "karma": "^0.13.19"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "jshint": "^2.9.1"
   }
 }
