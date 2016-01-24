@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Fickle-Piglet/ficklePiglet/issues"
   },
-  "homepage": "https://github.com/Fickle-Piglet/ficklePiglet#readme"
+  "homepage": "https://github.com/Fickle-Piglet/ficklePiglet#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
