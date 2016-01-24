@@ -1,0 +1,19 @@
+{
+  "name": "ficklepiglet",
+  "version": "1.0.0",
+  "description": "A search engine with recommendation",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fickle-Piglet/ficklePiglet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fickle-Piglet/ficklePiglet/issues"
+  },
+  "homepage": "https://github.com/Fickle-Piglet/ficklePiglet#readme"
+}
