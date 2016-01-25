@@ -21,7 +21,9 @@
     "browser-sync": "^2.11.1",
     "express": "^4.13.4",
     "gulp-nodemon": "^2.0.6",
-    "karma": "^0.13.19"
+    "karma": "^0.13.19",
+    "noodle": "0.0.3",
+    "noodlejs": "^0.3.2"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
