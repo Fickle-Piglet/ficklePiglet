@@ -7,7 +7,7 @@ module.exports = function(app, express){
     app.post("/insert", resourceController.insertResource)
 
     //GetResource
-    app.post('/getResource', resourceController.getResource)
+    app.get('/getResource', resourceController.getResource)
 
     //Signup/Signin Stuff
     app.post("/signin", loginController.signin)
