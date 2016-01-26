@@ -1,7 +1,6 @@
 var noodle = require("noodlejs")
 var fs = require("fs")
 var http = require("http")
-//var app = require("express")();
 var request = require("request")
 
 module.exports = {
@@ -32,7 +31,20 @@ module.exports = {
     readAllFiles : function(){
         var list = fs.readFileSync("../scripts/scraper/files/allocation.txt", "utf8").toString().split("\n");
         for(var i=0; i<list.length-1; i++){
-            console.log(">>>LIST>>>", JSON.parse(list[i]), "\n")
+            list[i] = JSON.parse(list[i]);
+            for(var j=0; j<list[i].genres.length; j++){
+                //console.log(">>>LIST>>>", list[i].name, list[i].genres[j], "\n")
+                request({
+                    method: "POST",
+                    url: "http://localhost:5050/insert",
+                    json: {
+                        name: list[i].name,
+                        genre: list[i].genres[j]
+                    }
+                }, function(err, res, body){
+                    //console.log("YAY", body)
+                })
+            }
         }
 
     }
