@@ -1,20 +1,19 @@
 <div id='signin'>
   <h1>signin</h1>
   <form name="signinForm" ng-submit='signin()'>
-    <input type='text'ng-model='user.username'>
-    <input type="password" ng-model='user.password'>
+    <input type='text'ng-model='user.username' placeholder="name"> <br>
+    <input type="password" ng-model='user.password' placeholder="password "> <br>
     <button>signin</button>
   </form>
-  <a href="#/signup">Don't have an account? <strong>Signup</strong> ...</a>
 </div>
 
 
 <div id='signup'>
   <h1>signup</h1>
   <form name="signupForm" ng-submit='signup()'>
-    <input type='text' ng-model='user.username'>
-    <input type="password" ng-model='user.password'>
+    <input type='text' ng-model='user.username' placeholder="name"> <br>
+    <input type='text' ng-model='user.email' placeholder="email"> <br>
+    <input type="password" ng-model='user.password' placeholder="password"> <br>
     <button>signup</button>
   </form>
-  <a href="#/signin">Already have an account? <strong>Signin</strong> ...</a>
 </div>
