@@ -16,9 +16,9 @@ app.listen(port, function(){
 //scraper.scrapeFile("podcasts.txt")
 scraper.getAllPodcast(("podcasts.txt"))
 
-module.exports = app;
 
-// sample query to return everything
+
+//sample query to return everything
 db.cypherQuery("START n=node(*) RETURN n;", function(err, result){
     if(err) throw err;
     console.log(result.data); // delivers an array of query results

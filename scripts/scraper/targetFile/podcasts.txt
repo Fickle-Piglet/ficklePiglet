@@ -6,7 +6,7 @@ entrepreneurial-thought-leaders
 hello-internet
 jquery+ajax+php+tutorial
 tedtalks-education
-take-up-code
+take+up+code
 web-design-1
 basic-html
 space
