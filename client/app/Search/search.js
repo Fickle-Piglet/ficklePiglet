@@ -1,3 +1,3 @@
-angular.module('fickle', ['ngMaterial'])
-	.controller('searchController', function($scope) {
+angular.module('fickle.search', [])
+	.controller('searchController', function ($scope) {
 });
