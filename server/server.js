@@ -4,7 +4,7 @@ var app = express();
 var port = 5050;
 var scraper = require("../scripts/scraper/scraper")
 
-app.use(express.static(path.join(__dirname, '/../client')));
+app.use(express.static(path.join(__dirname, '/client')));
 
 var neo4j = require('node-neo4j');
 var db = new neo4j("http://FicklePiglet:WCdiwRlhygf4M6g5Itvi@ficklepiglet.sb02.stations.graphenedb.com:24789");

@@ -1,18 +1,16 @@
-// angular.module('fickle', ['fickle.search'])
-// .config(function ($stateProvider) {
-// 	$stateProvider
-// 		.when('/', {
-// 			templateUrl: 'app/Search/search.html',
-// 			controller: 'searchController'
-// 	})
-// })
+angular.module('fickle', ['fickle.auth','ui.router'])
+.config(function ($stateProvider, $urlRouterProvider) {
 
-angular.module('fickle', ['ngMaterial', 'ngRoute'])
-	.config(function ($stateProvider){
-		$stateProvider
-    .state('/', {
-      url: "/search",
-      templateUrl: "Search/search.html",
-      controller: 'searchController'
-    });
-	})
+ $urlRouterProvider.otherwise("/search");
+ $stateProvider
+     .state('search', {
+       url: "/search",
+       templateUrl: "/app/Search/search.html",
+       controller: 'searchController'
+     })
+     .state('login', {
+       url: "/login",
+       templateUrl: "/app/login/login.html",
+       controller: 'AuthController'
+     })
+})

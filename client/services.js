@@ -1,4 +1,4 @@
-angular.module('app.services', [])
+angular.module('fickle.services', [])
 
 .factory('Auth', function ($http, $location, $window) {
 
