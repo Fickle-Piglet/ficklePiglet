@@ -13,15 +13,21 @@ app.listen(port, function(){
     console.log('Listening on port '+ port);
 });
 
+require('../server/config/middleware.js')(app, express);
+require('../server/config/routes.js')(app, express);
+
 //scraper.scrapeFile("podcasts.txt")
-scraper.getAllPodcast(("podcasts.txt"))
+scraper.getAllPodcast("podcasts.txt")
 
-module.exports = app;
+setTimeout(function(){
+    scraper.readAllFiles();
+}, 5000)
 
-// sample query to return everything
+
+//sample query to return everything
 db.cypherQuery("START n=node(*) RETURN n;", function(err, result){
     if(err) throw err;
-    console.log(result.data); // delivers an array of query results
+    //console.log(result.data); // delivers an array of query results
 });
 
 
