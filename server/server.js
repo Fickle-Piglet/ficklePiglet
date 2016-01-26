@@ -6,8 +6,8 @@ var scraper = require("../scripts/scraper/scraper")
 
 app.use(express.static(path.join(__dirname, '/../client')));
 
-var neo4j = require('node-neo4j');
-var db = new neo4j("http://FicklePiglet:WCdiwRlhygf4M6g5Itvi@ficklepiglet.sb02.stations.graphenedb.com:24789");
+//var neo4j = require('node-neo4j');
+//var db = new neo4j("http://FicklePiglet:WCdiwRlhygf4M6g5Itvi@ficklepiglet.sb02.stations.graphenedb.com:24789");
 
 app.listen(port, function(){
     console.log('Listening on port '+ port);
@@ -16,13 +16,13 @@ app.listen(port, function(){
 //scraper.scrapeFile("podcasts.txt")
 scraper.getAllPodcast(("podcasts.txt"))
 
-module.exports = app;
+
 
 // sample query to return everything
-db.cypherQuery("START n=node(*) RETURN n;", function(err, result){
-    if(err) throw err;
-    console.log(result.data); // delivers an array of query results
-});
+//db.cypherQuery("START n=node(*) RETURN n;", function(err, result){
+//    if(err) throw err;
+//    console.log(result.data); // delivers an array of query results
+//});
 
 
 module.exports = app;
