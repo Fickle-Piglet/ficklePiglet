@@ -18,9 +18,13 @@
   "homepage": "https://github.com/Fickle-Piglet/ficklePiglet#readme",
   "dependencies": {
     "angular": "^1.4.9",
+<<<<<<< HEAD
     "angular-animate": "^1.4.9",
     "angular-aria": "^1.4.9",
     "angular-material": "^1.0.2",
+=======
+    "body-parser": "^1.14.2",
+>>>>>>> Changes scraper to put everything in one file. Data ready to be put in database
     "browser-sync": "^2.11.1",
     "express": "^4.13.4",
     "gulp-nodemon": "^2.0.6",
