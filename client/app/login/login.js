@@ -25,6 +25,7 @@ angular.module('fickle.auth', [])
     $scope.signUpError = '';
     var userData = {
       "username":$scope.signUpUsername,
+      "email":$scope.signupEmail,
       "password":$scope.signUpPassword
     }
     console.log('User entered signup data',userData)
