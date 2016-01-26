@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var port = 5050;
+var scraper = require("../scripts/scraper/scraper")
 
 app.use(express.static(path.join(__dirname, '/client')));
 
@@ -15,13 +16,12 @@ app.listen(port, function(){
 require('../server/config/middleware.js')(app, express);
 require('../server/config/routes.js')(app, express);
 
-//scraper.scrapeFile("podcasts.txt")
-// var scraper = require("../scripts/scraper/scraper")
-// scraper.getAllPodcast("podcasts.txt")
+// scraper.scrapeFile("podcasts.txt")
+scraper.getAllPodcast("podcasts.txt")
 
-// setTimeout(function(){
-//     scraper.readAllFiles();
-// }, 5000)
+setTimeout(function(){
+    scraper.readAllFiles();
+}, 5000)
 
 
 //sample query to return everything

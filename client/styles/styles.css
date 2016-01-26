@@ -1,11 +1,10 @@
 .checkboxdemoSyncing .checkboxDemo1 md-checkbox {
-  float: left; }
-
-.checkboxdemoSyncing legend {
-  color: #3F51B5; }
+  float: left; 
+  color: #90A4AE;
+}
 
 .checkboxdemoSyncing legend code {
-  color: #3F51B5;
+  color: #90A4AE;
   font-weight: normal; }
 
 .checkboxdemoSyncing p {
