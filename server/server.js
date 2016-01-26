@@ -21,7 +21,7 @@ scraper.getAllPodcast("podcasts.txt")
 
 setTimeout(function(){
     scraper.readAllFiles();
-}, 5000)
+}, 10000)
 
 
 //sample query to return everything

@@ -18,7 +18,7 @@ gulp.task('lint', function() {
 
 var paths = {
   // all our client app js files, not including 3rd party js files
-  scripts: ['client/app/**/*.js', "scripts/scraper/scraper.js"],
+  scripts: ['client/app/**/*.js'],
   html: ['client/app/**/*.html', 'client/index.html'],
   styles: ['client/styles/styles.css'],
   test: ['specs/**/*.js']
