@@ -1,22 +1,32 @@
-.add-on .input-group-btn > .btn {
-  border-left-width:0;left:-2px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+.checkboxdemoSyncing .checkboxDemo1 md-checkbox {
+  float: left; 
+  color: #90A4AE;
 }
 
-.add-on .form-control:focus {
- box-shadow:none;
- -webkit-box-shadow:none;
- border-color:#cccccc; 
+.checkboxdemoSyncing legend code {
+  color: #90A4AE;
+  font-weight: normal; }
+
+.checkboxdemoSyncing p {
+  padding-left: 8px; }
+
+.checkboxdemoSyncing .info {
+  padding-left: 13px; }
+
+.checkboxdemoSyncing div.standard {
+  padding: 8px;
+  padding-left: 15px; }
+
+.checkboxdemoSyncing fieldset.standard {
+  border-style: solid;
+  border-width: 1px;
+  height: 50%;
+  width: 50%;
+}
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  width: 50%;
 }
 
-.contentdemoBasicUsage div.demo-content {
-  height: 600px; 
-}
-.contentdemoBasicUsage div[ng-controller] {
-  height: 100%;
-  padding-bottom: 15px; 
-}
-.contentdemoBasicUsage md-content {
-  padding: 24px; 
+.md-toolbar-tools{
+	width: 50%;
 }
