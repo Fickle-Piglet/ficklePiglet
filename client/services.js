@@ -22,7 +22,7 @@ angular.module('fickle.services', [])
         })
         .then(function (resp) {
           console.log("response from server",resp)
-          return resp.data.token;
+          // return resp.data.token;
         });
     };
 
