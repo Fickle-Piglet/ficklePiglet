@@ -1,9 +1,3 @@
-// angular.module('fickle.search', [])
-
-// .controller('searchController', function ($scope, tags) {
-//   // Your code here
-//   $scope.data = {};
-
-//   $scope.getTags = function () {
-//    }
-// });
+angular.module('fickle', ['ngMaterial'])
+	.controller('searchController', function($scope) {
+});

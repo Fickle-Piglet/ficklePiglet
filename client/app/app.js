@@ -6,3 +6,13 @@
 // 			controller: 'searchController'
 // 	})
 // })
+
+angular.module('fickle', ['ngMaterial', 'ngRoute'])
+	.config(function ($stateProvider){
+		$stateProvider
+    .state('/', {
+      url: "/search",
+      templateUrl: "Search/search.html",
+      controller: 'searchController'
+    });
+	})
