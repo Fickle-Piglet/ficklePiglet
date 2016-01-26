@@ -24,7 +24,8 @@
     "karma": "^0.13.19",
     "node-neo4j": "^2.0.3",
     "noodle": "0.0.3",
-    "noodlejs": "^0.3.2"
+    "noodlejs": "^0.3.2",
+    "request": "^2.67.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

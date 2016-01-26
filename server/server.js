@@ -13,7 +13,8 @@ app.listen(port, function(){
     console.log('Listening on port '+ port);
 });
 
-scraper.scrapeFile("podcasts.txt")
+//scraper.scrapeFile("podcasts.txt")
+scraper.getAllPodcast(("podcasts.txt"))
 
 module.exports = app;
 

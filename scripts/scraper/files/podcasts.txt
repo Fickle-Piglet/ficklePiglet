@@ -1,2 +1,0 @@
-http://feeds.serialpodcast.org/serialpodcast
-http://feed.thisamericanlife.org/talpodcast

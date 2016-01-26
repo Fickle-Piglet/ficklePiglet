@@ -1,5 +1,8 @@
 var noodle = require("noodlejs")
 var fs = require("fs")
+var http = require("http")
+//var app = require("express")();
+var request = require("request")
 
 module.exports = {
     scrape : function(website, title_d, description_d, callback){
@@ -43,7 +46,7 @@ module.exports = {
                 console.log("here")
                 //return value
                 data[website] = value
-                console.log(data)
+                //console.log(data)
                 fs.writeFile('../scripts/scraper/files/'+ title2.text +'.txt', value, function (err) {
                     if (err) return console.log(err);
                     console.log("uploaded data");
@@ -51,6 +54,33 @@ module.exports = {
 
             });
         }
+    },
+    getTags : function(searchTerm){
+        var search = 'https://itunes.apple.com/search?term='+searchTerm+'&entity=podcast'
+        request({
+            method: "GET",
+            url: search
+        }, function(err, res, body){
+            body = JSON.parse(body)
+            //console.log(body)
+            for(var i=0; i<body.results.length; i++){
+                var target = {};
+                target.name = body.results[i].trackName
+                target.genres = body.results[i].genres
+                fs.writeFile('../scripts/scraper/files/'+ body.results[i].trackName +'.txt', JSON.stringify(target), function(err){
+                    if (err) return console.log(err);
+                    console.log("uploaded: ", target.name);
+                })
+            }
+        })
+    },
+    getAllPodcast: function(file){
+        var list = fs.readFileSync("../scripts/scraper/targetFile/" + file, "utf8").toString().split("\n");
+        for(var i=0; i<list.length; i++){
+            console.log(">>>>>>>>>>>>",list[i])
+            this.getTags(list[i]);
+        }
     }
+
 };
 
