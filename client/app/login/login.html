@@ -10,10 +10,12 @@
 
 <div id='signup'>
   <h1>signup</h1>
-  <form name="signupForm" ng-submit='signup()'>
-    <input type='text' ng-model='user.username' placeholder="name"> <br>
+  <form name="signupForm">
+    <input type='text' ng-model='user.firstname' placeholder="first name"> <br>
+    <input type='text' ng-model='user.lastname' placeholder="last name"> <br>
+    <input type='text' ng-model='user.username' placeholder="username"> <br>
     <input type='text' ng-model='user.email' placeholder="email"> <br>
     <input type="password" ng-model='user.password' placeholder="password"> <br>
-    <button>signup</button>
+    <button ng-click="signup(user)">signup</button>
   </form>
 </div>

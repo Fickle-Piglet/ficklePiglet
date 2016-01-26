@@ -1,6 +1,6 @@
 angular.module('fickle.auth', [])
 
-.controller('AuthController', function ($scope, $http, $location) {
+.controller('AuthController', function ($scope, $http, $location, Auth) {
 
 
   // login function to be called when input form submitted
@@ -15,24 +15,20 @@ angular.module('fickle.auth', [])
     console.log("Attempting to login", userData)
     Auth.login(userData)
       .then(function(message){
-          $scope.clearFields();
+          // $scope.clearFields();
           $scope.error = message;
       })
   };
 
   // sign up function to be called when input form submitted
   $scope.signup = function () {
+    console.log($scope.user)
     $scope.signUpError = '';
-    var userData = {
-      "username":$scope.signUpUsername,
-      "email":$scope.signupEmail,
-      "password":$scope.signUpPassword
-    }
-    console.log('User entered signup data',userData)
-    Auth.signup(userData)
-    .then(function(message){
-      $scope.clearFields();
-      $scope.signUpError = message;
-    })
+    Auth.signup(JSON.stringify($scope.user))
+    // .then(function(message){
+      // $scope.clearFields();
+    //   $scope.signUpError = message;
+    // })
   };
+
 });

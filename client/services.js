@@ -14,12 +14,14 @@ angular.module('fickle.services', [])
     };
 
     var signup = function (user) {
+      console.log("in service controller signup")
       return $http({
           method: 'POST',
           url: '/signup',
           data: user
         })
         .then(function (resp) {
+          console.log("response from server",resp)
           return resp.data.token;
         });
     };
