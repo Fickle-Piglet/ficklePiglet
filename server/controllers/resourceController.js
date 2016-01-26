@@ -8,5 +8,8 @@ module.exports = {
         var name = req.body.name;
         var tags = req.body.genre
         // DB query
+    },
+    getResource: function(req, res){
+        //TODO: Write getResource function
     }
 };
