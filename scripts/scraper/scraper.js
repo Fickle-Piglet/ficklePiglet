@@ -8,13 +8,14 @@ module.exports = {
         var search = 'https://itunes.apple.com/search?term='+searchTerm+'&entity=podcast'
         request({
             method: "GET",
-            url: search
-        }, function(err, res, body){
-            body = JSON.parse(body)
-            for(var i=0; i<body.results.length; i++){
-                var target = {};
-                target.name = body.results[i].trackName
+                url: search
+            }, function(err, res, body){
+                    body = JSON.parse(body)
+                    for(var i=0; i<body.results.length; i++){
+                        var target = {};
+                        target.name = body.results[i].trackName
                 target.genres = body.results[i].genres
+                target.url = body.results[i].collectionViewUrl
                 fs.appendFile('../scripts/scraper/files/allocation.txt', JSON.stringify(target) + "\n", function(err){
                     if (err) return console.log(err);
                     console.log("uploaded: ", target.name);
@@ -39,7 +40,8 @@ module.exports = {
                     url: "http://localhost:5050/insert",
                     json: {
                         name: list[i].name,
-                        genre: list[i].genres[j]
+                        genre: list[i].genres[j],
+                        url: list[i].url
                     }
                 }, function(err, res, body){
                     //console.log("YAY", body)

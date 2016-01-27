@@ -1,1298 +1,215 @@
-{"name":"Entrepreneurial Thought Leaders","genres":["Higher Education","Podcasts","Education","Business","Management & Marketing"]}
-{"name":"TEDTalks (audio)","genres":["Education","Podcasts","Society & Culture","Arts","Science & Medicine","News & Politics","Technology"]}
-{"name":"Adventures in Angular","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Angular Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Ambrocio Garcia-I.A.P.A.","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Orbital Path","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Friday Videos","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Friday","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"RN Breakfast - Chris Smith: Friday Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Hello Internet","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Hello, We're from the Internet","genres":["TV & Film","Podcasts"]}
-{"name":"jQuery Ajax PHP Tutorial","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Web Design 1","genres":["Educational Technology","Podcasts","Education","Technology","Software How-To"]}
-{"name":"Stuff To Blow Your Mind","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture"]}
-{"name":"Take Up Code","genres":["Educational Technology","Podcasts","Education","Games & Hobbies","Technology","Software How-To","Hobbies"]}
-{"name":"JavaScript Jabber","genres":["Training","Podcasts","Education","Technology","Software How-To"]}
-{"name":"JavaScript Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"5 Minutes of JavaScript","genres":["Tech News","Podcasts","Technology"]}
-{"name":"CodeWinds - Leading edge web developer news and training | javascript / React.js / Node.js / HTML5 / web development - Jeff Bar","genres":["Software How-To","Podcasts","Technology","Tech News","Education","Training"]}
-{"name":"Lately in JavaScript podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Javascript 4 U","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Tech Leaders in Action - Rails, Python, Java, Scala, Javascript, Nodejs ...","genres":["Tech News","Podcasts","Technology","Business","Careers"]}
-{"name":"Coding Amateur Hour — Stories and Banter about Javascript and the Web","genres":["Software How-To","Podcasts","Technology","Society & Culture","Personal Journals","Business","Careers"]}
-{"name":"Web-Anwendungen - Einfuehrung in das YUI JavaScript/AJAX Framework von Yahoo","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"The SitePen Podcast for developers who can’t JavaScript good and want to learn to do other things good too","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Пятиминутка JavaScript (5minjs)","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Ruby on Rails Podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Start Here: Ruby on Rails","genres":["Training","Podcasts","Education"]}
-{"name":"RailsMagazin - Alles rund um Ruby on Rails » Videos","genres":["Software How-To","Podcasts","Technology","Science & Medicine","Medicine"]}
-{"name":"Basic HTML","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"The Bone Lab","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine"]}
-{"name":"King of the Lab: The Bones Podcast","genres":["TV & Film","Podcasts","Society & Culture","Games & Hobbies"]}
-{"name":"Blisshacker Radio","genres":["Self-Help","Podcasts","Health","Business","Careers","Science & Medicine"]}
-{"name":"TEDTalks Education","genres":["Educational Technology","Podcasts","Education","Higher Education"]}
-{"name":"TEDTalks Education","genres":["Education","Podcasts"]}
-{"name":"Science Weekly","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science News Weekly (Video-HI)","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences","Technology","Tech News","Medicine"]}
-{"name":"Science Update » Weekly Show","genres":["Medicine","Podcasts","Science & Medicine","Natural Sciences"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"Science News Weekly (MP3)","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine","Social Sciences"]}
-{"name":"Science News Flash","genres":["Natural Sciences","Podcasts","Science & Medicine","Religion & Spirituality","Christianity","News & Politics"]}
-{"name":"KQED Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Christian Science Monitor - News","genres":["News & Politics","Podcasts"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Autism Science Foundation Weekly Science Report","genres":["Medicine","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Science News Weekly (Video-LO)","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine","Technology","Tech News","Social Sciences"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"META-Health - The Art and Science of Self-Healing | Interviews and News from New Health Paradigm Leaders","genres":["Alternative Health","Podcasts","Health","Self-Help","Religion & Spirituality","Spirituality"]}
-{"name":"MiResearch Podcast: Basic Science and Research News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"Bedford Stem Cell Research Foundation Science Highlights & News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"SiT'N Listen!","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"MN Sea Grant: Superior Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"President's Weekly Podcast - Texas Tech University Health Sciences Center (TTUHSC) El Paso","genres":["Fitness & Nutrition","Podcasts","Health","Science & Medicine","Medicine"]}
-{"name":"Science News from COMPASS","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"News - Bastion","genres":["Literature","Podcasts","Arts"]}
-{"name":"KBDG: The News Everyone is Barking About","genres":["K-12","Podcasts","Education"]}
-{"name":"Mizzou Spotlight on Science","genres":["Higher Education","Podcasts","Education"]}
-{"name":"FiST Chat: Film, Science and Technology News","genres":["Tech News","Podcasts","Technology"]}
-{"name":"Impact!: Breaking Science That Applies to You!","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Podcasts – Weekly Science Week","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Careers Weekly","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Hidden Universe HD: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Selected Shorts","genres":["Performing Arts","Podcasts","Arts"]}
-{"name":"NASACast Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space","genres":["Science & Medicine","Podcasts"]}
-{"name":"Space Rockerz: Shake Down - Progressive Dance Music Podcast","genres":["Music","Podcasts"]}
-{"name":"NASACast: This Week @NASA Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Planetary Radio: Space Exploration, Astronomy and Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: Solar System Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Taylor Talk: The Taylor Swift Podcast | 1989 | Shake It Off | Blank Space | Red | Speak Now | Fearless | Taylor Swift","genres":["Kids & Family","Podcasts","Music","TV & Film"]}
-{"name":"NASACast: This Week @ NASA Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Beats In Space Radio Podcast","genres":["Music","Podcasts"]}
-{"name":"Hidden Universe: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Edge","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"60-Second Space","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Technology"]}
-{"name":"NASACast Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Goddard Shorts","genres":["Technology","Podcasts"]}
-{"name":"Living Homegrown Podcast with Theresa Loe","genres":["Food","Podcasts","Arts","Education","Games & Hobbies","Hobbies"]}
-{"name":"NASA 50th Anniversary Moments Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Blueshift","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 360 Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: What's Up? Video Podcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space Music podcast from Magnatune.com","genres":["Music","Podcasts"]}
-{"name":"The Last Mission to Hubble: Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Mission Update Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 50th Anniversary Moments Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"GLASTcast HD:  The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Government & Organizations","National"]}
-{"name":"Blame It On Outer Space","genres":["Comedy","Podcasts"]}
-{"name":"The Space Show","genres":["Science & Medicine","Podcasts","News & Politics","Technology","Business","Education"]}
-{"name":"Space Rocket History","genres":["History","Podcasts","Society & Culture","Education","Technology"]}
-{"name":"CMD+Space","genres":["Tech News","Podcasts","Technology"]}
-{"name":"GLASTcast: The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"The Holistic Spaces Podcast with Anjie Cho | Feng Shui & Holistic Living - Holistic Spaces","genres":["Self-Help","Podcasts","Health"]}
-{"name":"The Orb: A Star Trek Deep Space Nine Podcast","genres":["TV & Film","Podcasts","Arts","Society & Culture"]}
-{"name":"11.22.63 An Event Podcast","genres":["TV & Film","Podcasts","Society & Culture","History","Arts","Literature"]}
-{"name":"Space Radio  (Goth, Industrial, EBM, SynthPop, Electronic, Techno)","genres":["Music","Podcasts"]}
-{"name":"Ambiences & Spaces with Matt Borghi","genres":["Music","Podcasts"]}
-{"name":"Space Casey","genres":["Literature","Podcasts","Arts"]}
-{"name":"The RIPEcast","genres":["Music","Podcasts"]}
-{"name":"Non Breaking Space Show","genres":["Tech News","Podcasts","Technology"]}
-{"name":"NASA X Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Project Moonbase – The Historic Sound of the Future | Unusual music show | Podcast | Space cult | projectmoonbase.com","genres":["Music","Podcasts","Comedy","Society & Culture","Philosophy"]}
-{"name":"Earn Your Spurs: Exploring the Cowboy, Horses and All Things Western","genres":["Outdoor","Podcasts","Sports & Recreation","Kids & Family","Games & Hobbies"]}
-{"name":"Cosmos In You - Guide to Inner Space","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"space patrol","genres":["Literature","Podcasts","Arts"]}
-{"name":"WRITER 2.0: Writing. Publishing. And the Space Between.","genres":["Literature","Podcasts","Arts","Society & Culture","Education","Higher Education"]}
-{"name":"The Audio Collection – SPACE – Public Briefings","genres":["Music","Podcasts","TV & Film"]}
-{"name":"Space Talk","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","History","News & Politics"]}
-{"name":"ESApod, audio and video from space","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology"]}
-{"name":"Space Patrol  TV","genres":["Kids & Family","Podcasts","Society & Culture","TV & Film","History"]}
-{"name":"Space Heroes Podcast","genres":["Kids & Family","Podcasts","TV & Film","Comedy"]}
-{"name":"MinutePhysics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Physics In Action","genres":["K-12","Podcasts","Education","Science & Medicine","Technology","Tech News","Natural Sciences"]}
-{"name":"People Behind the Science Podcast - Stories from Scientists about Science, Life, Research, and Science Careers","genres":["Natural Sciences","Podcasts","Science & Medicine","Business","Careers"]}
-{"name":"Love Is A Verb – Daily interviews with experts around the world on self love, physics and self-development.","genres":["Self-Help","Podcasts","Health","Fitness & Nutrition","Religion & Spirituality","Spirituality"]}
-{"name":"Physics World Science Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Thermal and Statistical Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics Fundamentalized","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Physics 50 Lectures @ SJSU","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Kabbalah & Physics","genres":["Judaism","Podcasts","Religion & Spirituality"]}
-{"name":"Solid State Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics 50 example problems","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Waves of the Future: ISS2005","genres":["Education","Podcasts"]}
-{"name":"Physics 208","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"PHYSICS MINUTES!","genres":["K-12","Podcasts","Education"]}
-{"name":"Everyday Science","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","K-12"]}
-{"name":"Special Topics in Calamity Physics","genres":["Literature","Podcasts","Arts"]}
-{"name":"Lilou Macé webTV Well-being, Evolution, Consciousness, Quantum physics, Health, Creativity, Relationships, Meditations, Open H","genres":["Self-Help","Podcasts","Health"]}
-{"name":"Finding God In Physics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"physics - meaghersclasses","genres":["K-12","Podcasts","Education"]}
-{"name":"Smith's AP Physics B @ Arapahoe","genres":["Education","Podcasts","K-12"]}
-{"name":"Arapahoe High School Physics Podcasts","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"IB Physics Help Video Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"New Books in Physics","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Religion & Spirituality"]}
-{"name":"Princeton Plasma Physics Laboratory","genres":["Government & Organizations","Podcasts","National"]}
-{"name":"pwn your hw | physics / math / calculus / science / homework preparation and review- eli hibit","genres":["Science & Medicine","Podcasts"]}
-{"name":"Fundamentals of Physics III","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Colonial Physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Chalk Talk Physics Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences","Technology","Podcasting"]}
-{"name":"STS: Physics of Electricity","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics Club","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"VCE Physics Podcast","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics PapaPodcasts","genres":["K-12","Podcasts","Education"]}
-{"name":"Mr Mallon's Physics Site Podcast","genres":["Education","Podcasts","K-12"]}
-{"name":"Comic Book Physics with Bureau 42","genres":["Higher Education","Podcasts","Education"]}
-{"name":"SILLIAC: The Vodcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Get Your Physics On","genres":["K-12","Podcasts","Education"]}
-{"name":"SILLIAC: The Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"pwn physics 365: physics history, vocabulary, and resources every day of the year","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Rowland Physics Blog","genres":["K-12","Podcasts","Education"]}
-{"name":"We Are The Physics","genres":["Music","Podcasts","Arts","Visual Arts"]}
-{"name":"Honors Physics","genres":["K-12","Podcasts","Education"]}
-{"name":"The Physics Engine podcast","genres":["Music","Podcasts"]}
-{"name":"KDNK Programs: Radio Physics Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"VCE Physics Unit 3: Structures and Materials","genres":["Education","Podcasts","K-12"]}
-{"name":"CHS Physics","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"GradschoolShopper Podcast","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"partycool physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Physics by ARISTOTLE","genres":["Literature","Podcasts","Arts"]}
-{"name":"Physics 30 Class Recordings (Dickie)","genres":["Education","Podcasts","K-12"]}
-{"name":"Higher Physics Unit One","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Discovery","genres":["Science & Medicine","Podcasts"]}
-{"name":"Detective","genres":["News & Politics","Podcasts"]}
-{"name":"What The Crime?!","genres":["News & Politics","Podcasts"]}
-{"name":"Facing Evil with Candice DeLong","genres":["News & Politics","Podcasts"]}
-{"name":"The Mind of a Murderer Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"CrimeFeed","genres":["News & Politics","Podcasts"]}
-{"name":"Intelligent Design The Future","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Education","genres":["K-12","Podcasts","Education","Educational Technology"]}
-{"name":"Multiple Sclerosis Discovery: The Podcast of the MS Discovery Forum","genres":["Medicine","Podcasts","Science & Medicine","Government & Organizations","Non-Profit"]}
-{"name":"Discovery Now","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"ESIBytes - E-Discovery Tips by Experts","genres":["Business News","Podcasts","Business"]}
-{"name":"Verge of Discovery","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Technology"]}
-{"name":"- Simi Valley, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Institute's Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery Church Orlando FL Audio Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Applied Discovery: Litigation and E-Discovery Strategy - Meet and Confer Best Practices","genres":["News & Politics","Podcasts"]}
-{"name":"LSO Discovery Video Podcast","genres":["Music","Podcasts","Education"]}
-{"name":"Journeys of Discovery with Tom Wilmer","genres":["TV & Film","Podcasts"]}
-{"name":"Discovery Church - Learn the Bible in 24 Hours","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Diabetes Discovery Podcast","genres":["Fitness & Nutrition","Podcasts","Health"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Classical Music Discoveries","genres":["Music","Podcasts"]}
-{"name":"Amazing Reptiles Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Dinomight! Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Alliance Church Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church Colorado Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Through a Scientific Lens","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Book of Discovery, A by SYNGE, M. B.","genres":["Literature","Podcasts","Arts"]}
-{"name":"Hutto Discovery UMC - Messages of Hope","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Messages","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Soul Discovery Radio Shows on Podcast","genres":["Music","Podcasts"]}
-{"name":"Discovery Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Age of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Philosophy"]}
-{"name":"The Atomic Age: Discovery and Evolution of Nuclear Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"UX Discovery Session… by Gerard Dolan","genres":["Design","Podcasts","Arts","Technology","Podcasting","Business","Visual Arts"]}
-{"name":"Point of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery, A Christian Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality","Society & Culture","Philosophy"]}
-{"name":"Songs For Phaeton","genres":["Literature","Podcasts","Arts"]}
-{"name":"Faith Discovery Church - Online Media","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"The Unnormal Paranormal Podcast -- Discussing the World Of Ghosts, Hauntings, Psychics, UFOs, New Scientific Discoveries ... An","genres":["News & Politics","Podcasts","Society & Culture","Philosophy","Religion & Spirituality","Other"]}
-{"name":"CD Baby Metal Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"Hip Hop Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"Discovery Church International","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church of the Nazarene - Livermore, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"e-Discovery Zone","genres":["Business News","Podcasts","Business"]}
-{"name":"Messages from Discovery Road Church","genres":["Christianity","Podcasts","Religion & Spirituality","Society & Culture"]}
-{"name":"Discovery Church Orlando FL Video Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Blisshacker Radio","genres":["Self-Help","Podcasts","Health","Business","Careers","Science & Medicine"]}
-{"name":"Web Design 1","genres":["Educational Technology","Podcasts","Education","Technology","Software How-To"]}
-{"name":"Entrepreneurial Thought Leaders","genres":["Higher Education","Podcasts","Education","Business","Management & Marketing"]}
-{"name":"Take Up Code","genres":["Educational Technology","Podcasts","Education","Games & Hobbies","Technology","Software How-To","Hobbies"]}
-{"name":"Orbital Path","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Ruby on Rails Podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Start Here: Ruby on Rails","genres":["Training","Podcasts","Education"]}
-{"name":"RailsMagazin - Alles rund um Ruby on Rails » Videos","genres":["Software How-To","Podcasts","Technology","Science & Medicine","Medicine"]}
-{"name":"Hello Internet","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Hello, We're from the Internet","genres":["TV & Film","Podcasts"]}
-{"name":"The Bone Lab","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine"]}
-{"name":"King of the Lab: The Bones Podcast","genres":["TV & Film","Podcasts","Society & Culture","Games & Hobbies"]}
-{"name":"TEDTalks (audio)","genres":["Education","Podcasts","Society & Culture","Arts","Science & Medicine","News & Politics","Technology"]}
-{"name":"Adventures in Angular","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Angular Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Ambrocio Garcia-I.A.P.A.","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Science Friday","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Friday Videos","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"RN Breakfast - Chris Smith: Friday Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"TEDTalks Education","genres":["Educational Technology","Podcasts","Education","Higher Education"]}
-{"name":"TEDTalks Education","genres":["Education","Podcasts"]}
-{"name":"jQuery Ajax PHP Tutorial","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Basic HTML","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Stuff To Blow Your Mind","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture"]}
-{"name":"MinutePhysics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Physics In Action","genres":["K-12","Podcasts","Education","Science & Medicine","Technology","Tech News","Natural Sciences"]}
-{"name":"People Behind the Science Podcast - Stories from Scientists about Science, Life, Research, and Science Careers","genres":["Natural Sciences","Podcasts","Science & Medicine","Business","Careers"]}
-{"name":"Love Is A Verb – Daily interviews with experts around the world on self love, physics and self-development.","genres":["Self-Help","Podcasts","Health","Fitness & Nutrition","Religion & Spirituality","Spirituality"]}
-{"name":"Physics World Science Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Physics 50 Lectures @ SJSU","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Thermal and Statistical Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics Fundamentalized","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Kabbalah & Physics","genres":["Judaism","Podcasts","Religion & Spirituality"]}
-{"name":"Solid State Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics 50 example problems","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Waves of the Future: ISS2005","genres":["Education","Podcasts"]}
-{"name":"Physics 208","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"PHYSICS MINUTES!","genres":["K-12","Podcasts","Education"]}
-{"name":"Special Topics in Calamity Physics","genres":["Literature","Podcasts","Arts"]}
-{"name":"Everyday Science","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","K-12"]}
-{"name":"Lilou Macé webTV Well-being, Evolution, Consciousness, Quantum physics, Health, Creativity, Relationships, Meditations, Open H","genres":["Self-Help","Podcasts","Health"]}
-{"name":"Finding God In Physics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"physics - meaghersclasses","genres":["K-12","Podcasts","Education"]}
-{"name":"Smith's AP Physics B @ Arapahoe","genres":["Education","Podcasts","K-12"]}
-{"name":"Arapahoe High School Physics Podcasts","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"IB Physics Help Video Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"New Books in Physics","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Religion & Spirituality"]}
-{"name":"Princeton Plasma Physics Laboratory","genres":["Government & Organizations","Podcasts","National"]}
-{"name":"pwn your hw | physics / math / calculus / science / homework preparation and review- eli hibit","genres":["Science & Medicine","Podcasts"]}
-{"name":"Fundamentals of Physics III","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Colonial Physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Chalk Talk Physics Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences","Technology","Podcasting"]}
-{"name":"STS: Physics of Electricity","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics Club","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"VCE Physics Podcast","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics PapaPodcasts","genres":["K-12","Podcasts","Education"]}
-{"name":"Mr Mallon's Physics Site Podcast","genres":["Education","Podcasts","K-12"]}
-{"name":"SILLIAC: The Vodcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Comic Book Physics with Bureau 42","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Get Your Physics On","genres":["K-12","Podcasts","Education"]}
-{"name":"SILLIAC: The Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"pwn physics 365: physics history, vocabulary, and resources every day of the year","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Rowland Physics Blog","genres":["K-12","Podcasts","Education"]}
-{"name":"We Are The Physics","genres":["Music","Podcasts","Arts","Visual Arts"]}
-{"name":"Honors Physics","genres":["K-12","Podcasts","Education"]}
-{"name":"The Physics Engine podcast","genres":["Music","Podcasts"]}
-{"name":"KDNK Programs: Radio Physics Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"VCE Physics Unit 3: Structures and Materials","genres":["Education","Podcasts","K-12"]}
-{"name":"CHS Physics","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"GradschoolShopper Podcast","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"partycool physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Physics by ARISTOTLE","genres":["Literature","Podcasts","Arts"]}
-{"name":"Physics 30 Class Recordings (Dickie)","genres":["Education","Podcasts","K-12"]}
-{"name":"Higher Physics Unit One","genres":["Higher Education","Podcasts","Education"]}
-{"name":"JavaScript Jabber","genres":["Training","Podcasts","Education","Technology","Software How-To"]}
-{"name":"5 Minutes of JavaScript","genres":["Tech News","Podcasts","Technology"]}
-{"name":"JavaScript Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"CodeWinds - Leading edge web developer news and training | javascript / React.js / Node.js / HTML5 / web development - Jeff Bar","genres":["Software How-To","Podcasts","Technology","Tech News","Education","Training"]}
-{"name":"Lately in JavaScript podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Javascript 4 U","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Tech Leaders in Action - Rails, Python, Java, Scala, Javascript, Nodejs ...","genres":["Tech News","Podcasts","Technology","Business","Careers"]}
-{"name":"Coding Amateur Hour — Stories and Banter about Javascript and the Web","genres":["Software How-To","Podcasts","Technology","Society & Culture","Personal Journals","Business","Careers"]}
-{"name":"Web-Anwendungen - Einfuehrung in das YUI JavaScript/AJAX Framework von Yahoo","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"The SitePen Podcast for developers who can’t JavaScript good and want to learn to do other things good too","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Пятиминутка JavaScript (5minjs)","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Science Weekly","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Update » Weekly Show","genres":["Medicine","Podcasts","Science & Medicine","Natural Sciences"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"Science News Weekly (Video-HI)","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences","Technology","Tech News","Medicine"]}
-{"name":"Science News Weekly (MP3)","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine","Social Sciences"]}
-{"name":"Science News Flash","genres":["Natural Sciences","Podcasts","Science & Medicine","Religion & Spirituality","Christianity","News & Politics"]}
-{"name":"KQED Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Christian Science Monitor - News","genres":["News & Politics","Podcasts"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Autism Science Foundation Weekly Science Report","genres":["Medicine","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Science News Weekly (Video-LO)","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine","Technology","Tech News","Social Sciences"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"META-Health - The Art and Science of Self-Healing | Interviews and News from New Health Paradigm Leaders","genres":["Alternative Health","Podcasts","Health","Self-Help","Religion & Spirituality","Spirituality"]}
-{"name":"MiResearch Podcast: Basic Science and Research News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"Bedford Stem Cell Research Foundation Science Highlights & News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"SiT'N Listen!","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"MN Sea Grant: Superior Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"President's Weekly Podcast - Texas Tech University Health Sciences Center (TTUHSC) El Paso","genres":["Fitness & Nutrition","Podcasts","Health","Science & Medicine","Medicine"]}
-{"name":"Science News from COMPASS","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"News - Bastion","genres":["Literature","Podcasts","Arts"]}
-{"name":"KBDG: The News Everyone is Barking About","genres":["K-12","Podcasts","Education"]}
-{"name":"Mizzou Spotlight on Science","genres":["Higher Education","Podcasts","Education"]}
-{"name":"FiST Chat: Film, Science and Technology News","genres":["Tech News","Podcasts","Technology"]}
-{"name":"Impact!: Breaking Science That Applies to You!","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Podcasts – Weekly Science Week","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Careers Weekly","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Selected Shorts","genres":["Performing Arts","Podcasts","Arts"]}
-{"name":"Hidden Universe HD: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space","genres":["Science & Medicine","Podcasts"]}
-{"name":"Space Rockerz: Shake Down - Progressive Dance Music Podcast","genres":["Music","Podcasts"]}
-{"name":"NASACast: This Week @NASA Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Planetary Radio: Space Exploration, Astronomy and Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: Solar System Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Taylor Talk: The Taylor Swift Podcast | 1989 | Shake It Off | Blank Space | Red | Speak Now | Fearless | Taylor Swift","genres":["Kids & Family","Podcasts","Music","TV & Film"]}
-{"name":"NASACast: This Week @ NASA Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Beats In Space Radio Podcast","genres":["Music","Podcasts"]}
-{"name":"Hidden Universe: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Edge","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"60-Second Space","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Technology"]}
-{"name":"NASACast Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Goddard Shorts","genres":["Technology","Podcasts"]}
-{"name":"Living Homegrown Podcast with Theresa Loe","genres":["Food","Podcasts","Arts","Education","Games & Hobbies","Hobbies"]}
-{"name":"NASA 50th Anniversary Moments Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Blueshift","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 360 Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: What's Up? Video Podcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space Music podcast from Magnatune.com","genres":["Music","Podcasts"]}
-{"name":"The Last Mission to Hubble: Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Mission Update Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 50th Anniversary Moments Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"GLASTcast HD:  The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Government & Organizations","National"]}
-{"name":"Blame It On Outer Space","genres":["Comedy","Podcasts"]}
-{"name":"The Space Show","genres":["Science & Medicine","Podcasts","News & Politics","Technology","Business","Education"]}
-{"name":"Space Rocket History","genres":["History","Podcasts","Society & Culture","Education","Technology"]}
-{"name":"CMD+Space","genres":["Tech News","Podcasts","Technology"]}
-{"name":"The Holistic Spaces Podcast with Anjie Cho | Feng Shui & Holistic Living - Holistic Spaces","genres":["Self-Help","Podcasts","Health"]}
-{"name":"GLASTcast: The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"11.22.63 An Event Podcast","genres":["TV & Film","Podcasts","Society & Culture","History","Arts","Literature"]}
-{"name":"The Orb: A Star Trek Deep Space Nine Podcast","genres":["TV & Film","Podcasts","Arts","Society & Culture"]}
-{"name":"Space Radio  (Goth, Industrial, EBM, SynthPop, Electronic, Techno)","genres":["Music","Podcasts"]}
-{"name":"Ambiences & Spaces with Matt Borghi","genres":["Music","Podcasts"]}
-{"name":"Space Casey","genres":["Literature","Podcasts","Arts"]}
-{"name":"The RIPEcast","genres":["Music","Podcasts"]}
-{"name":"Non Breaking Space Show","genres":["Tech News","Podcasts","Technology"]}
-{"name":"NASA X Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Project Moonbase – The Historic Sound of the Future | Unusual music show | Podcast | Space cult | projectmoonbase.com","genres":["Music","Podcasts","Comedy","Society & Culture","Philosophy"]}
-{"name":"Earn Your Spurs: Exploring the Cowboy, Horses and All Things Western","genres":["Outdoor","Podcasts","Sports & Recreation","Kids & Family","Games & Hobbies"]}
-{"name":"Cosmos In You - Guide to Inner Space","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"space patrol","genres":["Literature","Podcasts","Arts"]}
-{"name":"WRITER 2.0: Writing. Publishing. And the Space Between.","genres":["Literature","Podcasts","Arts","Society & Culture","Education","Higher Education"]}
-{"name":"The Audio Collection – SPACE – Public Briefings","genres":["Music","Podcasts","TV & Film"]}
-{"name":"Space Talk","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","History","News & Politics"]}
-{"name":"ESApod, audio and video from space","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology"]}
-{"name":"Space Patrol  TV","genres":["Kids & Family","Podcasts","Society & Culture","TV & Film","History"]}
-{"name":"Space Heroes Podcast","genres":["Kids & Family","Podcasts","TV & Film","Comedy"]}
-{"name":"Detective","genres":["News & Politics","Podcasts"]}
-{"name":"What The Crime?!","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery","genres":["Science & Medicine","Podcasts"]}
-{"name":"Facing Evil with Candice DeLong","genres":["News & Politics","Podcasts"]}
-{"name":"The Mind of a Murderer Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"CrimeFeed","genres":["News & Politics","Podcasts"]}
-{"name":"Intelligent Design The Future","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Education","genres":["K-12","Podcasts","Education","Educational Technology"]}
-{"name":"Multiple Sclerosis Discovery: The Podcast of the MS Discovery Forum","genres":["Medicine","Podcasts","Science & Medicine","Government & Organizations","Non-Profit"]}
-{"name":"ESIBytes - E-Discovery Tips by Experts","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Now","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Verge of Discovery","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Technology"]}
-{"name":"- Simi Valley, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Institute's Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery Church Orlando FL Audio Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Applied Discovery: Litigation and E-Discovery Strategy - Meet and Confer Best Practices","genres":["News & Politics","Podcasts"]}
-{"name":"LSO Discovery Video Podcast","genres":["Music","Podcasts","Education"]}
-{"name":"Journeys of Discovery with Tom Wilmer","genres":["TV & Film","Podcasts"]}
-{"name":"Discovery Church - Learn the Bible in 24 Hours","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Diabetes Discovery Podcast","genres":["Fitness & Nutrition","Podcasts","Health"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Classical Music Discoveries","genres":["Music","Podcasts"]}
-{"name":"Amazing Reptiles Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Dinomight! Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Alliance Church Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church Colorado Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Through a Scientific Lens","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Book of Discovery, A by SYNGE, M. B.","genres":["Literature","Podcasts","Arts"]}
-{"name":"Hutto Discovery UMC - Messages of Hope","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Messages","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Soul Discovery Radio Shows on Podcast","genres":["Music","Podcasts"]}
-{"name":"Discovery Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Age of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Philosophy"]}
-{"name":"The Atomic Age: Discovery and Evolution of Nuclear Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"UX Discovery Session… by Gerard Dolan","genres":["Design","Podcasts","Arts","Technology","Podcasting","Business","Visual Arts"]}
-{"name":"Point of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery, A Christian Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality","Society & Culture","Philosophy"]}
-{"name":"Songs For Phaeton","genres":["Literature","Podcasts","Arts"]}
-{"name":"The Unnormal Paranormal Podcast -- Discussing the World Of Ghosts, Hauntings, Psychics, UFOs, New Scientific Discoveries ... An","genres":["News & Politics","Podcasts","Society & Culture","Philosophy","Religion & Spirituality","Other"]}
-{"name":"Faith Discovery Church - Online Media","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"CD Baby Metal Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"Hip Hop Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"e-Discovery Zone","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Church of the Nazarene - Livermore, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church International","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church Orlando FL Video Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Messages from Discovery Road Church","genres":["Christianity","Podcasts","Religion & Spirituality","Society & Culture"]}
-{"name":"TEDTalks Education","genres":["Educational Technology","Podcasts","Education","Higher Education"]}
-{"name":"TEDTalks Education","genres":["Education","Podcasts"]}
-{"name":"TEDTalks (audio)","genres":["Education","Podcasts","Society & Culture","Arts","Science & Medicine","News & Politics","Technology"]}
-{"name":"Blisshacker Radio","genres":["Self-Help","Podcasts","Health","Business","Careers","Science & Medicine"]}
-{"name":"jQuery Ajax PHP Tutorial","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Ruby on Rails Podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"RailsMagazin - Alles rund um Ruby on Rails » Videos","genres":["Software How-To","Podcasts","Technology","Science & Medicine","Medicine"]}
-{"name":"Start Here: Ruby on Rails","genres":["Training","Podcasts","Education"]}
-{"name":"Hello Internet","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Hello, We're from the Internet","genres":["TV & Film","Podcasts"]}
-{"name":"Basic HTML","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Adventures in Angular","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Angular Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Ambrocio Garcia-I.A.P.A.","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Take Up Code","genres":["Educational Technology","Podcasts","Education","Games & Hobbies","Technology","Software How-To","Hobbies"]}
-{"name":"Entrepreneurial Thought Leaders","genres":["Higher Education","Podcasts","Education","Business","Management & Marketing"]}
-{"name":"Orbital Path","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"The Bone Lab","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine"]}
-{"name":"King of the Lab: The Bones Podcast","genres":["TV & Film","Podcasts","Society & Culture","Games & Hobbies"]}
-{"name":"Web Design 1","genres":["Educational Technology","Podcasts","Education","Technology","Software How-To"]}
-{"name":"Stuff To Blow Your Mind","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture"]}
-{"name":"Science Friday","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Friday Videos","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"RN Breakfast - Chris Smith: Friday Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Weekly","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Update » Weekly Show","genres":["Medicine","Podcasts","Science & Medicine","Natural Sciences"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"Science News Weekly (Video-HI)","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences","Technology","Tech News","Medicine"]}
-{"name":"Science News Weekly (MP3)","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine","Social Sciences"]}
-{"name":"Science News Flash","genres":["Natural Sciences","Podcasts","Science & Medicine","Religion & Spirituality","Christianity","News & Politics"]}
-{"name":"KQED Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Christian Science Monitor - News","genres":["News & Politics","Podcasts"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Autism Science Foundation Weekly Science Report","genres":["Medicine","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Science News Weekly (Video-LO)","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine","Technology","Tech News","Social Sciences"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"META-Health - The Art and Science of Self-Healing | Interviews and News from New Health Paradigm Leaders","genres":["Alternative Health","Podcasts","Health","Self-Help","Religion & Spirituality","Spirituality"]}
-{"name":"MiResearch Podcast: Basic Science and Research News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"Bedford Stem Cell Research Foundation Science Highlights & News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"SiT'N Listen!","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"MN Sea Grant: Superior Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"President's Weekly Podcast - Texas Tech University Health Sciences Center (TTUHSC) El Paso","genres":["Fitness & Nutrition","Podcasts","Health","Science & Medicine","Medicine"]}
-{"name":"Science News from COMPASS","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"News - Bastion","genres":["Literature","Podcasts","Arts"]}
-{"name":"KBDG: The News Everyone is Barking About","genres":["K-12","Podcasts","Education"]}
-{"name":"Mizzou Spotlight on Science","genres":["Higher Education","Podcasts","Education"]}
-{"name":"FiST Chat: Film, Science and Technology News","genres":["Tech News","Podcasts","Technology"]}
-{"name":"Podcasts – Weekly Science Week","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Impact!: Breaking Science That Applies to You!","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Science Careers Weekly","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"JavaScript Jabber","genres":["Training","Podcasts","Education","Technology","Software How-To"]}
-{"name":"5 Minutes of JavaScript","genres":["Tech News","Podcasts","Technology"]}
-{"name":"Lately in JavaScript podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Javascript 4 U","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"CodeWinds - Leading edge web developer news and training | javascript / React.js / Node.js / HTML5 / web development - Jeff Bar","genres":["Software How-To","Podcasts","Technology","Tech News","Education","Training"]}
-{"name":"Tech Leaders in Action - Rails, Python, Java, Scala, Javascript, Nodejs ...","genres":["Tech News","Podcasts","Technology","Business","Careers"]}
-{"name":"JavaScript Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Coding Amateur Hour — Stories and Banter about Javascript and the Web","genres":["Software How-To","Podcasts","Technology","Society & Culture","Personal Journals","Business","Careers"]}
-{"name":"Web-Anwendungen - Einfuehrung in das YUI JavaScript/AJAX Framework von Yahoo","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"The SitePen Podcast for developers who can’t JavaScript good and want to learn to do other things good too","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Пятиминутка JavaScript (5minjs)","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"MinutePhysics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"People Behind the Science Podcast - Stories from Scientists about Science, Life, Research, and Science Careers","genres":["Natural Sciences","Podcasts","Science & Medicine","Business","Careers"]}
-{"name":"Physics In Action","genres":["K-12","Podcasts","Education","Science & Medicine","Technology","Tech News","Natural Sciences"]}
-{"name":"Physics World Science Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Love Is A Verb – Daily interviews with experts around the world on self love, physics and self-development.","genres":["Self-Help","Podcasts","Health","Fitness & Nutrition","Religion & Spirituality","Spirituality"]}
-{"name":"Physics 50 Lectures @ SJSU","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Thermal and Statistical Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics Fundamentalized","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Kabbalah & Physics","genres":["Judaism","Podcasts","Religion & Spirituality"]}
-{"name":"Solid State Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics 50 example problems","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Waves of the Future: ISS2005","genres":["Education","Podcasts"]}
-{"name":"Physics 208","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"PHYSICS MINUTES!","genres":["K-12","Podcasts","Education"]}
-{"name":"Special Topics in Calamity Physics","genres":["Literature","Podcasts","Arts"]}
-{"name":"Everyday Science","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","K-12"]}
-{"name":"Lilou Macé webTV Well-being, Evolution, Consciousness, Quantum physics, Health, Creativity, Relationships, Meditations, Open H","genres":["Self-Help","Podcasts","Health"]}
-{"name":"Finding God In Physics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"physics - meaghersclasses","genres":["K-12","Podcasts","Education"]}
-{"name":"Smith's AP Physics B @ Arapahoe","genres":["Education","Podcasts","K-12"]}
-{"name":"Arapahoe High School Physics Podcasts","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"New Books in Physics","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Religion & Spirituality"]}
-{"name":"IB Physics Help Video Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Princeton Plasma Physics Laboratory","genres":["Government & Organizations","Podcasts","National"]}
-{"name":"pwn your hw | physics / math / calculus / science / homework preparation and review- eli hibit","genres":["Science & Medicine","Podcasts"]}
-{"name":"Fundamentals of Physics III","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Colonial Physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Chalk Talk Physics Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences","Technology","Podcasting"]}
-{"name":"STS: Physics of Electricity","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics Club","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"VCE Physics Podcast","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics PapaPodcasts","genres":["K-12","Podcasts","Education"]}
-{"name":"Mr Mallon's Physics Site Podcast","genres":["Education","Podcasts","K-12"]}
-{"name":"Comic Book Physics with Bureau 42","genres":["Higher Education","Podcasts","Education"]}
-{"name":"SILLIAC: The Vodcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Get Your Physics On","genres":["K-12","Podcasts","Education"]}
-{"name":"SILLIAC: The Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"pwn physics 365: physics history, vocabulary, and resources every day of the year","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Rowland Physics Blog","genres":["K-12","Podcasts","Education"]}
-{"name":"We Are The Physics","genres":["Music","Podcasts","Arts","Visual Arts"]}
-{"name":"Honors Physics","genres":["K-12","Podcasts","Education"]}
-{"name":"The Physics Engine podcast","genres":["Music","Podcasts"]}
-{"name":"KDNK Programs: Radio Physics Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"VCE Physics Unit 3: Structures and Materials","genres":["Education","Podcasts","K-12"]}
-{"name":"CHS Physics","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"GradschoolShopper Podcast","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"partycool physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Physics by ARISTOTLE","genres":["Literature","Podcasts","Arts"]}
-{"name":"Physics 30 Class Recordings (Dickie)","genres":["Education","Podcasts","K-12"]}
-{"name":"Higher Physics Unit One","genres":["Higher Education","Podcasts","Education"]}
-{"name":"What The Crime?!","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery","genres":["Science & Medicine","Podcasts"]}
-{"name":"Facing Evil with Candice DeLong","genres":["News & Politics","Podcasts"]}
-{"name":"Detective","genres":["News & Politics","Podcasts"]}
-{"name":"The Mind of a Murderer Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"CrimeFeed","genres":["News & Politics","Podcasts"]}
-{"name":"Intelligent Design The Future","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Education","genres":["K-12","Podcasts","Education","Educational Technology"]}
-{"name":"Multiple Sclerosis Discovery: The Podcast of the MS Discovery Forum","genres":["Medicine","Podcasts","Science & Medicine","Government & Organizations","Non-Profit"]}
-{"name":"ESIBytes - E-Discovery Tips by Experts","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Now","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Verge of Discovery","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Technology"]}
-{"name":"- Simi Valley, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Institute's Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery Church Orlando FL Audio Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Applied Discovery: Litigation and E-Discovery Strategy - Meet and Confer Best Practices","genres":["News & Politics","Podcasts"]}
-{"name":"LSO Discovery Video Podcast","genres":["Music","Podcasts","Education"]}
-{"name":"Journeys of Discovery with Tom Wilmer","genres":["TV & Film","Podcasts"]}
-{"name":"Discovery Church - Learn the Bible in 24 Hours","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Diabetes Discovery Podcast","genres":["Fitness & Nutrition","Podcasts","Health"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Classical Music Discoveries","genres":["Music","Podcasts"]}
-{"name":"Amazing Reptiles Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Dinomight! Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Alliance Church Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church Colorado Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Through a Scientific Lens","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Book of Discovery, A by SYNGE, M. B.","genres":["Literature","Podcasts","Arts"]}
-{"name":"Hutto Discovery UMC - Messages of Hope","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Messages","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Soul Discovery Radio Shows on Podcast","genres":["Music","Podcasts"]}
-{"name":"Discovery Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Age of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Philosophy"]}
-{"name":"The Atomic Age: Discovery and Evolution of Nuclear Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"UX Discovery Session… by Gerard Dolan","genres":["Design","Podcasts","Arts","Technology","Podcasting","Business","Visual Arts"]}
-{"name":"Point of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery, A Christian Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality","Society & Culture","Philosophy"]}
-{"name":"Songs For Phaeton","genres":["Literature","Podcasts","Arts"]}
-{"name":"The Unnormal Paranormal Podcast -- Discussing the World Of Ghosts, Hauntings, Psychics, UFOs, New Scientific Discoveries ... An","genres":["News & Politics","Podcasts","Society & Culture","Philosophy","Religion & Spirituality","Other"]}
-{"name":"Faith Discovery Church - Online Media","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"CD Baby Metal Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"Hip Hop Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"e-Discovery Zone","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Church International","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church of the Nazarene - Livermore, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Messages from Discovery Road Church","genres":["Christianity","Podcasts","Religion & Spirituality","Society & Culture"]}
-{"name":"Discovery Church Orlando FL Video Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Selected Shorts","genres":["Performing Arts","Podcasts","Arts"]}
-{"name":"Hidden Universe HD: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space","genres":["Science & Medicine","Podcasts"]}
-{"name":"NASACast: This Week @NASA Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space Rockerz: Shake Down - Progressive Dance Music Podcast","genres":["Music","Podcasts"]}
-{"name":"Planetary Radio: Space Exploration, Astronomy and Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: Solar System Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Taylor Talk: The Taylor Swift Podcast | 1989 | Shake It Off | Blank Space | Red | Speak Now | Fearless | Taylor Swift","genres":["Kids & Family","Podcasts","Music","TV & Film"]}
-{"name":"NASACast: This Week @ NASA Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Beats In Space Radio Podcast","genres":["Music","Podcasts"]}
-{"name":"Hidden Universe: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Edge","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"60-Second Space","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Technology"]}
-{"name":"NASA Goddard Shorts","genres":["Technology","Podcasts"]}
-{"name":"NASACast Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Living Homegrown Podcast with Theresa Loe","genres":["Food","Podcasts","Arts","Education","Games & Hobbies","Hobbies"]}
-{"name":"NASA 50th Anniversary Moments Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Blueshift","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 360 Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: What's Up? Video Podcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space Music podcast from Magnatune.com","genres":["Music","Podcasts"]}
-{"name":"The Last Mission to Hubble: Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Mission Update Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 50th Anniversary Moments Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"GLASTcast HD:  The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Government & Organizations","National"]}
-{"name":"Blame It On Outer Space","genres":["Comedy","Podcasts"]}
-{"name":"The Space Show","genres":["Science & Medicine","Podcasts","News & Politics","Technology","Business","Education"]}
-{"name":"The Holistic Spaces Podcast with Anjie Cho | Feng Shui & Holistic Living - Holistic Spaces","genres":["Self-Help","Podcasts","Health"]}
-{"name":"Space Rocket History","genres":["History","Podcasts","Society & Culture","Education","Technology"]}
-{"name":"CMD+Space","genres":["Tech News","Podcasts","Technology"]}
-{"name":"GLASTcast: The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"The Orb: A Star Trek Deep Space Nine Podcast","genres":["TV & Film","Podcasts","Arts","Society & Culture"]}
-{"name":"11.22.63 An Event Podcast","genres":["TV & Film","Podcasts","Society & Culture","History","Arts","Literature"]}
-{"name":"Space Radio  (Goth, Industrial, EBM, SynthPop, Electronic, Techno)","genres":["Music","Podcasts"]}
-{"name":"Ambiences & Spaces with Matt Borghi","genres":["Music","Podcasts"]}
-{"name":"Space Casey","genres":["Literature","Podcasts","Arts"]}
-{"name":"Non Breaking Space Show","genres":["Tech News","Podcasts","Technology"]}
-{"name":"The RIPEcast","genres":["Music","Podcasts"]}
-{"name":"NASA X Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Project Moonbase – The Historic Sound of the Future | Unusual music show | Podcast | Space cult | projectmoonbase.com","genres":["Music","Podcasts","Comedy","Society & Culture","Philosophy"]}
-{"name":"Earn Your Spurs: Exploring the Cowboy, Horses and All Things Western","genres":["Outdoor","Podcasts","Sports & Recreation","Kids & Family","Games & Hobbies"]}
-{"name":"Cosmos In You - Guide to Inner Space","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"space patrol","genres":["Literature","Podcasts","Arts"]}
-{"name":"WRITER 2.0: Writing. Publishing. And the Space Between.","genres":["Literature","Podcasts","Arts","Society & Culture","Education","Higher Education"]}
-{"name":"The Audio Collection – SPACE – Public Briefings","genres":["Music","Podcasts","TV & Film"]}
-{"name":"Space Talk","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","History","News & Politics"]}
-{"name":"ESApod, audio and video from space","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology"]}
-{"name":"Space Patrol  TV","genres":["Kids & Family","Podcasts","Society & Culture","TV & Film","History"]}
-{"name":"Space Heroes Podcast","genres":["Kids & Family","Podcasts","TV & Film","Comedy"]}
-{"name":"TEDTalks (audio)","genres":["Education","Podcasts","Society & Culture","Arts","Science & Medicine","News & Politics","Technology"]}
-{"name":"Entrepreneurial Thought Leaders","genres":["Higher Education","Podcasts","Education","Business","Management & Marketing"]}
-{"name":"jQuery Ajax PHP Tutorial","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Orbital Path","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Hello, We're from the Internet","genres":["TV & Film","Podcasts"]}
-{"name":"Hello Internet","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Stuff To Blow Your Mind","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture"]}
-{"name":"Blisshacker Radio","genres":["Self-Help","Podcasts","Health","Business","Careers","Science & Medicine"]}
-{"name":"Basic HTML","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"The Bone Lab","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine"]}
-{"name":"King of the Lab: The Bones Podcast","genres":["TV & Film","Podcasts","Society & Culture","Games & Hobbies"]}
-{"name":"Web Design 1","genres":["Educational Technology","Podcasts","Education","Technology","Software How-To"]}
-{"name":"Take Up Code","genres":["Educational Technology","Podcasts","Education","Games & Hobbies","Technology","Software How-To","Hobbies"]}
-{"name":"TEDTalks Education","genres":["Educational Technology","Podcasts","Education","Higher Education"]}
-{"name":"TEDTalks Education","genres":["Education","Podcasts"]}
-{"name":"Ruby on Rails Podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Start Here: Ruby on Rails","genres":["Training","Podcasts","Education"]}
-{"name":"RailsMagazin - Alles rund um Ruby on Rails » Videos","genres":["Software How-To","Podcasts","Technology","Science & Medicine","Medicine"]}
-{"name":"JavaScript Jabber","genres":["Training","Podcasts","Education","Technology","Software How-To"]}
-{"name":"JavaScript Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"CodeWinds - Leading edge web developer news and training | javascript / React.js / Node.js / HTML5 / web development - Jeff Bar","genres":["Software How-To","Podcasts","Technology","Tech News","Education","Training"]}
-{"name":"Lately in JavaScript podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"5 Minutes of JavaScript","genres":["Tech News","Podcasts","Technology"]}
-{"name":"Javascript 4 U","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Coding Amateur Hour — Stories and Banter about Javascript and the Web","genres":["Software How-To","Podcasts","Technology","Society & Culture","Personal Journals","Business","Careers"]}
-{"name":"Tech Leaders in Action - Rails, Python, Java, Scala, Javascript, Nodejs ...","genres":["Tech News","Podcasts","Technology","Business","Careers"]}
-{"name":"Web-Anwendungen - Einfuehrung in das YUI JavaScript/AJAX Framework von Yahoo","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"The SitePen Podcast for developers who can’t JavaScript good and want to learn to do other things good too","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Пятиминутка JavaScript (5minjs)","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Science Friday","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Friday Videos","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"RN Breakfast - Chris Smith: Friday Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Angular Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Adventures in Angular","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Ambrocio Garcia-I.A.P.A.","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Science News Weekly (Video-HI)","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences","Technology","Tech News","Medicine"]}
-{"name":"Science Update » Weekly Show","genres":["Medicine","Podcasts","Science & Medicine","Natural Sciences"]}
-{"name":"Science Weekly","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"Science News Weekly (MP3)","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine","Social Sciences"]}
-{"name":"Science News Flash","genres":["Natural Sciences","Podcasts","Science & Medicine","Religion & Spirituality","Christianity","News & Politics"]}
-{"name":"KQED Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Christian Science Monitor - News","genres":["News & Politics","Podcasts"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Autism Science Foundation Weekly Science Report","genres":["Medicine","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Science News Weekly (Video-LO)","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine","Technology","Tech News","Social Sciences"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"META-Health - The Art and Science of Self-Healing | Interviews and News from New Health Paradigm Leaders","genres":["Alternative Health","Podcasts","Health","Self-Help","Religion & Spirituality","Spirituality"]}
-{"name":"MiResearch Podcast: Basic Science and Research News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"Bedford Stem Cell Research Foundation Science Highlights & News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"MN Sea Grant: Superior Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"SiT'N Listen!","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"President's Weekly Podcast - Texas Tech University Health Sciences Center (TTUHSC) El Paso","genres":["Fitness & Nutrition","Podcasts","Health","Science & Medicine","Medicine"]}
-{"name":"Science News from COMPASS","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"News - Bastion","genres":["Literature","Podcasts","Arts"]}
-{"name":"Mizzou Spotlight on Science","genres":["Higher Education","Podcasts","Education"]}
-{"name":"KBDG: The News Everyone is Barking About","genres":["K-12","Podcasts","Education"]}
-{"name":"FiST Chat: Film, Science and Technology News","genres":["Tech News","Podcasts","Technology"]}
-{"name":"Impact!: Breaking Science That Applies to You!","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Podcasts – Weekly Science Week","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Careers Weekly","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Selected Shorts","genres":["Performing Arts","Podcasts","Arts"]}
-{"name":"Hidden Universe HD: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space","genres":["Science & Medicine","Podcasts"]}
-{"name":"Space Rockerz: Shake Down - Progressive Dance Music Podcast","genres":["Music","Podcasts"]}
-{"name":"NASACast: This Week @NASA Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: Solar System Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Planetary Radio: Space Exploration, Astronomy and Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Taylor Talk: The Taylor Swift Podcast | 1989 | Shake It Off | Blank Space | Red | Speak Now | Fearless | Taylor Swift","genres":["Kids & Family","Podcasts","Music","TV & Film"]}
-{"name":"NASACast: This Week @ NASA Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Beats In Space Radio Podcast","genres":["Music","Podcasts"]}
-{"name":"Hidden Universe: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"60-Second Space","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Technology"]}
-{"name":"NASA Edge","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Goddard Shorts","genres":["Technology","Podcasts"]}
-{"name":"Living Homegrown Podcast with Theresa Loe","genres":["Food","Podcasts","Arts","Education","Games & Hobbies","Hobbies"]}
-{"name":"NASA 50th Anniversary Moments Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Blueshift","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 360 Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: What's Up? Video Podcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space Music podcast from Magnatune.com","genres":["Music","Podcasts"]}
-{"name":"The Last Mission to Hubble: Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Mission Update Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"GLASTcast HD:  The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Government & Organizations","National"]}
-{"name":"NASA 50th Anniversary Moments Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Blame It On Outer Space","genres":["Comedy","Podcasts"]}
-{"name":"The Space Show","genres":["Science & Medicine","Podcasts","News & Politics","Technology","Business","Education"]}
-{"name":"The Holistic Spaces Podcast with Anjie Cho | Feng Shui & Holistic Living - Holistic Spaces","genres":["Self-Help","Podcasts","Health"]}
-{"name":"Space Rocket History","genres":["History","Podcasts","Society & Culture","Education","Technology"]}
-{"name":"CMD+Space","genres":["Tech News","Podcasts","Technology"]}
-{"name":"11.22.63 An Event Podcast","genres":["TV & Film","Podcasts","Society & Culture","History","Arts","Literature"]}
-{"name":"GLASTcast: The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"The Orb: A Star Trek Deep Space Nine Podcast","genres":["TV & Film","Podcasts","Arts","Society & Culture"]}
-{"name":"Space Radio  (Goth, Industrial, EBM, SynthPop, Electronic, Techno)","genres":["Music","Podcasts"]}
-{"name":"Ambiences & Spaces with Matt Borghi","genres":["Music","Podcasts"]}
-{"name":"Space Casey","genres":["Literature","Podcasts","Arts"]}
-{"name":"Non Breaking Space Show","genres":["Tech News","Podcasts","Technology"]}
-{"name":"The RIPEcast","genres":["Music","Podcasts"]}
-{"name":"NASA X Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Project Moonbase – The Historic Sound of the Future | Unusual music show | Podcast | Space cult | projectmoonbase.com","genres":["Music","Podcasts","Comedy","Society & Culture","Philosophy"]}
-{"name":"Earn Your Spurs: Exploring the Cowboy, Horses and All Things Western","genres":["Outdoor","Podcasts","Sports & Recreation","Kids & Family","Games & Hobbies"]}
-{"name":"Cosmos In You - Guide to Inner Space","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"space patrol","genres":["Literature","Podcasts","Arts"]}
-{"name":"WRITER 2.0: Writing. Publishing. And the Space Between.","genres":["Literature","Podcasts","Arts","Society & Culture","Education","Higher Education"]}
-{"name":"The Audio Collection – SPACE – Public Briefings","genres":["Music","Podcasts","TV & Film"]}
-{"name":"Space Talk","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","History","News & Politics"]}
-{"name":"ESApod, audio and video from space","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology"]}
-{"name":"Space Patrol  TV","genres":["Kids & Family","Podcasts","Society & Culture","TV & Film","History"]}
-{"name":"Space Heroes Podcast","genres":["Kids & Family","Podcasts","TV & Film","Comedy"]}
-{"name":"Discovery","genres":["Science & Medicine","Podcasts"]}
-{"name":"Detective","genres":["News & Politics","Podcasts"]}
-{"name":"What The Crime?!","genres":["News & Politics","Podcasts"]}
-{"name":"Facing Evil with Candice DeLong","genres":["News & Politics","Podcasts"]}
-{"name":"The Mind of a Murderer Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"CrimeFeed","genres":["News & Politics","Podcasts"]}
-{"name":"Intelligent Design The Future","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Education","genres":["K-12","Podcasts","Education","Educational Technology"]}
-{"name":"Multiple Sclerosis Discovery: The Podcast of the MS Discovery Forum","genres":["Medicine","Podcasts","Science & Medicine","Government & Organizations","Non-Profit"]}
-{"name":"ESIBytes - E-Discovery Tips by Experts","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Now","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Verge of Discovery","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Technology"]}
-{"name":"- Simi Valley, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Institute's Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery Church Orlando FL Audio Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Applied Discovery: Litigation and E-Discovery Strategy - Meet and Confer Best Practices","genres":["News & Politics","Podcasts"]}
-{"name":"LSO Discovery Video Podcast","genres":["Music","Podcasts","Education"]}
-{"name":"Journeys of Discovery with Tom Wilmer","genres":["TV & Film","Podcasts"]}
-{"name":"Discovery Church - Learn the Bible in 24 Hours","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Diabetes Discovery Podcast","genres":["Fitness & Nutrition","Podcasts","Health"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Classical Music Discoveries","genres":["Music","Podcasts"]}
-{"name":"Amazing Reptiles Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Dinomight! Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Alliance Church Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church Colorado Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Through a Scientific Lens","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Book of Discovery, A by SYNGE, M. B.","genres":["Literature","Podcasts","Arts"]}
-{"name":"Hutto Discovery UMC - Messages of Hope","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Messages","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"Soul Discovery Radio Shows on Podcast","genres":["Music","Podcasts"]}
-{"name":"Discovery Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Age of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Philosophy"]}
-{"name":"The Atomic Age: Discovery and Evolution of Nuclear Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"UX Discovery Session… by Gerard Dolan","genres":["Design","Podcasts","Arts","Technology","Podcasting","Business","Visual Arts"]}
-{"name":"Point of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery, A Christian Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality","Society & Culture","Philosophy"]}
-{"name":"Songs For Phaeton","genres":["Literature","Podcasts","Arts"]}
-{"name":"The Unnormal Paranormal Podcast -- Discussing the World Of Ghosts, Hauntings, Psychics, UFOs, New Scientific Discoveries ... An","genres":["News & Politics","Podcasts","Society & Culture","Philosophy","Religion & Spirituality","Other"]}
-{"name":"Faith Discovery Church - Online Media","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"CD Baby Metal Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"Hip Hop Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"e-Discovery Zone","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Church of the Nazarene - Livermore, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church International","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Messages from Discovery Road Church","genres":["Christianity","Podcasts","Religion & Spirituality","Society & Culture"]}
-{"name":"Discovery Church Orlando FL Video Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"MinutePhysics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Physics In Action","genres":["K-12","Podcasts","Education","Science & Medicine","Technology","Tech News","Natural Sciences"]}
-{"name":"Love Is A Verb – Daily interviews with experts around the world on self love, physics and self-development.","genres":["Self-Help","Podcasts","Health","Fitness & Nutrition","Religion & Spirituality","Spirituality"]}
-{"name":"People Behind the Science Podcast - Stories from Scientists about Science, Life, Research, and Science Careers","genres":["Natural Sciences","Podcasts","Science & Medicine","Business","Careers"]}
-{"name":"Physics World Science Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Physics 50 Lectures @ SJSU","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Thermal and Statistical Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics Fundamentalized","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Kabbalah & Physics","genres":["Judaism","Podcasts","Religion & Spirituality"]}
-{"name":"Solid State Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics 50 example problems","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Waves of the Future: ISS2005","genres":["Education","Podcasts"]}
-{"name":"Physics 208","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"PHYSICS MINUTES!","genres":["K-12","Podcasts","Education"]}
-{"name":"Special Topics in Calamity Physics","genres":["Literature","Podcasts","Arts"]}
-{"name":"Everyday Science","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","K-12"]}
-{"name":"Lilou Macé webTV Well-being, Evolution, Consciousness, Quantum physics, Health, Creativity, Relationships, Meditations, Open H","genres":["Self-Help","Podcasts","Health"]}
-{"name":"Finding God In Physics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"physics - meaghersclasses","genres":["K-12","Podcasts","Education"]}
-{"name":"Smith's AP Physics B @ Arapahoe","genres":["Education","Podcasts","K-12"]}
-{"name":"Arapahoe High School Physics Podcasts","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"IB Physics Help Video Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"New Books in Physics","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Religion & Spirituality"]}
-{"name":"Princeton Plasma Physics Laboratory","genres":["Government & Organizations","Podcasts","National"]}
-{"name":"pwn your hw | physics / math / calculus / science / homework preparation and review- eli hibit","genres":["Science & Medicine","Podcasts"]}
-{"name":"Fundamentals of Physics III","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Colonial Physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Chalk Talk Physics Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences","Technology","Podcasting"]}
-{"name":"STS: Physics of Electricity","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics Club","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"VCE Physics Podcast","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics PapaPodcasts","genres":["K-12","Podcasts","Education"]}
-{"name":"Mr Mallon's Physics Site Podcast","genres":["Education","Podcasts","K-12"]}
-{"name":"SILLIAC: The Vodcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Comic Book Physics with Bureau 42","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Get Your Physics On","genres":["K-12","Podcasts","Education"]}
-{"name":"SILLIAC: The Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"pwn physics 365: physics history, vocabulary, and resources every day of the year","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Rowland Physics Blog","genres":["K-12","Podcasts","Education"]}
-{"name":"We Are The Physics","genres":["Music","Podcasts","Arts","Visual Arts"]}
-{"name":"Honors Physics","genres":["K-12","Podcasts","Education"]}
-{"name":"The Physics Engine podcast","genres":["Music","Podcasts"]}
-{"name":"KDNK Programs: Radio Physics Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"VCE Physics Unit 3: Structures and Materials","genres":["Education","Podcasts","K-12"]}
-{"name":"CHS Physics","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"GradschoolShopper Podcast","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Physics by ARISTOTLE","genres":["Literature","Podcasts","Arts"]}
-{"name":"partycool physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Physics 30 Class Recordings (Dickie)","genres":["Education","Podcasts","K-12"]}
-{"name":"Higher Physics Unit One","genres":["Higher Education","Podcasts","Education"]}
-{"name":"jQuery Ajax PHP Tutorial","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Stuff To Blow Your Mind","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture"]}
-{"name":"Take Up Code","genres":["Educational Technology","Podcasts","Education","Games & Hobbies","Technology","Software How-To","Hobbies"]}
-{"name":"TEDTalks (audio)","genres":["Education","Podcasts","Society & Culture","Arts","Science & Medicine","News & Politics","Technology"]}
-{"name":"Entrepreneurial Thought Leaders","genres":["Higher Education","Podcasts","Education","Business","Management & Marketing"]}
-{"name":"Adventures in Angular","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Angular Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Ambrocio Garcia-I.A.P.A.","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Orbital Path","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Blisshacker Radio","genres":["Self-Help","Podcasts","Health","Business","Careers","Science & Medicine"]}
-{"name":"JavaScript Jabber","genres":["Training","Podcasts","Education","Technology","Software How-To"]}
-{"name":"5 Minutes of JavaScript","genres":["Tech News","Podcasts","Technology"]}
-{"name":"JavaScript Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"CodeWinds - Leading edge web developer news and training | javascript / React.js / Node.js / HTML5 / web development - Jeff Bar","genres":["Software How-To","Podcasts","Technology","Tech News","Education","Training"]}
-{"name":"Lately in JavaScript podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Javascript 4 U","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Tech Leaders in Action - Rails, Python, Java, Scala, Javascript, Nodejs ...","genres":["Tech News","Podcasts","Technology","Business","Careers"]}
-{"name":"Coding Amateur Hour — Stories and Banter about Javascript and the Web","genres":["Software How-To","Podcasts","Technology","Society & Culture","Personal Journals","Business","Careers"]}
-{"name":"Web-Anwendungen - Einfuehrung in das YUI JavaScript/AJAX Framework von Yahoo","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"The SitePen Podcast for developers who can’t JavaScript good and want to learn to do other things good too","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Пятиминутка JavaScript (5minjs)","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Science Friday","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Friday Videos","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"RN Breakfast - Chris Smith: Friday Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"The Bone Lab","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine"]}
-{"name":"King of the Lab: The Bones Podcast","genres":["TV & Film","Podcasts","Society & Culture","Games & Hobbies"]}
-{"name":"Hello Internet","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Hello, We're from the Internet","genres":["TV & Film","Podcasts"]}
-{"name":"Basic HTML","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Web Design 1","genres":["Educational Technology","Podcasts","Education","Technology","Software How-To"]}
-{"name":"Ruby on Rails Podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Start Here: Ruby on Rails","genres":["Training","Podcasts","Education"]}
-{"name":"RailsMagazin - Alles rund um Ruby on Rails » Videos","genres":["Software How-To","Podcasts","Technology","Science & Medicine","Medicine"]}
-{"name":"TEDTalks Education","genres":["Educational Technology","Podcasts","Education","Higher Education"]}
-{"name":"TEDTalks Education","genres":["Education","Podcasts"]}
-{"name":"Science Weekly","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science News Weekly (Video-HI)","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences","Technology","Tech News","Medicine"]}
-{"name":"Science Update » Weekly Show","genres":["Medicine","Podcasts","Science & Medicine","Natural Sciences"]}
-{"name":"Science News Weekly (MP3)","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine","Social Sciences"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"KQED Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science News Flash","genres":["Natural Sciences","Podcasts","Science & Medicine","Religion & Spirituality","Christianity","News & Politics"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Christian Science Monitor - News","genres":["News & Politics","Podcasts"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Autism Science Foundation Weekly Science Report","genres":["Medicine","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Science News Weekly (Video-LO)","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine","Technology","Tech News","Social Sciences"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"META-Health - The Art and Science of Self-Healing | Interviews and News from New Health Paradigm Leaders","genres":["Alternative Health","Podcasts","Health","Self-Help","Religion & Spirituality","Spirituality"]}
-{"name":"MiResearch Podcast: Basic Science and Research News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"Bedford Stem Cell Research Foundation Science Highlights & News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"SiT'N Listen!","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"MN Sea Grant: Superior Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"President's Weekly Podcast - Texas Tech University Health Sciences Center (TTUHSC) El Paso","genres":["Fitness & Nutrition","Podcasts","Health","Science & Medicine","Medicine"]}
-{"name":"Science News from COMPASS","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"News - Bastion","genres":["Literature","Podcasts","Arts"]}
-{"name":"KBDG: The News Everyone is Barking About","genres":["K-12","Podcasts","Education"]}
-{"name":"Mizzou Spotlight on Science","genres":["Higher Education","Podcasts","Education"]}
-{"name":"FiST Chat: Film, Science and Technology News","genres":["Tech News","Podcasts","Technology"]}
-{"name":"Impact!: Breaking Science That Applies to You!","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Podcasts – Weekly Science Week","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Careers Weekly","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"MinutePhysics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"People Behind the Science Podcast - Stories from Scientists about Science, Life, Research, and Science Careers","genres":["Natural Sciences","Podcasts","Science & Medicine","Business","Careers"]}
-{"name":"Physics In Action","genres":["K-12","Podcasts","Education","Science & Medicine","Technology","Tech News","Natural Sciences"]}
-{"name":"Love Is A Verb – Daily interviews with experts around the world on self love, physics and self-development.","genres":["Self-Help","Podcasts","Health","Fitness & Nutrition","Religion & Spirituality","Spirituality"]}
-{"name":"Physics World Science Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Physics 50 Lectures @ SJSU","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Thermal and Statistical Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics Fundamentalized","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Kabbalah & Physics","genres":["Judaism","Podcasts","Religion & Spirituality"]}
-{"name":"Solid State Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics 50 example problems","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Waves of the Future: ISS2005","genres":["Education","Podcasts"]}
-{"name":"Physics 208","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"PHYSICS MINUTES!","genres":["K-12","Podcasts","Education"]}
-{"name":"Special Topics in Calamity Physics","genres":["Literature","Podcasts","Arts"]}
-{"name":"Lilou Macé webTV Well-being, Evolution, Consciousness, Quantum physics, Health, Creativity, Relationships, Meditations, Open H","genres":["Self-Help","Podcasts","Health"]}
-{"name":"Everyday Science","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","K-12"]}
-{"name":"Finding God In Physics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"physics - meaghersclasses","genres":["K-12","Podcasts","Education"]}
-{"name":"Smith's AP Physics B @ Arapahoe","genres":["Education","Podcasts","K-12"]}
-{"name":"Arapahoe High School Physics Podcasts","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"IB Physics Help Video Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"New Books in Physics","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Religion & Spirituality"]}
-{"name":"pwn your hw | physics / math / calculus / science / homework preparation and review- eli hibit","genres":["Science & Medicine","Podcasts"]}
-{"name":"Princeton Plasma Physics Laboratory","genres":["Government & Organizations","Podcasts","National"]}
-{"name":"Fundamentals of Physics III","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Colonial Physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Chalk Talk Physics Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences","Technology","Podcasting"]}
-{"name":"STS: Physics of Electricity","genres":["K-12","Podcasts","Education"]}
-{"name":"VCE Physics Podcast","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics Club","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Physics PapaPodcasts","genres":["K-12","Podcasts","Education"]}
-{"name":"Mr Mallon's Physics Site Podcast","genres":["Education","Podcasts","K-12"]}
-{"name":"Comic Book Physics with Bureau 42","genres":["Higher Education","Podcasts","Education"]}
-{"name":"SILLIAC: The Vodcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Get Your Physics On","genres":["K-12","Podcasts","Education"]}
-{"name":"SILLIAC: The Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"pwn physics 365: physics history, vocabulary, and resources every day of the year","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Rowland Physics Blog","genres":["K-12","Podcasts","Education"]}
-{"name":"We Are The Physics","genres":["Music","Podcasts","Arts","Visual Arts"]}
-{"name":"Honors Physics","genres":["K-12","Podcasts","Education"]}
-{"name":"The Physics Engine podcast","genres":["Music","Podcasts"]}
-{"name":"KDNK Programs: Radio Physics Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"VCE Physics Unit 3: Structures and Materials","genres":["Education","Podcasts","K-12"]}
-{"name":"CHS Physics","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"GradschoolShopper Podcast","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"partycool physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Physics by ARISTOTLE","genres":["Literature","Podcasts","Arts"]}
-{"name":"Physics 30 Class Recordings (Dickie)","genres":["Education","Podcasts","K-12"]}
-{"name":"Higher Physics Unit One","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Discovery","genres":["Science & Medicine","Podcasts"]}
-{"name":"Facing Evil with Candice DeLong","genres":["News & Politics","Podcasts"]}
-{"name":"Detective","genres":["News & Politics","Podcasts"]}
-{"name":"What The Crime?!","genres":["News & Politics","Podcasts"]}
-{"name":"The Mind of a Murderer Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"CrimeFeed","genres":["News & Politics","Podcasts"]}
-{"name":"Intelligent Design The Future","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Education","genres":["K-12","Podcasts","Education","Educational Technology"]}
-{"name":"ESIBytes - E-Discovery Tips by Experts","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Now","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Multiple Sclerosis Discovery: The Podcast of the MS Discovery Forum","genres":["Medicine","Podcasts","Science & Medicine","Government & Organizations","Non-Profit"]}
-{"name":"Verge of Discovery","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Technology"]}
-{"name":"- Simi Valley, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Institute's Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery Church Orlando FL Audio Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Applied Discovery: Litigation and E-Discovery Strategy - Meet and Confer Best Practices","genres":["News & Politics","Podcasts"]}
-{"name":"LSO Discovery Video Podcast","genres":["Music","Podcasts","Education"]}
-{"name":"Journeys of Discovery with Tom Wilmer","genres":["TV & Film","Podcasts"]}
-{"name":"Diabetes Discovery Podcast","genres":["Fitness & Nutrition","Podcasts","Health"]}
-{"name":"Discovery Church - Learn the Bible in 24 Hours","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Classical Music Discoveries","genres":["Music","Podcasts"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Amazing Reptiles Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Dinomight! Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Alliance Church Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church Colorado Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Through a Scientific Lens","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Book of Discovery, A by SYNGE, M. B.","genres":["Literature","Podcasts","Arts"]}
-{"name":"Hutto Discovery UMC - Messages of Hope","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Messages","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Soul Discovery Radio Shows on Podcast","genres":["Music","Podcasts"]}
-{"name":"Discovery Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Age of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Philosophy"]}
-{"name":"The Atomic Age: Discovery and Evolution of Nuclear Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"UX Discovery Session… by Gerard Dolan","genres":["Design","Podcasts","Arts","Technology","Podcasting","Business","Visual Arts"]}
-{"name":"Point of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery, A Christian Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality","Society & Culture","Philosophy"]}
-{"name":"Songs For Phaeton","genres":["Literature","Podcasts","Arts"]}
-{"name":"The Unnormal Paranormal Podcast -- Discussing the World Of Ghosts, Hauntings, Psychics, UFOs, New Scientific Discoveries ... An","genres":["News & Politics","Podcasts","Society & Culture","Philosophy","Religion & Spirituality","Other"]}
-{"name":"Faith Discovery Church - Online Media","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"CD Baby Metal Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"Hip Hop Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"e-Discovery Zone","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Church International","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church of the Nazarene - Livermore, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Messages from Discovery Road Church","genres":["Christianity","Podcasts","Religion & Spirituality","Society & Culture"]}
-{"name":"Discovery Church Orlando FL Video Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Selected Shorts","genres":["Performing Arts","Podcasts","Arts"]}
-{"name":"Hidden Universe HD: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space","genres":["Science & Medicine","Podcasts"]}
-{"name":"Space Rockerz: Shake Down - Progressive Dance Music Podcast","genres":["Music","Podcasts"]}
-{"name":"NASACast: This Week @NASA Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Planetary Radio: Space Exploration, Astronomy and Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: Solar System Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Taylor Talk: The Taylor Swift Podcast | 1989 | Shake It Off | Blank Space | Red | Speak Now | Fearless | Taylor Swift","genres":["Kids & Family","Podcasts","Music","TV & Film"]}
-{"name":"NASACast: This Week @ NASA Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Beats In Space Radio Podcast","genres":["Music","Podcasts"]}
-{"name":"Hidden Universe: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Edge","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"60-Second Space","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Technology"]}
-{"name":"NASACast Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Goddard Shorts","genres":["Technology","Podcasts"]}
-{"name":"Living Homegrown Podcast with Theresa Loe","genres":["Food","Podcasts","Arts","Education","Games & Hobbies","Hobbies"]}
-{"name":"NASA 50th Anniversary Moments Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Blueshift","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 360 Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: What's Up? Video Podcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space Music podcast from Magnatune.com","genres":["Music","Podcasts"]}
-{"name":"The Last Mission to Hubble: Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Mission Update Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 50th Anniversary Moments Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"GLASTcast HD:  The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Government & Organizations","National"]}
-{"name":"The Space Show","genres":["Science & Medicine","Podcasts","News & Politics","Technology","Business","Education"]}
-{"name":"Blame It On Outer Space","genres":["Comedy","Podcasts"]}
-{"name":"CMD+Space","genres":["Tech News","Podcasts","Technology"]}
-{"name":"Space Rocket History","genres":["History","Podcasts","Society & Culture","Education","Technology"]}
-{"name":"GLASTcast: The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"The Holistic Spaces Podcast with Anjie Cho | Feng Shui & Holistic Living - Holistic Spaces","genres":["Self-Help","Podcasts","Health"]}
-{"name":"11.22.63 An Event Podcast","genres":["TV & Film","Podcasts","Society & Culture","History","Arts","Literature"]}
-{"name":"The Orb: A Star Trek Deep Space Nine Podcast","genres":["TV & Film","Podcasts","Arts","Society & Culture"]}
-{"name":"Space Radio  (Goth, Industrial, EBM, SynthPop, Electronic, Techno)","genres":["Music","Podcasts"]}
-{"name":"Ambiences & Spaces with Matt Borghi","genres":["Music","Podcasts"]}
-{"name":"Space Casey","genres":["Literature","Podcasts","Arts"]}
-{"name":"The RIPEcast","genres":["Music","Podcasts"]}
-{"name":"Non Breaking Space Show","genres":["Tech News","Podcasts","Technology"]}
-{"name":"NASA X Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Project Moonbase – The Historic Sound of the Future | Unusual music show | Podcast | Space cult | projectmoonbase.com","genres":["Music","Podcasts","Comedy","Society & Culture","Philosophy"]}
-{"name":"Earn Your Spurs: Exploring the Cowboy, Horses and All Things Western","genres":["Outdoor","Podcasts","Sports & Recreation","Kids & Family","Games & Hobbies"]}
-{"name":"Cosmos In You - Guide to Inner Space","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"WRITER 2.0: Writing. Publishing. And the Space Between.","genres":["Literature","Podcasts","Arts","Society & Culture","Education","Higher Education"]}
-{"name":"space patrol","genres":["Literature","Podcasts","Arts"]}
-{"name":"The Audio Collection – SPACE – Public Briefings","genres":["Music","Podcasts","TV & Film"]}
-{"name":"Space Talk","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","History","News & Politics"]}
-{"name":"ESApod, audio and video from space","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology"]}
-{"name":"Space Patrol  TV","genres":["Kids & Family","Podcasts","Society & Culture","TV & Film","History"]}
-{"name":"Space Heroes Podcast","genres":["Kids & Family","Podcasts","TV & Film","Comedy"]}
-{"name":"Take Up Code","genres":["Educational Technology","Podcasts","Education","Games & Hobbies","Technology","Software How-To","Hobbies"]}
-{"name":"Web Design 1","genres":["Educational Technology","Podcasts","Education","Technology","Software How-To"]}
-{"name":"Orbital Path","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Stuff To Blow Your Mind","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture"]}
-{"name":"TEDTalks Education","genres":["Educational Technology","Podcasts","Education","Higher Education"]}
-{"name":"TEDTalks Education","genres":["Education","Podcasts"]}
-{"name":"The Bone Lab","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine"]}
-{"name":"King of the Lab: The Bones Podcast","genres":["TV & Film","Podcasts","Society & Culture","Games & Hobbies"]}
-{"name":"Web Design 1","genres":["Educational Technology","Podcasts","Education","Technology","Software How-To"]}
-{"name":"Orbital Path","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Take Up Code","genres":["Educational Technology","Podcasts","Education","Games & Hobbies","Technology","Software How-To","Hobbies"]}
-{"name":"Stuff To Blow Your Mind","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture"]}
-{"name":"Hello Internet","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Hello, We're from the Internet","genres":["TV & Film","Podcasts"]}
-{"name":"TEDTalks (audio)","genres":["Education","Podcasts","Arts","Science & Medicine","Society & Culture","News & Politics","Technology"]}
-{"name":"Basic HTML","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"TEDTalks Education","genres":["Educational Technology","Podcasts","Education","Higher Education"]}
-{"name":"TEDTalks Education","genres":["Education","Podcasts"]}
-{"name":"The Bone Lab","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine"]}
-{"name":"King of the Lab: The Bones Podcast","genres":["TV & Film","Podcasts","Society & Culture","Games & Hobbies"]}
-{"name":"jQuery Ajax PHP Tutorial","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Science Friday","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Friday Videos","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"RN Breakfast - Chris Smith: Friday Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Blisshacker Radio","genres":["Self-Help","Podcasts","Health","Business","Careers","Science & Medicine"]}
-{"name":"Entrepreneurial Thought Leaders","genres":["Higher Education","Podcasts","Education","Business","Management & Marketing"]}
-{"name":"Adventures in Angular","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Angular Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Ambrocio Garcia-I.A.P.A.","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Ruby on Rails Podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"RailsMagazin - Alles rund um Ruby on Rails » Videos","genres":["Software How-To","Podcasts","Technology","Science & Medicine","Medicine"]}
-{"name":"Start Here: Ruby on Rails","genres":["Training","Podcasts","Education"]}
-{"name":"Detective","genres":["News & Politics","Podcasts"]}
-{"name":"What The Crime?!","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery","genres":["Science & Medicine","Podcasts"]}
-{"name":"Facing Evil with Candice DeLong","genres":["News & Politics","Podcasts"]}
-{"name":"The Mind of a Murderer Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"CrimeFeed","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery Education","genres":["K-12","Podcasts","Education","Educational Technology"]}
-{"name":"Intelligent Design The Future","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Multiple Sclerosis Discovery: The Podcast of the MS Discovery Forum","genres":["Medicine","Podcasts","Science & Medicine","Government & Organizations","Non-Profit"]}
-{"name":"ESIBytes - E-Discovery Tips by Experts","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Now","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"Verge of Discovery","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Education"]}
-{"name":"- Simi Valley, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Institute's Podcast","genres":["News & Politics","Podcasts"]}
-{"name":"Discovery Church Orlando FL Audio Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Applied Discovery: Litigation and E-Discovery Strategy - Meet and Confer Best Practices","genres":["News & Politics","Podcasts"]}
-{"name":"LSO Discovery Video Podcast","genres":["Music","Podcasts","Education"]}
-{"name":"Journeys of Discovery with Tom Wilmer","genres":["TV & Film","Podcasts"]}
-{"name":"Diabetes Discovery Podcast","genres":["Fitness & Nutrition","Podcasts","Health"]}
-{"name":"Discovery Church - Learn the Bible in 24 Hours","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Classical Music Discoveries","genres":["Music","Podcasts"]}
-{"name":"Amazing Reptiles Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Dinomight! Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery Alliance Church Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church Colorado Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Through a Scientific Lens","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Book of Discovery, A by SYNGE, M. B.","genres":["Literature","Podcasts","Arts"]}
-{"name":"Hutto Discovery UMC - Messages of Hope","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Messages","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Soul Discovery Radio Shows on Podcast","genres":["Music","Podcasts"]}
-{"name":"Discovery Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Age of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Philosophy"]}
-{"name":"The Atomic Age: Discovery and Evolution of Nuclear Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"UX Discovery Session… by Gerard Dolan","genres":["Design","Podcasts","Arts","Technology","Podcasting","Business","Visual Arts"]}
-{"name":"Point of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Discovery, A Christian Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality","Society & Culture","Philosophy"]}
-{"name":"Songs For Phaeton","genres":["Literature","Podcasts","Arts"]}
-{"name":"The Unnormal Paranormal Podcast -- Discussing the World Of Ghosts, Hauntings, Psychics, UFOs, New Scientific Discoveries ... An","genres":["News & Politics","Podcasts","Society & Culture","Philosophy","Religion & Spirituality","Other"]}
-{"name":"Faith Discovery Church - Online Media","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"CD Baby Metal Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"Hip Hop Discovery Podcast","genres":["Music","Podcasts"]}
-{"name":"e-Discovery Zone","genres":["Business News","Podcasts","Business"]}
-{"name":"Discovery Church International","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Discovery Church of the Nazarene - Livermore, CA","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"Messages from Discovery Road Church","genres":["Christianity","Podcasts","Religion & Spirituality","Society & Culture"]}
-{"name":"Discovery Church Orlando FL Video Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"]}
-{"name":"JavaScript Jabber","genres":["Training","Podcasts","Education","Technology","Software How-To"]}
-{"name":"5 Minutes of JavaScript","genres":["Tech News","Podcasts","Technology"]}
-{"name":"JavaScript Air","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"CodeWinds - Leading edge web developer news and training | javascript / React.js / Node.js / HTML5 / web development - Jeff Bar","genres":["Software How-To","Podcasts","Technology","Tech News","Education","Training"]}
-{"name":"Lately in JavaScript podcast","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Javascript 4 U","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Tech Leaders in Action - Rails, Python, Java, Scala, Javascript, Nodejs ...","genres":["Tech News","Podcasts","Technology","Business","Careers"]}
-{"name":"Coding Amateur Hour — Stories and Banter about Javascript and the Web","genres":["Software How-To","Podcasts","Technology","Society & Culture","Personal Journals","Business","Careers"]}
-{"name":"Web-Anwendungen - Einfuehrung in das YUI JavaScript/AJAX Framework von Yahoo","genres":["Software How-To","Podcasts","Technology"]}
-{"name":"Пятиминутка JavaScript (5minjs)","genres":["Podcasting","Podcasts","Technology"]}
-{"name":"The SitePen Podcast for developers who can’t JavaScript good and want to learn to do other things good too","genres":["Tech News","Podcasts","Technology","Software How-To"]}
-{"name":"Science Weekly","genres":["Science & Medicine","Podcasts"]}
-{"name":"Science Update » Weekly Show","genres":["Medicine","Podcasts","Science & Medicine","Natural Sciences"]}
-{"name":"Science News Weekly (Video-HI)","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences","Technology","Tech News","Medicine"]}
-{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"]}
-{"name":"Science News Weekly (MP3)","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine","Social Sciences"]}
-{"name":"Science News Flash","genres":["Natural Sciences","Podcasts","Science & Medicine","Religion & Spirituality","Christianity","News & Politics"]}
-{"name":"KQED Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"]}
-{"name":"The Christian Science Monitor - News","genres":["News & Politics","Podcasts"]}
-{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Autism Science Foundation Weekly Science Report","genres":["Medicine","Podcasts","Science & Medicine","Social Sciences"]}
-{"name":"Science News Weekly (Video-LO)","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine","Technology","Tech News","Social Sciences"]}
-{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"]}
-{"name":"META-Health - The Art and Science of Self-Healing | Interviews and News from New Health Paradigm Leaders","genres":["Alternative Health","Podcasts","Health","Self-Help","Religion & Spirituality","Spirituality"]}
-{"name":"MiResearch Podcast: Basic Science and Research News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"Bedford Stem Cell Research Foundation Science Highlights & News","genres":["Medicine","Podcasts","Science & Medicine"]}
-{"name":"SiT'N Listen!","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"MN Sea Grant: Superior Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"President's Weekly Podcast - Texas Tech University Health Sciences Center (TTUHSC) El Paso","genres":["Fitness & Nutrition","Podcasts","Health","Science & Medicine","Medicine"]}
-{"name":"Science News from COMPASS","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"News - Bastion","genres":["Literature","Podcasts","Arts"]}
-{"name":"KBDG: The News Everyone is Barking About","genres":["K-12","Podcasts","Education"]}
-{"name":"Mizzou Spotlight on Science","genres":["Higher Education","Podcasts","Education"]}
-{"name":"FiST Chat: Film, Science and Technology News","genres":["Tech News","Podcasts","Technology"]}
-{"name":"Impact!: Breaking Science That Applies to You!","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Podcasts – Weekly Science Week","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"Science Careers Weekly","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Selected Shorts","genres":["Performing Arts","Podcasts","Arts"]}
-{"name":"NASACast Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Hidden Universe HD: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space","genres":["Science & Medicine","Podcasts"]}
-{"name":"Space Rockerz: Shake Down - Progressive Dance Music Podcast","genres":["Music","Podcasts"]}
-{"name":"NASACast: This Week @NASA Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Planetary Radio: Space Exploration, Astronomy and Science","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Taylor Talk: The Taylor Swift Podcast | 1989 | Shake It Off | Blank Space | Red | Speak Now | Fearless | Taylor Swift","genres":["Kids & Family","Podcasts","Music","TV & Film"]}
-{"name":"NASACast: Solar System Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: This Week @ NASA Video","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Beats In Space Radio Podcast","genres":["Music","Podcasts"]}
-{"name":"Hidden Universe: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"60-Second Space","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Technology"]}
-{"name":"NASA Edge","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Goddard Shorts","genres":["Technology","Podcasts"]}
-{"name":"Living Homegrown Podcast with Theresa Loe","genres":["Food","Podcasts","Arts","Games & Hobbies","Education","Hobbies"]}
-{"name":"NASA 50th Anniversary Moments Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Blueshift","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 360 Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASACast: What's Up? Video Podcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Space Music podcast from Magnatune.com","genres":["Music","Podcasts"]}
-{"name":"The Last Mission to Hubble: Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA Mission Update Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"NASA 50th Anniversary Moments Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"GLASTcast HD:  The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Government & Organizations","National"]}
-{"name":"Blame It On Outer Space","genres":["Comedy","Podcasts"]}
-{"name":"The Space Show","genres":["Science & Medicine","Podcasts","News & Politics","Technology","Business","Education"]}
-{"name":"The Holistic Spaces Podcast with Anjie Cho | Feng Shui & Holistic Living - Holistic Spaces","genres":["Self-Help","Podcasts","Health"]}
-{"name":"Space Rocket History","genres":["History","Podcasts","Society & Culture","Education","Technology"]}
-{"name":"CMD+Space","genres":["Tech News","Podcasts","Technology"]}
-{"name":"GLASTcast: The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"The Orb: A Star Trek Deep Space Nine Podcast","genres":["TV & Film","Podcasts","Arts","Society & Culture"]}
-{"name":"11.22.63 An Event Podcast","genres":["TV & Film","Podcasts","Society & Culture","History","Arts","Literature"]}
-{"name":"Space Radio  (Goth, Industrial, EBM, SynthPop, Electronic, Techno)","genres":["Music","Podcasts"]}
-{"name":"Ambiences & Spaces with Matt Borghi","genres":["Music","Podcasts"]}
-{"name":"Space Casey","genres":["Literature","Podcasts","Arts"]}
-{"name":"Non Breaking Space Show","genres":["Tech News","Podcasts","Technology"]}
-{"name":"The RIPEcast","genres":["Music","Podcasts"]}
-{"name":"NASA X Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Project Moonbase – The Historic Sound of the Future | Unusual music show | Podcast | Space cult | projectmoonbase.com","genres":["Music","Podcasts","Comedy","Society & Culture","Philosophy"]}
-{"name":"Earn Your Spurs: Exploring the Cowboy, Horses and All Things Western","genres":["Outdoor","Podcasts","Sports & Recreation","Kids & Family","Games & Hobbies"]}
-{"name":"Cosmos In You - Guide to Inner Space","genres":["Social Sciences","Podcasts","Science & Medicine"]}
-{"name":"space patrol","genres":["Literature","Podcasts","Arts"]}
-{"name":"WRITER 2.0: Writing. Publishing. And the Space Between.","genres":["Literature","Podcasts","Arts","Society & Culture","Education","Higher Education"]}
-{"name":"The Audio Collection – SPACE – Public Briefings","genres":["Music","Podcasts","TV & Film"]}
-{"name":"Space Talk","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","History","News & Politics"]}
-{"name":"ESApod, audio and video from space","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology"]}
-{"name":"Space Patrol  TV","genres":["Kids & Family","Podcasts","Society & Culture","TV & Film","History"]}
-{"name":"Space Heroes Podcast","genres":["Kids & Family","Podcasts","TV & Film","Comedy"]}
-{"name":"MinutePhysics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"People Behind the Science Podcast - Stories from Scientists about Science, Life, Research, and Science Careers","genres":["Natural Sciences","Podcasts","Science & Medicine","Business","Careers"]}
-{"name":"Love Is A Verb – Daily interviews with experts around the world on self love, physics and self-development.","genres":["Self-Help","Podcasts","Health","Fitness & Nutrition","Religion & Spirituality","Spirituality"]}
-{"name":"Physics World Science Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Physics In Action","genres":["K-12","Podcasts","Education","Science & Medicine","Technology","Tech News","Natural Sciences"]}
-{"name":"Thermal and Statistical Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics Fundamentalized","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Physics 50 Lectures @ SJSU","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Kabbalah & Physics","genres":["Judaism","Podcasts","Religion & Spirituality"]}
-{"name":"Solid State Physics","genres":["Higher Education","Podcasts","Education"]}
-{"name":"Physics 50 example problems","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"Waves of the Future: ISS2005","genres":["Education","Podcasts"]}
-{"name":"Physics 208","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"PHYSICS MINUTES!","genres":["K-12","Podcasts","Education"]}
-{"name":"Special Topics in Calamity Physics","genres":["Literature","Podcasts","Arts"]}
-{"name":"Everyday Science","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","K-12"]}
-{"name":"Finding God In Physics","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Lilou Macé webTV Well-being, Evolution, Consciousness, Quantum physics, Health, Creativity, Relationships, Meditations, Open H","genres":["Self-Help","Podcasts","Health"]}
-{"name":"physics - meaghersclasses","genres":["K-12","Podcasts","Education"]}
-{"name":"Smith's AP Physics B @ Arapahoe","genres":["Education","Podcasts","K-12"]}
-{"name":"Arapahoe High School Physics Podcasts","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"IB Physics Help Video Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"New Books in Physics","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Religion & Spirituality"]}
-{"name":"Princeton Plasma Physics Laboratory","genres":["Government & Organizations","Podcasts","National"]}
-{"name":"pwn your hw | physics / math / calculus / science / homework preparation and review- eli hibit","genres":["Science & Medicine","Podcasts"]}
-{"name":"Fundamentals of Physics III","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"pwn physics 365: physics history, vocabulary, and resources every day of the year","genres":["Natural Sciences","Podcasts","Science & Medicine"]}
-{"name":"Colonial Physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Chalk Talk Physics Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences","Technology","Podcasting"]}
-{"name":"Physics Club","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"STS: Physics of Electricity","genres":["K-12","Podcasts","Education"]}
-{"name":"VCE Physics Podcast","genres":["K-12","Podcasts","Education"]}
-{"name":"Physics PapaPodcasts","genres":["K-12","Podcasts","Education"]}
-{"name":"Mr Mallon's Physics Site Podcast","genres":["Education","Podcasts","K-12"]}
-{"name":"Comic Book Physics with Bureau 42","genres":["Higher Education","Podcasts","Education"]}
-{"name":"SILLIAC: The Vodcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Get Your Physics On","genres":["K-12","Podcasts","Education"]}
-{"name":"SILLIAC: The Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"We Are The Physics","genres":["Music","Podcasts","Arts","Visual Arts"]}
-{"name":"Rowland Physics Blog","genres":["K-12","Podcasts","Education"]}
-{"name":"Honors Physics","genres":["K-12","Podcasts","Education"]}
-{"name":"The Physics Engine podcast","genres":["Music","Podcasts"]}
-{"name":"KDNK Programs: Radio Physics Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"VCE Physics Unit 3: Structures and Materials","genres":["Education","Podcasts","K-12"]}
-{"name":"CHS Physics","genres":["Educational Technology","Podcasts","Education"]}
-{"name":"GradschoolShopper Podcast","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"]}
-{"name":"partycool physics","genres":["Science & Medicine","Podcasts","Natural Sciences"]}
-{"name":"Physics by ARISTOTLE","genres":["Literature","Podcasts","Arts"]}
-{"name":"Physics 30 Class Recordings (Dickie)","genres":["Education","Podcasts","K-12"]}
-{"name":"Higher Physics Unit One","genres":["Higher Education","Podcasts","Education"]}
+{"name":"jQuery Ajax PHP Tutorial","genres":["Educational Technology","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/jquery-ajax-php-tutorial/id305369833?mt=2&uo=4"}
+{"name":"Blisshacker Radio","genres":["Self-Help","Podcasts","Health","Business","Careers","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/blisshacker-radio/id1064386154?mt=2&uo=4"}
+{"name":"RailsMagazin - Alles rund um Ruby on Rails » Videos","genres":["Software How-To","Podcasts","Technology","Science & Medicine","Medicine"],"url":"https://itunes.apple.com/us/podcast/railsmagazin-alles-rund-um/id308506857?mt=2&uo=4"}
+{"name":"Ruby on Rails Podcast","genres":["Software How-To","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/ruby-on-rails-podcast/id840890158?mt=2&uo=4"}
+{"name":"Start Here: Ruby on Rails","genres":["Training","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/start-here-ruby-on-rails/id987277709?mt=2&uo=4"}
+{"name":"Web Design 1","genres":["Educational Technology","Podcasts","Education","Technology","Software How-To"],"url":"https://itunes.apple.com/us/podcast/web-design-1/id219737582?mt=2&uo=4"}
+{"name":"Angular Air","genres":["Podcasting","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/angular-air/id940806858?mt=2&uo=4"}
+{"name":"Ambrocio Garcia-I.A.P.A.","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/ambrocio-garcia-i.a.p.a./id991218643?mt=2&uo=4"}
+{"name":"Adventures in Angular","genres":["Tech News","Podcasts","Technology","Software How-To"],"url":"https://itunes.apple.com/us/podcast/adventures-in-angular/id907361052?mt=2&uo=4"}
+{"name":"Orbital Path","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/orbital-path/id1065986191?mt=2&uo=4"}
+{"name":"TEDTalks (audio)","genres":["Education","Podcasts","Arts","Science & Medicine","Society & Culture","News & Politics","Technology"],"url":"https://itunes.apple.com/us/podcast/tedtalks-audio/id160904630?mt=2&uo=4"}
+{"name":"The Bone Lab","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine"],"url":"https://itunes.apple.com/us/podcast/the-bone-lab/id1065421744?mt=2&uo=4"}
+{"name":"King of the Lab: The Bones Podcast","genres":["TV & Film","Podcasts","Games & Hobbies","Society & Culture"],"url":"https://itunes.apple.com/us/podcast/king-lab-bones-podcast/id926385289?mt=2&uo=4"}
+{"name":"Basic HTML","genres":["Educational Technology","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/basic-html/id136897714?mt=2&uo=4"}
+{"name":"Take Up Code","genres":["Educational Technology","Podcasts","Education","Games & Hobbies","Technology","Software How-To","Hobbies"],"url":"https://itunes.apple.com/us/podcast/take-up-code/id1059104505?mt=2&uo=4"}
+{"name":"Stuff To Blow Your Mind","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture"],"url":"https://itunes.apple.com/us/podcast/stuff-to-blow-your-mind/id350359306?mt=2&uo=4"}
+{"name":"Hello Internet","genres":["Educational Technology","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/hello-internet/id811377230?mt=2&uo=4"}
+{"name":"Hello, We're from the Internet","genres":["TV & Film","Podcasts"],"url":"https://itunes.apple.com/us/podcast/hello-were-from-the-internet/id519611048?mt=2&uo=4"}
+{"name":"Science Friday","genres":["Science & Medicine","Podcasts"],"url":"https://itunes.apple.com/us/podcast/science-friday/id73329284?mt=2&uo=4"}
+{"name":"Science Friday Videos","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/science-friday-videos/id220281403?mt=2&uo=4"}
+{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"],"url":"https://itunes.apple.com/us/podcast/science-update-podcast-daily/id215002256?mt=2&uo=4"}
+{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"],"url":"https://itunes.apple.com/us/podcast/christian-science-your-daily/id325697578?mt=2&uo=4"}
+{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/science-kabbalah.-daily-lessons/id366661341?mt=2&uo=4"}
+{"name":"RN Breakfast - Chris Smith: Friday Science","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/rn-breakfast-chris-smith-friday/id285282088?mt=2&uo=4"}
+{"name":"Entrepreneurial Thought Leaders","genres":["Higher Education","Podcasts","Education","Business","Management & Marketing"],"url":"https://itunes.apple.com/us/podcast/entrepreneurial-thought-leaders/id80867514?mt=2&uo=4"}
+{"name":"TEDTalks Education","genres":["Educational Technology","Podcasts","Education","Higher Education"],"url":"https://itunes.apple.com/us/podcast/tedtalks-education/id470623037?mt=2&uo=4"}
+{"name":"TEDTalks Education","genres":["Education","Podcasts"],"url":"https://itunes.apple.com/us/podcast/tedtalks-education/id527422706?mt=2&uo=4"}
+{"name":"JavaScript Jabber","genres":["Training","Podcasts","Education","Technology","Software How-To"],"url":"https://itunes.apple.com/us/podcast/javascript-jabber/id496893300?mt=2&uo=4"}
+{"name":"5 Minutes of JavaScript","genres":["Tech News","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/5-minutes-of-javascript/id775261328?mt=2&uo=4"}
+{"name":"JavaScript Air","genres":["Podcasting","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/javascript-air/id1066446588?mt=2&uo=4"}
+{"name":"CodeWinds - Leading edge web developer news and training | javascript / React.js / Node.js / HTML5 / web development - Jeff Bar","genres":["Software How-To","Podcasts","Technology","Education","Tech News","Training"],"url":"https://itunes.apple.com/us/podcast/codewinds-leading-edge-web/id803206041?mt=2&uo=4"}
+{"name":"Lately in JavaScript podcast","genres":["Software How-To","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/lately-in-javascript-podcast/id396032722?mt=2&uo=4"}
+{"name":"Javascript 4 U","genres":["Software How-To","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/javascript-4-u/id401615933?mt=2&uo=4"}
+{"name":"Tech Leaders in Action - Rails, Python, Java, Scala, Javascript, Nodejs ...","genres":["Tech News","Podcasts","Technology","Business","Careers"],"url":"https://itunes.apple.com/us/podcast/tech-leaders-in-action-rails/id954072358?mt=2&uo=4"}
+{"name":"Coding Amateur Hour — Stories and Banter about Javascript and the Web","genres":["Software How-To","Podcasts","Technology","Society & Culture","Personal Journals","Business","Careers"],"url":"https://itunes.apple.com/us/podcast/coding-amateur-hour-stories/id1030040039?mt=2&uo=4"}
+{"name":"Web-Anwendungen - Einfuehrung in das YUI JavaScript/AJAX Framework von Yahoo","genres":["Software How-To","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/web-anwendungen-einfuehrung/id266802169?mt=2&uo=4"}
+{"name":"The SitePen Podcast for developers who can’t JavaScript good and want to learn to do other things good too","genres":["Tech News","Podcasts","Technology","Software How-To"],"url":"https://itunes.apple.com/us/podcast/sitepen-podcast-for-developers/id1072291074?mt=2&uo=4"}
+{"name":"Пятиминутка JavaScript (5minjs)","genres":["Podcasting","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/patiminutka-javascript-5minjs/id964669252?mt=2&uo=4"}
+{"name":"MinutePhysics","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/minutephysics/id515562086?mt=2&uo=4"}
+{"name":"People Behind the Science Podcast - Stories from Scientists about Science, Life, Research, and Science Careers","genres":["Natural Sciences","Podcasts","Science & Medicine","Business","Careers"],"url":"https://itunes.apple.com/us/podcast/people-behind-science-podcast/id858218890?mt=2&uo=4"}
+{"name":"Physics In Action","genres":["K-12","Podcasts","Education","Science & Medicine","Technology","Tech News","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/physics-in-action/id348148553?mt=2&uo=4"}
+{"name":"Love Is A Verb – Daily interviews with experts around the world on self love, physics and self-development.","genres":["Self-Help","Podcasts","Health","Fitness & Nutrition","Religion & Spirituality","Spirituality"],"url":"https://itunes.apple.com/us/podcast/love-is-verb-daily-interviews/id1073469869?mt=2&uo=4"}
+{"name":"Physics World Science Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/physics-world-science-podcast/id474208361?mt=2&uo=4"}
+{"name":"Physics 50 Lectures @ SJSU","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/physics-50-lectures-sjsu/id179489543?mt=2&uo=4"}
+{"name":"Thermal and Statistical Physics","genres":["Higher Education","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/thermal-statistical-physics/id79278108?mt=2&uo=4"}
+{"name":"Physics Fundamentalized","genres":["Science & Medicine","Podcasts","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/physics-fundamentalized/id287926965?mt=2&uo=4"}
+{"name":"Kabbalah & Physics","genres":["Judaism","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/kabbalah-physics/id257529602?mt=2&uo=4"}
+{"name":"Solid State Physics","genres":["Higher Education","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/solid-state-physics/id117375756?mt=2&uo=4"}
+{"name":"Physics 50 example problems","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/physics-50-example-problems/id175472075?mt=2&uo=4"}
+{"name":"Waves of the Future: ISS2005","genres":["Education","Podcasts"],"url":"https://itunes.apple.com/us/podcast/waves-of-the-future-iss2005/id121535031?mt=2&uo=4"}
+{"name":"Physics 208","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/physics-208/id262283564?mt=2&uo=4"}
+{"name":"PHYSICS MINUTES!","genres":["K-12","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/physics-minutes!/id504844653?mt=2&uo=4"}
+{"name":"Everyday Science","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","K-12"],"url":"https://itunes.apple.com/us/podcast/everyday-science/id335224398?mt=2&uo=4"}
+{"name":"Special Topics in Calamity Physics","genres":["Literature","Podcasts","Arts"],"url":"https://itunes.apple.com/us/podcast/special-topics-in-calamity/id256891122?mt=2&uo=4"}
+{"name":"Finding God In Physics","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/finding-god-in-physics/id438517422?mt=2&uo=4"}
+{"name":"Lilou Macé webTV Well-being, Evolution, Consciousness, Quantum physics, Health, Creativity, Relationships, Meditations, Open H","genres":["Self-Help","Podcasts","Health"],"url":"https://itunes.apple.com/us/podcast/lilou-mace-webtv-well-being/id383313610?mt=2&uo=4"}
+{"name":"physics - meaghersclasses","genres":["K-12","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/physics-meaghersclasses/id213811039?mt=2&uo=4"}
+{"name":"Smith's AP Physics B @ Arapahoe","genres":["Education","Podcasts","K-12"],"url":"https://itunes.apple.com/us/podcast/smiths-ap-physics-b-arapahoe/id292590271?mt=2&uo=4"}
+{"name":"Arapahoe High School Physics Podcasts","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/arapahoe-high-school-physics/id328362484?mt=2&uo=4"}
+{"name":"IB Physics Help Video Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/ib-physics-help-video-podcast/id290960866?mt=2&uo=4"}
+{"name":"New Books in Physics","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/new-books-in-physics/id425675567?mt=2&uo=4"}
+{"name":"pwn your hw | physics / math / calculus / science / homework preparation and review- eli hibit","genres":["Science & Medicine","Podcasts"],"url":"https://itunes.apple.com/us/podcast/pwn-your-hw-physics-math-calculus/id916066057?mt=2&uo=4"}
+{"name":"Princeton Plasma Physics Laboratory","genres":["Government & Organizations","Podcasts","National"],"url":"https://itunes.apple.com/us/podcast/princeton-plasma-physics-laboratory/id350833419?mt=2&uo=4"}
+{"name":"Fundamentals of Physics III","genres":["Science & Medicine","Podcasts","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/fundamentals-of-physics-iii/id547386391?mt=2&uo=4"}
+{"name":"Colonial Physics","genres":["Science & Medicine","Podcasts","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/colonial-physics/id213512804?mt=2&uo=4"}
+{"name":"Chalk Talk Physics Podcast","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences","Technology","Podcasting"],"url":"https://itunes.apple.com/us/podcast/chalk-talk-physics-podcast/id262782016?mt=2&uo=4"}
+{"name":"pwn physics 365: physics history, vocabulary, and resources every day of the year","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/pwn-physics-365-physics-history/id1072243577?mt=2&uo=4"}
+{"name":"Physics Club","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/physics-club/id263983607?mt=2&uo=4"}
+{"name":"STS: Physics of Electricity","genres":["K-12","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/sts-physics-of-electricity/id376062079?mt=2&uo=4"}
+{"name":"Physics PapaPodcasts","genres":["K-12","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/physics-papapodcasts/id296886991?mt=2&uo=4"}
+{"name":"VCE Physics Podcast","genres":["K-12","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/vce-physics-podcast/id425200415?mt=2&uo=4"}
+{"name":"Mr Mallon's Physics Site Podcast","genres":["Education","Podcasts","K-12"],"url":"https://itunes.apple.com/us/podcast/mr-mallons-physics-site-podcast/id153271743?mt=2&uo=4"}
+{"name":"SILLIAC: The Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/silliac-the-podcast/id203147557?mt=2&uo=4"}
+{"name":"Comic Book Physics with Bureau 42","genres":["Higher Education","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/comic-book-physics-bureau/id855212738?mt=2&uo=4"}
+{"name":"SILLIAC: The Vodcast","genres":["Science & Medicine","Podcasts","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/silliac-the-vodcast/id203147558?mt=2&uo=4"}
+{"name":"Get Your Physics On","genres":["K-12","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/get-your-physics-on/id628043458?mt=2&uo=4"}
+{"name":"Rowland Physics Blog","genres":["K-12","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/rowland-physics-blog/id319317791?mt=2&uo=4"}
+{"name":"We Are The Physics","genres":["Music","Podcasts","Arts","Visual Arts"],"url":"https://itunes.apple.com/us/podcast/we-are-the-physics/id298989072?mt=2&uo=4"}
+{"name":"Honors Physics","genres":["K-12","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/honors-physics/id592065606?mt=2&uo=4"}
+{"name":"The Physics Engine podcast","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/the-physics-engine-podcast/id338648950?mt=2&uo=4"}
+{"name":"VCE Physics Unit 3: Structures and Materials","genres":["Education","Podcasts","K-12"],"url":"https://itunes.apple.com/us/podcast/vce-physics-unit-3-structures/id281127868?mt=2&uo=4"}
+{"name":"CHS Physics","genres":["Educational Technology","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/chs-physics/id429762873?mt=2&uo=4"}
+{"name":"KDNK Programs: Radio Physics Podcast","genres":["Science & Medicine","Podcasts","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/kdnk-programs-radio-physics/id582826940?mt=2&uo=4"}
+{"name":"GradschoolShopper Podcast","genres":["Higher Education","Podcasts","Education","Science & Medicine","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/gradschoolshopper-podcast/id542702198?mt=2&uo=4"}
+{"name":"partycool physics","genres":["Science & Medicine","Podcasts","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/partycool-physics/id1033048920?mt=2&uo=4"}
+{"name":"Physics by ARISTOTLE","genres":["Literature","Podcasts","Arts"],"url":"https://itunes.apple.com/us/podcast/physics-by-aristotle/id668714802?mt=2&uo=4"}
+{"name":"Physics 30 Class Recordings (Dickie)","genres":["Education","Podcasts","K-12"],"url":"https://itunes.apple.com/us/podcast/physics-30-class-recordings/id486273600?mt=2&uo=4"}
+{"name":"Higher Physics Unit One","genres":["Higher Education","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/higher-physics-unit-one/id382003281?mt=2&uo=4"}
+{"name":"Science Update » Weekly Show","genres":["Medicine","Podcasts","Science & Medicine","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/science-update-weekly-show/id102800259?mt=2&uo=4"}
+{"name":"Science News Weekly (Video-HI)","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences","Technology","Tech News","Medicine"],"url":"https://itunes.apple.com/us/podcast/science-news-weekly-video-hi/id504163283?mt=2&uo=4"}
+{"name":"Science Weekly","genres":["Science & Medicine","Podcasts"],"url":"https://itunes.apple.com/us/podcast/science-weekly/id136697669?mt=2&uo=4"}
+{"name":"Science Update Podcast – Daily Edition","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Tech News","Medicine"],"url":"https://itunes.apple.com/us/podcast/science-update-podcast-daily/id215002256?mt=2&uo=4"}
+{"name":"Science News Weekly (MP3)","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine","Technology","Tech News","Social Sciences"],"url":"https://itunes.apple.com/us/podcast/science-news-weekly-mp3/id504163279?mt=2&uo=4"}
+{"name":"Science News Flash","genres":["Natural Sciences","Podcasts","Science & Medicine","Religion & Spirituality","Christianity","News & Politics"],"url":"https://itunes.apple.com/us/podcast/science-news-flash/id265539001?mt=2&uo=4"}
+{"name":"KQED Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/kqed-science-news/id214663465?mt=2&uo=4"}
+{"name":"The Christian Science Monitor - News","genres":["News & Politics","Podcasts"],"url":"https://itunes.apple.com/us/podcast/christian-science-monitor/id280563588?mt=2&uo=4"}
+{"name":"Christian Science | Your Daily Lift","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"],"url":"https://itunes.apple.com/us/podcast/christian-science-your-daily/id325697578?mt=2&uo=4"}
+{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"],"url":"https://itunes.apple.com/us/podcast/us-news-science-discoveries/id286351851?mt=2&uo=4"}
+{"name":"Autism Science Foundation Weekly Science Report","genres":["Medicine","Podcasts","Science & Medicine","Social Sciences"],"url":"https://itunes.apple.com/us/podcast/autism-science-foundation/id1017003702?mt=2&uo=4"}
+{"name":"Science News Weekly (Video-LO)","genres":["Natural Sciences","Podcasts","Science & Medicine","Medicine","Technology","Tech News","Social Sciences"],"url":"https://itunes.apple.com/us/podcast/science-news-weekly-video-lo/id504163281?mt=2&uo=4"}
+{"name":"The Science of Kabbalah. Daily Lessons","genres":["Spirituality","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/science-kabbalah.-daily-lessons/id366661341?mt=2&uo=4"}
+{"name":"META-Health - The Art and Science of Self-Healing | Interviews and News from New Health Paradigm Leaders","genres":["Alternative Health","Podcasts","Health","Self-Help","Religion & Spirituality","Spirituality"],"url":"https://itunes.apple.com/us/podcast/meta-health-art-science-self/id999326861?mt=2&uo=4"}
+{"name":"MiResearch Podcast: Basic Science and Research News","genres":["Medicine","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/miresearch-podcast-basic-science/id184834873?mt=2&uo=4"}
+{"name":"Bedford Stem Cell Research Foundation Science Highlights & News","genres":["Medicine","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/bedford-stem-cell-research/id423433774?mt=2&uo=4"}
+{"name":"MN Sea Grant: Superior Science News","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/mn-sea-grant-superior-science/id288979011?mt=2&uo=4"}
+{"name":"SiT'N Listen!","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/sitn-listen!/id1038193544?mt=2&uo=4"}
+{"name":"Science News from COMPASS","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/science-news-from-compass/id275111533?mt=2&uo=4"}
+{"name":"President's Weekly Podcast - Texas Tech University Health Sciences Center (TTUHSC) El Paso","genres":["Fitness & Nutrition","Podcasts","Health","Science & Medicine","Medicine"],"url":"https://itunes.apple.com/us/podcast/presidents-weekly-podcast/id914224242?mt=2&uo=4"}
+{"name":"News - Bastion","genres":["Literature","Podcasts","Arts"],"url":"https://itunes.apple.com/us/podcast/news-bastion/id944490269?mt=2&uo=4"}
+{"name":"KBDG: The News Everyone is Barking About","genres":["K-12","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/kbdg-news-everyone-is-barking/id319549982?mt=2&uo=4"}
+{"name":"Mizzou Spotlight on Science","genres":["Higher Education","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/mizzou-spotlight-on-science/id421887080?mt=2&uo=4"}
+{"name":"FiST Chat: Film, Science and Technology News","genres":["Tech News","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/fist-chat-film-science-technology/id419056407?mt=2&uo=4"}
+{"name":"Impact!: Breaking Science That Applies to You!","genres":["Higher Education","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/impact!-breaking-science-that/id299763863?mt=2&uo=4"}
+{"name":"Podcasts – Weekly Science Week","genres":["Social Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/podcasts-weekly-science-week/id500023260?mt=2&uo=4"}
+{"name":"Science Careers Weekly","genres":["K-12","Podcasts","Education","Science & Medicine","Natural Sciences"],"url":"https://itunes.apple.com/us/podcast/science-careers-weekly/id442948942?mt=2&uo=4"}
+{"name":"Hidden Universe HD: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/hidden-universe-hd-nasas-spitzer/id252259693?mt=2&uo=4"}
+{"name":"Selected Shorts","genres":["Performing Arts","Podcasts","Arts"],"url":"https://itunes.apple.com/us/podcast/selected-shorts/id253191824?mt=2&uo=4"}
+{"name":"NASACast Video","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasacast-video/id201661703?mt=2&uo=4"}
+{"name":"Space","genres":["Science & Medicine","Podcasts"],"url":"https://itunes.apple.com/us/podcast/space/id1067344634?mt=2&uo=4"}
+{"name":"Space Rockerz: Shake Down - Progressive Dance Music Podcast","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/space-rockerz-shake-down-progressive/id125722934?mt=2&uo=4"}
+{"name":"NASACast: This Week @NASA Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasacast-this-week-nasa-audio/id254107991?mt=2&uo=4"}
+{"name":"Planetary Radio: Space Exploration, Astronomy and Science","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/planetary-radio-space-exploration/id91689834?mt=2&uo=4"}
+{"name":"NASACast: Solar System Video","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasacast-solar-system-video/id252866470?mt=2&uo=4"}
+{"name":"NASACast: This Week @ NASA Video","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasacast-this-week-nasa-video/id254108626?mt=2&uo=4"}
+{"name":"Taylor Talk: The Taylor Swift Podcast | 1989 | Shake It Off | Blank Space | Red | Speak Now | Fearless | Taylor Swift","genres":["Kids & Family","Podcasts","Music","TV & Film"],"url":"https://itunes.apple.com/us/podcast/taylor-talk-taylor-swift-podcast/id477534265?mt=2&uo=4"}
+{"name":"Beats In Space Radio Podcast","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/beats-in-space-radio-podcast/id179927309?mt=2&uo=4"}
+{"name":"Hidden Universe: NASA's Spitzer Space Telescope","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/hidden-universe-nasas-spitzer/id152578508?mt=2&uo=4"}
+{"name":"60-Second Space","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Technology"],"url":"https://itunes.apple.com/us/podcast/60-second-space/id434439476?mt=2&uo=4"}
+{"name":"NASA Edge","genres":["Social Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasa-edge/id252330702?mt=2&uo=4"}
+{"name":"NASACast Audio","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasacast-audio/id201661540?mt=2&uo=4"}
+{"name":"NASA Goddard Shorts","genres":["Technology","Podcasts"],"url":"https://itunes.apple.com/us/podcast/nasa-goddard-shorts/id283424434?mt=2&uo=4"}
+{"name":"Living Homegrown Podcast with Theresa Loe","genres":["Food","Podcasts","Arts","Games & Hobbies","Education","Hobbies"],"url":"https://itunes.apple.com/us/podcast/living-homegrown-podcast-theresa/id983808184?mt=2&uo=4"}
+{"name":"NASA 50th Anniversary Moments Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasa-50th-anniversary-moments/id282901894?mt=2&uo=4"}
+{"name":"NASA Blueshift","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasa-blueshift/id251707729?mt=2&uo=4"}
+{"name":"NASA 360 Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasa-360-vodcasts/id291374218?mt=2&uo=4"}
+{"name":"NASACast: What's Up? Video Podcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasacast-whats-up-video-podcasts/id252873558?mt=2&uo=4"}
+{"name":"Space Music podcast from Magnatune.com","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/space-music-podcast-from-magnatune.com/id151133653?mt=2&uo=4"}
+{"name":"NASA Mission Update Vodcast","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasa-mission-update-vodcast/id288973856?mt=2&uo=4"}
+{"name":"The Last Mission to Hubble: Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/last-mission-to-hubble-vodcasts/id286805364?mt=2&uo=4"}
+{"name":"NASA 50th Anniversary Moments Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasa-50th-anniversary-moments/id282901825?mt=2&uo=4"}
+{"name":"GLASTcast HD:  The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology","Government & Organizations","National"],"url":"https://itunes.apple.com/us/podcast/glastcast-hd-extreme-universe/id289338552?mt=2&uo=4"}
+{"name":"Blame It On Outer Space","genres":["Comedy","Podcasts"],"url":"https://itunes.apple.com/us/podcast/blame-it-on-outer-space/id578993359?mt=2&uo=4"}
+{"name":"The Holistic Spaces Podcast with Anjie Cho | Feng Shui & Holistic Living - Holistic Spaces","genres":["Self-Help","Podcasts","Health"],"url":"https://itunes.apple.com/us/podcast/holistic-spaces-podcast-anjie/id1033215047?mt=2&uo=4"}
+{"name":"The Space Show","genres":["Science & Medicine","Podcasts","News & Politics","Technology","Business","Education"],"url":"https://itunes.apple.com/us/podcast/the-space-show/id73799424?mt=2&uo=4"}
+{"name":"Space Rocket History","genres":["History","Podcasts","Society & Culture","Education","Technology"],"url":"https://itunes.apple.com/us/podcast/space-rocket-history/id609365180?mt=2&uo=4"}
+{"name":"CMD+Space","genres":["Tech News","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/cmd+space/id364995753?mt=2&uo=4"}
+{"name":"GLASTcast: The Extreme Universe","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/glastcast-extreme-universe/id281911425?mt=2&uo=4"}
+{"name":"The Orb: A Star Trek Deep Space Nine Podcast","genres":["TV & Film","Podcasts","Arts","Society & Culture"],"url":"https://itunes.apple.com/us/podcast/orb-star-trek-deep-space-nine/id593248951?mt=2&uo=4"}
+{"name":"Ambiences & Spaces with Matt Borghi","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/ambiences-spaces-matt-borghi/id189392264?mt=2&uo=4"}
+{"name":"11.22.63 An Event Podcast","genres":["TV & Film","Podcasts","Society & Culture","History","Arts","Literature"],"url":"https://itunes.apple.com/us/podcast/11.22.63-an-event-podcast/id1071003237?mt=2&uo=4"}
+{"name":"Space Radio  (Goth, Industrial, EBM, SynthPop, Electronic, Techno)","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/space-radio-goth-industrial/id516215234?mt=2&uo=4"}
+{"name":"Space Casey","genres":["Literature","Podcasts","Arts"],"url":"https://itunes.apple.com/us/podcast/space-casey/id317035966?mt=2&uo=4"}
+{"name":"Non Breaking Space Show","genres":["Tech News","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/non-breaking-space-show/id507162981?mt=2&uo=4"}
+{"name":"The RIPEcast","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/the-ripecast/id637170409?mt=2&uo=4"}
+{"name":"Project Moonbase – The Historic Sound of the Future | Unusual music show | Podcast | Space cult | projectmoonbase.com","genres":["Music","Podcasts","Comedy","Society & Culture","Philosophy"],"url":"https://itunes.apple.com/us/podcast/project-moonbase-historic/id510743312?mt=2&uo=4"}
+{"name":"Space Talk","genres":["Natural Sciences","Podcasts","Science & Medicine","News & Politics","Society & Culture","History"],"url":"https://itunes.apple.com/us/podcast/space-talk/id545365634?mt=2&uo=4"}
+{"name":"NASA X Vodcasts","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/nasa-x-vodcasts/id554764386?mt=2&uo=4"}
+{"name":"space patrol","genres":["Literature","Podcasts","Arts"],"url":"https://itunes.apple.com/us/podcast/space-patrol/id298196888?mt=2&uo=4"}
+{"name":"Earn Your Spurs: Exploring the Cowboy, Horses and All Things Western","genres":["Outdoor","Podcasts","Sports & Recreation","Kids & Family","Games & Hobbies"],"url":"https://itunes.apple.com/us/podcast/earn-your-spurs-exploring/id914599749?mt=2&uo=4"}
+{"name":"WRITER 2.0: Writing. Publishing. And the Space Between.","genres":["Literature","Podcasts","Arts","Society & Culture","Education","Higher Education"],"url":"https://itunes.apple.com/us/podcast/writer-2.0-writing.-publishing./id924980625?mt=2&uo=4"}
+{"name":"Cosmos In You - Guide to Inner Space","genres":["Social Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/cosmos-in-you-guide-to-inner/id1011637188?mt=2&uo=4"}
+{"name":"The Audio Collection – SPACE – Public Briefings","genres":["Music","Podcasts","TV & Film"],"url":"https://itunes.apple.com/us/podcast/audio-collection-space-public/id367750633?mt=2&uo=4"}
+{"name":"ESApod, audio and video from space","genres":["Natural Sciences","Podcasts","Science & Medicine","Technology"],"url":"https://itunes.apple.com/us/podcast/esapod-audio-video-from-space/id117835479?mt=2&uo=4"}
+{"name":"Space Patrol  TV","genres":["Kids & Family","Podcasts","Society & Culture","TV & Film","History"],"url":"https://itunes.apple.com/us/podcast/space-patrol-tv/id275078956?mt=2&uo=4"}
+{"name":"Space Heroes Podcast","genres":["Kids & Family","Podcasts","TV & Film","Comedy"],"url":"https://itunes.apple.com/us/podcast/space-heroes-podcast/id216589211?mt=2&uo=4"}
+{"name":"Discovery","genres":["Science & Medicine","Podcasts"],"url":"https://itunes.apple.com/us/podcast/discovery/id284012446?mt=2&uo=4"}
+{"name":"What The Crime?!","genres":["News & Politics","Podcasts"],"url":"https://itunes.apple.com/us/podcast/what-the-crime-!/id1058456228?mt=2&uo=4"}
+{"name":"Detective","genres":["News & Politics","Podcasts"],"url":"https://itunes.apple.com/us/podcast/detective/id1029038371?mt=2&uo=4"}
+{"name":"Facing Evil with Candice DeLong","genres":["News & Politics","Podcasts"],"url":"https://itunes.apple.com/us/podcast/facing-evil-candice-delong/id1048123246?mt=2&uo=4"}
+{"name":"The Mind of a Murderer Podcast","genres":["News & Politics","Podcasts"],"url":"https://itunes.apple.com/us/podcast/the-mind-of-a-murderer-podcast/id977283328?mt=2&uo=4"}
+{"name":"CrimeFeed","genres":["News & Politics","Podcasts"],"url":"https://itunes.apple.com/us/podcast/crimefeed/id1022010118?mt=2&uo=4"}
+{"name":"Intelligent Design The Future","genres":["Social Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/intelligent-design-future/id132125271?mt=2&uo=4"}
+{"name":"Discovery Education","genres":["K-12","Podcasts","Education","Educational Technology"],"url":"https://itunes.apple.com/us/podcast/discovery-education/id137199957?mt=2&uo=4"}
+{"name":"Multiple Sclerosis Discovery: The Podcast of the MS Discovery Forum","genres":["Medicine","Podcasts","Science & Medicine","Government & Organizations","Non-Profit"],"url":"https://itunes.apple.com/us/podcast/multiple-sclerosis-discovery/id893610881?mt=2&uo=4"}
+{"name":"ESIBytes - E-Discovery Tips by Experts","genres":["Business News","Podcasts","Business"],"url":"https://itunes.apple.com/us/podcast/esibytes-e-discovery-tips/id307149037?mt=2&uo=4"}
+{"name":"Discovery Now","genres":["Podcasting","Podcasts","Technology"],"url":"https://itunes.apple.com/us/podcast/discovery-now/id218791442?mt=2&uo=4"}
+{"name":"Verge of Discovery","genres":["Natural Sciences","Podcasts","Science & Medicine","Education","Technology"],"url":"https://itunes.apple.com/us/podcast/verge-of-discovery/id1037152402?mt=2&uo=4"}
+{"name":"- Simi Valley, CA","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/simi-valley-ca/id333337651?mt=2&uo=4"}
+{"name":"Discovery Church Orlando FL Audio Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-church-orlando-fl/id200384730?mt=2&uo=4"}
+{"name":"Discovery Institute's Podcast","genres":["News & Politics","Podcasts"],"url":"https://itunes.apple.com/us/podcast/discovery-institutes-podcast/id513108531?mt=2&uo=4"}
+{"name":"Applied Discovery: Litigation and E-Discovery Strategy - Meet and Confer Best Practices","genres":["News & Politics","Podcasts"],"url":"https://itunes.apple.com/us/podcast/applied-discovery-litigation/id351116704?mt=2&uo=4"}
+{"name":"LSO Discovery Video Podcast","genres":["Music","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/lso-discovery-video-podcast/id289692239?mt=2&uo=4"}
+{"name":"Journeys of Discovery with Tom Wilmer","genres":["TV & Film","Podcasts"],"url":"https://itunes.apple.com/us/podcast/journeys-discovery-tom-wilmer/id174891800?mt=2&uo=4"}
+{"name":"Diabetes Discovery Podcast","genres":["Fitness & Nutrition","Podcasts","Health"],"url":"https://itunes.apple.com/us/podcast/diabetes-discovery-podcast/id1046557358?mt=2&uo=4"}
+{"name":"Amazing Reptiles Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/amazing-reptiles-modscast/id275010272?mt=2&uo=4"}
+{"name":"Discovery Church - Learn the Bible in 24 Hours","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-church-learn-bible/id313562343?mt=2&uo=4"}
+{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-church/id596535281?mt=2&uo=4"}
+{"name":"Classical Music Discoveries","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/classical-music-discoveries/id83581052?mt=2&uo=4"}
+{"name":"Dinomight! Modscast","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/dinomight!-modscast/id256791127?mt=2&uo=4"}
+{"name":"Discovery Alliance Church Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-alliance-church/id626605827?mt=2&uo=4"}
+{"name":"Discovery Through a Scientific Lens","genres":["Educational Technology","Podcasts","Education"],"url":"https://itunes.apple.com/us/podcast/discovery-through-scientific/id258340004?mt=2&uo=4"}
+{"name":"Discovery Church Colorado Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-church-colorado/id980395489?mt=2&uo=4"}
+{"name":"UX Discovery Session… by Gerard Dolan","genres":["Design","Podcasts","Arts","Technology","Business","Podcasting","Visual Arts"],"url":"https://itunes.apple.com/us/podcast/ux-discovery-session...-by/id693746926?mt=2&uo=4"}
+{"name":"Discovery Messages","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-messages/id200219321?mt=2&uo=4"}
+{"name":"Book of Discovery, A by SYNGE, M. B.","genres":["Literature","Podcasts","Arts"],"url":"https://itunes.apple.com/us/podcast/book-discovery-by-synge-m./id344687584?mt=2&uo=4"}
+{"name":"Sermons","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/sermons/id1001307951?mt=2&uo=4"}
+{"name":"Soul Discovery Radio Shows on Podcast","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/soul-discovery-radio-shows/id382863059?mt=2&uo=4"}
+{"name":"Hutto Discovery UMC - Messages of Hope","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/hutto-discovery-umc-messages/id962886433?mt=2&uo=4"}
+{"name":"Discovery Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-church-podcast/id395738447?mt=2&uo=4"}
+{"name":"Age of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine","Society & Culture","Philosophy"],"url":"https://itunes.apple.com/us/podcast/age-of-discovery-podcast/id697991418?mt=2&uo=4"}
+{"name":"US News | Science Discoveries","genres":["Natural Sciences","Podcasts","Science & Medicine","Social Sciences"],"url":"https://itunes.apple.com/us/podcast/us-news-science-discoveries/id286351851?mt=2&uo=4"}
+{"name":"Discovery Church","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-church/id888586194?mt=2&uo=4"}
+{"name":"The Atomic Age: Discovery and Evolution of Nuclear Science","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/atomic-age-discovery-evolution/id403774607?mt=2&uo=4"}
+{"name":"Point of Discovery Podcast","genres":["Natural Sciences","Podcasts","Science & Medicine"],"url":"https://itunes.apple.com/us/podcast/point-of-discovery-podcast/id1036884430?mt=2&uo=4"}
+{"name":"Discovery, A Christian Church Podcast","genres":["Christianity","Podcasts","Religion & Spirituality","Spirituality","Society & Culture","Philosophy"],"url":"https://itunes.apple.com/us/podcast/discovery-christian-church/id401448084?mt=2&uo=4"}
+{"name":"Songs For Phaeton","genres":["Literature","Podcasts","Arts"],"url":"https://itunes.apple.com/us/podcast/songs-for-phaeton/id1006048790?mt=2&uo=4"}
+{"name":"The Unnormal Paranormal Podcast -- Discussing the World Of Ghosts, Hauntings, Psychics, UFOs, New Scientific Discoveries ... An","genres":["News & Politics","Podcasts","Society & Culture","Philosophy","Religion & Spirituality","Other"],"url":"https://itunes.apple.com/us/podcast/unnormal-paranormal-podcast/id972942157?mt=2&uo=4"}
+{"name":"Faith Discovery Church - Online Media","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/faith-discovery-church-online/id1034958627?mt=2&uo=4"}
+{"name":"CD Baby Metal Discovery Podcast","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/cd-baby-metal-discovery-podcast/id466219548?mt=2&uo=4"}
+{"name":"Hip Hop Discovery Podcast","genres":["Music","Podcasts"],"url":"https://itunes.apple.com/us/podcast/hip-hop-discovery-podcast/id604017334?mt=2&uo=4"}
+{"name":"e-Discovery Zone","genres":["Business News","Podcasts","Business"],"url":"https://itunes.apple.com/us/podcast/e-discovery-zone/id412240681?mt=2&uo=4"}
+{"name":"Discovery Church International","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-church-international/id498316117?mt=2&uo=4"}
+{"name":"Discovery Church of the Nazarene - Livermore, CA","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-church-nazarene/id281953686?mt=2&uo=4"}
+{"name":"Messages from Discovery Road Church","genres":["Christianity","Podcasts","Religion & Spirituality","Society & Culture"],"url":"https://itunes.apple.com/us/podcast/messages-from-discovery-road/id252000003?mt=2&uo=4"}
+{"name":"Discovery Church Orlando FL Video Podcast","genres":["Christianity","Podcasts","Religion & Spirituality"],"url":"https://itunes.apple.com/us/podcast/discovery-church-orlando-fl/id335047723?mt=2&uo=4"}
