@@ -25,10 +25,13 @@ angular.module('fickle.auth', [])
     console.log($scope.user)
     $scope.signUpError = '';
     Auth.signup(JSON.stringify($scope.user))
-    // .then(function(message){
-      // $scope.clearFields();
-    //   $scope.signUpError = message;
-    // })
+    .then(function(message){
+      if(message==="existing"){
+        alert("You already have an account. Please login.")
+      } else{
+        $location.path('/search');
+      }
+    })
   };
 
 });

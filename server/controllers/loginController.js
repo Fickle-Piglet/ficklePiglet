@@ -9,19 +9,17 @@ module.exports = {
       var userInfo = req.body
       db.cypherQuery("MATCH (n:User) WHERE n.firstname={firstname} and n.lastname={lastname} and n.username={username} and n.email={email} and n.password={password} return n", userInfo , function(err, result){
             if(err) {
-              // res.status(404).json(err);
-              res.send("error")
+              res.sendStatus(400).json(err);
             } else if (result.data.length!==0) {
-              res.send("already a user")
-              // res.status(403).send("Already a user. Please sign in.");
+              res.send("existing");
             } else {
               db.cypherQuery("create (n:User {firstname:{firstname},lastname:{lastname},username:{username},email:{email},password:{password}}) return n", userInfo , function(err, result){
                     if(err) {
-                      res.status(404).json(err);
+                      res.sendStatus(400).json(err);
                     } else {
-                      res.status(200);
+                      res.sendStatus(201);
                     }
-                });           
+               });           
             }
         });
     },

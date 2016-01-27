@@ -21,8 +21,7 @@ angular.module('fickle.services', [])
           data: user
         })
         .then(function (resp) {
-          console.log("response from server",resp)
-          // return resp.data.token;
+          return resp.data;
         });
     };
 
