@@ -14,7 +14,7 @@ app.listen(port, function(){
 require('../server/config/middleware.js')(app, express);
 require('../server/config/routes.js')(app, express);
 
-scraper.getAllPodcast("podcasts.txt")
+// scraper.getAllPodcast("podcasts.txt")
 
 setTimeout(function(){
      scraper.readAllFiles();
