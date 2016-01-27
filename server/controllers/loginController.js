@@ -20,8 +20,7 @@ module.exports = {
             if(err) {
               res.status(404).json(err);
             } else if (result.data.length!==0) {
-              console.log(result)
-              res.send("Already a user. Please sign in.");
+              res.send("existing");
             } else {
               db.cypherQuery("create (n:User {firstname:{firstname},lastname:{lastname},username:{username},email:{email},password:{password}}) return n", userInfo , function(err, result){
                     if(err) {
