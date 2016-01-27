@@ -4,14 +4,12 @@ var db = require("../db/db.js")
 module.exports = {
     signin : function(req, res){
        //TODO: Write signin query
-     var username = req.body.username;
-     var password = req.body.password;
-     console.log(username);
-     db.readNode({username: username, password: password}, function (err, result) {
+     var user = req.body;
+     db.cypherQuery("MATCH (n:User) WHERE n.username={username} and n.password={password} RETURN n", user, function (err, result) {
      	if (err) {
      		throw error;
      	} else  {
-     		res.json(result);
+     		res.send(result.data);
      	}
      })
     },
