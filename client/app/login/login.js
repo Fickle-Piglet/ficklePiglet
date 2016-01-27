@@ -15,7 +15,7 @@ angular.module('fickle.auth', [])
       console.log("Attempting to login", userData)
       Auth.signin(JSON.stringify($scope.user))
         .then(function(message){
-          $window.localStorage.setItem('com.fickle', message);
+          // $window.localStorage.setItem('com.fickle', message);
           $location.path('/search');
         })
         .catch(function (error) {
@@ -31,7 +31,7 @@ angular.module('fickle.auth', [])
     .then(function(message){
       if(message==="existing"){
         alert("You already have an account. Please login.")
-      } else{
+      } else {
         $location.path('/search');
       }
     })
