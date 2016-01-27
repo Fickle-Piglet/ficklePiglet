@@ -1,9 +1,19 @@
 var db = require("../db/db.js")
+// db.create()
 
 module.exports = {
     signin : function(req, res){
-        //TODO: Write signin query
-
+       //TODO: Write signin query
+     var username = req.body.username;
+     var password = req.body.password;
+     console.log(username);
+     db.readNode({username: username, password: password}, function (err, result) {
+     	if (err) {
+     		throw error;
+     	} else  {
+     		res.json(result);
+     	}
+     })
     },
     signup: function(req, res){
       var userInfo = req.body
