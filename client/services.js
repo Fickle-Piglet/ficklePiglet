@@ -2,7 +2,7 @@ angular.module('fickle.services', [])
 
 .factory('Auth', function ($http, $location, $window) {
 
-    var signin = function (user) {
+    var login = function (user) {
       return $http({
           method: 'POST',
           url: '/signin',
@@ -27,7 +27,7 @@ angular.module('fickle.services', [])
     };
 
     return {
-      signin: signin,
+      login: login,
       signup: signup,
     };
 });

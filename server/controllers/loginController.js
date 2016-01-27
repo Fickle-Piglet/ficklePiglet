@@ -1,9 +1,18 @@
 var db = require("../db/db.js")
+// db.create()
 
 module.exports = {
     signin : function(req, res){
-        //TODO: Write signin query
-
+       //TODO: Write signin query
+     var user = req.body;
+     db.cypherQuery("MATCH (n:User) WHERE n.username={username} and n.password={password} RETURN n", user, function (err, result) {
+     	if (err) {
+     		throw error;
+     	} else  {
+     		console.log('i')
+     		res.send(result.data);
+     	}
+     })
     },
     signup: function(req, res){
       var userInfo = req.body
@@ -12,7 +21,7 @@ module.exports = {
               res.status(404).json(err);
             } else if (result.data.length!==0) {
               console.log(result)
-              res.status(400).send("Already a user. Please sign in.");
+              res.send("Already a user. Please sign in.");
             } else {
               db.cypherQuery("create (n:User {firstname:{firstname},lastname:{lastname},username:{username},email:{email},password:{password}}) return n", userInfo , function(err, result){
                     if(err) {
