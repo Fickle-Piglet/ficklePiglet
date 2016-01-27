@@ -1,6 +1,6 @@
 angular.module('fickle.search',['ngMaterial', 'ngMessages'])
 
-.controller('searchController', function($scope) {
+.controller('searchController', function($scope,'Podcasts') {
   $scope.items = ['Science', 'Technology', 'Engineering', 'Math'];
     $scope.selected = [];
 
