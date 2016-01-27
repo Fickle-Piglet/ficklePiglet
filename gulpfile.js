@@ -34,6 +34,12 @@ gulp.task('start', ['serve'], function () {
   });
 });
 
+gulp.task('karma', function (done) {
+  new KarmaServer({
+    configFile: __dirname + '/karma.conf.js'
+  }, done).start();
+});
+
 gulp.task('serve', function () {
   nodemon({
     script: './server/server.js',
