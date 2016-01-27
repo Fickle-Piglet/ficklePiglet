@@ -6,9 +6,10 @@ module.exports = {
         console.log(">>>>>>>>>>>>>>REQ", req.body)
         var name = req.body.name;
         var tags = req.body.genre
+        var url = req.body.url
         // TODO: Query is Commented out becasue it will run on server startup. Need to rework query
-        //db.cypherQuery("MERGE (r:Resource {name:'"+name+"'}) MERGE (t:Tag {name:'"+tags+"'}) MERGE (r:Resource {name:'"+name+"'})-[:TAGGED]->(t:Tag {name:'"+tags+"'})", function(err, res){
-        //})
+        db.cypherQuery("MERGE (r:Resource {name:'"+name+"'}) MERGE (t:Tag {name:'"+tags+"'}) MERGE (r:Resource {name:'"+name+"', url:'"+url+"'})-[:TAGGED]-(t:Tag {name:'"+tags+"'})", function(err, res){
+        })
 
     },
     getResource: function(req, res){
@@ -16,7 +17,7 @@ module.exports = {
 
         var keyword = ["Math", "Science"]
         keyword = JSON.stringify(keyword)
-        db.cypherQuery("MATCH (n:Resource)-[:TAGGED]->(t:Tag) WHERE t.name IN "+keyword+" RETURN n", function(err, res){
+        db.cypherQuery("MATCH (n:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN "+keyword+" RETURN n", function(err, res){
             console.log("ERROR: ", err)
             console.log("HARHARHAR", res)
         })
