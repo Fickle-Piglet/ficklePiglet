@@ -4,7 +4,7 @@ var db = require("../../server/db/db.js")
 module.exports = {
     //Query to insert all Resources with accompanying Tags into the database
     insertResource : function(req, res){
-        console.log(">>>>>>>>>>>>>>REQ", req.body)
+        //console.log(">>>>>>>>>>>>>>REQ", req.body)
         var name = req.body.name;
         var tags = req.body.genre
         var url = req.body.url
@@ -23,11 +23,18 @@ module.exports = {
         // console.log(keyword)
         //This is a map of the array not a filter
         db.cypherQuery("MATCH (n:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN "+keyword+" RETURN n", function(err, query){
-            console.log("ERROR: ", err)
-            console.log("HARHARHAR", query)
+
+            //console.log("ERROR: ", err)
+            //console.log("HARHARHAR", res)
             //Return's Array of Resource Objects
-            // console.log(query.data);
-            res.send(query.data);
+
+            //Randomizer function
+            var getRandomInt = function(min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+            var int = getRandomInt(0, query.data.length)
+            console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
+            res.send([query.data[int]]);
         });
     },
     getTags: function(req, res){
