@@ -4,7 +4,7 @@ var db = require("../../server/db/db.js")
 module.exports = {
     likeResource: function(req, res){
         var userLikes = res.body
-        db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) CREATE (u)-[:HAS_LIKED]->(r)", userLikes, function(err, query){
+        db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_LIKED]->(r)", userLikes, function(err, query){
             if(err){
                 res.sendStatus(404);
             } else{
@@ -14,7 +14,7 @@ module.exports = {
     },
     dislikeResource: function(req, res){
         var userDislikes = req.body
-        db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) CREATE (u)-[:HAS_DISLIKED]->(r)", userDislikes, function(err, query){
+        db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_DISLIKED]->(r)", userDislikes, function(err, query){
             if(err){
                 res.sendStatus(404);
             } else{
