@@ -2,7 +2,7 @@
 
   <div layout="row" layout-wrap="">
     <div flex="100" flex-gt-sm="50" layout="column">
-      <div>
+      <div ng-init="initGet()">
         <!-- <fieldset class="standard"> -->
           <div layout="row" layout-wrap="" flex="">
             <div flex="50" ng-repeat="resource in results">
@@ -15,3 +15,6 @@
         <!-- </fieldset> -->
       </div>
     </div>
+    </div>
+  </div>
+</div>
