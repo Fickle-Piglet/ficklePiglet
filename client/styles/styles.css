@@ -42,3 +42,11 @@
   padding-right: 250px;
   padding-top:20px;
 }
+
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

@@ -14,7 +14,6 @@ module.exports = {
     },
     getResource: function(req, res){
         //TODO: Write getResource function. Keyword is just placeholder
-
         var keyword = req || ["Math", "Science"];
         keyword = JSON.stringify(keyword);
         //This is a map of the array not a filter
