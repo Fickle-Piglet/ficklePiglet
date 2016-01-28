@@ -1,8 +1,13 @@
 angular.module('fickle.search',['ngMaterial', 'ngMessages'])
 
-.controller('searchController', function($scope,'Podcasts') {
+.controller('searchController', function($scope,Podcasts) {
   $scope.items = ['Science', 'Technology', 'Engineering', 'Math'];
     $scope.selected = [];
+    $scope.tags = [];
+    
+    Podcasts.getTags().then(function (data) {
+      $scope.tags = data;
+    });
 
     $scope.toggle = function (item, list) {
       var idx = list.indexOf(item);
