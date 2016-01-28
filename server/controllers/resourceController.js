@@ -8,8 +8,9 @@ module.exports = {
         var name = req.body.name;
         var tags = req.body.genre
         var url = req.body.url
+        var thumbnail = req.body.thumbnail
         // TODO: Query is Commented out becasue it will run on server startup. Need to rework query
-        db.cypherQuery("MERGE (r:Resource {name:'"+name+"'}) MERGE (t:Tag {name:'"+tags+"'}) MERGE (r:Resource {name:'"+name+"', url:'"+url+"'})-[:TAGGED]-(t:Tag {name:'"+tags+"'})", function(err, res){
+        db.cypherQuery("MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"'}) MERGE (t:Tag {name:'"+tags+"'}) MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"'})-[:TAGGED]-(t:Tag {name:'"+tags+"'})", function(err, res){
         })
 
     },
