@@ -23,8 +23,9 @@ module.exports = {
                     for(var i=0; i<body.results.length; i++){
                         var target = {};
                         target.name = body.results[i].trackName
-                target.genres = body.results[i].genres
-                target.url = body.results[i].collectionViewUrl
+                        target.genres = body.results[i].genres
+                        target.url = body.results[i].collectionViewUrl
+                        target.thumbnail = body.results[i].artworkUrl100
                 fs.appendFile('../scripts/scraper/files/allocation.txt', JSON.stringify(target) + "\n", function(err){
                     if (err) throw err;
                     console.log("uploaded: ", target.name);
@@ -38,17 +39,18 @@ module.exports = {
         var list = fs.readFileSync("../scripts/scraper/files/allocation.txt", "utf8").toString().split("\n");
         for(var i=0; i<list.length-1; i++){
             list[i] = JSON.parse(list[i]);
-            for(var j=0; j<list[i].genres.length; j++){
+            for(var j=0; j<list[i].genres.length-1; j++){
                 request({
                     method: "POST",
                     url: "http://localhost:5050/insert",
                     json: {
                         name: list[i].name,
                         genre: list[i].genres[j],
-                        url: list[i].url
+                        url: list[i].url,
+                        thumbnail: list[i].thumbnail
                     }
                 }, function(err, res, body){
-                    if(err) throw err
+                    //if(err) console.log("ERROR: ",err)
                 })
             }
         }
