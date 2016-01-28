@@ -1,0 +1,17 @@
+<div ng-controller="searchController" class="md-padding checkboxdemoSyncing" ng-cloak="" style="min-height:270px" ng-app="fickle.search">
+
+  <div layout="row" layout-wrap="">
+    <div flex="100" flex-gt-sm="50" layout="column">
+      <div>
+        <!-- <fieldset class="standard"> -->
+          <div layout="row" layout-wrap="" flex="">
+            <div flex="50" ng-repeat="resource in results">
+            <br><br>
+             <div>
+                {{ resource.name }} 
+            </div>
+             <div class='original'>{{resource.url}}</div>
+          </div>
+        <!-- </fieldset> -->
+      </div>
+    </div>
