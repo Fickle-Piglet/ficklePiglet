@@ -18,4 +18,10 @@ angular.module('fickle', ['fickle.auth', 'fickle.services', 'fickle.search','ui.
     templateUrl: '/app/Search/resource.html',
     controller: 'searchController'
    })
-})
+  .state('user', {
+    url: "/user",
+    templateUrl: "/app/user/user.html",
+    controller: 'userController'
+  });
+});
+

@@ -1,6 +1,7 @@
 var resourceController = require("../controllers/resourceController");
 var loginController = require("../../server/controllers/loginController");
 var userResourceController = require("../../server/controllers/userResourceController");
+var userController = require("../../server/controllers/userController");
 
 module.exports = function(app, express){
 
@@ -25,6 +26,8 @@ module.exports = function(app, express){
     // { name: 'Philosophy', _id: 4033 },
     // { name: 'Judaism', _id: 4034 },]
     app.get('/tags', resourceController.getTags);
+
+    app.get('/user/:username', userController.getUser);
 
     //Signup/Signin Stuff
     app.post("/signin", loginController.signin);

@@ -8,7 +8,7 @@ module.exports = {
         if (err) {
           throw error;
         } else  {
-          console.log(result.data)
+          // console.log(result.data)
           res.send(result.data);
         }
        })
@@ -21,11 +21,12 @@ module.exports = {
             } else if (result.data.length!==0) {  
               res.send("existing");
             } else {
+              //Seems like a strange way to declare properties
               db.cypherQuery("create (n:User {firstname:{firstname},lastname:{lastname},username:{name},email:{email},password:{pword}}) return n", userInfo , function(err, result){
                     if(err) {
                       res.sendStatus(404).json(err);
                     } else {
-                      res.sendStatus(200);
+                      res.sendStatus(result.data);
                     }
                 });           
             }
