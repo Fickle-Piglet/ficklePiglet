@@ -2,6 +2,7 @@ var db = require("../../server/db/db.js")
 
 
 module.exports = {
+    //Query to insert all Resources with accompanying Tags into the database
     insertResource : function(req, res){
         console.log(">>>>>>>>>>>>>>REQ", req.body)
         var name = req.body.name;
@@ -12,6 +13,7 @@ module.exports = {
         })
 
     },
+    //Query to getgit
     getResource: function(req, res){
         //TODO: Write getResource function. Keyword is just placeholder
         var keyword = req || ["Math", "Science"];
