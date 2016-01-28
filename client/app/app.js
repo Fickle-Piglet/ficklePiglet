@@ -13,4 +13,9 @@ angular.module('fickle', ['fickle.auth', 'fickle.services', 'fickle.search','ui.
      templateUrl: "/app/login/login.html",
      controller: 'AuthController'
    })
+   .state('resource', {
+    url: '/resource',
+    templateUrl: '/app/Search/resource.html',
+    controller: 'searchController'
+   })
 })
