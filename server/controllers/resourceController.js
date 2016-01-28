@@ -15,11 +15,19 @@ module.exports = {
     getResource: function(req, res){
         //TODO: Write getResource function. Keyword is just placeholder
 
-        var keyword = ["Math", "Science"]
-        keyword = JSON.stringify(keyword)
-        db.cypherQuery("MATCH (n:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN "+keyword+" RETURN n", function(err, res){
-            console.log("ERROR: ", err)
-            console.log("HARHARHAR", res)
-        })
+        var keyword = req || ["Math", "Science"];
+        keyword = JSON.stringify(keyword);
+        //This is a map of the array not a filter
+        db.cypherQuery("MATCH (n:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN "+keyword+" RETURN n", function(err, query){
+            // console.log("ERROR: ", err)
+            // console.log("HARHARHAR", res)
+            //Return's Array of Resource Objects
+            res.send(query.data);
+        });
+    },
+    getTags: function(req, res){
+        db.cypherQuery("Match (n:Tag) Return n", function(err, response){
+            res.send(response.data);
+        });
     }
 };
