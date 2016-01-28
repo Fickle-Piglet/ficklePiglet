@@ -13,7 +13,7 @@ module.exports = {
         });
     },
     dislikeResource: function(req, res){
-        var userDislikes = res.body
+        var userDislikes = req.body
         db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) CREATE (u)-[:HAS_DISLIKED]->(r)", userDislikes, function(err, query){
             if(err){
                 res.sendStatus(404);
