@@ -1,5 +1,6 @@
 var resourceController = require("../controllers/resourceController");
 var loginController = require("../../server/controllers/loginController");
+var userResourceController = require("../../server/controllers/userResourceController");
 
 module.exports = function(app, express){
 
@@ -15,6 +16,8 @@ module.exports = function(app, express){
     //   url: 'https://itunes.apple.com/us/podcast/chalk-talk-physics-podcast/id262782016?mt=2&uo=4',
     //   _id: 4054 }]
     app.post('/getResource', resourceController.getResource);
+    app.post('/likeResource', userResourceController.likeResource);
+    app.post('/dislikeResource', userResourceController.dislikeResource);
 
     //Tags
     //Returns Array of Tag objects 
