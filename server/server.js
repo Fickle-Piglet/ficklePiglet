@@ -4,7 +4,7 @@ var app = express();
 var port = 5050;
 var scraper = require("../scripts/scraper/scraper")
 var db = require("../server/db/db.js");
-// var test = require("../server/controllers/resourceController");
+//var test = require("../server/controllers/resourceController");
 
 app.use(express.static(path.join(__dirname, '/client')));
 
