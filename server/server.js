@@ -15,11 +15,11 @@ app.listen(port, function(){
 require('../server/config/middleware.js')(app, express);
 require('../server/config/routes.js')(app, express);
 
-// scraper.getAllPodcast("podcasts.txt")
+scraper.getAllPodcast("podcasts.txt")
 
-// setTimeout(function(){
+//setTimeout(function(){
 //      scraper.readAllFiles();
-// }, 10000)
+//}, 10000)
 
 
 //sample query to return everything
