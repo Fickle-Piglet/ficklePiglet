@@ -2,17 +2,18 @@ angular.module('fickle.services', [])
 
 .factory('Auth', function ($http, $location, $window) {
     var signin = function (user) {
+      console.log("in signin controller")
       return $http({
           method: 'POST',
           url: '/signin',
           data: user
         })
         .then(function (resp) {
-          return resp.data.token;
+          console.log("response",resp.data.data)
+          return resp.data;
         });
     }
     var signup = function (user) {
-      console.log("in service controller signup")
       return $http({
           method: 'POST',
           url: '/signup',
@@ -39,7 +40,13 @@ angular.module('fickle.services', [])
           });
     };
     var getPodcasts = function () {
-      // TO DO AJ
+      return $http({
+           method: 'POST',
+           url: '/getResource',
+         })
+         .then(function (resp) {
+           return resp.data;
+         });
     };
 
     return {

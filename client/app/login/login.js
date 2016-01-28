@@ -1,6 +1,6 @@
 angular.module('fickle.auth', [])
 
-.controller('AuthController', function ($scope, $http, $location, Auth) {
+.controller('AuthController', function ($scope, $http, $location, $window , Auth) {
 
 
   // login function to be called when input form submitted
@@ -12,10 +12,12 @@ angular.module('fickle.auth', [])
           "password":$scope.password
         }
       } 
-      console.log("Attempting to login", userData)
       Auth.signin(JSON.stringify($scope.user))
         .then(function(message){
-          // $window.localStorage.setItem('com.fickle', message);
+          // messages is an array with one object that contains our user info
+          // setting that information in local storage
+          // should be refactored to use jwt at some point
+          window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
           $location.path('/search');
         })
         .catch(function (error) {
@@ -32,6 +34,7 @@ angular.module('fickle.auth', [])
       if(message==="existing"){
         alert("You already have an account. Please login.")
       } else {
+        $window.localStorage.setItem('com.fickle', message);
         $location.path('/search');
       }
     })

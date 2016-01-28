@@ -1,22 +1,15 @@
 <div ng-controller="searchController" class="md-padding checkboxdemoSyncing" ng-cloak="" style="min-height:270px" ng-app="fickle.search">
 
-  <div layout="row" layout-wrap="">
-    <div flex="100" flex-gt-sm="50" layout="column">
-      <div>
-        <fieldset class="standard">
-          <div layout="row" layout-wrap="" flex="">
-            <div flex="50" ng-repeat="tag in tags">
-            <br><br>
+<!--   <div layout="row" layout-wrap="">
+    <div flex="100" flex-gt-sm="50" layout="column"> -->
+       <div class="tags">
+<!--            <div layout="row" layout-wrap="" flex="">
+ -->         <div ng-repeat="tag in tags">
+          <!--   <br><br> -->
              <div ng-checked="exists(tag, selected)" ng-click="toggle(tag, selected)">
                 {{ tag.name }} <span ng-if="exists(tag, selected)">selected</span>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-    </div>
-<!--     <div flex="100">
-      <h2 class="md-title">Selected Items</h2>
-      <code style="display: block; padding: 8px; color: grey">{{selected | json}}</code>
-    </div>
-  </div>
-</div> -->
+             </div>
+             </div>
+          </div> 
+       
+       </div>
