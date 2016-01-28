@@ -10,7 +10,7 @@ angular.module('fickle.services', [])
         .then(function (resp) {
           return resp.data.token;
         });
-    };
+    }
     var signup = function (user) {
       console.log("in service controller signup")
       return $http({
@@ -26,15 +26,21 @@ angular.module('fickle.services', [])
       signin: signin,
       signup: signup,
     };
-});
+})
 
 .factory('Podcasts', function ($http, $location, $window) {
     var getTags = function () {
-      // TO DO TESSA
-    },
+       return $http({
+            method: 'GET',
+            url: '/tags',
+          })
+          .then(function (resp) {
+            return resp.data;
+          });
+    };
     var getPodcasts = function () {
       // TO DO AJ
-    }
+    };
 
     return {
       getTags: getTags,
