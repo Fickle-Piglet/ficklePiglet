@@ -15,10 +15,15 @@ angular.module('fickle.search',['ngMaterial', 'ngMessages'])
         
       });
     }
-
-    Podcasts.GetRec(function(data){
+    $scope.initGet = function(){
+      Podcasts.GetRec(function(data){
         $scope.results = data
-    })
+      })
+    }
+
+    //Podcasts.GetRec(function(data){
+    //    $scope.results = data
+    //})
 
     $scope.toggle = function (item, list) {
       var idx = list.indexOf(item);
