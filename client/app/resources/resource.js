@@ -1,42 +1,17 @@
 angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
 
 .controller('resourceController', function($scope,Podcasts,UserResources) {
-  $scope.items = ['Science', 'Technology', 'Engineering', 'Math'];
     $scope.selected = [];
     $scope.results = [];
-    
 
-    $scope.sendTags = function() {
-      Podcasts.getPodcasts($scope.selected).then(function () {        
-      });
-    }
-
-      Podcasts.GetRec(function(data){
-          $scope.results = data
-      })
-
-
-
-    // $scope.selected_index = 0;
+    Podcasts.getPodcasts().then(function (data){
+      $scope.results = data;
+    });
 
     $scope.next = function () {
-      // if ($scope.selected_index >= $scope.results.length - 1) {
-      //   $scope.selected_index = 0;
-      // } else {
-      //   $scope.selected_index++;
-      // }
-      // console.log($scope.results.length + '/' + $scope.selected_index);
-      //$scope.selected= ["Education"]
-      Podcasts.GetRec(function(data, rec){
-        $scope.selected = rec
-      })
-      Podcasts.getPodcasts($scope.selected).then(function () {
-        
+      Podcasts.getPodcasts().then(function (data) {
+         $scope.results = data
       });
-      Podcasts.GetRec(function(data, rec){
-        $scope.results = data
-      })
-
     };
 
     $scope.toggle = function (item, list) {
