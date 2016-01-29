@@ -26,12 +26,17 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
       //   $scope.selected_index++;
       // }
       // console.log($scope.results.length + '/' + $scope.selected_index);
+      //$scope.selected= ["Education"]
+      Podcasts.GetRec(function(data, rec){
+        $scope.selected = rec
+      })
       Podcasts.getPodcasts($scope.selected).then(function () {
         
       });
-      Podcasts.GetRec(function(data){
+      Podcasts.GetRec(function(data, rec){
         $scope.results = data
       })
+
     };
 
     $scope.toggle = function (item, list) {

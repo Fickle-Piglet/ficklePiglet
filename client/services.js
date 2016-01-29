@@ -31,6 +31,7 @@ angular.module('fickle.services', [])
 
 .factory('Podcasts', function ($http, $location, $window) {
   var resources = [];
+  var rec;
     var getTags = function () {
        return $http({
             method: 'GET',
@@ -42,6 +43,7 @@ angular.module('fickle.services', [])
     };
 
     var getPodcasts = function (resource) {
+    rec = resource;
       return $http({
         method: 'POST',
         url: '/getResource',
@@ -49,11 +51,12 @@ angular.module('fickle.services', [])
       })
       .then(function (resp) {
         resources = resp.data;
+
       });
       
     };
     var GetRec = function (callback) {
-        callback(resources);
+        callback(resources, rec);
     }
 
     return {
