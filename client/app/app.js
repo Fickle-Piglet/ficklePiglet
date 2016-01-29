@@ -3,6 +3,7 @@ angular.module('fickle', [
   'fickle.services',
   'fickle.search',
   'fickle.user',
+  'fickle.resource',
   'ui.router'
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
@@ -21,8 +22,8 @@ angular.module('fickle', [
    })
    .state('resource', {
     url: '/resource',
-    templateUrl: '/app/Search/resource.html',
-    controller: 'searchController'
+    templateUrl: '/app/resources/resource.html',
+    controller: 'resourceController'
    })
   .state('user', {
     url: "/user",
