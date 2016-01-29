@@ -34,7 +34,7 @@ angular.module('fickle.auth', [])
       if(message==="existing"){
         alert("You already have an account. Please login.");
       } else {
-        $window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
+        window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
         $location.path('/search');
       }
     });

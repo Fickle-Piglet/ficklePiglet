@@ -3,7 +3,9 @@ var db = require("../../server/db/db.js")
 
 module.exports = {
     likeResource: function(req, res){
-        var userLikes = res.body
+        console.log("in like server controller")
+        console.log(req.body)
+        var userLikes = req.body
         db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_LIKED]->(r)", userLikes, function(err, query){
             if(err){
                 res.sendStatus(404);
