@@ -26,6 +26,7 @@ module.exports = {
                         target.genres = body.results[i].genres
                         target.url = body.results[i].collectionViewUrl
                         target.thumbnail = body.results[i].artworkUrl100
+                        target.feedUrl = body.results[i].feedUrl
                 fs.appendFile('../scripts/scraper/files/allocation.txt', JSON.stringify(target) + "\n", function(err){
                     if (err) throw err;
                     console.log("uploaded: ", target.name);
@@ -47,7 +48,8 @@ module.exports = {
                         name: list[i].name,
                         genre: list[i].genres[j],
                         url: list[i].url,
-                        thumbnail: list[i].thumbnail
+                        thumbnail: list[i].thumbnail,
+                        feedUrl: list[i].feedUrl
                     }
                 }, function(err, res, body){
                     //if(err) console.log("ERROR: ",err)
