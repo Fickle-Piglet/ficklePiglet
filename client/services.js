@@ -62,7 +62,6 @@ angular.module('fickle.services', [])
       GetRec: GetRec
     };
 })
-
 .factory('User', function ($http, $location, $window) {
   var getUser = function (user) {
     return $http({
@@ -77,20 +76,34 @@ angular.module('fickle.services', [])
   return {
     getUser: getUser
   };
+})
+.factory('UserResources', function ($http, $location, $window) {
+
+    var likeResource = function (userPref) {
+      console.log("userPref",userPref)
+      return $http({
+        method: 'POST',
+        url: '/likeResource',
+        data: userPref
+      })
+      .then(function (resp) {
+        return resp.status;
+      });
+    };
+
+    var dislikeResource = function (userPref) {
+      return $http({
+        method: 'POST',
+        url: '/dislikeResource',
+        data: userPref
+      })
+      .then(function (resp) {
+        return resp.status;
+      });
+    };
+
+    return {
+      likeResource: likeResource,
+      dislikeResource: dislikeResource
+    };
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
