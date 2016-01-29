@@ -18,6 +18,7 @@ module.exports = {
     getResource: function(req, res){
         //TODO: Write getResource function. Keyword is just placeholder
         var keyword = (req.body);
+        console.log(req.body);
         // console.log(keyword)
         keyword = JSON.stringify(keyword);
         console.log("KEYWORD: ",keyword)

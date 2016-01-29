@@ -9,16 +9,9 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
     });
 
     $scope.next = function () {
-      Podcasts.GetRec(function(data, rec){
-        $scope.selected = rec
-      })
-      Podcasts.getPodcasts($scope.selected).then(function () {
-        
+      Podcasts.getPodcasts().then(function (data) {
+         $scope.results = data
       });
-      Podcasts.GetRec(function(data, rec){
-        $scope.results = data
-      })
-
     };
 
     $scope.toggle = function (item, list) {
