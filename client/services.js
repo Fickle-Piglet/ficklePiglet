@@ -107,4 +107,3 @@ angular.module('fickle.services', [])
       dislikeResource: dislikeResource
     };
 });
->>>>>>> basic like or dislike
