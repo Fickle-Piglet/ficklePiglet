@@ -22,6 +22,8 @@
     <a class="navbar-brand" ui-sref="#">Fickle Piglet</a>
     <ul class="nav navbar-nav navbar-right"></ul>
     <ul class="nav navbar-nav navbar-right">
+    <li ng-class="{ active: isActive('/search')}"><a href="#/search"> Search </a></li>
+    <li ng-class="{ active: isActive('/resource')}"><a href="#/resource"> Resources </a></li>
     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Home </a></li>
     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> About </a></li>
 
