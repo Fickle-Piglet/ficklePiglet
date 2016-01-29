@@ -27,17 +27,17 @@ angular.module('fickle.auth', [])
 
   // sign up function to be called when input form submitted
   $scope.signup = function () {
-    console.log($scope.user)
+    // console.log($scope.user)
     $scope.signUpError = '';
     Auth.signup(JSON.stringify($scope.user))
     .then(function(message){
       if(message==="existing"){
-        alert("You already have an account. Please login.")
+        alert("You already have an account. Please login.");
       } else {
-        $window.localStorage.setItem('com.fickle', message);
+        $window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
         $location.path('/search');
       }
-    })
+    });
   };
 
 });

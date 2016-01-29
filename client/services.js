@@ -61,4 +61,36 @@ angular.module('fickle.services', [])
       getPodcasts: getPodcasts,
       GetRec: GetRec
     };
+})
+
+.factory('User', function ($http, $location, $window) {
+  var getUser = function (user) {
+    return $http({
+      method: 'GET',
+      url: '/user/' + user
+    })
+    .then(function (res) {
+      return res.data;
+    });
+  };
+
+  return {
+    getUser: getUser
+  };
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
