@@ -27,7 +27,7 @@ module.exports = function(app, express){
     // { name: 'Judaism', _id: 4034 },]
     app.get('/tags', resourceController.getTags);
 
-    app.get('/user/:username', userController.getUser);
+    app.get('/user/:user', userController.getUser);
 
     //Signup/Signin Stuff
     app.post("/signin", loginController.signin);
