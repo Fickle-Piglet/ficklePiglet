@@ -8,9 +8,11 @@
             <div flex="50" ng-repeat="resource in results">
             <br><br>
              <div>
-                {{ resource.name }} 
+                {{ resource.name }}
             </div>
              <div class='original'>{{resource.url}}</div>
+             <i ng-click="likeResource(resource.name)"class="material-icons">thumb_up</i>
+             <i ng-click="dislikeResource(resource.name)" class="material-icons">thumb_down</i>
           </div>
         <!-- </fieldset> -->
       </div>
