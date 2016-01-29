@@ -1,4 +1,5 @@
 var db = require("../../server/db/db.js")
+var request = require("request")
 
 
 module.exports = {
@@ -9,8 +10,9 @@ module.exports = {
         var tags = req.body.genre
         var url = req.body.url
         var thumbnail = req.body.thumbnail
+        var feedUrl = req.body.feedUrl
         // TODO: Query is Commented out becasue it will run on server startup. Need to rework query
-        db.cypherQuery("MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"'}) MERGE (t:Tag {name:'"+tags+"'}) MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"'})-[:TAGGED]-(t:Tag {name:'"+tags+"'})", function(err, res){
+        db.cypherQuery("MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"', feedUrl:'"+feedUrl+"'}) MERGE (t:Tag {name:'"+tags+"'}) MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"', feedUrl:'"+feedUrl+"'})-[:TAGGED]-(t:Tag {name:'"+tags+"'})", function(err, res){
         })
 
     },
@@ -35,6 +37,19 @@ module.exports = {
             }
             var int = getRandomInt(0, query.data.length)
             console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
+            //TODO: Request for rss feed api
+            request({
+                method: "GET",
+                url: "http://rss2json.com/api.json?rss_url=" + query.data[int].feedUrl
+            }, function(err, res, body){
+                //console.log("RES:", res)
+                //console.log(">>>>>>>Body", JSON.parse(body))
+                console.log(">>>>>>>TITLE:", JSON.parse(body).feed.title)
+                console.log(">>>>>>>Author:", JSON.parse(body).feed.author)
+                console.log(">>>>>>>DESCRIPTION:", JSON.parse(body).feed.description)
+                console.log(">>>>>>>EpisodeTitle:", JSON.parse(body).items[0].title)
+                console.log(">>>>>>>EpisodeMP3:", JSON.parse(body).items[0].enclosure.link)
+            })
             res.send([query.data[int]]);
         });
     },
