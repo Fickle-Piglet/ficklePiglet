@@ -35,41 +35,41 @@ angular.module('fickle.search',['ngMaterial', 'ngMessages'])
       return list.indexOf(item) > -1;
     };
 
-    $scope.likeResource = function(resource){
-      var user = JSON.parse(window.localStorage.getItem('com.fickle'));
-      var username = user.username;
-      var userpref = {
-        'username' : username,
-        'ResourceName' : resource
-      }
-      UserResources.likeResource(userpref)
-      .then(function(message){
-        if(message ===200){
-          alert("You have liked this")
-        }
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
-    };
+    // $scope.likeResource = function(resource){
+    //   var user = JSON.parse(window.localStorage.getItem('com.fickle'));
+    //   var username = user.username;
+    //   var userpref = {
+    //     'username' : username,
+    //     'ResourceName' : resource
+    //   }
+    //   UserResources.likeResource(userpref)
+    //   .then(function(message){
+    //     if(message ===200){
+    //       alert("You have liked this")
+    //     }
+    //   })
+    //   .catch(function (error) {
+    //     console.error(error);
+    //   });
+    // };
 
-    $scope.dislikeResource = function(resource){
-      var user = JSON.parse(window.localStorage.getItem('com.fickle'));
-      var username = user.username;
-      var userpref = {
-        'username' : username,
-        'ResourceName' : resource
-      }
-      UserResources.dislikeResource(userpref)
-      .then(function(message){
-        if(message ===200){
-          alert("You have disliked this")
-        }
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
-    }
+    // $scope.dislikeResource = function(resource){
+    //   var user = JSON.parse(window.localStorage.getItem('com.fickle'));
+    //   var username = user.username;
+    //   var userpref = {
+    //     'username' : username,
+    //     'ResourceName' : resource
+    //   }
+    //   UserResources.dislikeResource(userpref)
+    //   .then(function(message){
+    //     if(message ===200){
+    //       alert("You have disliked this")
+    //     }
+    //   })
+    //   .catch(function (error) {
+    //     console.error(error);
+    //   });
+    // }
 
     
 });
