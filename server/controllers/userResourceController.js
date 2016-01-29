@@ -23,5 +23,15 @@ module.exports = {
                 res.sendStatus(200);
             }
         });
+    },
+    markAsSeen: function(req, res){
+        var userHasSeen = req.body
+        db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_SEEN]->(r)", userHasSeen, function(err, query){
+            if(err){
+                res.sendStatus(404);
+            } else{
+                res.sendStatus(200);
+            }
+        });
     }
 };

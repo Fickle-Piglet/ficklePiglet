@@ -24,6 +24,10 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
       return list.indexOf(item) > -1;
     };
 
+    $scope.markAsSeen = function(resource){
+      console.log(resource);
+    };
+
     $scope.likeResource = function(resource){
       var user = JSON.parse(window.localStorage.getItem('com.fickle'));
       var username = user.username;
@@ -53,6 +57,25 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
       .then(function(message){
         if(message ===200){
           alert("You have disliked this")
+        }
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+    }
+
+
+    $scope.markAsSeen = function(resource){
+      var user = JSON.parse(window.localStorage.getItem('com.fickle'));
+      var username = user.username;
+      var userHasSeen = {
+        'username' : username,
+        'ResourceName' : resource
+      }
+      UserResources.markAsSeen(userHasSeen)
+      .then(function(message){
+        if(message ===200){
+          console.log("updated DB that user has seen this")
         }
       })
       .catch(function (error) {

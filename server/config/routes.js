@@ -19,7 +19,7 @@ module.exports = function(app, express){
     app.post('/getResource', resourceController.getResource);
     app.post('/likeResource', userResourceController.likeResource);
     app.post('/dislikeResource', userResourceController.dislikeResource);
-
+    app.post('/resourceHistory', userResourceController.markAsSeen);
     //Tags
     //Returns Array of Tag objects 
     //EX: [  { name: 'Business News', _id: 4030 },

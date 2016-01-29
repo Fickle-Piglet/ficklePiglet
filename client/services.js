@@ -108,8 +108,19 @@ angular.module('fickle.services', [])
       });
     };
 
+    var markAsSeen = function (userHasSeen) {
+      return $http({
+        method: 'POST',
+        url: '/resourceHistory',
+        data: userHasSeen
+      })
+      .then(function (resp) {
+        return resp.status;
+      });
+    };
     return {
       likeResource: likeResource,
-      dislikeResource: dislikeResource
+      dislikeResource: dislikeResource,
+      markAsSeen : markAsSeen
     };
 });
