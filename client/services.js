@@ -82,8 +82,30 @@ angular.module('fickle.services', [])
     });
   };
 
+  var getLikes = function () {
+    return $http({
+      method: 'GET',
+      url: '/userlike'
+    })
+    .then(function (resp) {
+      return resp.data;
+    });
+  };
+
+  var getDislike = function () {
+    return $http({
+      method: 'GET',
+      url: '/userDislike'
+    })
+    .then(function (resp) {
+      return resp.data;
+    })
+  };
+
   return {
-    getUser: getUser
+    getUser: getUser,
+    getLikes: getLikes,
+    getDislike: getDislike
   };
 })
 .factory('UserResources', function ($http, $location, $window) {

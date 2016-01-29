@@ -16,20 +16,20 @@ module.exports = {
     //How should we split those up and then combine them?  
   },
   getLikes: function (req, res) {
-    var likes = req.body;
-    db.cypherQuery('MATCH (u:User {username: {username}})-[l:HAS_LIKED]-(r:Resource) RETURN l', likes, function (err, result) {
+    var user = req.body;
+    db.cypherQuery('MATCH (u:User {username: "'+user+'"})-[l:HAS_LIKED]-(r:Resource) RETURN l', function (err, result) {
       if (err) {
         throw err;
       }
       res.send(result.data);
     })
   },
-  getDislike: function (req, res) {
-    var dislikes = req.body;
-    db.cypherQuery('MATCH (u:User {username: {username}})-[d:HAS_DISLIKED]-(r:Resource) RETURN d', dislikes, function (err, result) {
+  getDislikes: function (req, res) {
+    var user = req.body;
+    db.cypherQuery('MATCH (u:User {username: "'+user+'"})-[d:HAS_DISLIKED]-(r:Resource) RETURN d', function (err, result) {
       if (err) {
         throw err;
-      }
+      } 
       res.send(result.data);
     })
   }

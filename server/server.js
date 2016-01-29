@@ -4,13 +4,15 @@ var app = express();
 var port = 5050;
 var scraper = require("../scripts/scraper/scraper")
 var db = require("../server/db/db.js");
-//var test = require("../server/controllers/resourceController");
+var test = require("../server/controllers/userController");
 
 app.use(express.static(path.join(__dirname, '/client')));
 
 app.listen(port, function(){
     console.log('Listening on port '+ port);
 });
+
+// test.getDislike({body:'timmy'});
 
 require('../server/config/middleware.js')(app, express);
 require('../server/config/routes.js')(app, express);
