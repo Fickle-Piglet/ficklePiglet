@@ -27,30 +27,25 @@ module.exports = {
         //This is a map of the array not a filter
         db.cypherQuery("MATCH (n:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN "+keyword+" RETURN n", function(err, query){
 
-            console.log("ERROR: ", err)
-            console.log("HARHARHAR", query)
-            //Return's Array of Resource Objects
-
             //Randomizer function
             var getRandomInt = function(min, max) {
                 return Math.floor(Math.random() * (max - min)) + min;
             }
             var int = getRandomInt(0, query.data.length)
-            console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
+            //console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
             //TODO: Request for rss feed api
             request({
                 method: "GET",
                 url: "http://rss2json.com/api.json?rss_url=" + query.data[int].feedUrl
-            }, function(err, res, body){
+            }, function(err, result, body){
                 //console.log("RES:", res)
                 //console.log(">>>>>>>Body", JSON.parse(body))
-                console.log(">>>>>>>TITLE:", JSON.parse(body).feed.title)
-                console.log(">>>>>>>Author:", JSON.parse(body).feed.author)
-                console.log(">>>>>>>DESCRIPTION:", JSON.parse(body).feed.description)
-                console.log(">>>>>>>EpisodeTitle:", JSON.parse(body).items[0].title)
-                console.log(">>>>>>>EpisodeMP3:", JSON.parse(body).items[0].enclosure.link)
+                query.data[int].feed = JSON.parse(body).feed
+                query.data[int].episodes = JSON.parse(body).items
+                res.send([query.data[int]]);
+
             })
-            res.send([query.data[int]]);
+            //res.send([query.data[int]]);
         });
     },
     getTags: function(req, res){

@@ -6,19 +6,29 @@
         <div flex="50" ng-repeat="resource in results">
           
           <div>
-          <div>
-             Thumnail: {{ resource.thumbnail }} 
+            <div>
+             <img src="{{ resource.thumbnail }}">
+              <h1>{{ resource.name }}</h1>
             </div>
             <div>
-              name: {{ resource.name }} 
+              Info: {{ resource.feed.description }}
             </div>
+
+            <br>
           <div class='original'>url: {{resource.url}}</div>
           <i ng-click="likeResource(resource.name)"class="material-icons">thumb_up</i>
           <i ng-click="dislikeResource(resource.name)" class="material-icons">thumb_down</i>
           </div>
           <button ng-click="markAsSeen(resource.name)"> Play </button>
           <button ng-click="next()">Next</button>
-          <div>
+          <div ng-repeat="episode in resource.episodes">
+            Title: {{ episode.title }} <br>
+            <a href="{{episode.enclosure.link}}"><button>Play Episode</button></a>
+
+
+          </div>
+          </div>
+
 
       </div>
     </div>
