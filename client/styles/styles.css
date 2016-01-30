@@ -50,3 +50,15 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+#up {
+  color: green;
+}
+
+#down {
+  color: red;
+}
+.material-icons {
+  height: 1px;
+  width: 1px;
+}

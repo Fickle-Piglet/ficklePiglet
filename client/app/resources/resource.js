@@ -38,7 +38,8 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
       UserResources.likeResource(userpref)
       .then(function(message){
         if(message ===200){
-          alert("You have liked this")
+          console.log("You have liked this")
+          return false;
         }
       })
       .catch(function (error) {
@@ -54,14 +55,16 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
       UserResources.dislikeResource(userpref)
       .then(function(message){
         if(message ===200){
-          alert("You have disliked this")
+          console.log("You have disliked this")
         }
       })
       .catch(function (error) {
         console.error(error);
       });
     }
-
+    $scope.select = function(row) {
+      row.selected=!row.selected;
+    }
 
     $scope.markAsSeen = function(resource){
       console.log(resource)
