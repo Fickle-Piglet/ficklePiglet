@@ -14,5 +14,25 @@ module.exports = {
 
     //We need to do additional queries for likes and dislikes
     //How should we split those up and then combine them?  
+  },
+  getLikes: function (req, res) {
+    var user = JSON.parse(req.params.user).username;
+    console.log("user", user);
+    db.cypherQuery('MATCH (u:User {username: "' +user+ '"})-[l:HAS_LIKED]-(r:Resource) RETURN r', function (err, result) {
+      if (err) {
+        throw err;
+      }
+      // console.log(result.data);
+      res.send(result.data);
+    })
+  },
+  getDislikes: function (req, res) {
+    var user = JSON.parse(req.params.user).username;
+    db.cypherQuery('MATCH (u:User {username: "'+user+'"})-[d:HAS_DISLIKED]-(r:Resource) RETURN r', function (err, result) {
+      if (err) {
+        throw err;
+      } 
+      res.send(result.data);
+    })
   }
 };
