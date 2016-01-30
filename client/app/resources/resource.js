@@ -10,6 +10,10 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
       $scope.results = data;
     });
 
+    $scope.parseDate = function(episode){
+      return Date.parse(episode.pubDate);
+    };
+ 
     $scope.next = function () {
       Podcasts.getPodcasts(username).then(function (data) {
          $scope.results = data
