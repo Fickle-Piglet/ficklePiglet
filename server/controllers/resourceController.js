@@ -18,35 +18,34 @@ module.exports = {
     },
     //Query to getgit
     getResource: function(req, res){
-        //TODO: Write getResource function. Keyword is just placeholder
-        var keyword = (req.body);
-        console.log(req.body);
-        // console.log(keyword)
-        keyword = JSON.stringify(keyword);
-        console.log("KEYWORD: ",keyword)
-        //This is a map of the array not a filter
-        db.cypherQuery("MATCH (n:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN "+keyword+" RETURN n", function(err, query){
+        var userPreferences = req.body
+        if (Object.keys(userPreferences).length ===0){
+            res.sendStatus(404)
+        } else {
+          db.cypherQuery(
+              "MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(r:Resource) WITH collect(distinct r) as seenresources MATCH (resources:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN {keywords} AND NOT resources IN seenresources return resources;",
+              userPreferences, function(err, query){
+              //Randomizer function
+                         var getRandomInt = function(min, max) {
+                             return Math.floor(Math.random() * (max - min)) + min;
+                         }
+                         var int = getRandomInt(0, query.data.length)
+                         //console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
+                         //TODO: Request for rss feed api
+                         request({
+                             method: "GET",
+                             url: "http://rss2json.com/api.json?rss_url=" + query.data[int].feedUrl
+                         }, function(err, result, body){
+                             //console.log("RES:", res)
+                             //console.log(">>>>>>>Body", JSON.parse(body))
+                             query.data[int].feed = JSON.parse(body).feed
+                             query.data[int].episodes = JSON.parse(body).items
+                             res.send([query.data[int]]);
 
-            //Randomizer function
-            var getRandomInt = function(min, max) {
-                return Math.floor(Math.random() * (max - min)) + min;
-            }
-            var int = getRandomInt(0, query.data.length)
-            //console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
-            //TODO: Request for rss feed api
-            request({
-                method: "GET",
-                url: "http://rss2json.com/api.json?rss_url=" + query.data[int].feedUrl
-            }, function(err, result, body){
-                //console.log("RES:", res)
-                //console.log(">>>>>>>Body", JSON.parse(body))
-                query.data[int].feed = JSON.parse(body).feed
-                query.data[int].episodes = JSON.parse(body).items
-                res.send([query.data[int]]);
-
-            })
-            //res.send([query.data[int]]);
-        });
+                         })
+                         //res.send([query.data[int]]);
+                     });
+      }
     },
     getTags: function(req, res){
 
