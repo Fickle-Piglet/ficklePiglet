@@ -60,6 +60,7 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
 
 
     $scope.markAsSeen = function(resource){
+      console.log(resource)
       var userHasSeen = {
         'username' : username,
         'ResourceName' : resource
