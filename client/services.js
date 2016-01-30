@@ -82,20 +82,20 @@ angular.module('fickle.services', [])
     });
   };
 
-  var getLikes = function () {
+  var getLikes = function (user) {
     return $http({
       method: 'GET',
-      url: '/userlike'
+      url: '/userlike/' + user
     })
     .then(function (resp) {
       return resp.data;
     });
   };
 
-  var getDislike = function () {
+  var getDislike = function (path) {
     return $http({
       method: 'GET',
-      url: '/userDislike'
+      url: '/userDislike/' + path
     })
     .then(function (resp) {
       return resp.data;

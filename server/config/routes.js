@@ -28,8 +28,8 @@ module.exports = function(app, express){
     app.get('/tags', resourceController.getTags);
 
     app.get('/user/:user', userController.getUser);
-    app.get('/userlike', userController.getLikes);
-    app.get('/userDislike', userController.getDislikes);
+    app.get('/userlike/:user', userController.getLikes);
+    app.get('/userDislike/:user', userController.getDislikes);
 
     //Signup/Signin Stuff
     app.post("/signin", loginController.signin);
