@@ -2,7 +2,6 @@ angular.module('fickle.services', [])
 
 .factory('Auth', function ($http, $location, $window) {
     var signin = function (user) {
-      console.log("in signin controller")
       return $http({
           method: 'POST',
           url: '/signin',
@@ -46,11 +45,15 @@ angular.module('fickle.services', [])
       rec = resource;
     };
 
-    var getPodcasts = function () {
+    var getPodcasts = function (user) {
+      var userPref ={
+        username : user,
+        keywords : rec
+      } 
       return $http({
         method: 'POST',
         url: '/getResource',
-        data: rec
+        data: userPref
       })
       .then(function (resp) {
         return resp.data;
@@ -86,7 +89,6 @@ angular.module('fickle.services', [])
 .factory('UserResources', function ($http, $location, $window) {
 
     var likeResource = function (userPref) {
-      console.log("userPref",userPref)
       return $http({
         method: 'POST',
         url: '/likeResource',

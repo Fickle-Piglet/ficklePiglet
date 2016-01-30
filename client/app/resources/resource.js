@@ -3,13 +3,15 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
 .controller('resourceController', function($scope,Podcasts,UserResources) {
     $scope.selected = [];
     $scope.results = [];
+    var user = JSON.parse(window.localStorage.getItem('com.fickle'));
+    var username = user.username;
 
-    Podcasts.getPodcasts().then(function (data){
+    Podcasts.getPodcasts(username).then(function (data){
       $scope.results = data;
     });
 
     $scope.next = function () {
-      Podcasts.getPodcasts().then(function (data) {
+      Podcasts.getPodcasts(username).then(function (data) {
          $scope.results = data
       });
     };
@@ -24,13 +26,7 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
       return list.indexOf(item) > -1;
     };
 
-    $scope.markAsSeen = function(resource){
-      console.log(resource);
-    };
-
     $scope.likeResource = function(resource){
-      var user = JSON.parse(window.localStorage.getItem('com.fickle'));
-      var username = user.username;
       var userpref = {
         'username' : username,
         'ResourceName' : resource
@@ -46,9 +42,7 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
       });
     };
 
-    $scope.dislikeResource = function(resource){
-      var user = JSON.parse(window.localStorage.getItem('com.fickle'));
-      var username = user.username;
+    $scope.dislikeResource = function(resource){;
       var userpref = {
         'username' : username,
         'ResourceName' : resource
@@ -66,8 +60,6 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
 
 
     $scope.markAsSeen = function(resource){
-      var user = JSON.parse(window.localStorage.getItem('com.fickle'));
-      var username = user.username;
       var userHasSeen = {
         'username' : username,
         'ResourceName' : resource
