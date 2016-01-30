@@ -40,6 +40,8 @@ module.exports = {
                              //console.log(">>>>>>>Body", JSON.parse(body))
                              query.data[int].feed = JSON.parse(body).feed
                              query.data[int].episodes = JSON.parse(body).items
+                             //TODO: Need to review redirect parser. Code for redirect url moved to redirectURL.js
+
                              res.send([query.data[int]]);
 
                          })
