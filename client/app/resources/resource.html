@@ -4,7 +4,6 @@
     <div flex="100" flex-gt-sm="50" layout="column">
       <div layout="row" layout-wrap="" flex="">
         <div flex="50" ng-repeat="resource in results">
-          
           <div>
             <div>
              <img src="{{ resource.thumbnail }}">
@@ -13,18 +12,15 @@
             <div>
               Info: {{ resource.feed.description }}
             </div>
-
             <br>
           <div class='original'>url: {{resource.url}}</div>
           <i ng-click="likeResource(resource.name)"class="material-icons">thumb_up</i>
           <i ng-click="dislikeResource(resource.name)" class="material-icons">thumb_down</i>
           </div>
           <button ng-click="next()">Next</button>
-          <div ng-repeat="episode in resource.episodes">
+          <div ng-repeat="episode in resource.episodes | orderBy:parseDate">
             Title: {{ episode.title }} <br>
             <a ng-click="markAsSeen(resource.name)" href="{{episode.enclosure.link}}"><button>Play Episode</button></a>
-
-
           </div>
           </div>
 
