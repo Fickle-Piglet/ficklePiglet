@@ -14,8 +14,12 @@
             </div>
             <br>
           <div class='original'>url: {{resource.url}}</div>
-          <div fb-like ng-click="likeResource(resource.name)"class="material-icons">thumb_up</div>
-          <i ng-click="dislikeResource(resource.name)" class="material-icons">thumb_down</i>
+          <button ng-click="likeResource(resource.name); select(resource.name); next()"  class="btn btn-default btn-sm" >
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </button>
+          <button ng-click="dislikeResource(resource.name); select(resource.name); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
+        </button>
           </div>
           <button ng-click="next()">Next</button>
           <div ng-repeat="episode in resource.episodes | orderBy:parseDate">
@@ -23,9 +27,8 @@
             <a ng-click="markAsSeen(resource.name)" href="{{episode.enclosure.link}}"><button>Play Episode</button></a>
           </div>
           </div>
-
-
       </div>
     </div>
   </div>
 </div>
+
