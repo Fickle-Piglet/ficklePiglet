@@ -6,7 +6,7 @@ var scraper = require("../scripts/scraper/scraper")
 var db = require("../server/db/db.js");
 // var test = require("../server/controllers/userController");
 
-app.use(express.static(path.join(__dirname, '/client')));
+// app.use(express.static(path.join(__dirname, '/client')));
 
 app.listen(port, function(){
     console.log('Listening on port '+ port);
