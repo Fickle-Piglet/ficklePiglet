@@ -6,7 +6,7 @@ var scraper = require("../scripts/scraper/scraper")
 var db = require("../server/db/db.js");
 // var test = require("../server/controllers/userController");
 
-app.use(express.static(path.join(__dirname, '/client')));
+// app.use(express.static(path.join(__dirname, '/client')));
 
 app.listen(port, function(){
     console.log('Listening on port '+ port);
@@ -20,10 +20,10 @@ require('../server/config/routes.js')(app, express);
 //scraper.getAllPodcast("podcasts.txt")
 
 
-setTimeout(function(){
-       scraper.readAllFiles();
-       scraper.tester()
-}, 10000)
+// setTimeout(function(){
+//        scraper.readAllFiles();
+//        scraper.tester()
+// }, 10000)
 
 
 //sample query to return everything
