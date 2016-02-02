@@ -2,6 +2,7 @@ var noodle = require("noodlejs")
 var fs = require("fs")
 var http = require("http")
 var request = require("request")
+var insertEp = require("../../scripts/redirectURL.js")
 
 module.exports = {
     //Reads the podcasts (or specified target) file and sends the tags to the getTags Methods
@@ -57,7 +58,28 @@ module.exports = {
             }
         }
 
+    },
+    tester: function(counter){
+        var counter = counter || 0;
+        var listLength = null;
+        setTimeout(function(){
+            var list = fs.readFileSync("../scripts/scraper/files/allocation.txt", "utf8").toString().split("\n");
+            listLength = listLength || list.length-1
+            var item = JSON.parse(list[counter])
+            insertEp.insertEpisodes(item.feedUrl, function(eps){
+                if(eps.length > 0){
+                    for(var j =0; j<eps.length; j++){
+                        console.log(eps[j].title)
+                    }
+                    //console.log(eps)
+                }
+            })
+            counter++
+            module.exports.tester(counter);
+        }, 10000)
     }
 
 };
+
+
 
