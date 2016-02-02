@@ -34,4 +34,3 @@ db.cypherQuery("START n=node(*) RETURN n;", function(err, result){
 
 
 module.exports = app;
-

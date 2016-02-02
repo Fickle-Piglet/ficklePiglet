@@ -147,4 +147,21 @@ angular.module('fickle.services', [])
       dislikeResource: dislikeResource,
       markAsSeen : markAsSeen
     };
+})
+.factory('Search', function($http) {
+    var searchPodcasts = function (input) {
+      console.log("INPUT url" , '/suggest/' + input);
+      return $http({
+        method: 'GET',
+        url: '/suggest/' + input
+      })
+      .then(function (resp) {
+        console.log(resp.data)
+        return resp.data;
+      });
+    };
+    
+    return {
+      searchPodcasts : searchPodcasts
+    }
 });

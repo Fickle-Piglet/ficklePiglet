@@ -4,6 +4,7 @@ angular.module('fickle', [
   'fickle.search',
   'fickle.user',
   'fickle.resource',
+  'fickle.elasticSearch',
   'ui.router'
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
@@ -29,6 +30,11 @@ angular.module('fickle', [
     url: "/user",
     templateUrl: "/app/user/user.html",
     controller: 'userController'
+  })
+  .state('searchelastic', {
+    url: "/searchelastic",
+    templateUrl: "/app/elastic/elastic.html",
+    controller: 'elasticController'
   });
 });
 
