@@ -8,6 +8,9 @@ module.exports = function(app, express){
     //Insert Resource into Database
     app.post("/insert", resourceController.insertResource);
 
+    //Edit episodes
+    app.post("/editEp", resourceController.editEpisode);
+
     //GetResource
     //EX:
     //   [ { name: '60-Second Space',
