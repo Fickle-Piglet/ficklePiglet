@@ -1,0 +1,20 @@
+Search
+<div class="md-padding checkboxdemoSyncing" ng-cloak="" style="min-height:270px">
+
+<!--   <div layout="row" layout-wrap="">
+    <div flex="100" flex-gt-sm="50" layout="column"> -->
+       <div class="tags">
+<!--            <div layout="row" layout-wrap="" flex="">
+ -->         <div ng-repeat="tag in tags">
+          <!--   <br><br> -->
+             <div ng-checked="exists(tag, selected)" ng-click="toggle(tag, selected)">
+             &nbsp<label><input type="checkbox"></label>
+                {{ tag.name }} <span ng-if="exists(tag, selected)">selected</span>
+             </div>
+             </div>
+          </div> 
+          <br>
+          <form >
+          <a href='#/resource'><button ng-click='sendTags()'>Submit</button></a>
+          </form>
+       </div>
