@@ -23,6 +23,9 @@ module.exports = function(app, express){
 
 
 
+    //Edit episodes
+    app.post("/editEp", resourceController.editEpisode);
+
     //GetResource
     //EX:
     //   [ { name: '60-Second Space',

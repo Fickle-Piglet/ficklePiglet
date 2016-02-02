@@ -50,7 +50,8 @@ module.exports = {
                         genre: list[i].genres[j],
                         url: list[i].url,
                         thumbnail: list[i].thumbnail,
-                        feedUrl: list[i].feedUrl
+                        feedUrl: list[i].feedUrl,
+                        episodes: []
                     }
                 }, function(err, res, body){
                     //if(err) console.log("ERROR: ",err)
@@ -68,15 +69,25 @@ module.exports = {
             var item = JSON.parse(list[counter])
             insertEp.insertEpisodes(item.feedUrl, function(eps){
                 if(eps.length > 0){
-                    for(var j =0; j<eps.length; j++){
-                        console.log(eps[j].title)
-                    }
-                    //console.log(eps)
+                    //console.log("NAME:",item.name)
+                    //console.log("EPISODES: >>>",eps)
+                    request({
+                        method: "POST",
+                        url: "http://localhost:5050/editEp",
+                        json: {
+                            name: item.name,
+                            episodes: eps
+                        }
+                    }, function(err, res, body){
+                        //if(err) console.log("ERROR: ",err)
+                    })
+
+
                 }
             })
             counter++
             module.exports.tester(counter);
-        }, 10000)
+        }, 20000)
     }
 
 };
