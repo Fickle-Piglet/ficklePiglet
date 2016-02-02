@@ -2,11 +2,26 @@ var resourceController = require("../controllers/resourceController");
 var loginController = require("../../server/controllers/loginController");
 var userResourceController = require("../../server/controllers/userResourceController");
 var userController = require("../../server/controllers/userController");
+var elastic = require("../../server/controllers/esearch");
+
 
 module.exports = function(app, express){
 
     //Insert Resource into Database
     app.post("/insert", resourceController.insertResource);
+    
+    /* GET suggestions */
+    app.get('/suggest/:input', function (req, res, next) {  
+      console.log("hit this route",req.params.input)
+      elastic.getSuggestions(req.params.input).then(function (result) { res.json(result) });
+    });
+
+    /* POST document to be indexed */
+    app.post('/create', function (req, res, next) {  
+      elastic.addDocument(req.body).then(function (result) { res.json(result) });
+    });
+
+
 
     //GetResource
     //EX:
@@ -20,6 +35,7 @@ module.exports = function(app, express){
     app.post('/likeResource', userResourceController.likeResource);
     app.post('/dislikeResource', userResourceController.dislikeResource);
     app.post('/resourceHistory', userResourceController.markAsSeen);
+    app.post
     //Tags
     //Returns Array of Tag objects 
     //EX: [  { name: 'Business News', _id: 4030 },

@@ -23,8 +23,8 @@
           </div>
           <button ng-click="next()">Next</button>
           <div ng-repeat="episode in resource.episodes | orderBy:parseDate">
-            Title: {{ episode.title }} <br>
-            <a ng-click="markAsSeen(resource.name)" href="{{episode.enclosure.link}}"><button>Play Episode</button></a>
+            Title: {{ episode.title }} 
+            <a ng-click="markAsSeen(resource.name)" href="{{episode.enclosure.link}}"><i id = "play" class="material-icons">play_circle_filled</i></a>
           </div>
           </div>
       </div>
