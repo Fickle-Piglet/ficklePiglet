@@ -7,18 +7,50 @@ var elasticClient = new elasticsearch.Client({
 
 var indexName = "main";
 
+/**
+* Delete an existing index
+*/
+function deleteIndex() {  
+    return elasticClient.indices.delete({
+        index: indexName
+    });
+}
+exports.deleteIndex = deleteIndex;
+
+/**
+* create the index
+*/
+function initIndex() {  
+    return elasticClient.indices.create({
+        index: indexName
+    });
+}
+exports.initIndex = initIndex;
+
+/**
+* check if the index exists
+*/
+function indexExists() {  
+    return elasticClient.indices.exists({
+        index: indexName
+    });
+}
+exports.indexExists = indexExists; 
+
 function initMapping() {  
     return elasticClient.indices.putMapping({
         index: indexName,
         type: "document",
         body: {
             properties: {
-                title: { type: "string" },
-                content: { type: "string" },
+                name: { type: "string" },
+                url: { type: "string" },
+                feedUrl : { type: "string" },
+                thumbnal : { type: "string" },
                 suggest: {
                     type: "completion",
-                    analyzer: "english",
-                    search_analyzer: "english",
+                    analyzer: "simple",
+                    search_analyzer: "simple",
                     payloads: true
                 }
             }
@@ -27,29 +59,23 @@ function initMapping() {
 }
 exports.initMapping = initMapping;
 
-function indexExists() {  
-    return elasticClient.indices.exists({
-        index: indexName
-    });
-}
-exports.indexExists = indexExists;  
-
 function addDocument(document) {  
     return elasticClient.index({
         index: indexName,
         type: "document",
         body: {
-            title: document.title,
-            content: document.content,
+            name: document.name,
+            url: document.url,
+            feedUrl: document.feedUrl,
+            thumbnail : document.thumbnail,
             suggest: {
-                input: document.title.split(" "),
-                output: document.title,
+                input: document.name.split(" "),
+                output: document.name,
                 payload: document.metadata || {}
             }
         }
     });
 }
-
 exports.addDocument = addDocument;
 
 
@@ -62,7 +88,7 @@ function getSuggestions(input) {
                 text: input,
                 completion: {
                     field: "suggest",
-                    fuzzy: true 
+                    fuzzy: true
                 }
             }
         }

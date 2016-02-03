@@ -46,16 +46,18 @@ angular.module('enki.services', [])
     };
 
     var getPodcasts = function (user) {
+
       var userPref ={
         username : user,
-        keywords : rec
-      };
+        podcastName : rec
+      } 
       return $http({
         method: 'POST',
         url: 'http://localhost:5050/getResource',
         data: userPref
       })
       .then(function (resp) {
+        console.log("response to esearch",resp.data)
         return resp.data;
       });
       
@@ -147,4 +149,19 @@ angular.module('enki.services', [])
       dislikeResource: dislikeResource,
       markAsSeen : markAsSeen
     };
+})
+.factory('Search', function($http) {
+    var searchPodcasts = function (input) {
+      return $http({
+        method: 'GET',
+        url: 'http://localhost:5050/suggest/' + input
+      })
+      .then(function (resp) {
+        return resp.data;
+      });
+    };
+    
+    return {
+      searchPodcasts : searchPodcasts
+    }
 });

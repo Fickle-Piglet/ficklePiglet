@@ -33,6 +33,7 @@ module.exports = {
     //Query to getgit
     getResource: function(req, res){
         var userPreferences = req.body
+        console.log(userPreferences)
         if (Object.keys(userPreferences).length ===0){
             res.sendStatus(404)
         } else {
@@ -45,8 +46,8 @@ module.exports = {
                     return Math.floor(Math.random() * (max - min)) + min;
                 }
                 var int = getRandomInt(0, query.data.length)
-                //console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
-                //TODO: Request for rss feed api
+                // // console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
+                // // TODO: Request for rss feed api
                 // request({
                 //     method: "GET",
                 //     url: "http://rss2json.com/api.json?rss_url=" + query.data[int].feedUrl
@@ -60,10 +61,9 @@ module.exports = {
                 //     res.send([query.data[int]]);
 
                 // })
-                console.log(query.data[int])
+                console.log("RESULTSSS>>>>>>>>>>>>>>>>>",query.data[int])
                 res.send([query.data[int]]);
             })
-
         })
       }
     },
