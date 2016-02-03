@@ -14,7 +14,7 @@
             </div>
             <br>
           <div class='original'>url: {{resource.url}}</div>
-          <button ng-click="likeResource(resource.name); select(resource.name); next()"  class="btn btn-default btn-sm" >
+          <button ng-click="likeResource(resource.name); select(resource.name)"  class="btn btn-default btn-sm" >
           <span class="glyphicon glyphicon-thumbs-up"></span> Like
         </button>
           <button ng-click="dislikeResource(resource.name); select(resource.name); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
