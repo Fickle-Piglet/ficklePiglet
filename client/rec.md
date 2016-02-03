@@ -74,7 +74,7 @@ RETURN count(*) AS rec, s.name AS name
 ORDER BY rec DESC, name DESC;
 
 //Cosine similarities
-//the calculation is correct, but need to find the total number of likes
+//the calculation is correct, but need to find the total number of likes and implement it somehow
 MATCH (u1:User)-[x:HAS_LIKED]->(m:Resource)<-[y:HAS_LIKED]-(u2:User)
 WITH SUM(x.HAS_LIKED * y.HAS_LIKED) AS DotProduct,
  SQRT(REDUCE(xDot = 0, i IN COLLECT(x.HAS_LIKED) | xDot + toInt(i^2))) AS xLength,
