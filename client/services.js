@@ -58,6 +58,7 @@ angular.module('fickle.services', [])
         data: userPref
       })
       .then(function (resp) {
+        console.log("response from podcasts",resp.data)
         return resp.data;
       });
       

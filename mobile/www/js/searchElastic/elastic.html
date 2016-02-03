@@ -1,0 +1,13 @@
+<ion-view>
+  <ion-content class='has-header'>
+    <label>
+    <input type="text" class="form-control" ng-model="myModel.searchString" placeholder='Search: e.g. "Javascript Jabber" or "This American life"' ng-change="search()"/>
+    </label>
+    <div ng-repeat="podcast in results">
+    <a ng-click='sendTags(podcast.text)'>{{podcast.text}}</a>
+    </div>
+  </ion-content>
+</ion-view>
+
+
+
