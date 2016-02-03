@@ -23,6 +23,9 @@ module.exports = function(app, express){
 
 
 
+    //Insert Episode into Database
+    app.post("/insertEp", resourceController.insertEpisode);
+
     //Edit episodes
     app.post("/editEp", resourceController.editEpisode);
 

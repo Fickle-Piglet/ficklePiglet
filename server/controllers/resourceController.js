@@ -12,9 +12,27 @@ module.exports = {
         var thumbnail = req.body.thumbnail
         var feedUrl = req.body.feedUrl
         var episodes = req.body.episodes
-        // TODO: Query is Commented out becasue it will run on server startup. Need to rework query
         db.cypherQuery("MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"', feedUrl:'"+feedUrl+"', episodes:'"+episodes+"'}) MERGE (t:Tag {name:'"+tags+"'}) MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"', feedUrl:'"+feedUrl+"'})-[:TAGGED]-(t:Tag {name:'"+tags+"'})", function(err, res){
         })
+
+    },
+    insertEpisode : function(req, res){
+        //console.log(">>>>>>>>>>>>>>REQ", req.body)
+        var pubDate = req.body.pubDate
+        var title = req.body.title;
+        var link = req.body.link
+        var resource = req.body.feed.title
+        var feed = req.body.feed
+        // TODO: Modify CypherQuery for inserting episode as a node into db
+        //"MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_LIKED]->(r)"
+        console.log("MERGE (e:Episode {title:'"+title+"', link:'"+link+"', pubDate:'"+pubDate+"', feed: '"+req.body.feed+"'}) Match (r:Resource {name:'"+resource+"'}) MERGE (e)-[:EPISODE_OF]->(r)")
+        db.cypherQuery("MERGE (e:Episode {title:'"+title+"', link:'"+link+"', pubDate:'"+pubDate+"'})", function(err, res){
+            console.log("ERROR in InsertEpisode:", err)
+        })
+        db.cypherQuery("Match (e:Episode {title:'"+title+"'}) Match (r:Resource {name:'"+resource+"'}) MERGE (e)-[:EPISODE_OF]->(r)", function(err, res){
+            console.log("ERROR in InsertEpisode:", err)
+        })
+        //console.log("Resource: ", resource, " TITL: ", title, " Link: ", link, " PubDate: ", pubDate)
 
     },
 
@@ -46,7 +64,7 @@ module.exports = {
                 }
                 var int = getRandomInt(0, query.data.length)
                 //console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
-                //TODO: Request for rss feed api
+                //TODO(JOSH): Change this request to rss api and do db query instead
                 // request({
                 //     method: "GET",
                 //     url: "http://rss2json.com/api.json?rss_url=" + query.data[int].feedUrl
@@ -71,6 +89,6 @@ module.exports = {
         db.cypherQuery("Match (n:Tag) Return n", function(err, response){
             res.send(response.data);
         });
-    },
+    }
     
 };

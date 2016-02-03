@@ -22,12 +22,22 @@ module.exports =  {
             var episodes = JSON.parse(body).items
             eps2 = episodes;
 
-            var eps = [];
             if(episodes !== undefined) {
                 for (var i = 0; i < episodes.length; i++) {
                     console.log(">>>>>TEST TITLE>>>>>", episodes[i].title)
                     console.log("FULL:", episodes[i].enclosure.link)
-                    eps.push({title: episodes[i].title, pubDate: episodes[i].pubDate, link: episodes[i].enclosure.link})
+                    request({
+                        method:"POST",
+                        url: "http://localhost:5050/insertEp",
+                        json: {
+                            title: episodes[i].title,
+                            pubDate: episodes[i].pubDate,
+                            link: episodes[i].enclosure.link,
+                            feed: feed
+                        }
+
+                    })
+                    //eps.push({title: episodes[i].title, pubDate: episodes[i].pubDate, link: episodes[i].enclosure.link})
                     //var originURL = episodes[i].enclosure.link
                     //TODO(Josh): REQUEST HAS STUPID ASS ASYNC ISSUE!!! SEE TESTER IN SCRAPER.js
                     //var epReq = function(i){
@@ -44,13 +54,13 @@ module.exports =  {
 
                 }
             }
-            setTimeout(function(){
-                //console.log("feed: ", feed)
-                //console.log("Episodes: ", eps)
-                //console.log("i: ", i)
-                console.log("in set timeout")
-                query(eps);
-            }, 5000)
+            //setTimeout(function(){
+            //    //console.log("feed: ", feed)
+            //    //console.log("Episodes: ", eps)
+            //    //console.log("i: ", i)
+            //    console.log("in set timeout")
+            //    query(eps);
+            //}, 5000)
 
 
         })
