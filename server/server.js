@@ -27,6 +27,7 @@ require('../server/config/routes.js')(app, express);
 
 
 
+
 //sample query to return everything
 db.cypherQuery("START n=node(*) RETURN n;", function(err, result){
     if(err) throw err;

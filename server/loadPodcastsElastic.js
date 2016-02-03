@@ -17,7 +17,7 @@ function bulkLoadPodcasts(podcasts) {
       return elastic.deleteIndex();
     }
   }).then(function () {
-    return elastic.initIndex().then(elastic.initPodcastMapping).then(function () {
+    return elastic.initIndex().then(elastic.initMapping).then(function () {
       //Add a few titles for the autocomplete
       //elasticsearch offers a bulk functionality as well, but this is for a different time
       podcasts.map(function (podcast) {
