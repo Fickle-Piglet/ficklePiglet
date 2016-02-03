@@ -40,16 +40,18 @@ angular.module('fickle.services', [])
             return resp.data;
           });
     };
-
+    
     var setTags = function(resource) {
       rec = resource;
     };
 
     var getPodcasts = function (user) {
+
       var userPref ={
         username : user,
-        keywords : rec
+        podcastName : rec
       } 
+
       return $http({
         method: 'POST',
         url: '/getResource',
@@ -150,13 +152,11 @@ angular.module('fickle.services', [])
 })
 .factory('Search', function($http) {
     var searchPodcasts = function (input) {
-      console.log("INPUT url" , '/suggest/' + input);
       return $http({
         method: 'GET',
         url: '/suggest/' + input
       })
       .then(function (resp) {
-        console.log(resp.data)
         return resp.data;
       });
     };
