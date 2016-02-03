@@ -17,8 +17,8 @@ function initMapping() {
                 content: { type: "string" },
                 suggest: {
                     type: "completion",
-                    analyzer: "simple",
-                    search_analyzer: "simple",
+                    analyzer: "english",
+                    search_analyzer: "english",
                     payloads: true
                 }
             }
@@ -62,7 +62,7 @@ function getSuggestions(input) {
                 text: input,
                 completion: {
                     field: "suggest",
-                    fuzzy: true
+                    fuzzy: true 
                 }
             }
         }

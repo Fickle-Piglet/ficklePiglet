@@ -7,6 +7,7 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
     var username = user.username;
 
     Podcasts.getPodcasts(username).then(function (data){
+      console.log("we got the data back from the server")
       $scope.results = data;
     });
 

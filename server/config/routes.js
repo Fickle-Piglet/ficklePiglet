@@ -45,7 +45,6 @@ module.exports = function(app, express){
     // { name: 'Philosophy', _id: 4033 },
     // { name: 'Judaism', _id: 4034 },]
     app.get('/tags', resourceController.getTags);
-
     app.get('/user/:user', userController.getUser);
     app.get('/userlike/:user', userController.getLikes);
     app.get('/userDislike/:user', userController.getDislikes);
