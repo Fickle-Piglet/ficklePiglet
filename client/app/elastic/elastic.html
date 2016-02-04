@@ -1,6 +1,6 @@
 <input type="text" class="form-control" ng-model="searchString" placeholder='Search: e.g. "Javascript Jabber" or "This American life"' ng-change="search()"/>
 
 <div ng-repeat="resource in results">
-<a  ng-click='sendTags(resource)'>{{resource.text}}</a>
+<a href='#/resource' ng-click='sendTags(resource)'>{{resource.text}}</a>
 </div>
 

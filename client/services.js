@@ -49,7 +49,7 @@ angular.module('fickle.services', [])
 
       var userPref ={
         username : user,
-        podcastName : rec
+        resource : rec
       } 
 
       return $http({

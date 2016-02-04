@@ -16,7 +16,7 @@ angular.module('fickle.elasticSearch', [])
       var isShow = selected.payload.url ? true : false;
       var obj = {name: selected.text, isShow: isShow};
       console.log(obj);
-      // Podcasts.setTags(selected);
+      Podcasts.setTags(selected);
       
     };
 });
