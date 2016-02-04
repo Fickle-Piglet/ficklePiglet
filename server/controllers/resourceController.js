@@ -39,7 +39,7 @@ module.exports = {
         } else {
           db.cypherQuery("MATCH (resources:Resource { name: {podcastName}})-[:TAGGED]-(t:Tag) return t.name", userPreferences, function(err,result){
              userPreferences.keywords = result.data
-             db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(r:Resource) WITH collect(distinct r) as seenresources MATCH (resources:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN {keywords} AND NOT resources IN seenresources return resources;",
+             db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(r:Resource) WITH collect(distinct r) as seenresources MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT resources IN seenresources return resources,e;",
              userPreferences, function(err, query){
              //Randomizer function
                 var getRandomInt = function(min, max) {
