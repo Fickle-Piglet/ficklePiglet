@@ -5,6 +5,7 @@ angular.module('fickle.elasticSearch', [])
     if (q.length > 1) {
       Search.searchPodcasts(q).then(function (data) {
        $scope.results = data.docsuggest[0].options;
+       // console.log(data);
       });
     } else {
       $scope.results = [];
@@ -12,7 +13,11 @@ angular.module('fickle.elasticSearch', [])
   };
 
   $scope.sendTags = function(selected) {
-      Podcasts.setTags(selected);
-    }
+      var isShow = selected.payload.url ? true : false;
+      var obj = {name: selected.text, isShow: isShow};
+      console.log(obj);
+      // Podcasts.setTags(selected);
+      
+    };
 });
 
