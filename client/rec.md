@@ -96,3 +96,9 @@ WHERE NOT((u1)-[:RATED]->(m))
 WITH m, u2, s.value AS similarity
 ORDER BY similarity DESC
 return m, u2
+
+//Changing the collab rec to episodes
+MATCH (u: User)-[:HAS_LIKED]-(e: Episode)-[:EPISODE_OF]-(r: Resource)-[:EPISODE_OF]-(e2: Episode)-[:HAS_LIKED]-(y: User)-[:HAS_LIKED]-(e: Episode)-[:EPISODE_OF]-(r: Resource)
+WHERE NOT (u = y) AND NOT (u--e)
+RETURN count(*) AS rec, s.name AS name
+ORDER BY rec DESC, name DESC;
