@@ -3,30 +3,31 @@
   <div layout="row" layout-wrap="">
     <div flex="100" flex-gt-sm="50" layout="column">
       <div layout="row" layout-wrap="" flex="">
-        <div flex="50" ng-repeat="resource in results">
+        <img src="{{results[0][0].thumbnail}}">
+        <br>
+        {{results[0][1].title}}
+        <br>
+
+        <h4> Player </h4>
+        Url: {{results[0][1].link}}
+        <i ng-click="markAsSeen(results[0][1].title)" id = "play" class="material-icons">play_circle_filled</i>
+        <br>
+        <h5> 
+          On 
+        </h5>
+        <div>
+          {{results[0][0].name}}
           <div>
-            <div>
-             <img src="{{ resource.thumbnail }}">
-              <h1>{{ resource.name }}</h1>
-            </div>
-            <div>
-              Info: {{ resource.feed.description }}
-            </div>
-            <br>
-          <div class='original'>url: {{resource.url}}</div>
-          <button ng-click="likeResource(resource.name); select(resource.name)"  class="btn btn-default btn-sm" >
-          <span class="glyphicon glyphicon-thumbs-up"></span> Like
-        </button>
-          <button ng-click="dislikeResource(resource.name); select(resource.name); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
-          <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
-        </button>
+          <button ng-click="likeResource(results[0][1].title); select(results[0][1].title)"  class="btn btn-default btn-sm" >
+            <span class="glyphicon glyphicon-thumbs-up"></span> Like
+          </button>
+            <button ng-click="dislikeResource(results[0][1].title); select(results[0][1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
+          </button>
+  
+           <button class="btn btn-default btn-sm" ng-click="next()">Next</button>
           </div>
-          <button ng-click="next()">Next</button>
-          <div ng-repeat="episode in resource.episodes | orderBy:parseDate track by $index">
-            Title: {{ episode.title }} 
-            <a ng-click="markAsSeen(resource.name)" href="{{episode.enclosure.link}}"><i id = "play" class="material-icons">play_circle_filled</i></a>
-          </div>
-          </div>
+        </div>
       </div>
     </div>
   </div>

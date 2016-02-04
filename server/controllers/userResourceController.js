@@ -6,7 +6,7 @@ module.exports = {
         console.log("in like server controller")
         console.log(req.body)
         var userLikes = req.body
-        db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_LIKED]->(r)", userLikes, function(err, query){
+        db.cypherQuery("MATCH (u:User {username:{username}}),(e:Episode {name:{ResourceName}}) MERGE (u)-[:HAS_LIKED]->(e)", userLikes, function(err, query){
             if(err){
                 res.sendStatus(404);
             } else{
@@ -16,7 +16,7 @@ module.exports = {
     },
     dislikeResource: function(req, res){
         var userDislikes = req.body
-        db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_DISLIKED]->(r)", userDislikes, function(err, query){
+        db.cypherQuery("MATCH (u:User {username:{username}}),(e:Episode {name:{ResourceName}}) MERGE (u)-[:HAS_DISLIKED]->(e)", userDislikes, function(err, query){
             if(err){
                 res.sendStatus(404);
             } else{
@@ -26,7 +26,7 @@ module.exports = {
     },
     markAsSeen: function(req, res){
         var userHasSeen = req.body
-        db.cypherQuery("MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_SEEN]->(r)", userHasSeen, function(err, query){
+        db.cypherQuery("MATCH (u:User {username:{username}}),(e:Episode {name:{ResourceName}}) MERGE (u)-[:HAS_SEEN]->(e)", userHasSeen, function(err, query){
             if(err){
                 res.sendStatus(404);
             } else{
