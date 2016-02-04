@@ -19,9 +19,14 @@ angular.module('enki.resource',[])
       var userpref = {
         'username' : username
       }
-      Podcasts.getRec(username).then(function (data) {
-         $scope.results = data
+      Podcasts.getPodcasts(username).then(function (data){
+        $scope.results = data;
       });
+      if(userpref) {
+        Podcasts.getRec(userpref).then(function (data) {
+           $scope.results = data;
+        });
+      }
     };
 
     $scope.toggle = function (item, list) {
