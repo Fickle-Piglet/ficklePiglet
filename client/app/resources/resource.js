@@ -3,7 +3,6 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
 .controller('resourceController', function($scope,Podcasts,UserResources) {
     $scope.selected = [];
     $scope.results = [];
-    // $scope.recommend = [];
     var user = JSON.parse(window.localStorage.getItem('com.fickle'));
     var username = user.username;
 
@@ -27,7 +26,6 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
         if(userpref) {
         Podcasts.getRec(userpref).then(function (data) {
            $scope.results = data;
-           // console.log("hey", data);
         });
       }
     };
