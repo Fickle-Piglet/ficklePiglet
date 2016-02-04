@@ -16,14 +16,13 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
     };
  
     $scope.next = function () {
+      var userpref = {
+        'username' : username
+      }
       Podcasts.getPodcasts(username).then(function (data){
-        console.log("we got the data back from the server")
         $scope.results = data;
       });
-        var userpref = {
-          'username' : username
-        }
-        if(userpref) {
+      if(userpref) {
         Podcasts.getRec(userpref).then(function (data) {
            $scope.results = data;
         });
