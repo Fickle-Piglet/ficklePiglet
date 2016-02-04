@@ -76,7 +76,7 @@ module.exports = {
     getRec: function(req, res) {
         var userInfo = req.body;
         console.log("userinfo",userInfo)
-        db.cypherQuery("MATCH (u: User {username: {username}})-[:HAS_LIKED]->(r: Resource)<-[:HAS_LIKED]-(y: User)-[:HAS_LIKED]->(s: Resource) WHERE not(u = y) and not (u -- s) RETURN distinct s AS name;", userInfo, function(err, query) {
+        db.cypherQuery("MATCH (u: User {username: {username}})-[:HAS_LIKED]->(r: Episode)<-[:HAS_LIKED]-(y: User)-[:HAS_LIKED]->(s: Episode) WHERE not(u = y) and not (u -- s) RETURN distinct s AS name;", userInfo, function(err, query) {
                 if (err) {
                     throw err;
                 }
