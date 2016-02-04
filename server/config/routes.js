@@ -38,7 +38,7 @@ module.exports = function(app, express){
     app.post('/likeResource', userResourceController.likeResource);
     app.post('/dislikeResource', userResourceController.dislikeResource);
     app.post('/resourceHistory', userResourceController.markAsSeen);
-    app.post
+    // app.post
     //Tags
     //Returns Array of Tag objects 
     //EX: [  { name: 'Business News', _id: 4030 },
@@ -48,6 +48,7 @@ module.exports = function(app, express){
     app.get('/user/:user', userController.getUser);
     app.get('/userlike/:user', userController.getLikes);
     app.get('/userDislike/:user', userController.getDislikes);
+    app.post('/getRec', resourceController.getRec);
 
     //Signup/Signin Stuff
     app.post("/signin", loginController.signin);

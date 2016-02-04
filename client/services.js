@@ -58,7 +58,6 @@ angular.module('fickle.services', [])
         data: userPref
       })
       .then(function (resp) {
-        console.log("response from podcasts",resp.data)
         return resp.data;
       });
       
@@ -67,11 +66,24 @@ angular.module('fickle.services', [])
         callback(resources, rec);
     }
 
+    var getRec = function (user) {
+      return $http({
+        method: 'POST',
+        url: '/getRec',
+        data : user
+      })
+      .then(function (resp) {
+        return resp.data;
+      });
+    };
+
+
     return {
       getTags: getTags,
       getPodcasts: getPodcasts,
       GetRec: GetRec,
-      setTags : setTags
+      setTags : setTags,
+      getRec: getRec
     };
 })
 .factory('User', function ($http, $location, $window) {

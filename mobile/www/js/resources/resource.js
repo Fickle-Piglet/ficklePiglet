@@ -16,7 +16,10 @@ angular.module('enki.resource',[])
     };
  
     $scope.next = function () {
-      Podcasts.getPodcasts(username).then(function (data) {
+      var userpref = {
+        'username' : username
+      }
+      Podcasts.getRec(username).then(function (data) {
          $scope.results = data
       });
     };

@@ -72,5 +72,21 @@ module.exports = {
             res.send(response.data);
         });
     },
+
+    getRec: function(req, res) {
+        var userInfo = req.body;
+        console.log("userinfo",userInfo)
+        db.cypherQuery("MATCH (u: User {username: {username}})-[:HAS_LIKED]->(r: Resource)<-[:HAS_LIKED]-(y: User)-[:HAS_LIKED]->(s: Resource) WHERE not(u = y) and not (u -- s) RETURN distinct s AS name;", userInfo, function(err, query) {
+                if (err) {
+                    throw err;
+                }
+                var getRandomInt = function(min, max) {
+                    return Math.floor(Math.random() * (max - min)) + min;
+                }
+                var int = getRandomInt(0, query.data.length)
+                console.log("getRec data",[query.data[int]])
+                res.send([query.data[int]]);
+            })
+    }
     
 };
