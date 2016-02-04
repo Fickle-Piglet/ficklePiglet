@@ -84,7 +84,7 @@ module.exports = {
                     return Math.floor(Math.random() * (max - min)) + min;
                 }
                 var int = getRandomInt(0, query.data.length)
-                console.log("getRec data",query.data)
+                console.log("getRec data",[query.data[int]])
                 res.send([query.data[int]]);
             })
     }
