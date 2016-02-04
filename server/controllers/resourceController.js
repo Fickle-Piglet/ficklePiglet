@@ -72,5 +72,17 @@ module.exports = {
             res.send(response.data);
         });
     },
+
+    getRec: function(req, res) {
+        var userInfo = req.body;
+        console.log("userinfo",userInfo)
+        db.cypherQuery("MATCH (u: User {username: {username}})-[:HAS_LIKED]->(r: Resource)<-[:HAS_LIKED]-(y: User)-[:HAS_LIKED]->(s: Resource) WHERE not(u = y) and not (u -- s) RETURN distinct s AS name;", userInfo, function(err, query) {
+                if (err) {
+                    throw err;
+                }
+                console.log("getRec data",query.data)
+                res.send(query.data);
+            })
+    }
     
 };
