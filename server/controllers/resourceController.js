@@ -80,8 +80,12 @@ module.exports = {
                 if (err) {
                     throw err;
                 }
+                var getRandomInt = function(min, max) {
+                    return Math.floor(Math.random() * (max - min)) + min;
+                }
+                var int = getRandomInt(0, query.data.length)
                 console.log("getRec data",query.data)
-                res.send(query.data);
+                res.send([query.data[int]]);
             })
     }
     
