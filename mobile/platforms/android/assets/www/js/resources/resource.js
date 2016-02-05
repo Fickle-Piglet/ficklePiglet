@@ -1,12 +1,13 @@
 angular.module('enki.resource',[])
 
-.controller('resourceController', function($scope,Podcasts,UserResources) {
+.controller('resourceController', function($scope, Podcasts, UserResources) {
     $scope.selected = [];
     $scope.results = [];
     var user = JSON.parse(window.localStorage.getItem('com.fickle'));
     var username = user.username;
 
     Podcasts.getPodcasts(username).then(function (data){
+      console.log(data)
       $scope.results = data;
     });
 
@@ -15,9 +16,17 @@ angular.module('enki.resource',[])
     };
  
     $scope.next = function () {
-      Podcasts.getPodcasts(username).then(function (data) {
-         $scope.results = data
+      var userpref = {
+        'username' : username
+      }
+      Podcasts.getPodcasts(username).then(function (data){
+        $scope.results = data;
       });
+      if(userpref) {
+        Podcasts.getRec(userpref).then(function (data) {
+           $scope.results = data;
+        });
+      }
     };
 
     $scope.toggle = function (item, list) {

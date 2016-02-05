@@ -7,6 +7,7 @@ angular.module('enki.resource',[])
     var username = user.username;
 
     Podcasts.getPodcasts(username).then(function (data){
+      console.log(data)
       $scope.results = data;
     });
 
@@ -15,9 +16,17 @@ angular.module('enki.resource',[])
     };
  
     $scope.next = function () {
-      Podcasts.getPodcasts(username).then(function (data) {
-         $scope.results = data
+      var userpref = {
+        'username' : username
+      }
+      Podcasts.getPodcasts(username).then(function (data){
+        $scope.results = data;
       });
+      if(userpref) {
+        Podcasts.getRec(userpref).then(function (data) {
+           $scope.results = data;
+        });
+      }
     };
 
     $scope.toggle = function (item, list) {
