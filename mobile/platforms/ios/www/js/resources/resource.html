@@ -1,20 +1,21 @@
 <ion-view>
   <ion-content>
     <ion-item ng-repeat="resource in results">
+      {{resource}}
       <ion-item>
-        Name: {{ resource.name }}
-        Info: {{ resource.feed.description }}
-        Url: {{ resource.url }}
         <a ng-click="likeResource(resource.name)" class="button button-icon icon ion-thumbsup"></a>
         <a ng-click="dislikeResource(resource.name)" class="button button-icon icon ion-thumbsdown"></a>
         <a ng-click="next()" class="button button-icon icon ion-skip-forward"></a>
+<!--         Name: {{ resource.name }}
+        Info: {{ resource.feed.description }}
+        Url: {{ resource.url }} -->
 
         <ion-item ng-repeat="episode in resource.episodes | orderBy:parseDate"
           ng-model="tag.checked" 
           ng-checked="tag.checked">
-          Title: {{ episode.title }}
           <a ng-click="markAsSeen(resource.name)" href="{{episode.enclosure.link}}" class="button button-icon icon ion-play"></a>
-        </ion-item>
+<!--           {{ episode.title }}
+ -->        </ion-item>
       <ion-item>  
     </ion-item>
   </ion-content>

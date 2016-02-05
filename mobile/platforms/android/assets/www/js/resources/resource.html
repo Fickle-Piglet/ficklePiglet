@@ -1,9 +1,27 @@
 <ion-view>
-<ion-content>
-<h1>Resource</h1>
-</ion-content>
+  <ion-content>
+    <ion-item ng-repeat="resource in results">
+      {{resource}}
+      <ion-item>
+        <a ng-click="likeResource(resource.name)" class="button button-icon icon ion-thumbsup"></a>
+        <a ng-click="dislikeResource(resource.name)" class="button button-icon icon ion-thumbsdown"></a>
+        <a ng-click="next()" class="button button-icon icon ion-skip-forward"></a>
+<!--         Name: {{ resource.name }}
+        Info: {{ resource.feed.description }}
+        Url: {{ resource.url }} -->
+
+        <ion-item ng-repeat="episode in resource.episodes | orderBy:parseDate"
+          ng-model="tag.checked" 
+          ng-checked="tag.checked">
+          <a ng-click="markAsSeen(resource.name)" href="{{episode.enclosure.link}}" class="button button-icon icon ion-play"></a>
+<!--           {{ episode.title }}
+ -->        </ion-item>
+      <ion-item>  
+    </ion-item>
+  </ion-content>
 </ion-view>
-<div class="md-padding checkboxdemoSyncing" ng-cloak="" style="min-height:270px" ng-app="fickle.resource">
+
+<!-- <div class="md-padding checkboxdemoSyncing" ng-cloak="" style="min-height:270px" ng-app="fickle.resource">
 
   <div layout="row" layout-wrap="">
     <div flex="100" flex-gt-sm="50" layout="column">
@@ -33,4 +51,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

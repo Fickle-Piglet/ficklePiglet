@@ -9,7 +9,8 @@ var enki = angular.module('enki', [
   'enki.user',
   'enki.search',
   'enki.resource',
-  'enki.services'
+  'enki.services',
+  'enki.elasticSearch'
   ])
 
 .run(function($ionicPlatform) {
@@ -72,6 +73,15 @@ enki.config(function($stateProvider, $urlRouterProvider){
       'tab-user': {
         templateUrl: "js/user/user.html",
         controller: 'userController'
+      }  
+    }
+  })
+  .state('tab.searchElastic', {
+    url: "/searchElastic",
+    views: {
+      'tab-searchElastic': {
+        templateUrl: "js/searchElastic/elastic.html",
+        controller: 'elasticController'
       }  
     }
   });

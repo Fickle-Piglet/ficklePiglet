@@ -1,7 +1,8 @@
 angular.module('enki.auth', [])
 
-.controller('AuthController', function ($scope, $http, $location, $window, Auth) {
+.controller('AuthController', function ($scope, $http, $location, $window, Auth, $state) {
   // login function to be called when input form submitted
+  $scope.user = {};
   $scope.signin = function (user) {
       $scope.error = '';
       if(!user) {
@@ -16,7 +17,8 @@ angular.module('enki.auth', [])
           // setting that information in local storage
           // should be refactored to use jwt at some point
           window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
-          $location.path('/search');
+          // $location.path('/search');
+          $state.go('tab.search');
         })
         .catch(function (error) {
           console.error(error);
@@ -25,7 +27,7 @@ angular.module('enki.auth', [])
 
   // sign up function to be called when input form submitted
   $scope.signup = function () {
-    // console.log($scope.user)
+    clearFields();
     $scope.signUpError = '';
     Auth.signup(JSON.stringify($scope.user))
     .then(function(message){
@@ -33,9 +35,16 @@ angular.module('enki.auth', [])
         alert("You already have an account. Please login.");
       } else {
         window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
-        $location.path('/search');
+        // $location.path('/search');
+        $state.go('tab.search');
       }
     });
+  };
+
+  var clearFields = function () {
+    for (var prop in $scope.user) {
+      $scope.user[prop] = "";
+    }
   };
 
 });
