@@ -65,7 +65,7 @@ module.exports = {
                         throw err;
                     }
                     userPreferences.keywords = result.data;
-                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(r:Resource) WITH collect(distinct r) as seenresources MATCH (resources:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN {keywords} AND NOT resources IN seenresources return resources;",
+                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(r:Resource) WITH collect(distinct r) as seenresources MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT resources IN seenresources return resources,e;",
                         userPreferences,
                         function(err, query) {
                             //Randomizer function
@@ -80,7 +80,7 @@ module.exports = {
             } else {
                 console.log("NAME OF TAG: ", userPreferences.resource.text);
                 userPreferences.keywords = [userPreferences.resource.text];
-                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(r:Resource) WITH collect(distinct r) as seenresources MATCH (resources:Resource)-[:TAGGED]-(t:Tag) WHERE t.name IN {keywords} AND NOT resources IN seenresources return resources;",
+                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(r:Resource) WITH collect(distinct r) as seenresources MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT resources IN seenresources return resources,e;",
                     userPreferences,
                     function(err, query) {
                         //Randomizer function
