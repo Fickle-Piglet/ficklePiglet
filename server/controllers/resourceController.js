@@ -112,6 +112,6 @@ module.exports = {
 //     query.data[int].episodes = JSON.parse(body).items
 //     //TODO: Need to review redirect parser. Code for redirect url moved to redirectURL.js
 
-//     res.send([query.data[int]]);
+//     res.send([query.data[int]])
 
 // })
