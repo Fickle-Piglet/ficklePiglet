@@ -34,3 +34,6 @@ node_modules
 
 # Ignores WebStorm
 .idea
+
+# Ignore build files for xcode
+mobile/platforms
