@@ -71,7 +71,7 @@ function addDocument(document) {
             suggest: {
                 input: document.name.split(" "),
                 output: document.name,
-                payload: document.metadata || {}
+                payload: {url: document.url}
             }
         }
     });
