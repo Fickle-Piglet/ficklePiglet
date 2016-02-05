@@ -21,9 +21,9 @@ require('../server/config/routes.js')(app, express);
 
 
 //setTimeout(function(){
-//        scraper.readAllFiles();
+//        //scraper.readAllFiles();
 //        scraper.tester()
-//}, 10000)
+//}, 1000)
 
 
 
