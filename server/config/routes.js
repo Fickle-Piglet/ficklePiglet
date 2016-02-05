@@ -23,6 +23,9 @@ module.exports = function(app, express){
 
 
 
+    //Insert Episode into Database
+    app.post("/insertEp", resourceController.insertEpisode);
+
     //Edit episodes
     app.post("/editEp", resourceController.editEpisode);
 
@@ -38,7 +41,7 @@ module.exports = function(app, express){
     app.post('/likeResource', userResourceController.likeResource);
     app.post('/dislikeResource', userResourceController.dislikeResource);
     app.post('/resourceHistory', userResourceController.markAsSeen);
-    // app.post
+
     //Tags
     //Returns Array of Tag objects 
     //EX: [  { name: 'Business News', _id: 4030 },

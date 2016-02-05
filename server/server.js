@@ -20,10 +20,10 @@ require('../server/config/routes.js')(app, express);
 //scraper.getAllPodcast("podcasts.txt")
 
 
-// setTimeout(function(){
-//        scraper.readAllFiles();
+//setTimeout(function(){
+//        //scraper.readAllFiles();
 //        scraper.tester()
-// }, 10000)
+//}, 1000)
 
 
 

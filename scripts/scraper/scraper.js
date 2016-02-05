@@ -29,7 +29,7 @@ module.exports = {
                         target.thumbnail = body.results[i].artworkUrl100
                         target.feedUrl = body.results[i].feedUrl
                 fs.appendFile('../scripts/scraper/files/allocation.txt', JSON.stringify(target) + "\n", function(err){
-                    if (err) throw err;
+                    if (err) console.log(err);
                     console.log("uploaded: ", target.name);
                 })
             }
@@ -62,32 +62,14 @@ module.exports = {
     },
     tester: function(counter){
         var counter = counter || 0;
-        var listLength = null;
+        console.log("COUNTER: ",counter);
         setTimeout(function(){
             var list = fs.readFileSync("../scripts/scraper/files/allocation.txt", "utf8").toString().split("\n");
-            listLength = listLength || list.length-1
             var item = JSON.parse(list[counter])
-            insertEp.insertEpisodes(item.feedUrl, function(eps){
-                if(eps.length > 0){
-                    //console.log("NAME:",item.name)
-                    //console.log("EPISODES: >>>",eps)
-                    request({
-                        method: "POST",
-                        url: "http://localhost:5050/editEp",
-                        json: {
-                            name: item.name,
-                            episodes: eps
-                        }
-                    }, function(err, res, body){
-                        //if(err) console.log("ERROR: ",err)
-                    })
-
-
-                }
-            })
+            insertEp.insertEpisodes(item.feedUrl)
             counter++
             module.exports.tester(counter);
-        }, 20000)
+        }, 180000)
     }
 
 };

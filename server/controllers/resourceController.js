@@ -5,16 +5,36 @@ var request = require("request");
 module.exports = {
     //Query to insert all Resources with accompanying Tags into the database
     insertResource: function(req, res) {
+        var name = req.body.name.replace(/'/g, "*");
+        var tags = req.body.genre
+        var url = req.body.url
+        var thumbnail = req.body.thumbnail
+        var feedUrl = req.body.feedUrl
+        var episodes = req.body.episodes
+        db.cypherQuery("MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"', feedUrl:'"+feedUrl+"', episodes:'"+episodes+"'}) MERGE (t:Tag {name:'"+tags+"'}) MERGE (r:Resource {name:'"+name+"', url:'"+url+"', thumbnail:'"+thumbnail+"', feedUrl:'"+feedUrl+"'})-[:TAGGED]-(t:Tag {name:'"+tags+"'})", function(err, res){
+        })
+    },
+    insertEpisode : function(req, res){
         //console.log(">>>>>>>>>>>>>>REQ", req.body)
-        var name = req.body.name;
-        var tags = req.body.genre;
-        var url = req.body.url;
-        var thumbnail = req.body.thumbnail;
-        var feedUrl = req.body.feedUrl;
-        var episodes = req.body.episodes;
-        // TODO: Query is Commented out becasue it will run on server startup. Need to rework query
-        db.cypherQuery("MERGE (r:Resource {name:'" + name + "', url:'" + url + "', thumbnail:'" + thumbnail + "', feedUrl:'" + feedUrl + "', episodes:'" + episodes + "'}) MERGE (t:Tag {name:'" + tags + "'}) MERGE (r:Resource {name:'" + name + "', url:'" + url + "', thumbnail:'" + thumbnail + "', feedUrl:'" + feedUrl + "'})-[:TAGGED]-(t:Tag {name:'" + tags + "'})", function(err, res) {});
-
+        var pubDate = req.body.pubDate
+        var title = req.body.title.replace(/'/g, "*");
+        var link = req.body.link
+        var resource = req.body.feed.title.replace(/'/g, "*")
+        var feed = req.body.feed
+        // TODO: Modify CypherQuery for inserting episode as a node into db
+        //"MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_LIKED]->(r)"
+        console.log(">>>> $ $ $ $ $ Episode :"+title+", Resource:'"+resource+"' $ $ $ $ $ <<<<)")
+        db.cypherQuery("MERGE (e:Episode {title:'"+title+"', link:'"+link+"', pubDate:'"+pubDate+"'})", function(err, res){
+            if(err){
+                console.log("* * * * * E R R O R * * * * *:", err)
+            }
+        })
+        db.cypherQuery("Match (e:Episode {title:'"+title+"'}) Match (r:Resource {name:'"+resource+"'}) MERGE (e)-[:EPISODE_OF]->(r)", function(err, res){
+            if(err){
+                console.log("* * * * * E R R O R * * * * *:", err)
+            }
+        })
+        res.send(200)
     },
 
     editEpisode: function(req, res) {
@@ -96,7 +116,13 @@ module.exports = {
                 console.log("getRec data",[query.data[int]]);
                 res.send([query.data[int]]);
             });
+    },
+    getTags: function(req, res){
+        db.cypherQuery("Match (n:Tag) Return n", function(err, response){
+            res.send(response.data);
+        });
     }
+
 
 };
 //Old RSS Stuff that used to be in getResource
@@ -114,4 +140,6 @@ module.exports = {
 
 //     res.send([query.data[int]])
 
+
 // })
+
