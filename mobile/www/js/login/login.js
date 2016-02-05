@@ -18,7 +18,7 @@ angular.module('enki.auth', [])
           // should be refactored to use jwt at some point
           window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
           // $location.path('/search');
-          $state.go('tab.search');
+          $state.go('tab.searchElastic');
         })
         .catch(function (error) {
           console.error(error);
@@ -36,7 +36,7 @@ angular.module('enki.auth', [])
       } else {
         window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
         // $location.path('/search');
-        $state.go('tab.search');
+        $state.go('tab.searchElastic');
       }
     });
   };
