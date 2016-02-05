@@ -46,5 +46,9 @@ angular.module('enki.auth', [])
       $scope.user[prop] = "";
     }
   };
-
+  $scope.register = function() {
+    
+    $state.go('signup');
+    console.log("Registration Page");
+  };
 });

@@ -1,4 +1,4 @@
-var db = require("../db/db.js")
+var db = require("../db/db.js");
 // db.create()
 
 module.exports = {
@@ -11,10 +11,10 @@ module.exports = {
           // console.log(result.data)
           res.send(result.data);
         }
-       })
+       });
     },
     signup: function(req, res){
-      var userInfo = req.body
+      var userInfo = req.body;
       db.cypherQuery("MATCH (n:User) WHERE n.firstname={firstname} and n.lastname={lastname} and n.username={name} and n.email={email} and n.password={pword} return n", userInfo , function(err, result){
             if(err) {
               res.sendStatus(404).json(err);
