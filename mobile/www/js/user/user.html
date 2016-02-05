@@ -1,5 +1,58 @@
 <ion-view>
 <ion-content>
+    <!--TODO: WORK ON THIS SHIT JOSH-->
+    <!-------------- PLAYER STUFF ------------>
+    <div id="trackOne" style="padding-top: 60px;"><img src="../../img/332.gif" id="loading"></div>
+    <script src="wavesurfer.min.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script>
+        $(document).ready(function(){
+            $("#play").hide()
+            $("#pause").hide()
+            $("#rewind").hide()
+            $("#forward").hide()
+        })
+        $("#forward").on("click", function(){
+            wavesurfer.skipForward()
+        })
+        $("#rewind").on("click", function(){
+            wavesurfer.skipBackward()
+        })
+        $("#play").on("click", function(){
+            wavesurfer.play();
+            $("#play").hide()
+            $("#pause").show()
+        })
+
+        $("#pause").on("click", function(){
+            wavesurfer.pause();
+            $("#play").show()
+            $("#pause").hide()
+        })
+        var wavesurfer = WaveSurfer.create({
+            container: document.querySelector('#trackOne'),
+            waveColor: 'grey',
+            skipLength: 5,
+            progressColor: 'black'
+        });
+
+
+        wavesurfer.on('ready', function () {
+            wavesurfer.play();
+            $("#rewind").show()
+            $("#forward").show()
+            $("#pause").show()
+            $("#loading").hide()
+        });
+
+        wavesurfer.load('http://www.stephaniequinn.com/Music/Allegro%20from%20Duet%20in%20C%20Major.mp3');
+    </script>
+    <div id="playerButtons" style="padding-left: 140px;">
+        <button style="width: 30px; height: 30px; border-radius: 20px " id="rewind" class="ion-reply" style="text-align:center"></button>
+        <button style="width: 30px; height: 30px; border-radius: 20px" id="play" class="ion-play"></button>
+        <button style="width: 30px; height: 30px; border-radius: 20px" id="pause" class="ion-pause"></button>
+        <button style="width: 30px; height: 30px; border-radius: 20px" class="ion-forward" id="forward"></button>
+    </div>
 <ion-toggle ng-model="shouldShowDelete">
   Edit
 </ion-toggle>
@@ -14,5 +67,19 @@
 </ion-list>
 </ion-content>
 </ion-view>
+
+
+<ion-content>
+
+
+<!----------- END OF PLAYER STUFF -------->
+  <h2>Likes</h2>
+  <div class="list" collection-repeat="likes in likedResources">
+    <div class="item item-thumbnail-left" href="#">
+      <img src="{{ likes.thumbnail }}">
+      <h2> {{ likes.name }} </h2>
+      <a ng-href="{{likes.url}}"> {{ likes.url }} </a>
+    </div>
+  </div>
 
 

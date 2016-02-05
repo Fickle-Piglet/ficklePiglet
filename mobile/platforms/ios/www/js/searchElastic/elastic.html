@@ -1,0 +1,12 @@
+<ion-view>
+  <ion-content class='has-header'>
+    <label>
+    <input type="text" class="form-control" ng-model="myModel.searchString" placeholder='Search: e.g. "Javascript Jabber" or "This American life"' ng-change="search()"/>
+    </label>
+    <div ng-repeat="resource in results">
+    <a ng-click='sendTags(resource)'>{{resource.text}}</a>
+    </div>
+  </ion-content>
+</ion-view>
+
+
