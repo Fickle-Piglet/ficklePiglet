@@ -1,54 +1,59 @@
 <ion-view>
   <ion-content>
-    <ion-item ng-repeat="resource in results">
-      {{resource}}
-      <ion-item>
-        <a ng-click="likeResource(resource.name)" class="button button-icon icon ion-thumbsup"></a>
-        <a ng-click="dislikeResource(resource.name)" class="button button-icon icon ion-thumbsdown"></a>
-        <a ng-click="next()" class="button button-icon icon ion-skip-forward"></a>
-<!--         Name: {{ resource.name }}
-        Info: {{ resource.feed.description }}
-        Url: {{ resource.url }} -->
-
-        <ion-item ng-repeat="episode in resource.episodes | orderBy:parseDate"
-          ng-model="tag.checked" 
-          ng-checked="tag.checked">
-          <a ng-click="markAsSeen(resource.name)" href="{{episode.enclosure.link}}" class="button button-icon icon ion-play"></a>
-<!--           {{ episode.title }}
- -->        </ion-item>
-      <ion-item>  
-    </ion-item>
-  </ion-content>
-</ion-view>
-
-<!-- <div class="md-padding checkboxdemoSyncing" ng-cloak="" style="min-height:270px" ng-app="fickle.resource">
-
-  <div layout="row" layout-wrap="">
-    <div flex="100" flex-gt-sm="50" layout="column">
-      <div layout="row" layout-wrap="" flex="">
-        <div flex="50" ng-repeat="resource in results">
-          <div>
-            <div>
-             <img src="{{ resource.thumbnail }}">
-              <h1>{{ resource.name }}</h1>
-            </div>
-            <div>
-              Info: {{ resource.feed.description }}
-            </div>
-            <br>
-          <div class='original'>url: {{resource.url}}</div>
-          <i ng-click="likeResource(resource.name)"class="material-icons">thumb_up</i>
-          <i ng-click="dislikeResource(resource.name)" class="material-icons">thumb_down</i>
-          </div>
-          <button ng-click="next()">Next</button>
-          <div ng-repeat="episode in resource.episodes | orderBy:parseDate">
-            Title: {{ episode.title }} <br>
-            <a ng-click="markAsSeen(resource.name)" href="{{episode.enclosure.link}}"><button>Play Episode</button></a>
-          </div>
-          </div>
-
-
+  <div class="card row responsive-sm">
+    <div class="col item item-divider">
+      <div class="col item item-avatar">
+        <h2>{{results[0][1].title}}</h2>
+        <p>On {{results[0][0].name}}</p>
       </div>
     </div>
+    <div class="col item item-text-wrap">
+      <a class="col item item-icon-left assertive" href="#">
+        <div class="col item item-image">
+          <img src="{{results[0][0].thumbnail}}">
+        </div>
+        Url: {{results[0][1].link}}
+        Start listening
+      </a>
+    </div>
+    <div class="item item-divider">
+      <button ng-click="likeResource(results[0][1].title); select(results[0][1].title)"  class="btn btn-default btn-sm" >
+        <span class="glyphicon glyphicon-thumbs-up"></span> Like
+      </button>
+        <button ng-click="dislikeResource(results[0][1].title); select(results[0][1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
+        <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
+      </button>
+      
+       <button class="btn btn-default btn-sm" ng-click="next()">Next</button>
+    </div>
   </div>
+<!-- <div class="list card">
+
+  <div class="item item-avatar">
+    <h2>{{results[0][1].title}}</h2>
+    <p>On {{results[0][0].name}}</p>
+  </div>
+
+  <div class="item item-image">
+    <img src="{{results[0][0].thumbnail}}">
+  </div>
+
+  <a class="item item-icon-left assertive" href="#">
+    <i class="icon ion-music-note"></i>
+    Url: {{results[0][1].link}}
+    Start listening
+  </a>
+
+  <button ng-click="likeResource(results[0][1].title); select(results[0][1].title)"  class="btn btn-default btn-sm" >
+    <span class="glyphicon glyphicon-thumbs-up"></span> Like
+  </button>
+    <button ng-click="dislikeResource(results[0][1].title); select(results[0][1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
+    <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
+  </button>
+  
+   <button class="btn btn-default btn-sm" ng-click="next()">Next</button>
+
 </div> -->
+
+  </ion-view>
+</ion-content>

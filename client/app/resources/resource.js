@@ -76,10 +76,11 @@ angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
     }
 
     $scope.markAsSeen = function(resource){
-      console.log(resource)
+      var currentDate = new Date().toJSON().slice(0,10)
       var userHasSeen = {
         'username' : username,
-        'ResourceName' : resource
+        'ResourceName' : resource,
+        'currentDate' : currentDate
       }
       UserResources.markAsSeen(userHasSeen)
       .then(function(message){
