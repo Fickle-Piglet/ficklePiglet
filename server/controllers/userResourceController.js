@@ -26,7 +26,7 @@ module.exports = {
     },
     markAsSeen: function(req, res){
         var userHasSeen = req.body
-        db.cypherQuery("MATCH (u:User {username:{username}}),(e:Episode {title:{ResourceName}}) MERGE (u)-[:HAS_SEEN]->(e)", userHasSeen, function(err, query){
+        db.cypherQuery("MATCH (u:User {username:{username}}),(e:Episode {title:{ResourceName}}) MERGE (u)-[:HAS_SEEN {currentDate : {currentDate}}]->(e)", userHasSeen, function(err, query){
             if(err){
                 res.sendStatus(404);
             } else{
