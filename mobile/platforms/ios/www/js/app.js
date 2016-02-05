@@ -41,7 +41,7 @@ enki.config(function($stateProvider, $urlRouterProvider){
       templateUrl: 'templates/tabs.html'
   })
     .state('tab.login', {
-    url: '/login',
+    url: '/loginold',
     views: {
       'tab-login': {
         templateUrl: 'js/login/login.html',
@@ -84,7 +84,21 @@ enki.config(function($stateProvider, $urlRouterProvider){
         controller: 'elasticController'
       }  
     }
+  })
+  .state('login', {
+      url: '/login',
+      templateUrl: 'templates/login.html',
+      controller: 'AuthController'
+  })
+  .state('signup', {
+    url: "/signup",
+    // views: {
+    //   'login-signup': {
+        templateUrl: "templates/signup.html",
+        controller: "AuthController"
+    //   }
+    // }
   });
   
-  $urlRouterProvider.otherwise('/tab/login');
+  $urlRouterProvider.otherwise('/login');
 });

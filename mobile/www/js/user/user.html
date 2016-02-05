@@ -1,23 +1,7 @@
 <ion-view>
 <ion-content>
-<ion-toggle ng-model="shouldShowDelete">
-  Edit
-</ion-toggle>
-<ion-list show-delete="shouldShowDelete">
-  <ion-item collection-repeat="item in likedResources">
-    <ion-delete-button class="ion-minus-circled"></ion-delete-button>
-    <div class="item item-avatar">
-       <img src="{{item.thumbnail}}">
-       <h3>{{item.name}}</h3>
-    </div>
-  </ion-item>
-</ion-list>
-</ion-content>
-</ion-view>
-
-<ion-content>
     <!--TODO: WORK ON THIS SHIT JOSH-->
-<!-------------- PLAYER STUFF ------------>
+    <!-------------- PLAYER STUFF ------------>
     <div id="trackOne" style="padding-top: 60px;"><img src="../../img/332.gif" id="loading"></div>
     <script src="wavesurfer.min.js"></script>
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -69,6 +53,24 @@
         <button style="width: 30px; height: 30px; border-radius: 20px" id="pause" class="ion-pause"></button>
         <button style="width: 30px; height: 30px; border-radius: 20px" class="ion-forward" id="forward"></button>
     </div>
+<ion-toggle ng-model="shouldShowDelete">
+  Edit
+</ion-toggle>
+<ion-list show-delete="shouldShowDelete">
+  <ion-item collection-repeat="item in likedResources">
+    <ion-delete-button class="ion-minus-circled"></ion-delete-button>
+    <div class="item item-avatar">
+       <img src="{{item.thumbnail}}">
+       <h3>{{item.name}}</h3>
+    </div>
+  </ion-item>
+</ion-list>
+</ion-content>
+</ion-view>
+
+
+<ion-content>
+
 
 <!----------- END OF PLAYER STUFF -------->
   <h2>Likes</h2>

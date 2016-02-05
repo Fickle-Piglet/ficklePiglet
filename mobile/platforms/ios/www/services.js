@@ -47,17 +47,17 @@ angular.module('enki.services', [])
 
     var getPodcasts = function (user) {
 
-      var userPref ={
+      var userPref = {
         username : user,
-        podcastName : rec
-      } 
+        resource : rec
+      };
       return $http({
         method: 'POST',
         url: 'http://localhost:5050/getResource',
         data: userPref
       })
       .then(function (resp) {
-        console.log("response to esearch",resp.data)
+        console.log("response to esearch",resp.data);
         return resp.data;
       });
       
@@ -175,5 +175,5 @@ angular.module('enki.services', [])
     
     return {
       searchPodcasts : searchPodcasts
-    }
+    };
 });
