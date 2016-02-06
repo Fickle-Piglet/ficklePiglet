@@ -34,3 +34,5 @@ node_modules
 
 # Ignores WebStorm
 .idea
+
+mobile/platforms
