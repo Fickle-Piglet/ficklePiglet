@@ -8,7 +8,15 @@ angular.module('enki.resource',[])
 
     function getPods (){
       var queue = JSON.parse(window.localStorage.getItem('podcastQueue'));
-      if (queue.length > 0) {
+      console.log("queue",queue);
+      if(queue === null || !queue.length > 0) {
+        Podcasts.getPodcasts(username).then(function (data){
+          console.log(data);
+          $scope.results = data[0];
+          data.shift()
+          window.localStorage.setItem('podcastQueue', JSON.stringify(data));
+        });  
+      } else if (queue.length > 0) {
         $scope.results = queue[0];
         console.log(queue)
         console.log(queue[0])
@@ -16,13 +24,6 @@ angular.module('enki.resource',[])
         queue.shift();
         console.log(queue);
         window.localStorage.setItem('podcastQueue', JSON.stringify(queue))
-      } else {
-        Podcasts.getPodcasts(username).then(function (data){
-          console.log(data);
-          $scope.results = data[0];
-          data.shift()
-          window.localStorage.setItem('podcastQueue', JSON.stringify(data));
-        });
       }
     }
     

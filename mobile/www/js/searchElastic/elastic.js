@@ -22,3 +22,4 @@ angular.module('enki.elasticSearch', [])
         $state.go('tab.resource');
       };
 
+})
