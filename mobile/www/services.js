@@ -129,6 +129,16 @@ angular.module('enki.services', [])
 })
 .factory('UserResources', function ($http, $location, $window) {
 
+    var removeRelationship = function(userPref){
+      return $http({
+        method: 'POST',
+        url: 'http://localhost:5050/removeRelationship',
+        data: userPref
+      })
+      .then(function (resp) {
+        return resp.status;
+      });
+    };
     var likeResource = function (userPref) {
       return $http({
         method: 'POST',
@@ -164,7 +174,8 @@ angular.module('enki.services', [])
     return {
       likeResource: likeResource,
       dislikeResource: dislikeResource,
-      markAsSeen : markAsSeen
+      markAsSeen : markAsSeen,
+      removeRelationship: removeRelationship
     };
 })
 .factory('Search', function($http) {

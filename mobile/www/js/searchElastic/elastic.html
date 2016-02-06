@@ -11,7 +11,7 @@
     <div ng-repeat="resource in results">
       <div class="item item-button-right">
         {{ resource.text }}
-        <button class="button button-royal">
+        <button ng-click="sendTags(resource)" class="button button-royal">
           <i class="icon ion-search"></i>
         </button>
       </div>

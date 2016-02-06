@@ -33,5 +33,18 @@ module.exports = {
                 res.sendStatus(200);
             }
         });
+    },
+    removeRelationship: function(req, res){
+        var userPref = req.body;
+        console.log("Final Server Controller: ",userPref);
+        db.cypherQuery("MATCH (u:User {username:{username}})-[n]-(e:Resource {name:{ResourceName}}) DELETE n", userPref, function(err, query){
+            if(err){
+                console.log(err);
+                res.sendStatus(404);
+            } else{
+                res.sendStatus(200);
+            }
+        });
     }
+
 };
