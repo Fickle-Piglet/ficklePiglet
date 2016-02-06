@@ -40,24 +40,6 @@ enki.config(function($stateProvider, $urlRouterProvider){
       abstract: true,
       templateUrl: 'templates/tabs.html'
   })
-    .state('tab.login', {
-    url: '/loginold',
-    views: {
-      'tab-login': {
-        templateUrl: 'js/login/login.html',
-        controller: 'AuthController'
-      }
-    }
-  })
-    .state('tab.search', {
-    url: "/search",
-    views: {
-      'tab-search': {
-        templateUrl: "js/Search/search.html",
-        controller: 'searchController'
-      }
-    }
-  })
    .state('tab.resource', {
     url: '/resource',
     views: {

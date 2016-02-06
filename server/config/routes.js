@@ -41,7 +41,8 @@ module.exports = function(app, express){
     app.post('/likeResource', userResourceController.likeResource);
     app.post('/dislikeResource', userResourceController.dislikeResource);
     app.post('/resourceHistory', userResourceController.markAsSeen);
-
+    
+    app.post('/removeRelationship', userResourceController.removeRelationship);
     //Tags
     //Returns Array of Tag objects 
     //EX: [  { name: 'Business News', _id: 4030 },
