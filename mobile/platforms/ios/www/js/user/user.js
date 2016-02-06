@@ -9,13 +9,11 @@ angular.module('enki.user',[])
   .then(function (user) {
   });
 
-	  User.getLikes($window.localStorage.getItem('com.fickle')).then(function(res) {
-	    $scope.likedResources = res;
-	    console.log("hey", res);
+	User.getLikes($window.localStorage.getItem('com.fickle')).then(function(data) {
+	 $scope.likedResources = data;
 	  });
 
   User.getDislike($window.localStorage.getItem('com.fickle')).then(function(data){
     $scope.dislikedResources = data;
-    console.log("dislike", data);
   })
 });

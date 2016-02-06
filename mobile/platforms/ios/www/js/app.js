@@ -9,7 +9,8 @@ var enki = angular.module('enki', [
   'enki.user',
   'enki.search',
   'enki.resource',
-  'enki.services'
+  'enki.services',
+  'enki.elasticSearch'
   ])
 
 .run(function($ionicPlatform) {
@@ -40,7 +41,7 @@ enki.config(function($stateProvider, $urlRouterProvider){
       templateUrl: 'templates/tabs.html'
   })
     .state('tab.login', {
-    url: '/login',
+    url: '/loginold',
     views: {
       'tab-login': {
         templateUrl: 'js/login/login.html',
@@ -74,7 +75,30 @@ enki.config(function($stateProvider, $urlRouterProvider){
         controller: 'userController'
       }  
     }
+  })
+  .state('tab.searchElastic', {
+    url: "/searchElastic",
+    views: {
+      'tab-searchElastic': {
+        templateUrl: "js/searchElastic/elastic.html",
+        controller: 'elasticController'
+      }  
+    }
+  })
+  .state('login', {
+      url: '/login',
+      templateUrl: 'templates/login.html',
+      controller: 'AuthController'
+  })
+  .state('signup', {
+    url: "/signup",
+    // views: {
+    //   'login-signup': {
+        templateUrl: "templates/signup.html",
+        controller: "AuthController"
+    //   }
+    // }
   });
   
-  $urlRouterProvider.otherwise('/tab/login');
+  $urlRouterProvider.otherwise('/login');
 });
