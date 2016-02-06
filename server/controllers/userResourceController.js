@@ -6,7 +6,7 @@ module.exports = {
         console.log("in like server controller")
         console.log(req.body)
         var userLikes = req.body
-        db.cypherQuery("MATCH (u:User {username:{username}}),(e:Episode {title:{ResourceName}}), (r: Resource {name: {ResourceName}}) MERGE (r)<-[:HAS_LIKED]-(u)-[:HAS_LIKED]->(e)-[:EPISODE_OF]->(r) UNION ALL (u)-[:HAS_LIKED]-(r)", userLikes, function(err, query){
+        db.cypherQuery("MATCH (u:User {username:{username}}),(e:Episode {title:{ResourceName}}), (r: Resource {name: {ResourceName}}) MERGE (r)<-[:HAS_LIKED]-(u)-[:HAS_LIKED]->(e)-[:EPISODE_OF]->(r), MERGE (u)-[:HAS_LIKED]-(r)", userLikes, function(err, query){
             if(err){
                 res.sendStatus(404);
             } else{
