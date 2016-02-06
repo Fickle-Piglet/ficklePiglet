@@ -60,37 +60,41 @@ module.exports = {
             // Is it a tag or show? 
             if (userPreferences.resource.payload.url) {
                 console.log("NAME OF SHOW: ", userPreferences.resource.text);
-                db.cypherQuery("MATCH (resources:Resource { name: {text}})-[:TAGGED]-(t:Tag) return t.name", userPreferences.resource, function(err, result) {
+                db.cypherQuery("MATCH (resources:Resource { name: {text}})-[:TAGGED]-(t:Tag) WHERE not t.name = 'Podcasts' return t.name", userPreferences.resource, function(err, result) {
                     //keywords is an array of tags
                     if (err) {
                         throw err;
                     }
+                    console.log("GETTING THE TAGS FOR SHOW",result.data)
                     userPreferences.keywords = result.data;
-                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(r:Resource) WITH collect(distinct r) as seenresources MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT resources IN seenresources return resources,e;",
+                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes return resources,e limit 5;",
                         userPreferences,
                         function(err, query) {
-                            //Randomizer function
-                            var getRandomInt = function(min, max) {
-                                return Math.floor(Math.random() * (max - min)) + min;
-                            };
-                            var int = getRandomInt(0, query.data.length);
-                            console.log("RESULTSSS>>>>>>>>>>>>>>>>>", query.data[int]);
-                            res.send([query.data[int]]);
+                            console.log(err)
+                            // Randomizer function
+                            // var getRandomInt = function(min, max) {
+                            //     return Math.floor(Math.random() * (max - min)) + min;
+                            // };
+                            // var int = getRandomInt(0, query.data.length);
+                            // var results = query.data.slice(0,4);
+                            console.log("RESULTSSS>>>>>>>>>>>>>>>>>", query.data);
+                            res.send(query.data);
                         });
                 });
             } else {
                 console.log("NAME OF TAG: ", userPreferences.resource.text);
                 userPreferences.keywords = [userPreferences.resource.text];
-                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(r:Resource) WITH collect(distinct r) as seenresources MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT resources IN seenresources return resources,e;",
+                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes return resources,e limit 5;",
                     userPreferences,
                     function(err, query) {
                         //Randomizer function
-                        var getRandomInt = function(min, max) {
-                            return Math.floor(Math.random() * (max - min)) + min;
-                        };
-                        var int = getRandomInt(0, query.data.length);
-                        console.log("RESULTSSS>>>>>>>>>>>>>>>>>", query.data[int]);
-                        res.send([query.data[int]]);
+                        // var getRandomInt = function(min, max) {
+                        //     return Math.floor(Math.random() * (max - min)) + min;
+                        // };
+                        // var int = getRandomInt(0, query.data.length);
+                        // console.log("RESULTSSS>>>>>>>>>>>>>>>>>", query.data[int]);
+                        // var results = query.data.slice(0,4);
+                        res.send(query.data);
                     });
             }
             //userPreferences.resource.isShow 
