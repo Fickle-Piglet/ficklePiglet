@@ -51,6 +51,11 @@ angular.module('enki.services', [])
         username : user,
         resource : rec
       };
+
+      if(userPref.resource.length === 0){
+        userPref.resource = JSON.parse(window.localStorage.getItem('selected'));
+      }
+      
       return $http({
         method: 'POST',
         url: 'http://localhost:5050/getResource',

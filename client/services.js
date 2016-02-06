@@ -52,12 +52,17 @@ angular.module('fickle.services', [])
         resource : rec
       } 
 
+      if(userPref.resource.length === 0){
+        userPref.resource = JSON.parse(window.localStorage.getItem('selected'));
+      }
+      console.log("rec in services", userPref.resource)
       return $http({
         method: 'POST',
         url: '/getResource',
         data: userPref
       })
       .then(function (resp) {
+        console.log("in controller",resp.data);
         return resp.data;
       });
       

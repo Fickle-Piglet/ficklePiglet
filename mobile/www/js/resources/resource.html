@@ -3,24 +3,24 @@
   <div class="card row responsive-sm">
     <div class="col item item-divider">
       <div class="col item item-avatar">
-        <h2>{{results[0][1].title}}</h2>
-        <p>On {{results[0][0].name}}</p>
+        <h2>{{results[1].title}}</h2>
+        <p>On {{results[0].name}}</p>
       </div>
     </div>
     <div class="col item item-text-wrap">
       <a class="col item item-icon-left assertive" href="#">
         <div class="col item item-image">
-          <img src="{{results[0][0].thumbnail}}">
+          <img src="{{results[0].thumbnail}}">
         </div>
-        Url: {{results[0][1].link}}
+        Url: {{results[1].link}}
         Start listening
       </a>
     </div>
     <div class="item item-divider">
-      <button ng-click="likeResource(results[0][1].title); select(results[0][1].title)"  class="btn btn-default btn-sm" >
+      <button ng-click="likeResource(results[1].title); select(results[1].title)"  class="btn btn-default btn-sm" >
         <span class="glyphicon glyphicon-thumbs-up"></span> Like
       </button>
-        <button ng-click="dislikeResource(results[0][1].title); select(results[0][1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
+        <button ng-click="dislikeResource(results[1].title); select(results[1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
         <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
       </button>
       
