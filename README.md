@@ -2,10 +2,10 @@
 A Podcast Social Recommendation Engine
 
 ## Authors:
-**Ajoke Salaudeen** ---- [Github](https://github.com/joksina) ---- [LinkedIn]()
 
-**Tessa Serdar** ---- [Github](https://github.com/tessajeanserdar) ---- [LinkedIn]()
-
-**Joey Leung** ---- [Github](https://github.com/DzoYee) ---- [LinkedIn]()
-
-**Joshua Huang** ---- [Github](https://github.com/jphuangjr) ---- [LinkedIn]()
+| Name        | Github           | LinkedIn  |
+| ------------- |:-------------:| -----:|
+| **Ajoke Salaudeen**      | https://github.com/joksina |  |
+| **Tessa Serdar**      | https://github.com/tessajeanserdar      |  |
+| **Joey Leung** | https://github.com/DzoYee      |     |
+| **Joshua Huang** | https://github.com/jphuangjr     |     |
