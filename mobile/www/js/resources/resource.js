@@ -6,27 +6,51 @@ angular.module('enki.resource',[])
     var user = JSON.parse(window.localStorage.getItem('com.fickle'));
     var username = user.username;
 
-    Podcasts.getPodcasts(username).then(function (data){
-      console.log(data)
-      $scope.results = data;
-    });
+    function getPods (){
+      var queue = JSON.parse(window.localStorage.getItem('podcastQueue'));
+      if (queue.length > 0) {
+        $scope.results = queue[0];
+        console.log(queue)
+        console.log(queue[0])
+        window.localStorage.removeItem('podcastQueue');
+        queue.shift();
+        console.log(queue);
+        window.localStorage.setItem('podcastQueue', JSON.stringify(queue))
+      } else {
+        Podcasts.getPodcasts(username).then(function (data){
+          console.log(data);
+          $scope.results = data[0];
+          data.shift()
+          window.localStorage.setItem('podcastQueue', JSON.stringify(data));
+        });
+      }
+    }
+    
+    getPods ();
+
+
+    // Podcasts.getPodcasts(username).then(function (data){
+    //   console.log(data)
+    //   $scope.results = data;
+    // });
 
     $scope.parseDate = function(episode){
       return Date.parse(episode.pubDate);
     };
  
     $scope.next = function () {
-      var userpref = {
-        'username' : username
-      }
-      Podcasts.getPodcasts(username).then(function (data){
-        $scope.results = data;
-      });
-      if(userpref) {
-        Podcasts.getRec(userpref).then(function (data) {
-           $scope.results = data;
-        });
-      }
+      getPods ();
+      // var userpref = {
+      //   'username' : username
+      // }
+      // Podcasts.getPodcasts(username).then(function (data){
+      //   $scope.results = data;
+      // });
+      // if(userpref) {
+      //   Podcasts.getRec(userpref).then(function (data) {
+      //      $scope.results = data;
+      //   });
+      // }
     };
 
     $scope.toggle = function (item, list) {

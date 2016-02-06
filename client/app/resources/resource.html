@@ -3,25 +3,25 @@
   <div layout="row" layout-wrap="">
     <div flex="100" flex-gt-sm="50" layout="column">
       <div layout="row" layout-wrap="" flex="">
-        <img src="{{results[0][0].thumbnail}}">
+        <img src="{{results[0].thumbnail}}">
         <br>
-        {{results[0][1].title}}
+        {{results[1].title}}
         <br>
 
         <h4> Player </h4>
-        Url: {{results[0][1].link}}
-        <i ng-click="markAsSeen(results[0][1].title)" id = "play" class="material-icons">play_circle_filled</i>
+        Url: {{results[1].link}}
+        <i ng-click="markAsSeen(results[1].title)" id = "play" class="material-icons">play_circle_filled</i>
         <br>
         <h5> 
           On 
         </h5>
         <div>
-          {{results[0][0].name}}
+          {{results[0].name}}
           <div>
-          <button ng-click="likeResource(results[0][1].title); select(results[0][1].title)"  class="btn btn-default btn-sm" >
+          <button ng-click="likeResource(results[1].title); select(results[1].title)"  class="btn btn-default btn-sm" >
             <span class="glyphicon glyphicon-thumbs-up"></span> Like
           </button>
-            <button ng-click="dislikeResource(results[0][1].title); select(results[0][1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
+            <button ng-click="dislikeResource(results[1].title); select(results[1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
           </button>
   
