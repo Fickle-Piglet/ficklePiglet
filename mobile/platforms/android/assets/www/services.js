@@ -4,7 +4,7 @@ angular.module('enki.services', [])
     var signin = function (user) {
       return $http({
           method: 'POST',
-          url: 'http://localhost:5050/signin/signin',
+          url: 'http://localhost:5050/signin',
           data: user
         })
         .then(function (resp) {
@@ -46,16 +46,18 @@ angular.module('enki.services', [])
     };
 
     var getPodcasts = function (user) {
+
       var userPref ={
         username : user,
-        keywords : rec
-      };
+        podcastName : rec
+      } 
       return $http({
         method: 'POST',
         url: 'http://localhost:5050/getResource',
         data: userPref
       })
       .then(function (resp) {
+        console.log("response to esearch",resp.data)
         return resp.data;
       });
       
@@ -64,11 +66,23 @@ angular.module('enki.services', [])
         callback(resources, rec);
     };
 
+    var getRec = function (user) {
+      return $http({
+        method: 'POST',
+        url: 'http://localhost:5050/getRec',
+        data : user
+      })
+      .then(function (resp) {
+        return resp.data;
+      });
+    };
+
     return {
       getTags: getTags,
       getPodcasts: getPodcasts,
       GetRec: GetRec,
-      setTags : setTags
+      setTags : setTags,
+      getRec: getRec
     };
 })
 .factory('User', function ($http, $location, $window) {
@@ -147,4 +161,19 @@ angular.module('enki.services', [])
       dislikeResource: dislikeResource,
       markAsSeen : markAsSeen
     };
+})
+.factory('Search', function($http) {
+    var searchPodcasts = function (input) {
+      return $http({
+        method: 'GET',
+        url: 'http://localhost:5050/suggest/' + input
+      })
+      .then(function (resp) {
+        return resp.data;
+      });
+    };
+    
+    return {
+      searchPodcasts : searchPodcasts
+    }
 });
