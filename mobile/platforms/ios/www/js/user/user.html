@@ -1,0 +1,42 @@
+<!-- <div class="md-padding checkboxdemoSyncing" ng-cloak="" style="min-height:270px" ng-model="fickle.user">
+
+  <h1> User Profile </h1>
+
+  <h1>User Likes</h1>
+  <div ng-repeat="likes in likedResources">
+      <div>
+         Thumnail: {{ likes.thumbnail }} 
+      </div>
+      <div>
+        name: {{ likes.name }} 
+      </div>
+      <div class='original'>url: <a ng-href="/{{likes.url}}">
+      {{likes.url}}</a>
+      </div><br>
+  </div>
+
+  <h1> User Dislikes</h1>
+  <div ng-repeat="dislikes in dislikedResources">
+    <div>
+     Thumnail: {{ dislikes.thumbnail }} 
+    </div>
+    <div>
+      name: {{ dislikes.name }} 
+    </div>
+    <div class='original'>url: <a ng-href="/{{dislikes.url}}">{{dislikes.url}}</a>
+    </div>
+  </div>
+</div> -->
+
+
+<ion-content>
+  <h2>Likes</h2>
+  <div class="list" collection-repeat="likes in likedResources">
+    <div class="item item-thumbnail-left" href="#">
+      <img src="{{ likes.thumbnail }}">
+      <h2> {{ likes.name }} </h2>
+      <a ng-href="{{likes.url}}"> {{ likes.url }} </a>
+
+    </div>
+  </div>
+</ion-content>
