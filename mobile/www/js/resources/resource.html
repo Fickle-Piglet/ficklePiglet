@@ -1,5 +1,11 @@
 <ion-view>
   <ion-content>
+  <div class="list list-inset">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search">
+  </label>
+</div>
   <div class="card row responsive-sm">
     <div class="col item item-divider">
       <div class="col item item-avatar">
@@ -17,9 +23,9 @@
       </a>
     </div>
     <div class="item item-divider">
-      <button ng-click="likeResource(results[1].title); select(results[1].title)"  class="btn btn-default btn-sm" >
+      <a ng-click="likeResource(results[1].title); select(results[1].title)"  class="btn btn-default btn-sm" >
         <span class="glyphicon glyphicon-thumbs-up"></span> Like
-      </button>
+      </a>
         <button ng-click="dislikeResource(results[1].title); select(results[1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
         <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
       </button>
