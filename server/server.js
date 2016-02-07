@@ -3,6 +3,7 @@ var path = require('path');
 var app = express();
 var port = 5050;
 var scraper = require("../scripts/scraper/scraper")
+var fakeData = require("../scripts/fakeData.js")
 var db = require("../server/db/db.js");
 // var test = require("../server/controllers/userController");
 
@@ -21,8 +22,9 @@ require('../server/config/routes.js')(app, express);
 
 
 //setTimeout(function(){
-//        //scraper.readAllFiles();
-//        scraper.tester()
+        //scraper.readAllFiles();
+        //scraper.tester()
+        //fakeData()
 //}, 1000)
 
 

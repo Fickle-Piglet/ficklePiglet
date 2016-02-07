@@ -1,25 +1,27 @@
 var db = require("../server/db/db.js")
 
+//SCRIPT TO ENTER create 50 USERS and have them like 50 random episodes
+
 var names = [
-    {firstname: "Laverne", email:"test1@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Lynell", email:"test2@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Neda",email:"test3@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Laurette",email:"test4@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Eliz",email:"test5@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Kristian",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Tenesha",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Lora",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Chloe",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Jonna",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Mark",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Jovita",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Ashanti",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Lenora",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Tamie",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Deshawn",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Joseph",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Mireille",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
-    {firstname:"Shaunda",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname: "Laverne2", email:"test1@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Lynell2", email:"test2@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Neda2",email:"test3@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Laurette2",email:"test4@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Eliz2",email:"test5@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Kristian2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Tenesha2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Lora2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Chloe2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Jonna2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Mark2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Jovita2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Ashanti2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Lenora2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Tamie2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Deshawn2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Joseph2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Mireille2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
+    {firstname:"Shaunda2",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
     {firstname:"Kristofer",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
     {firstname:"Winford",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
     {firstname:"Lina",email:"test@gmail.com", lastname:"lolzer", password:"coffee"},
@@ -60,9 +62,9 @@ var add50Users = function(){
     var users;
 
     db.cypherQuery("Match (e:Episode) return e", function(err, res){
-        episodes = res;
+        episodes = res.data;
+        console.log(episodes)
     });
-
     for(var i=0; i<names.length; i++){
         db.cypherQuery("Merge (n:User {firstname:{firstname},lastname:{lastname},username:{firstname},email:{email},password:{password}}) return n", names[i], function(err, users){
             if(err){
@@ -74,36 +76,31 @@ var add50Users = function(){
             }
         });
     }
-
     setTimeout(function(){
         db.cypherQuery("Match (u:User) return u", function(err, res){
-            users = res;
+            users = res.data;
+            console.log(">>>>> GETTING USERS")
         });
-    }, 10000)
+    }, 4000)
 
     var getRandomInt = function(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
     };
-
-
     setTimeout(function(){
         for(var i=0; i<users.length; i++){
-            console.log("")
             for(var j=0; j<50; j++){
-                var userLikes = {username: users[i].username, ResourceName: episodes[getRandomInt()].title}
-                db.cypherQuery("MATCH (u:User {username:{username}}),(e:Episode {title:{ResourceName}}) MERGE (u)-[:HAS_LIKED]->(e)", userLikes, function(err, query){
+                var rand = getRandomInt(0, episodes.length)
+                db.cypherQuery("MATCH (u:User {username:'"+users[i].username+"'}),(e:Episode {title:'"+episodes[rand].title+"'}) MERGE (u)-[:HAS_LIKED]->(e)", function(err, query){
                     if(err){
-                        //res.sendStatus(404);
                         console.log("ERR", err)
                     } else{
-                        //res.sendStatus(200);
                         console.log("success linked")
                     }
                 });
             }
-
         }
-    }, 50000)
+    }, 120000)
 }
 
-add50Users();
+add50Users()
+
