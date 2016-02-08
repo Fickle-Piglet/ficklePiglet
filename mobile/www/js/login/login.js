@@ -27,7 +27,6 @@ angular.module('enki.auth', [])
 
   // sign up function to be called when input form submitted
   $scope.signup = function () {
-    clearFields();
     $scope.signUpError = '';
     Auth.signup(JSON.stringify($scope.user))
     .then(function(message){
@@ -39,6 +38,7 @@ angular.module('enki.auth', [])
         $state.go('tab.searchElastic');
       }
     });
+    clearFields();
   };
 
   var clearFields = function () {
