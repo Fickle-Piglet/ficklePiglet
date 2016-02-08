@@ -4,18 +4,18 @@ angular.module('enki.services', [])
     var signin = function (user) {
       return $http({
           method: 'POST',
-          url: 'http://52.36.85.255/signin',
+          url: 'http://localhost:5050/signin',
           data: user
         })
         .then(function (resp) {
-          // console.log("response",resp.data.data);
+          console.log("response",resp.data.data);
           return resp.data;
         });
     };
     var signup = function (user) {
       return $http({
           method: 'POST',
-          url: 'http://52.36.85.255/signup',
+          url: 'http://localhost:5050/signup',
           data: user
         })
         .then(function (resp) {
@@ -34,7 +34,7 @@ angular.module('enki.services', [])
     var getTags = function () {
        return $http({
             method: 'GET',
-            url: 'http://52.36.85.255/tags',
+            url: 'http://localhost:5050/tags',
           })
           .then(function (resp) {
             return resp.data;
@@ -55,17 +55,17 @@ angular.module('enki.services', [])
       if(userPref.resource.length === 0){
         userPref.resource = JSON.parse(window.localStorage.getItem('selected'));
       }
-      
+
       return $http({
         method: 'POST',
-        url: 'http://52.36.85.255/getResource',
+        url: 'http://localhost:5050/getResource',
         data: userPref
       })
       .then(function (resp) {
         console.log("response to esearch",resp.data);
         return resp.data;
       });
-      
+
     };
     var GetRec = function (callback) {
         callback(resources, rec);
@@ -74,7 +74,7 @@ angular.module('enki.services', [])
     var getRec = function (user) {
       return $http({
         method: 'POST',
-        url: 'http://52.36.85.255/getRec',
+        url: 'http://localhost:5050/getRec',
         data : user
       })
       .then(function (resp) {
@@ -94,8 +94,8 @@ angular.module('enki.services', [])
   var getUser = function (user) {
     return $http({
       method: 'GET',
-      url: 'http://52.36.85.255/user/' + user
-  })
+      url: 'http://localhost:5050/user/' + user
+    })
     .then(function (res) {
       return res.data;
     });
@@ -104,7 +104,7 @@ angular.module('enki.services', [])
   var getLikes = function (user) {
     return $http({
       method: 'GET',
-      url: 'http://52.36.85.255/userlike/' + user
+      url: 'http://localhost:5050/userlike/' + user
     })
     .then(function (resp) {
       return resp.data;
@@ -114,7 +114,7 @@ angular.module('enki.services', [])
   var getDislike = function (path) {
     return $http({
       method: 'GET',
-      url: 'http://52.36.85.255/userDislike/' + path
+      url: 'http://localhost:5050/userDislike/' + path
     })
     .then(function (resp) {
       return resp.data;
@@ -132,7 +132,7 @@ angular.module('enki.services', [])
     var removeRelationship = function(userPref){
       return $http({
         method: 'POST',
-        url: 'http://52.36.85.255/removeRelationship',
+        url: 'http://localhost:5050/removeRelationship',
         data: userPref
       })
       .then(function (resp) {
@@ -142,7 +142,7 @@ angular.module('enki.services', [])
     var likeResource = function (userPref) {
       return $http({
         method: 'POST',
-        url: 'http://52.36.85.255/likeResource',
+        url: 'http://localhost:5050/likeResource',
         data: userPref
       })
       .then(function (resp) {
@@ -153,7 +153,7 @@ angular.module('enki.services', [])
     var dislikeResource = function (userPref) {
       return $http({
         method: 'POST',
-        url: 'http://52.36.85.255/dislikeResource',
+        url: 'http://localhost:5050/dislikeResource',
         data: userPref
       })
       .then(function (resp) {
@@ -164,7 +164,7 @@ angular.module('enki.services', [])
     var markAsSeen = function (userHasSeen) {
       return $http({
         method: 'POST',
-        url: 'http://52.36.85.255/resourceHistory',
+        url: 'http://localhost:5050/resourceHistory',
         data: userHasSeen
       })
       .then(function (resp) {
@@ -182,7 +182,7 @@ angular.module('enki.services', [])
     var searchPodcasts = function (input) {
       return $http({
         method: 'GET',
-        url: 'http://52.36.85.255/suggest/' + input
+        url: 'http://localhost:5050/suggest/' + input
       })
       .then(function (resp) {
         return resp.data;

@@ -21,18 +21,17 @@
         <div class="col item item-image">
           <img src="{{results[0].thumbnail}}">
         </div>
-        <div id="urlLink">{{results[1].link}}</div>
-        Start listening
+        <input id="urlLink" hidden="true" value="{{results[1].link}}">
         <!-------------- PLAYER STUFF ------------>
         <div id="trackOne" style="padding-top: 60px;"><img src="../../img/332.gif" id="loading"></div>
         <script src="../wavesurfer.min.js"></script>
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <script>
           $(document).ready(function(){
-            $("#play").hide()
+//            $("#play").hide()
             $("#pause").hide()
-            $("#rewind").hide()
-            $("#forward").hide()
+//            $("#rewind").hide()
+//            $("#forward").hide()
           })
           $("#forward").on("click", function(){
             wavesurfer.skipForward()
@@ -67,10 +66,21 @@
             $("#loading").hide()
           });
 
-          $(document).ready(function(){
-            var link = $("#urlLink").html()
-            wavesurfer.load(link);
+          var activate = function(){
+            setTimeout(function(){
+              var urlLINK = $("#urlLink").val();
+              alert(urlLINK)
+
+              wavesurfer.load(urlLINK);
+            }, 1000)
+          }
+
+          activate();
+
+          $(".refresh").on("click", function(){
+            activate();
           })
+
 
 
         </script>
@@ -85,13 +95,13 @@
     </div>
     <div class="item item-divider">
       <a ng-click="likeResource(results[1].title,results[0].name); select(results[1].title)"  class="btn btn-default btn-sm" >
-        <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        <span class="glyphicon glyphicon-thumbs-up refresh"></span> Like
       </a>
         <button ng-click="dislikeResource(results[1].title); select(results[1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
-        <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
+        <span class="glyphicon glyphicon-thumbs-down refresh"></span> Dislike
       </button>
       
-       <button class="btn btn-default btn-sm" ng-click="next()">Next</button>
+       <button class="btn btn-default btn-sm refresh" ng-click="next()">Next</button>
     </div>
   </div>
 <!-- <div class="list card">
