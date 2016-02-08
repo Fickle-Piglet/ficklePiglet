@@ -18,7 +18,7 @@ module.exports = {
   getLikes: function (req, res) {
     var user = JSON.parse(req.params.user).username;
     console.log("user", user);
-    db.cypherQuery('MATCH (u:User {username: "' +user+ '"})-[l:HAS_LIKED]-(r:Episode) RETURN r', function (err, result) {
+    db.cypherQuery('match (u:User {username:"'+ user +'"})-[l:HAS_LIKED]-(e:Episode)--(r:Resource) return e,r', function (err, result) {
       if (err) {
         throw err;
       }
@@ -28,7 +28,7 @@ module.exports = {
   },
   getDislikes: function (req, res) {
     var user = JSON.parse(req.params.user).username;
-    db.cypherQuery('MATCH (u:User {username: "'+user+'"})-[d:HAS_DISLIKED]-(r:Episode) RETURN r', function (err, result) {
+    db.cypherQuery('match (u:User {username:"'+ user +'"})-[l:HAS_DISLIKED]-(e:Episode)--(r:Resource) return e,r', function (err, result) {
       if (err) {
         throw err;
       } 

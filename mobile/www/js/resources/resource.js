@@ -1,6 +1,6 @@
 angular.module('enki.resource',[])
 
-.controller('resourceController', function($scope, Podcasts, UserResources) {
+.controller('resourceController', function($scope, Podcasts, UserResources, $rootScope) {
     $scope.selected = [];
     $scope.results = [];
     var user = JSON.parse(window.localStorage.getItem('com.fickle'));
@@ -9,12 +9,13 @@ angular.module('enki.resource',[])
     function getPods (){
       var queue = JSON.parse(window.localStorage.getItem('podcastQueue'));
       console.log("queue",queue);
-      if(queue === null || !queue.length > 0) {
+      if(queue === null || !queue.length > 0 || window.localStorage.getItem('search')) {
         Podcasts.getPodcasts(username).then(function (data){
           console.log(data);
           $scope.results = data[0];
           data.shift()
           window.localStorage.setItem('podcastQueue', JSON.stringify(data));
+          window.localStorage.removeItem('search');
         });  
       } else if (queue.length > 0) {
         $scope.results = queue[0];
@@ -27,7 +28,15 @@ angular.module('enki.resource',[])
       }
     }
     
-    getPods ();
+    getPods();
+    $rootScope.$on('$stateChangeSuccess', 
+    function(event, toState, toParams, fromState, fromParams) {
+      // console.log("toState: ",toState,"fromState: ", fromState);
+      if (toState.name === 'tab.resource' && window.localStorage.getItem('search')) {
+        console.log('new search now!');
+        getPods();
+      }
+    });
 
 
     // Podcasts.getPodcasts(username).then(function (data){
@@ -64,15 +73,18 @@ angular.module('enki.resource',[])
       return list.indexOf(item) > -1;
     };
 
-    $scope.likeResource = function(resource){
+    $scope.likeResource = function(episodeTitle, showName){
       var userpref = {
         'username' : username,
-        'ResourceName' : resource
-      }
+        'episodeTitle' : episodeTitle,
+        'showName' : showName
+      };
+      console.log(userpref);
       UserResources.likeResource(userpref)
       .then(function(message){
+        console.log("Return from Like: ",message);
         if(message ===200){
-          alert("You have liked this")
+          alert("You have liked this");
         }
       })
       .catch(function (error) {

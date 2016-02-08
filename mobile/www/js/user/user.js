@@ -13,7 +13,8 @@ angular.module('enki.user',[])
 
 	User.getLikes($window.localStorage.getItem('com.fickle')).then(function(data) {
 	 $scope.likedResources = data;
-	  });
+   console.log("LIKES: ", data);
+	});
 
   User.getDislike($window.localStorage.getItem('com.fickle')).then(function(data){
     $scope.dislikedResources = data;
@@ -28,12 +29,14 @@ angular.module('enki.user',[])
     console.log("Attempted to Delete");
     var userpref = {
       'username' : username,
-      'ResourceName' : resource.name
+      'episodeTitle' : resource[0].title,
+      'showName' : resource[1].name
     };
+    console.log(userpref);
     UserResources.removeRelationship(userpref)
     .then(function(message){
       console.log("Response Message: ",message);
-      if(message ===200){
+      if(message === 200){
         alert("You have removed this like/dislke");
       }
     })

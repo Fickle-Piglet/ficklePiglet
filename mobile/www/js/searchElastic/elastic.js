@@ -17,9 +17,10 @@ angular.module('enki.elasticSearch', [])
         var obj = {name: selected.text, isShow: isShow};
         console.log(obj);
         window.localStorage.removeItem('selected');
-        window.localStorage.setItem('selected', JSON.stringify(selected))
+        window.localStorage.setItem('selected', JSON.stringify(selected));
         Podcasts.setTags(selected);
         $state.go('tab.resource');
+        window.localStorage.setItem('search', true);
       };
 
-})
+});
