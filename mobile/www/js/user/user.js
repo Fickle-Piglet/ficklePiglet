@@ -29,12 +29,14 @@ angular.module('enki.user',[])
     console.log("Attempted to Delete");
     var userpref = {
       'username' : username,
-      'ResourceName' : resource.name
+      'episodeTitle' : resource[0].title,
+      'showName' : resource[1].name
     };
+    console.log(userpref);
     UserResources.removeRelationship(userpref)
     .then(function(message){
       console.log("Response Message: ",message);
-      if(message ===200){
+      if(message === 200){
         alert("You have removed this like/dislke");
       }
     })
