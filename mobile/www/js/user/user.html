@@ -60,8 +60,9 @@
   <ion-item collection-repeat="item in likedResources">
     <ion-delete-button ng-click="onItemDelete(item)" class="ion-minus-circled"></ion-delete-button>
     <div class="item item-avatar">
-       <img src="{{item.thumbnail}}">
-       <h3>{{item.title}}</h3>
+       <img src="{{item[1].thumbnail}}">
+       <h2>{{item[1].name}}</h2>
+       <h4>{{item[0].title}}</h3>
     </div>
   </ion-item>
 </ion-list>
