@@ -61,7 +61,7 @@
     <ion-delete-button ng-click="onItemDelete(item)" class="ion-minus-circled"></ion-delete-button>
     <div class="item item-avatar">
        <img src="{{item.thumbnail}}">
-       <h3>{{item.name}}</h3>
+       <h3>{{item.title}}</h3>
     </div>
   </ion-item>
 </ion-list>
@@ -74,17 +74,16 @@
 </ion-view>
 
 
-<ion-content>
 
 
 <!----------- END OF PLAYER STUFF -------->
-  <h2>Likes</h2>
+  <!-- <h2>Likes</h2>
   <div class="list" collection-repeat="likes in likedResources">
     <div class="item item-thumbnail-left" href="#">
       <img src="{{ likes.thumbnail }}">
       <h2> {{ likes.name }} </h2>
       <a ng-href="{{likes.url}}"> {{ likes.url }} </a>
     </div>
-  </div>
+  </div> -->
 
 

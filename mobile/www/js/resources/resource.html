@@ -26,7 +26,7 @@
       </a>
     </div>
     <div class="item item-divider">
-      <a ng-click="likeResource(results[1].title); select(results[1].title)"  class="btn btn-default btn-sm" >
+      <a ng-click="likeResource(results[1].title,results[0].name); select(results[1].title)"  class="btn btn-default btn-sm" >
         <span class="glyphicon glyphicon-thumbs-up"></span> Like
       </a>
         <button ng-click="dislikeResource(results[1].title); select(results[1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">

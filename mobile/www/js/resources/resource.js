@@ -73,15 +73,18 @@ angular.module('enki.resource',[])
       return list.indexOf(item) > -1;
     };
 
-    $scope.likeResource = function(resource){
+    $scope.likeResource = function(episodeTitle, showName){
       var userpref = {
         'username' : username,
-        'ResourceName' : resource
-      }
+        'episodeTitle' : episodeTitle,
+        'showName' : showName
+      };
+      console.log(userpref);
       UserResources.likeResource(userpref)
       .then(function(message){
+        console.log("Return from Like: ",message);
         if(message ===200){
-          alert("You have liked this")
+          alert("You have liked this");
         }
       })
       .catch(function (error) {
