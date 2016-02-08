@@ -8,7 +8,7 @@ angular.module('enki.services', [])
           data: user
         })
         .then(function (resp) {
-          console.log("response",resp.data.data);
+          // console.log("response",resp.data.data);
           return resp.data;
         });
     };
