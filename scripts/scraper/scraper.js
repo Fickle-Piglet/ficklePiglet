@@ -44,7 +44,7 @@ module.exports = {
             for(var j=0; j<list[i].genres.length-1; j++){
                 request({
                     method: "POST",
-                    url: "http://localhost:5050/insert",
+                    url: "http://52.36.85.255/insert",
                     json: {
                         name: list[i].name,
                         genre: list[i].genres[j],
