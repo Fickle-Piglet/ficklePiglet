@@ -21,7 +21,7 @@
         <div class="col item item-image">
           <img src="{{results[0].thumbnail}}">
         </div>
-        Url: {{results[1].link}}
+        <div id="urlLink">{{results[1].link}}</div>
         Start listening
         <!-------------- PLAYER STUFF ------------>
         <div id="trackOne" style="padding-top: 60px;"><img src="../../img/332.gif" id="loading"></div>
@@ -67,7 +67,12 @@
             $("#loading").hide()
           });
 
-          wavesurfer.load('{{results[0][1].link}}');
+          $(document).ready(function(){
+            var link = $("#urlLink").html()
+            wavesurfer.load(link);
+          })
+
+
         </script>
         <div id="playerButtons" style="padding-left: 140px;">
           <button style="width: 30px; height: 30px; border-radius: 20px " id="rewind" class="ion-reply" style="text-align:center"></button>
