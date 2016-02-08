@@ -7,8 +7,11 @@ module.exports = {
        db.cypherQuery("MATCH (n:User) WHERE n.username={username} and n.password={password} RETURN n", user, function (err, result) {
         if (err) {
           throw error;
+        } else if(result.data.length ===0){
+          console.log("Wrong Input");
+          res.send("Wrong Input");
         } else  {
-          // console.log(result.data)
+          console.log(result.data)
           res.send(result.data);
         }
        });
