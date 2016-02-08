@@ -37,7 +37,7 @@ angular.module('enki.user',[])
     .then(function(message){
       console.log("Response Message: ",message);
       if(message === 200){
-        alert("You have removed this like/dislke");
+        console.log("You have removed this like/dislke");
       }
     })
     .catch(function (error) {
