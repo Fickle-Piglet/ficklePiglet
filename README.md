@@ -25,7 +25,7 @@ A Podcast Social Recommendation Engine
 1. Create an account
 2. Search for Podcast Using ElasticSearch
 3. Choose one and listen to it
-4. Recommends another one based on the one you prefer
+4. Click next for recommendation based on what you like
 
 ## Requirements
 
