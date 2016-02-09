@@ -8,7 +8,6 @@ A Podcast Social Recommendation Engine
 1. [Requirements](#requirements)
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
-    1. [Tasks](#tasks)
 1. [Contributing](#contributing)
 
 ## Authors:
@@ -48,10 +47,17 @@ npm install
 
 - CD into server and run ``` node server.js```
 
-##### To run the mobile version
+##### To run the mobile version on Xcode
 
 - CD into the mobile directory
 - Run ``` ionic platform ios```
 - ``` ionic build ios```
 - ```ionic emulate ios```
+- On the same directory, Run ``` ionic server --lab``` to run on Web
+
+##### To run ElasticSearch
+
+- CD into server
+- Run ``` node loadPodcastsElastic.js```
+- And run elasticsearch
 
