@@ -30,7 +30,7 @@ angular.module('enki.auth', [])
             // messages is an array with one object that contains our user info
             // setting that information in local storage
             // should be refactored to use jwt at some point
-            window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
+            $window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
             // $location.path('/search');
             $state.go('tab.searchElastic');            
           }
@@ -57,9 +57,9 @@ angular.module('enki.auth', [])
           console.log('This person is already a user');
         });        
       } else {
-        window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
+        $window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
         // $location.path('/search');
-        $location.path('/searchElastic');
+        $state.transitionTo('tab.searchElastic'); 
       }
     });
     clearFields();
