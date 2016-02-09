@@ -102,5 +102,65 @@ var add50Users = function(){
     }, 120000)
 }
 
+var dislike50Stuff = function(){
+    var episodes;
+    var users;
+
+    db.cypherQuery("Match (e:Episode) return e", function(err, res){
+        episodes = res.data;
+        console.log(episodes)
+    });
+    for(var i=0; i<names.length; i++){
+        db.cypherQuery("Merge (n:User {firstname:{firstname},lastname:{lastname},username:{firstname},email:{email},password:{password}}) return n", names[i], function(err, users){
+            if(err){
+                console.log("ERROR: ", err)
+                //res.sendStatus(404);
+            } else{
+                //res.sendStatus(200);
+                console.log("success added user")
+            }
+        });
+    }
+    setTimeout(function(){
+        db.cypherQuery("Match (u:User) return u", function(err, res){
+            users = res.data;
+            console.log(">>>>> GETTING USERS")
+        });
+    }, 4000)
+
+    var getRandomInt = function(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    };
+    setTimeout(function(){
+        for(var i=0; i<users.length; i++){
+            for(var j=0; j<50; j++){
+                var rand = getRandomInt(0, episodes.length)
+                db.cypherQuery("MATCH (u:User {username:'"+users[i].username+"'}),(e:Episode {title:'"+episodes[rand].title+"'}) MERGE (e)<-[:HAS_DISLIKED]-(u) MERGE (u)-[:HAS_DISLIKED]-(e)", function(err, query){
+                    if(err){
+                        console.log("ERR", err)
+                    } else{
+                        console.log("success linked")
+                    }
+                });
+                db.cypherQuery("MATCH (u:User {username:'"+users[i].username+"'}),(e:Episode {title:'"+episodes[rand].title+"'}) MATCH (u)-[rel:HAS_LIKED]-(e) DELETE rel", function(err, query){
+                    if(err){
+                        console.log("ERR", err)
+                    } else{
+                        console.log("success linked")
+                    }
+                })
+            }
+        }
+    }, 120000)
+}
+
+
 //add50Users()
 
+//db.cypherQuery("MATCH (u:User {username:{username}}),(e:Episode {title:{episodeTitle}}), (r: Resource {name: {showName}}) MERGE (e)<-[:HAS_DISLIKED]-(u) MERGE (u)-[:HAS_DISLIKED]-(r)", userDislikes, function(err, query){
+//    if(err){
+//        res.sendStatus(404);
+//    } else{
+//        res.sendStatus(200);
+//    }
+//});
