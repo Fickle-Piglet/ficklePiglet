@@ -14,7 +14,7 @@ A Podcast Social Recommendation Engine
 
 | Name        | Github           | LinkedIn  |
 | ------------- |:-------------:| -----:|
-| **Ajoke Salaudeen**      | https://github.com/joksina |  |
+| **Ajoke Salaudeen**      | https://github.com/joksina | https://www.linkedin.com/in/jksalaudeen |
 | **Tessa Serdar**      | https://github.com/tessajeanserdar      |  |
 | **Joey Leung** | https://github.com/DzoYee      |     |
 | **Joshua Huang** | https://github.com/jphuangjr     |     |
