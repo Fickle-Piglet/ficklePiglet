@@ -28,6 +28,7 @@
     "express": "^4.13.4",
     "gulp-nodemon": "^2.0.6",
     "karma": "^0.13.19",
+    "lodash": "^4.3.0",
     "node-neo4j": "^2.0.3",
     "noodle": "0.0.3",
     "noodlejs": "^0.3.2",
