@@ -17,12 +17,15 @@ A Podcast Social Recommendation Engine
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
     1. [Tasks](#tasks)
-1. [Team](#Authors)
+1. [Team](#authors)
 1. [Contributing](#contributing)
 
 ## Usage
 
-> Some usage instructions
+1. Create an account
+2. Search for Podcast Using ElasticSearch
+3. Choose the one you like and listen
+4. Recommends another one based on the one you prefer
 
 ## Requirements
 
@@ -30,6 +33,7 @@ A Podcast Social Recommendation Engine
 - Neo4j
 - ElasticSearch
 - Ionic
+- Xcode
 
 ## Development
 
