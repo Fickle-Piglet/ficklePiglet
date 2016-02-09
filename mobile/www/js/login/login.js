@@ -59,7 +59,7 @@ angular.module('enki.auth', [])
       } else {
         window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
         // $location.path('/search');
-        $state.go('tab.searchElastic');
+        $location.path('/searchElastic');
       }
     });
     clearFields();
