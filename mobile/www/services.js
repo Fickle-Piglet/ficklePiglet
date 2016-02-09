@@ -8,7 +8,7 @@ angular.module('enki.services', [])
           data: user
         })
         .then(function (resp) {
-          // console.log("response",resp.data.data);
+          console.log("response",resp.data.data);
           return resp.data;
         });
     };
@@ -55,7 +55,7 @@ angular.module('enki.services', [])
       if(userPref.resource.length === 0){
         userPref.resource = JSON.parse(window.localStorage.getItem('selected'));
       }
-      
+
       return $http({
         method: 'POST',
         url: 'http://localhost:5050/getResource',
@@ -65,7 +65,7 @@ angular.module('enki.services', [])
         console.log("response to esearch",resp.data);
         return resp.data;
       });
-      
+
     };
     var GetRec = function (callback) {
         callback(resources, rec);

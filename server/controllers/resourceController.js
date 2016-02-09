@@ -57,7 +57,7 @@ module.exports = {
         if (Object.keys(userPreferences).length === 0) {
             res.sendStatus(404);
         } else {
-            // Is it a tag or show? 
+            // Is it a tag or show?
             if (userPreferences.resource.payload.url) {
                 console.log("NAME OF SHOW: ", userPreferences.resource.text);
                 db.cypherQuery("MATCH (resources:Resource { name: {text}})-[:TAGGED]-(t:Tag) WHERE not t.name = 'Podcasts' return t.name", userPreferences.resource, function(err, result) {
