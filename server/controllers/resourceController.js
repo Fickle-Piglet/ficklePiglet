@@ -67,7 +67,7 @@ module.exports = {
                     }
                     console.log("GETTING THE TAGS FOR SHOW",result.data)
                     userPreferences.keywords = result.data;
-                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes return resources,e limit 5;",
+                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return resources,e ORDER BY number limit 5;",
                         userPreferences,
                         function(err, query) {
                             console.log(err)
@@ -84,7 +84,7 @@ module.exports = {
             } else {
                 console.log("NAME OF TAG: ", userPreferences.resource.text);
                 userPreferences.keywords = [userPreferences.resource.text];
-                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes return resources,e limit 5;",
+                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return resources,e ORDER BY number limit 5;",
                     userPreferences,
                     function(err, query) {
                         //Randomizer function
