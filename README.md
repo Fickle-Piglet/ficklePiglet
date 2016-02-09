@@ -45,6 +45,5 @@ From the folder directory:
 npm install
 ```
 #### To run the Server
-..* CD into server and run ``` node server.js```
-3. 
-4. Recommends 
+    ..* CD into server and run ``` node server.js```
+
