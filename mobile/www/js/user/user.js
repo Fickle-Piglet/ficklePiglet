@@ -1,6 +1,6 @@
 angular.module('enki.user',[])
 
-.controller('userController', function ($scope, $window, $location, User, $state, UserResources) {
+.controller('userController', function ($scope, $window, $location, User, $state, UserResources, $ionicHistory) {
   // console.log("ITEM: ", $window.localStorage.getItem('com.fickle'));
   $scope.likedResources = [];
   $scope.dislikedResources = [];
@@ -22,6 +22,8 @@ angular.module('enki.user',[])
 
   $scope.logout = function() {
     window.localStorage.setItem('com.fickle', null);
+    $ionicHistory.clearCache();
+    $ionicHistory.clearHistory();
     $state.go('login');
   };
 
