@@ -51,6 +51,7 @@ npm install
 ##### To run the mobile version
 
 - CD into the mobile directory
-- Run ``` ionic platform ios```, ``` ionic build ios``` and ```ionic emulate ios```
-- 
+- Run ``` ionic platform ios```
+- ``` ionic build ios```
+- ```ionic emulate ios```
 
