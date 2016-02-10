@@ -179,7 +179,8 @@ db.cypherQuery("MATCH (u:User) return u.username", function(err, res){
   };
 };
 
-compare();
+//UNCOMMENT THIS TO RUN IS
+// compare();
 
 
 
