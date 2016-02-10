@@ -13,14 +13,14 @@ angular.module('enki.elasticSearch', [])
     };
 
     $scope.sendTags = function(selected) {
-        var isShow = selected.payload.url ? true : false;
-        var obj = {name: selected.text, isShow: isShow};
-        console.log(obj);
-        window.localStorage.removeItem('selected');
-        window.localStorage.setItem('selected', JSON.stringify(selected));
-        Podcasts.setTags(selected);
-        $state.go('tab.resource');
-        window.localStorage.setItem('search', true);
-      };
-
+      var isShow = selected.payload.url ? true : false;
+      var obj = {name: selected.text, isShow: isShow};
+      console.log(obj);
+      window.localStorage.removeItem('selected');
+      window.localStorage.setItem('selected', JSON.stringify(selected));
+      Podcasts.setTags(selected);
+      $state.go('tab.resource');
+      window.localStorage.setItem('search', true);
+    };
+      
 });
