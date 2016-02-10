@@ -1,6 +1,7 @@
 var db = require("../../server/db/db.js");
 
 var request = require("request");
+var _ = require("lodash");
 
 
 module.exports = {
@@ -67,35 +68,32 @@ module.exports = {
                     }
                     console.log("GETTING THE TAGS FOR SHOW",result.data)
                     userPreferences.keywords = result.data;
-                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return resources,e ORDER BY number limit 5;",
+                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return e.title as episodeTitle ORDER BY number limit 10;",
                         userPreferences,
                         function(err, query) {
-                            console.log(err)
-                            // Randomizer function
-                            // var getRandomInt = function(min, max) {
-                            //     return Math.floor(Math.random() * (max - min)) + min;
-                            // };
-                            // var int = getRandomInt(0, query.data.length);
-                            // var results = query.data.slice(0,4);
-                            console.log("RESULTSSS>>>>>>>>>>>>>>>>>", query.data);
-                            res.send(query.data);
-                        });
+                          if (err) { console.log(err) }
+                          userPreferences.titles = query.data, 'title';
+                          db.cypherQuery("Match (u:User {username:{username}})-[s:SIMILARITY]-(m:User)-[r]-(e:Episode) where not u.username=m.username and e.title in {titles} WITH e as eps, (sum(case when type(r)='HAS_LIKED' then  toFloat(s.score) END) - sum(case when type(r)='HAS_DISLIKED' then toFloat(s.score) END))/(count(case when type(r)='HAS_LIKED' then m.username END) + count(case when type(r)='HAS_DISLIKED' then m.username END)) as rank MATCH (eps)--(r:Resource) return r.name,r.thumbnail,eps.title, eps.link order by rank DESC limit 5;",userPreferences,
+                              function(err, query) {
+                                res.send(query.data);
+                                console.log("<<<<<RANKED SHOWS",query.data)
+                          });   
+                    });
                 });
             } else {
                 console.log("NAME OF TAG: ", userPreferences.resource.text);
                 userPreferences.keywords = [userPreferences.resource.text];
-                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return resources,e ORDER BY number limit 5;",
+                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return    e ORDER BY number limit 10;",
                     userPreferences,
                     function(err, query) {
-                        //Randomizer function
-                        // var getRandomInt = function(min, max) {
-                        //     return Math.floor(Math.random() * (max - min)) + min;
-                        // };
-                        // var int = getRandomInt(0, query.data.length);
-                        // console.log("RESULTSSS>>>>>>>>>>>>>>>>>", query.data[int]);
-                        // var results = query.data.slice(0,4);
-                        res.send(query.data);
-                    });
+                        if (err) { console.log(err) }
+                        userPreferences.titles = query.data, 'title';
+                        db.cypherQuery("Match (u:User {username:{username}})-[s:SIMILARITY]-(m:User)-[r]-(e:Episode) where not u.username=m.username and e.title in {titles} WITH e as eps, (sum(case when type(r)='HAS_LIKED' then  toFloat(s.score) END) - sum(case when type(r)='HAS_DISLIKED' then toFloat(s.score) END))/(count(case when type(r)='HAS_LIKED' then m.username END) + count(case when type(r)='HAS_DISLIKED' then m.username END)) as rank MATCH (eps)--(r:Resource) return r.name,r.thumbnail,eps.title, eps.link order by rank DESC limit 5;",userPreferences,
+                            function(err, query) {
+                              res.send(query.data);
+                              console.log("<<<<<RANKED SHOWS",query.data)
+                        });  
+                });
             }
             //userPreferences.resource.isShow 
             // This finds all of the tags for a particular show;

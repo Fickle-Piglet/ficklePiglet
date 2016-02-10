@@ -1,33 +1,36 @@
 angular.module('fickle.resource',['ngMaterial', 'ngMessages'])
 
-.controller('resourceController', function($scope,Podcasts,UserResources) {
+.controller('resourceController', function($scope,Podcasts,UserResources,$window) {
   $scope.selected = [];
   $scope.results = [];
   var user = JSON.parse(window.localStorage.getItem('com.fickle'));
   var username = user.username;
   
 
-  function getPods (){
-    var queue = JSON.parse(window.localStorage.getItem('podcastQueue'));
-    if (queue.length > 0) {
-      $scope.results = queue[0];
-      console.log(queue)
-      console.log(queue[0])
-      window.localStorage.removeItem('podcastQueue');
-      queue.shift();
-      console.log(queue);
-      window.localStorage.setItem('podcastQueue', JSON.stringify(queue))
-    } else {
-      Podcasts.getPodcasts(username).then(function (data){
-        console.log(data);
-        $scope.results = data[0];
-        data.shift()
-        window.localStorage.setItem('podcastQueue', JSON.stringify(data));
-      });
+
+    function getPods (){
+      var queue = JSON.parse($window.localStorage.getItem('podcastQueue'));
+      console.log("queue",queue);
+      if(queue === null || !queue.length > 0 || $window.localStorage.getItem('search')) {
+        Podcasts.getPodcasts(username).then(function (data){
+          console.log(data);
+          $scope.results = data[0];
+          data.shift()
+          $window.localStorage.setItem('podcastQueue', JSON.stringify(data));
+          $window.localStorage.removeItem('search');
+        });  
+      } else if (queue.length > 0) {
+        $scope.results = queue[0];
+        console.log(queue)
+        console.log(queue[0])
+        $window.localStorage.removeItem('podcastQueue');
+        queue.shift();
+        console.log(queue);
+        $window.localStorage.setItem('podcastQueue', JSON.stringify(queue))
+      }
     }
-  }
-  
-  getPods ();
+    
+    getPods();
 
   $scope.parseDate = function(episode){
     return Date.parse(episode.pubDate);
