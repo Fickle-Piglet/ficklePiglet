@@ -15,29 +15,19 @@ app.listen(port, function(){
     console.log('Listening on port '+ port);
 });
 
-// test.getlikes({body:'timmy'});
 
 require('../server/config/middleware.js')(app, express);
 require('../server/config/routes.js')(app, express);
 
+
+
+////////UNCOMMENT THIS SECTION WHEN INITIALIZING DATABASE///////
 //scraper.getAllPodcast("podcasts.txt")
-
-
-// setTimeout(function(){
+//setTimeout(function(){
         //scraper.readAllFiles();
         //scraper.tester()
-        // fakeData()
-//         jaccard();
-// }, 2000);
-
-
-
-
-//sample query to return everything
-// db.cypherQuery("START n=node(*) RETURN n;", function(err, result){
-//     if(err) throw err;
-//     // console.log(result.data); // delivers an array of query results
-// });
-
+        //jaccard();
+//}, 1000)
+////////////////////////////////////////////////////////////////
 
 module.exports = app;
