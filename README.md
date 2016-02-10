@@ -20,6 +20,10 @@ A Podcast Social Recommendation Engine
 | **Joey Leung** | https://github.com/DzoYee      |   https://www.linkedin.com/in/joeydleung  |
 | **Joshua Huang** | https://github.com/jphuangjr     |   https://www.linkedin.com/in/jphuangjr  |
 
+## Documentation:
+1. [API Routes](#authors)
+
+
 ## Usage
 
 1. Create an account
@@ -37,7 +41,9 @@ A Podcast Social Recommendation Engine
 
 ## Development
 
-### Installing Dependencies
+### Installing 
+
+Install Node, ElasticSearch, Cordova, and Ionic globally using `npm install -g node elasticsearch cordova ionic` 
 
 From the folder directory:
 
@@ -59,8 +65,8 @@ npm install
 ##### To run ElasticSearch
 
 - CD into server
+- And run ```elasticsearch```
 - Run ``` node loadPodcastsElastic.js```
-- And run elasticsearch
 
 ## Roadmap
 
