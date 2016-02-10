@@ -1,10 +1,74 @@
 <ion-view cache-view="false" view-title="Enki">
 <ion-content>
 <div class="bar bar-header">
-  
+<ion-toggle ng-model="shouldShowDelete">
+  Edit
+</ion-toggle>
   <div class="h1 title">EnKi</div>
   <button class="button icon ion-log-out button-assertive logout_button" ng-click="logout()">Logout </button>
   </div>
+
+  <div class="tabs tabs-darkgrey tabs-icon-top static">
+    <a ui-sref="app.friends" class="tab-item">
+      <i class="icon ion-thumbsup"></i> Likes
+    </a>
+    <a ui-sref="app.gallery" class="tab-item">
+      <i class="icon ion-thumbsdown"></i> Dislikes
+    </a>
+  </div>
+    <!-------------- PLAYER STUFF ------------>
+    <div id="trackOne" style="padding-top: 60px;"><img src="../../img/332.gif" id="loading"></div>
+    <script src="../wavesurfer.min.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script>
+        $(document).ready(function(){
+            $("#play").hide()
+            $("#pause").hide()
+            $("#rewind").hide()
+            $("#forward").hide()
+        })
+        $("#forward").on("click", function(){
+            wavesurfer.skipForward()
+        })
+        $("#rewind").on("click", function(){
+            wavesurfer.skipBackward()
+        })
+        $("#play").on("click", function(){
+            wavesurfer.play();
+            $("#play").hide()
+            $("#pause").show()
+        })
+
+        $("#pause").on("click", function(){
+            wavesurfer.pause();
+            $("#play").show()
+            $("#pause").hide()
+        })
+        var wavesurfer = WaveSurfer.create({
+            container: document.querySelector('#trackOne'),
+            waveColor: 'grey',
+            skipLength: 5,
+            progressColor: 'black'
+        });
+
+
+        wavesurfer.on('ready', function () {
+            wavesurfer.play();
+            $("#rewind").show()
+            $("#forward").show()
+            $("#pause").show()
+            $("#loading").hide()
+        });
+
+        wavesurfer.load('http://www.stephaniequinn.com/Music/Allegro%20from%20Duet%20in%20C%20Major.mp3');
+    </script>
+    <div id="playerButtons" style="padding-left: 140px;">
+        <button style="width: 30px; height: 30px; border-radius: 20px " id="rewind" class="ion-reply" style="text-align:center"></button>
+        <button style="width: 30px; height: 30px; border-radius: 20px" id="play" class="ion-play"></button>
+        <button style="width: 30px; height: 30px; border-radius: 20px" id="pause" class="ion-pause"></button>
+        <button style="width: 30px; height: 30px; border-radius: 20px" class="ion-forward" id="forward"></button>
+    </div>
+    <!----------- END OF PLAYER STUFF -------->
 
 <ion-toggle ng-model="shouldShowDelete">
   Edit
