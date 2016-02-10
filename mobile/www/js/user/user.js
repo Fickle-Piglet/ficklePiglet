@@ -1,6 +1,6 @@
 angular.module('enki.user',[])
 
-.controller('userController', function ($scope, $window, $location, User, $state, UserResources, $ionicHistory) {
+.controller('userController', function ($scope, $window, $location, User, $state, UserResources, $ionicHistory, $ionicLoading) {
   // console.log("ITEM: ", $window.localStorage.getItem('com.fickle'));
   $scope.likedResources = [];
   $scope.dislikedResources = [];
@@ -22,10 +22,28 @@ angular.module('enki.user',[])
 
   $scope.logout = function() {
     window.localStorage.setItem('com.fickle', null);
-    $ionicHistory.clearCache();
-    $ionicHistory.clearHistory();
-    $state.go('login');
+    window.localStorage.clear();
+     setTimeout(function () {
+      $ionicHistory.clearCache();
+      $ionicHistory.clearHistory();
+      // $ionicHistory.nextViewOptions({ disableBack: true, historyRoot: true });
+      $state.go('login');
+    }, 300);
   };
+
+//   $scope.logout = function(){
+//     $ionicLoading.show({template:'Logging out....'});
+//     window.localStorage.setItem('com.fickle', null);
+
+//     $timeout(function () {
+//         $ionicLoading.hide();
+//         $ionicHistory.clearCache();
+//         $ionicHistory.clearHistory();
+//         $ionicHistory.nextViewOptions({ disableBack: true, historyRoot: true });
+//         $state.go('login');
+//         }, 30);
+
+// };
 
   $scope.onItemDelete = function(resource) {
     console.log("Attempted to Delete");
