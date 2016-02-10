@@ -1,3 +1,4 @@
+var Promise = require("bluebird");
 var db = require("../server/db/db.js");
 var _ = require('lodash');
 var users;
@@ -16,22 +17,22 @@ var UserTwoDislikes;
   db.cypherQuery("MATCH (u:User {username:'" + userOne + "'})-[r:HAS_DISLIKED]-(e:Episode) return e.title", function(err, res){
     if (err) {console.log("Error: with ",userOne," ", err);}
     userOneDislikes = res.data;
-    // console.log("typeof userOneDislikes: ", typeof userOneDislikes);
+    console.log("typeof userOneDislikes: ", typeof userOneDislikes);
     
     db.cypherQuery("MATCH (u:User {username:'" + userTwo + "'})-[r:HAS_DISLIKED]-(e:Episode) return e.title", function(err, res){
       if (err) {console.log("Error: with ",userTwo," ", err);}
       userTwoDislikes = res.data;
-      // console.log("typeof userTwoDislikes: ", typeof userTwoDislikes);
+      console.log("typeof userTwoDislikes: ", typeof userTwoDislikes);
 
       db.cypherQuery("MATCH (u:User {username:'" + userOne + "'})-[r:HAS_LIKED]-(e:Episode) return e.title", function(err, res){
         if (err) {console.log("Error: with ",userOne," ", err);}
         userOneLikes = res.data;
-        // console.log("typeof userOnelikes: ", typeof userOneLikes);
+        console.log("typeof userOnelikes: ", typeof userOneLikes);
 
         db.cypherQuery("MATCH (u:User {username:'" + userTwo + "'})-[r:HAS_LIKED]-(e:Episode) return e.title", function(err, res){
           if (err) {console.log("Error: with ",userTwo," ", err);}
           userTwoLikes = res.data;
-          // console.log("typeof userTwolikes: ", typeof userTwoLikes);
+          console.log("typeof userTwolikes: ", typeof userTwoLikes);
           // console.log("userOneLikes: ", userOneLikes.length);
           // console.log("userTwoLikes: ", userTwoLikes.length);
           var union = _.union(userOneLikes, userTwoLikes, userOneDislikes, userTwoDislikes).length;
@@ -45,10 +46,8 @@ var UserTwoDislikes;
 
           db.cypherQuery("MATCH (u1:User {username:'" + userOne + "'}), (u2:User {username:'" + userTwo + "'}) MERGE (u1)-[:SIMILARITY {score: '" + similarityIndex + "'}]->(u2)", function(err, res){
             if (err) { console.log (err); }
-            // console.log("RES: ", res);
-            // return res;
-            // callback(userOne);
-            console.log("Yay it worked!");
+            console.log("got to the end");
+            callback(userOne, userTwo);
           });
         });
       });
@@ -57,33 +56,36 @@ var UserTwoDislikes;
 };
 
 
-function makeUserSimalarities (){
-
+function makeUserSimalarities () {
+  console.log("Starting Function");
+  var j;
+  var iterate = function(userOne,userTwo){
+    // console.log(userOne, " and ", userTwo, " are connected!");
+    console.log(j);
+    j ++;
+  };
   db.cypherQuery("MATCH (u:User) return u.username", function(err, res){
     users = res.data;
+    console.log("Got Users Back");
     // console.log("USERS: ", users[0]);
     // console.log("USERS TYPE: ",typeof users[0]);
-
-
-    for (var i = 60; i < 80; i ++) {
-      for (var j = i + 1; j < 80; j++) {
-          compare(users[i], users[j]);
-          // , function(userOne){
-          // console.log("Done with user:  ", userOne);
-        // });
-      }
-      // console.log('Completed user: ',i," of ", users.length);
-      // console.log(i);
+    for (var i = 0; i < users.length - 1; i ++) {
+      console.log("Starting User: ", i);
+      // for (var j = i + 1; j < 80; j++) {
+      j = i + 1;
+      console.log("J: ",j);
+      console.log(users.length);
+      while(j < users.length){
+        // console.log("Calling compare on 1: ", users[i], "2: ", users[j]);
+        compare(users[i], users[j], iterate);
+      }  
+      // }
     }
-    // console.log(res.data);
-  });
-  
+  });  
 }
+makeUserSimalarities();
 
-makeUserSimalarities ();
-  //Find number of similar likes
-  //Find number of similar dislikes
-  //total length =
+
 
 
 // compare('Laverne2','Lynell2');

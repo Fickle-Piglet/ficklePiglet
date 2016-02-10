@@ -22,6 +22,7 @@
     "angular-aria": "^1.4.9",
     "angular-material": "^1.0.2",
     "angular-messages": "^1.4.9",
+    "bluebird": "^3.2.2",
     "body-parser": "^1.14.2",
     "browser-sync": "^2.11.1",
     "elasticsearch": "^10.1.3",
