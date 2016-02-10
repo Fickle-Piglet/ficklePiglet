@@ -1,30 +1,30 @@
 angular.module('enki.resource',[])
 
-.controller('resourceController', function($scope, Podcasts, UserResources, $rootScope) {
+.controller('resourceController', function ($scope, Podcasts, UserResources, $rootScope, $window) {
     $scope.selected = [];
     $scope.results = [];
-    var user = JSON.parse(window.localStorage.getItem('com.fickle'));
+    var user = JSON.parse($window.localStorage.getItem('com.fickle'));
     var username = user.username;
 
     function getPods (){
-      var queue = JSON.parse(window.localStorage.getItem('podcastQueue'));
+      var queue = JSON.parse($window.localStorage.getItem('podcastQueue'));
       console.log("queue",queue);
-      if(queue === null || !queue.length > 0 || window.localStorage.getItem('search')) {
+      if(queue === null || !queue.length > 0 || $window.localStorage.getItem('search')) {
         Podcasts.getPodcasts(username).then(function (data){
           console.log(data);
           $scope.results = data[0];
           data.shift()
-          window.localStorage.setItem('podcastQueue', JSON.stringify(data));
-          window.localStorage.removeItem('search');
+          $window.localStorage.setItem('podcastQueue', JSON.stringify(data));
+          $window.localStorage.removeItem('search');
         });  
       } else if (queue.length > 0) {
         $scope.results = queue[0];
         console.log(queue)
         console.log(queue[0])
-        window.localStorage.removeItem('podcastQueue');
+        $window.localStorage.removeItem('podcastQueue');
         queue.shift();
         console.log(queue);
-        window.localStorage.setItem('podcastQueue', JSON.stringify(queue))
+        $window.localStorage.setItem('podcastQueue', JSON.stringify(queue))
       }
     }
     
@@ -32,7 +32,7 @@ angular.module('enki.resource',[])
     $rootScope.$on('$stateChangeSuccess', 
     function(event, toState, toParams, fromState, fromParams) {
       // console.log("toState: ",toState,"fromState: ", fromState);
-      if (toState.name === 'tab.resource' && window.localStorage.getItem('search')) {
+      if (toState.name === 'tab.resource' && $window.localStorage.getItem('search')) {
         console.log('new search now!');
         getPods();
       }

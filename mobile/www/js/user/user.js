@@ -4,7 +4,7 @@ angular.module('enki.user',[])
   // console.log("ITEM: ", $window.localStorage.getItem('com.fickle'));
   $scope.likedResources = [];
   $scope.dislikedResources = [];
-  var user = JSON.parse(window.localStorage.getItem('com.fickle'));
+  var user = JSON.parse($window.localStorage.getItem('com.fickle'));
   var username = user.username;
 
   User.getUser($window.localStorage.getItem('com.fickle'))
@@ -21,13 +21,13 @@ angular.module('enki.user',[])
   });
 
   $scope.logout = function() {
-    window.localStorage.setItem('com.fickle', null);
-    window.localStorage.clear();
-    window.localStorage.removeItem('com.fickle', null);
+    $window.localStorage.setItem('com.fickle', null);
+    $window.localStorage.clear();
+    $window.localStorage.removeItem('com.fickle', null);
      setTimeout(function () {
       $ionicHistory.clearCache();
       $ionicHistory.clearHistory();
-      // $ionicHistory.nextViewOptions({ disableBack: true, historyRoot: true });
+      $ionicHistory.nextViewOptions({ disableBack: true, historyRoot: true });
       $state.go('login');
     }, 300);
   };
