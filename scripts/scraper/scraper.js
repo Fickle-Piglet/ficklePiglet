@@ -61,7 +61,10 @@ module.exports = {
         }
 
     },
-    tester: function(counter){
+    tester: function(counter, max){
+        if(counter === max){
+            return
+        }
         var counter = counter || 0;
         console.log("COUNTER: ",counter);
         setTimeout(function(){
@@ -69,7 +72,7 @@ module.exports = {
             var item = JSON.parse(list[counter])
             insertEp.insertEpisodes(item.feedUrl)
             counter++
-            module.exports.tester(counter);
+            module.exports.tester(counter, list.length-1);
         }, 180000)
     }
 
