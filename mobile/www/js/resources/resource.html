@@ -1,6 +1,6 @@
-<ion-view>
-  <ion-content>
-  <div class="bar bar-header item-input-inset">
+<ion-view view-title="Enki">
+<ion-content>
+<div class="bar bar-header item-input-inset">
   <label class="item-input-wrapper">
     <i class="icon ion-ios-search placeholder-icon"></i>
     <input type="search" placeholder="Search" ng-model="myModel.searchString" >
@@ -8,129 +8,93 @@
   <button class="button button-clear" data-clear-btn="true">
     Cancel
   </button>
-</div>
-  <div class="card row responsive-sm">
-    <div class="col item item-divider">
-      <div class="col item item-avatar">
-        <h2>{{results[1].title}}</h2>
-        <p>On {{results[0].name}}</p>
-      </div>
-    </div>
-    <div class="col item item-text-wrap">
-      <a class="col item item-icon-left assertive" href="#">
-        <div class="col item item-image">
-          <img src="{{results[0].thumbnail}}">
-        </div>
-        <input id="urlLink" hidden="true" value="{{results[1].link}}">
-        <!-------------- PLAYER STUFF ------------>
-        <div id="trackOne" style="padding-top: 60px;"><img src="../../img/332.gif" id="loading"></div>
-        <script src="../wavesurfer.min.js"></script>
-        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-        <script>
-          $(document).ready(function(){
+  </div>
+<div class="list card">
+  <div class="item item-body">
+    <img src="{{results[0].thumbnail}}">
+  
+  <input id="urlLink" hidden="true" value="{{results[1].link}}">
+    <div id="trackOne"><img src="../../img/332.gif" id="loading"></div>
+    <script src="../wavesurfer.min.js"></script>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script>
+      $(document).ready(function(){
 //            $("#play").hide()
-            $("#pause").hide()
+        $("#pause").hide()
 //            $("#rewind").hide()
 //            $("#forward").hide()
-          })
-          $("#forward").on("click", function(){
-            wavesurfer.skipForward()
-          })
-          $("#rewind").on("click", function(){
-            wavesurfer.skipBackward()
-          })
-          $("#play").on("click", function(){
-            wavesurfer.play();
-            $("#play").hide()
-            $("#pause").show()
-          })
-
-          $("#pause").on("click", function(){
-            wavesurfer.pause();
-            $("#play").show()
-            $("#pause").hide()
-          })
-          var wavesurfer = WaveSurfer.create({
-            container: document.querySelector('#trackOne'),
-            waveColor: 'grey',
-            skipLength: 5,
-            progressColor: 'black'
-          });
-
-
-          wavesurfer.on('ready', function () {
-            wavesurfer.play();
-            $("#rewind").show()
-            $("#forward").show()
-            $("#pause").show()
-            $("#loading").hide()
-          });
-
-          var activate = function(){
-            setTimeout(function(){
-              var urlLINK = $("#urlLink").val();
-              alert(urlLINK)
-
-              wavesurfer.load(urlLINK);
-            }, 1000)
-          }
-
-          activate();
-
-          $(".refresh").on("click", function(){
-            activate();
-          })
-
-
-
-        </script>
-        <div id="playerButtons" style="padding-left: 140px;">
-          <button style="width: 30px; height: 30px; border-radius: 20px " id="rewind" class="ion-reply" style="text-align:center"></button>
-          <button style="width: 30px; height: 30px; border-radius: 20px" id="play" class="ion-play"></button>
-          <button style="width: 30px; height: 30px; border-radius: 20px" id="pause" class="ion-pause"></button>
-          <button style="width: 30px; height: 30px; border-radius: 20px" class="ion-forward" id="forward"></button>
-        </div>
-        <!----------- END OF PLAYER STUFF -------->
+      })
+      $("#forward").on("click", function(){
+        wavesurfer.skipForward()
+      })
+      $("#rewind").on("click", function(){
+        wavesurfer.skipBackward()
+      })
+      $("#play").on("click", function(){
+        wavesurfer.play();
+        $("#play").hide()
+        $("#pause").show()
+      })
+      $("#pause").on("click", function(){
+        wavesurfer.pause();
+        $("#play").show()
+        $("#pause").hide()
+      })
+      var wavesurfer = WaveSurfer.create({
+        container: document.querySelector('#trackOne'),
+        waveColor: 'grey',
+        skipLength: 5,
+        progressColor: 'black'
+      });
+      wavesurfer.on('ready', function () {
+        wavesurfer.play();
+        $("#rewind").show()
+        $("#forward").show()
+        $("#pause").show()
+        $("#loading").hide()
+      });
+      var activate = function(){
+        setTimeout(function(){
+          var urlLINK = $("#urlLink").val();
+          alert(urlLINK)
+          wavesurfer.load(urlLINK);
+        }, 1000)
+      }
+      activate();
+      $(".refresh").on("click", function(){
+        activate();
+      })
+    </script>
+  <div>
+    <h2>{{results[1].title}}</h2>
+    <p>On {{results[0].name}}</p>
+    <div class="item tabs tabs-secondary tabs-icon-left">
+      <a class="tab-item">
+        <i class="icon ion-reply" id="rewind"></i>
+      </a>
+      <a class="tab-item">
+        <i class="icon ion-play" id="play"></i>
+      </a>
+      <a class="tab-item">
+        <i class="icon ion-pause" id="pause"></i>
+      </a>
+      <a class="tab-item">
+        <i class="icon ion-forward" id="forward"></i>
       </a>
     </div>
-    <div class="item item-divider">
-      <a ng-click="likeResource(results[1].title,results[0].name); select(results[1].title)"  class="btn btn-default btn-sm" >
-        <span class="glyphicon glyphicon-thumbs-up refresh"></span> Like
+    <div class="item tabs tabs-secondary tabs-icon-left">
+      <a class="tab-item">
+        <i class="icon ion-thumbsup" ng-click="likeResource(results[1].title,results[0].name); select(results[1].title)"></i>
       </a>
-        <button ng-click="dislikeResource(results[1].title); select(results[1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
-        <span class="glyphicon glyphicon-thumbs-down refresh"></span> Dislike
-      </button>
-      
-       <button class="btn btn-default btn-sm refresh" ng-click="next()">Next</button>
+      <a class="tab-item">
+        <i class="icon ion-thumbsdown" ng-click="dislikeResource(results[1].title); select(results[1].title); next()"></i>
+      </a>
+      <a class="tab-item">
+        <i class="icon ion-skip-forward" ng-click="next()"></i>
+      </a>
     </div>
   </div>
-<!-- <div class="list card">
-
-  <div class="item item-avatar">
-    <h2>{{results[0][1].title}}</h2>
-    <p>On {{results[0][0].name}}</p>
   </div>
-
-  <div class="item item-image">
-    <img src="{{results[0][0].thumbnail}}">
-  </div>
-
-  <a class="item item-icon-left assertive" href="#">
-    <i class="icon ion-music-note"></i>
-    Url: {{results[0][1].link}}
-    Start listening
-  </a>
-
-  <button ng-click="likeResource(results[0][1].title); select(results[0][1].title)"  class="btn btn-default btn-sm" >
-    <span class="glyphicon glyphicon-thumbs-up"></span> Like
-  </button>
-    <button ng-click="dislikeResource(results[0][1].title); select(results[0][1].title); next()" ng-disabled="abled" ng-model="abled" class="btn btn-default btn-sm">
-    <span class="glyphicon glyphicon-thumbs-down"></span> Dislike
-  </button>
-  
-   <button class="btn btn-default btn-sm" ng-click="next()">Next</button>
-
-</div> -->
-
-  </ion-view>
+</div>
+</ion-view>
 </ion-content>

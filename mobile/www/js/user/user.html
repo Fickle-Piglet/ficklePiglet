@@ -1,5 +1,10 @@
-<ion-view>
+<ion-view view-title="Enki">
 <ion-content>
+<div class="bar bar-header">
+  
+  <div class="h1 title">EnKi</div>
+  <button class="button icon ion-log-out button-assertive logout_button" ng-click="logout()">Logout </button>
+  </div>
     <!-------------- PLAYER STUFF ------------>
     <div id="trackOne" style="padding-top: 60px;"><img src="../../img/332.gif" id="loading"></div>
     <script src="../wavesurfer.min.js"></script>
@@ -66,11 +71,11 @@
     </div>
   </ion-item>
 </ion-list>
-<div class="padding">
+<!-- <div class="padding">
     <button ng-click="logout()" class="button button-full button-assertive">
      Logout
     </button>
-</div> 
+</div>  -->
 </ion-content>
 </ion-view>
 
