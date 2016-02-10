@@ -23,6 +23,7 @@ angular.module('enki.user',[])
   $scope.logout = function() {
     window.localStorage.setItem('com.fickle', null);
     window.localStorage.clear();
+    window.localStorage.removeItem('com.fickle', null);
      setTimeout(function () {
       $ionicHistory.clearCache();
       $ionicHistory.clearHistory();
@@ -31,19 +32,6 @@ angular.module('enki.user',[])
     }, 300);
   };
 
-//   $scope.logout = function(){
-//     $ionicLoading.show({template:'Logging out....'});
-//     window.localStorage.setItem('com.fickle', null);
-
-//     $timeout(function () {
-//         $ionicLoading.hide();
-//         $ionicHistory.clearCache();
-//         $ionicHistory.clearHistory();
-//         $ionicHistory.nextViewOptions({ disableBack: true, historyRoot: true });
-//         $state.go('login');
-//         }, 30);
-
-// };
 
   $scope.onItemDelete = function(resource) {
     console.log("Attempted to Delete");
