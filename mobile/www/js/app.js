@@ -31,7 +31,7 @@ var enki = angular.module('enki', [
   });
 });
 
-enki.config(function($stateProvider, $urlRouterProvider){
+enki.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider){
   // $urlRouterProvider.otherwise('/');
 
   $stateProvider
@@ -68,6 +68,7 @@ enki.config(function($stateProvider, $urlRouterProvider){
     }
   })
   .state('login', {
+      cache: false,
       url: '/login',
       templateUrl: 'templates/login.html',
       controller: 'AuthController'
@@ -83,4 +84,5 @@ enki.config(function($stateProvider, $urlRouterProvider){
   });
   
   $urlRouterProvider.otherwise('/login');
+  $ionicConfigProvider.views.forwardCache(true);
 });
