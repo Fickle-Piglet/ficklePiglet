@@ -1,6 +1,7 @@
 var db = require("../../server/db/db.js");
 
 var request = require("request");
+var _ = require("lodash");
 
 
 module.exports = {
@@ -67,24 +68,25 @@ module.exports = {
                     }
                     console.log("GETTING THE TAGS FOR SHOW",result.data)
                     userPreferences.keywords = result.data;
-                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return resources,e ORDER BY number limit 5;",
+                    db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return resources,e ORDER BY number limit 10;",
                         userPreferences,
                         function(err, query) {
                             console.log(err)
+                            var titles = _.map(query.data, 'title');
                             // Randomizer function
                             // var getRandomInt = function(min, max) {
                             //     return Math.floor(Math.random() * (max - min)) + min;
                             // };
                             // var int = getRandomInt(0, query.data.length);
                             // var results = query.data.slice(0,4);
-                            console.log("RESULTSSS>>>>>>>>>>>>>>>>>", query.data);
+                            console.log("RESULTSSS>>>>>>>>>>>>>>>>>", titles);
                             res.send(query.data);
                         });
                 });
             } else {
                 console.log("NAME OF TAG: ", userPreferences.resource.text);
                 userPreferences.keywords = [userPreferences.resource.text];
-                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return resources,e ORDER BY number limit 5;",
+                db.cypherQuery("MATCH  (u:User {username:{username}})-[:HAS_SEEN]->(eps:Episode) WITH collect(distinct eps) as seenepisodes MATCH (e:Episode)--(resources:Resource)--(t:Tag) WHERE t.name IN {keywords} AND NOT e IN seenepisodes WITH resources,e, rand() AS  number return resources,e ORDER BY number limit 10;",
                     userPreferences,
                     function(err, query) {
                         //Randomizer function
@@ -94,6 +96,7 @@ module.exports = {
                         // var int = getRandomInt(0, query.data.length);
                         // console.log("RESULTSSS>>>>>>>>>>>>>>>>>", query.data[int]);
                         // var results = query.data.slice(0,4);
+                        console.log("RESULTSSS>>>>>>>>>>>>>>>>>", query.data);
                         res.send(query.data);
                     });
             }
