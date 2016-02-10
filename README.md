@@ -21,7 +21,7 @@ A Podcast Social Recommendation Engine
 | **Joshua Huang** | https://github.com/jphuangjr     |   https://www.linkedin.com/in/jphuangjr  |
 
 ## Documentation:
-1. [API Routes](#authors)
+1. [API Routes](https://github.com/Fickle-Piglet/ficklePiglet/wiki/API-Routes)
 
 
 ## Usage
