@@ -24,6 +24,7 @@ A Podcast Social Recommendation Engine
 ## Documentation:
 1. [API Routes](https://github.com/Fickle-Piglet/ficklePiglet/wiki/API-Routes)
 2. [Scraper](https://github.com/Fickle-Piglet/ficklePiglet/wiki/Data-Scraper)
+3. [Jaccard Index](https://github.com/Fickle-Piglet/ficklePiglet/wiki/Jaccard-Index)
 
 
 ## Usage
