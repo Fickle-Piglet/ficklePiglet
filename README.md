@@ -22,6 +22,7 @@ A Podcast Social Recommendation Engine
 | **Joshua Huang** | https://github.com/jphuangjr     |   https://www.linkedin.com/in/jphuangjr  |
 
 ## Documentation:
+0. [AWS Server Setup](https://github.com/Fickle-Piglet/ficklePiglet/wiki/AWS-Setup-and-accessing-the-server)
 1. [API Routes](https://github.com/Fickle-Piglet/ficklePiglet/wiki/API-Routes)
 2. [Scraper](https://github.com/Fickle-Piglet/ficklePiglet/wiki/Data-Scraper)
 3. [Jaccard Index](https://github.com/Fickle-Piglet/ficklePiglet/wiki/Jaccard-Index)
