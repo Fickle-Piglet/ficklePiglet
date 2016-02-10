@@ -126,7 +126,16 @@
 
 <ion-view>
 <ion-content>
-<ion-card>
+<div class="bar bar-header item-input-inset">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input type="search" placeholder="Search" ng-model="myModel.searchString" >
+  </label>
+  <button class="button button-clear" data-clear-btn="true">
+    Cancel
+  </button>
+  </div>
+<div class="list card list-outline list-positive">
   <div class="item item-thumbnail">
     <img src="{{results[0].thumbnail}}">
   
@@ -182,21 +191,21 @@
             activate();
           })
         </script>
-  <ion-card-content>
+  <div>
     <h2>{{results[1].title}}</h2>
     <p>On {{results[0].name}}</p>
     <div class="item tabs tabs-secondary tabs-icon-left">
       <a class="tab-item">
-        <i class="icon ion-thumbsup" ng-click="likeResource(results[1].title,results[0].name); select(results[1].title)"></i>
-      </a>
-      <a class="tab-item">
-        <i class="icon ion-thumbsdown" ng-click="ldislikeResource(results[1].title); select(results[1].title); next()"></i>
+        <i class="icon ion-reply"></i>
       </a>
       <a class="tab-item">
         <i class="icon ion-play"></i>
       </a>
       <a class="tab-item">
-        <i class="icon ion-forward" ng-click="next()"></i>
+        <i class="icon ion-pause"></i>
+      </a>
+      <a class="tab-item">
+        <i class="icon ion-forward"></i>
       </a>
     </div>
     <div class="item tabs tabs-secondary tabs-icon-left">
@@ -207,11 +216,11 @@
         <i class="icon ion-thumbsdown" ng-click="ldislikeResource(results[1].title); select(results[1].title); next()"></i>
       </a>
       <a class="tab-item">
-        <i class="icon ion-forward" ng-click="next()"></i>
+        <i class="icon ion-skip-forward" ng-click="next()"></i>
       </a>
     </div>
-  </ion-card-content>
   </div>
-</ion-card>
+  </div>
+</div>
 </ion-view>
 </ion-content>
