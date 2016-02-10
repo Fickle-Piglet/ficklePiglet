@@ -4,6 +4,7 @@ A Podcast Social Recommendation Engine
 ## Table of Contents
 
 1. [Team](#authors)
+2. [Documentation](#Documentation)
 1. [Usage](#usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
