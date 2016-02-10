@@ -84,7 +84,7 @@ angular.module('enki.resource',[])
       .then(function(message){
         console.log("Return from Like: ",message);
         if(message ===200){
-          alert("You have liked this");
+          console.log("You have liked this");
         }
       })
       .catch(function (error) {
@@ -100,7 +100,7 @@ angular.module('enki.resource',[])
       UserResources.dislikeResource(userpref)
       .then(function(message){
         if(message ===200){
-          alert("You have disliked this")
+          console.log("You have disliked this")
         }
       })
       .catch(function (error) {
