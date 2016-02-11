@@ -88,7 +88,8 @@ function getSuggestions(input) {
                 text: input,
                 completion: {
                     field: "suggest",
-                    fuzzy: true
+                    fuzzy: true,
+                    size: "20"
                 }
             }
         }
