@@ -5,12 +5,14 @@ angular.module('enki.resource',[])
     $scope.myModel = {};
     $scope.search = function() {
         q = $scope.myModel.searchString;
-        if (q.length > 1) {
+        if (q.length > 0) {
+            $("#warning").hide();
             Search.searchPodcasts(q).then(function (data) {
                 $scope.results2 = data.docsuggest[0].options;
             });
         } else {
             $scope.results2 = [];
+            $("#warning").show();
         }
     };
     $scope.clearSearch = function(){
@@ -42,13 +44,15 @@ angular.module('enki.resource',[])
         Podcasts.getPodcasts(username).then(function (data){
           console.log(data);
           $scope.results = data[0];
+        checkEmpty()
           data.shift()
           $window.localStorage.setItem('podcastQueue', JSON.stringify(data));
           $window.localStorage.removeItem('search');
-          $window.location.reload(true);
+          //$window.location.reload(true);
         });  
       } else if (queue.length > 0) {
         $scope.results = queue[0];
+      checkEmpty()
         console.log(queue)
         console.log(queue[0])
         $window.localStorage.removeItem('podcastQueue');
@@ -57,8 +61,19 @@ angular.module('enki.resource',[])
         $window.localStorage.setItem('podcastQueue', JSON.stringify(queue))
       }
     }
+
+    function checkEmpty(){
+        if($scope.results[0] === undefined){
+            $("#pod").hide();
+            $("#warning").show();
+        } else {
+            $("#pod").show();
+            $("#warning").hide();
+        }
+    }
     
     getPods();
+    checkEmpty()
     // $rootScope.$on('$stateChangeSuccess', 
     // function(event, toState, toParams, fromState, fromParams) {
     //   // console.log("toState: ",toState,"fromState: ", fromState);

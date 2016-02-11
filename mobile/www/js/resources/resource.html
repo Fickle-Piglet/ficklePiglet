@@ -17,7 +17,8 @@
             </button>
         </div>
     </div>
-<div class="list card">
+<div id="warning"> Please Search for a Podcast :)</div>
+<div class="list card" id="pod">
   <div class="item item-body">
     <img src="{{results[1]}}">
   
@@ -26,6 +27,12 @@
     <!--<script src="../wavesurfer.min.js"></script>-->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <script>
+        $("#like").on("click", function(){
+            $("#like").css("color", "green")
+        })
+        $("#dislike").on("click", function(){
+            $("#like").css("color", "red")
+        })
 //      $(document).ready(function(){
 //          activate();
 //      })
@@ -92,10 +99,10 @@
     </div>
     <div class="item tabs tabs-secondary tabs-icon-left">
       <a class="tab-item">
-        <i class="icon ion-thumbsup refresh" ng-click="likeResource(results[2],results[0]); select(results[2])"></i>
+        <i id="like" class="icon ion-thumbsup refresh" ng-click="likeResource(results[2],results[0]); select(results[2])"></i>
       </a>
       <a class="tab-item">
-        <i class="icon ion-thumbsdown refresh" ng-click="dislikeResource(results[2]); select(results[2]); next()"></i>
+        <i id="dislike" class="icon ion-thumbsdown refresh" ng-click="dislikeResource(results[2]); select(results[2]); next()"></i>
       </a>
       <a class="tab-item">
         <i class="icon ion-skip-forward refresh" ng-click="next()"></i>
