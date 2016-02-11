@@ -15,18 +15,19 @@ angular.module('enki.resource',[])
     };
     $scope.clearSearch = function(){
         $scope.results2 = [];
-    }
+    };
 
     $scope.sendTags = function(selected) {
-        $scope.clearSearch()
+        $scope.clearSearch();
         var isShow = selected.payload.url ? true : false;
         var obj = {name: selected.text, isShow: isShow};
         console.log(obj);
         window.localStorage.removeItem('selected');
         window.localStorage.setItem('selected', JSON.stringify(selected));
         Podcasts.setTags(selected);
-        $state.go('tab.resource');
+        // $state.go('tab.resource');
         window.localStorage.setItem('search', true);
+        getPods();
     };
     $scope.selected = [];
     $scope.results = [];
@@ -56,14 +57,14 @@ angular.module('enki.resource',[])
     }
     
     getPods();
-    $rootScope.$on('$stateChangeSuccess', 
-    function(event, toState, toParams, fromState, fromParams) {
-      // console.log("toState: ",toState,"fromState: ", fromState);
-      if (toState.name === 'tab.resource' && $window.localStorage.getItem('search')) {
-        console.log('new search now!');
-        getPods();
-      }
-    });
+    // $rootScope.$on('$stateChangeSuccess', 
+    // function(event, toState, toParams, fromState, fromParams) {
+    //   // console.log("toState: ",toState,"fromState: ", fromState);
+    //   if (toState.name === 'tab.resource' && $window.localStorage.getItem('search')) {
+    //     console.log('new search now!');
+    //     getPods();
+    //   }
+    // });
 
 
     // Podcasts.getPodcasts(username).then(function (data){
