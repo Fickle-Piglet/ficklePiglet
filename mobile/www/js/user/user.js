@@ -36,6 +36,8 @@ angular.module('enki.user',[])
 
   $scope.onItemDelete = function(resource) {
     console.log("Attempted to Delete");
+    $scope.likedResources.splice($scope.likedResources.indexOf(resource), 1);
+    $scope.dislikedResources.splice($scope.dislikedResources.indexOf(resource), 1);
     var userpref = {
       'username' : username,
       'episodeTitle' : resource[0].title,
@@ -52,7 +54,7 @@ angular.module('enki.user',[])
     .catch(function (error) {
       console.error(error);
     });
-    $scope.likedResources.splice($scope.likedResources.indexOf(resource), 1);
-    $scope.dislikedResources.splice($scope.dislikedResources.indexOf(resource), 1);
+    // $scope.likedResources.splice($scope.likedResources.indexOf(resource), 1);
+    // $scope.dislikedResources.splice($scope.dislikedResources.indexOf(resource), 1);
   };
 });
