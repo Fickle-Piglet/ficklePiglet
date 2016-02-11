@@ -1,6 +1,33 @@
 angular.module('enki.resource',[])
 
-.controller('resourceController', function ($scope, Podcasts, UserResources, $rootScope, $window) {
+.controller('resourceController', function ($scope, Podcasts, UserResources, $rootScope, $window, Search) {
+
+    $scope.myModel = {};
+    $scope.search = function() {
+        q = $scope.myModel.searchString;
+        if (q.length > 1) {
+            Search.searchPodcasts(q).then(function (data) {
+                $scope.results2 = data.docsuggest[0].options;
+            });
+        } else {
+            $scope.results2 = [];
+        }
+    };
+    $scope.clearSearch = function(){
+        $scope.results2 = [];
+    }
+
+    $scope.sendTags = function(selected) {
+        $scope.clearSearch()
+        var isShow = selected.payload.url ? true : false;
+        var obj = {name: selected.text, isShow: isShow};
+        console.log(obj);
+        window.localStorage.removeItem('selected');
+        window.localStorage.setItem('selected', JSON.stringify(selected));
+        Podcasts.setTags(selected);
+        $state.go('tab.resource');
+        window.localStorage.setItem('search', true);
+    };
     $scope.selected = [];
     $scope.results = [];
     var user = JSON.parse($window.localStorage.getItem('com.fickle'));

@@ -3,12 +3,17 @@
 <div class="bar bar-header item-input-inset">
   <label class="item-input-wrapper">
     <i class="icon ion-ios-search placeholder-icon"></i>
-    <input type="search" placeholder="Search" ng-model="myModel.searchString" >
+    <input type="search" placeholder="Search" ng-model="myModel.searchString" ng-change="search()">
   </label>
-  <button class="button button-clear" data-clear-btn="true">
-    Cancel
-  </button>
   </div>
+    <div ng-repeat="resource in results2">
+        <div class="item item-button-right">
+            {{ resource.text }}
+            <button ng-click="sendTags(resource)" class="button button-royal">
+                <i class="icon ion-search"></i>
+            </button>
+        </div>
+    </div>
 <div class="list card">
   <div class="item item-body">
     <img src="{{results[0].thumbnail}}">
@@ -19,10 +24,7 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <script>
 //      $(document).ready(function(){
-////            $("#play").hide()
-//        $("#pause").hide()
-////            $("#rewind").hide()
-////            $("#forward").hide()
+//          activate();
 //      })
 //      $("#forward").on("click", function(){
 //        wavesurfer.skipForward()
@@ -57,7 +59,7 @@
         setTimeout(function(){
           var urlLINK = $("#urlLink").val();
 //          alert(urlLINK)
-            $("#audioPlayer2").html("<audio src='"+urlLINK+"'controls></audio>")
+            $("#audioPlayer2").html("<audio controls src='"+urlLINK+"'></audio>")
 //          wavesurfer.load(urlLINK);
         }, 1000)
       }
@@ -69,8 +71,8 @@
   <div>
     <h2>{{results[1].title}}</h2>
     <p>On {{results[0].name}}</p>
-      <div id="audioPlayer2" style="width:150px">.</div>
-    <!--<div class="item tabs tabs-secondary tabs-icon-left">-->
+      <!--<div id="audioPlayer2" style="margin-left: 10%">.</div>-->
+    <div class="item tabs tabs-secondary tabs-icon-left">
       <!--<a class="tab-item">-->
         <!--<i class="icon ion-reply" id="rewind"></i>-->
       <!--</a>-->
@@ -83,7 +85,7 @@
       <!--<a class="tab-item">-->
         <!--<i class="icon ion-forward" id="forward"></i>-->
       <!--</a>-->
-    <!--</div>-->
+    </div>
     <div class="item tabs tabs-secondary tabs-icon-left">
       <a class="tab-item">
         <i class="icon ion-thumbsup refresh" ng-click="likeResource(results[1].title,results[0].name); select(results[1].title)"></i>
@@ -98,5 +100,32 @@
   </div>
   </div>
 </div>
-</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar>
+            <h1 class="title">My Modal title</h1>
+        </ion-header-bar>
+        <ion-content>
+            <button class="button button-clear" data-clear-btn="true" ng-click="closeModal()">
+                Cancel
+            </button>
+            <div ng-repeat="resource in results">
+                <div class="item item-button-right">
+                    {{ resource.text }}
+                    <button ng-click="closeModal(); sendTags(resource)" class="button button-royal">
+                        <i class="icon ion-search"></i>
+                    </button>
+                </div>
+            </div>
+        </ion-content>
+    </ion-modal-view>
+</script>
 </ion-content>
+
+<div style="position: fixed; bottom: 3.5em; color:white !important">
+    <!--<div class="item">-->
+        <div id="audioPlayer2" style="margin-left: 25%">.</div>
+    <!--</div>-->
+</div>
+</ion-view>
