@@ -44,6 +44,7 @@ angular.module('enki.resource',[])
           data.shift()
           $window.localStorage.setItem('podcastQueue', JSON.stringify(data));
           $window.localStorage.removeItem('search');
+          $window.location.reload(true);
         });  
       } else if (queue.length > 0) {
         $scope.results = queue[0];
