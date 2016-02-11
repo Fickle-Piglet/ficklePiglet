@@ -15,6 +15,7 @@ angular.module('enki.resource',[])
     };
     $scope.clearSearch = function(){
         $scope.results2 = [];
+        $scope.myModel.searchString = ""
     };
 
     $scope.sendTags = function(selected) {
