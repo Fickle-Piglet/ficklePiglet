@@ -1,22 +1,15 @@
-<ion-view view-title="Enki">
+<ion-view cache-view="false" view-title="Profile">
 <ion-content>
-<div class="bar bar-header">
-<div class="tabs tabs-darkgrey tabs-icon-top static">
-  <button class="button icon ion-log-out button-clear logout_button" ng-click="logout()">Logout </button>  
-    <a ui-sref="app.friends" class="tab-item">
-      <h4>Likes</h4>
-    </a>
-    <a ui-sref="app.gallery" class="tab-item">
-      <h4>Dislikes</h4>
-    </a>
+<div class="bar bar-header bar-royal" >
+  <button class="button icon ion-log-out button-clear logout_button" ng-click="logout()">Logout </button>
+  <h1 class="title">Profile</h1>
   </div>
-  </div>
-  <br>
-  <br>
+  <br><br>
 <ion-toggle ng-model="shouldShowDelete">
   Edit
 </ion-toggle>
 <ion-list show-delete="shouldShowDelete">
+<h4>Likes</h4>
   <ion-item collection-repeat="item in likedResources">
     <ion-delete-button ng-click="onItemDelete(item)" class="ion-minus-circled"></ion-delete-button>
     <div class="item item-avatar">
@@ -24,10 +17,11 @@
        <h2>{{item[1].name}}</h2>
        <h4>{{item[0].title}}</h4>
     </div>
+
   </ion-item>
 </ion-list>
 <ion-list show-delete="shouldShowDelete">
-<h1>Dislikes</h1>
+<h4>Dislikes</h4>
   <ion-item collection-repeat="item in dislikedResources">
     <ion-delete-button ng-click="onItemDelete(item)" class="ion-minus-circled"></ion-delete-button>
     <div class="item item-avatar">
