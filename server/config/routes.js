@@ -12,7 +12,7 @@ module.exports = function(app, express){
     
     /* GET suggestions */
     app.get('/suggest/:input', function (req, res, next) {  
-      console.log("hit this route",req.params.input)
+      // console.log("hit this route",req.params.input)
       elastic.getSuggestions(req.params.input).then(function (result) { res.json(result) });
     });
 

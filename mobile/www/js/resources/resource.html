@@ -16,9 +16,9 @@
     </div>
 <div class="list card">
   <div class="item item-body">
-    <img src="{{results[0].thumbnail}}">
+    <img src="{{results[1]}}">
   
-  <input id="urlLink" hidden="true" value="{{results[1].link}}">
+  <input id="urlLink" hidden="true" value="{{results[3]}}">
       <!--<div id="trackOne"><img src="../../img/332.gif" id="loading"></div>-->
     <!--<script src="../wavesurfer.min.js"></script>-->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -69,10 +69,11 @@
       })
     </script>
   <div>
-    <h2>{{results[1].title}}</h2>
-    <p>On {{results[0].name}}</p>
+    <h2>{{results[2]}}</h2>
+    <p>On {{results[0]}}</p>
       <!--<div id="audioPlayer2" style="margin-left: 10%">.</div>-->
     <div class="item tabs tabs-secondary tabs-icon-left">
+
       <!--<a class="tab-item">-->
         <!--<i class="icon ion-reply" id="rewind"></i>-->
       <!--</a>-->
@@ -88,10 +89,10 @@
     </div>
     <div class="item tabs tabs-secondary tabs-icon-left">
       <a class="tab-item">
-        <i class="icon ion-thumbsup refresh" ng-click="likeResource(results[1].title,results[0].name); select(results[1].title)"></i>
+        <i class="icon ion-thumbsup refresh" ng-click="likeResource(results[2],results[0]); select(results[2])"></i>
       </a>
       <a class="tab-item">
-        <i class="icon ion-thumbsdown refresh" ng-click="dislikeResource(results[1].title); select(results[1].title); next()"></i>
+        <i class="icon ion-thumbsdown refresh" ng-click="dislikeResource(results[2]); select(results[2]); next()"></i>
       </a>
       <a class="tab-item">
         <i class="icon ion-skip-forward refresh" ng-click="next()"></i>
