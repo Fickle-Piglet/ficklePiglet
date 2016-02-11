@@ -1,6 +1,6 @@
 angular.module('enki.resource',[])
 
-.controller('resourceController', function ($scope, Podcasts, UserResources, $rootScope, $window, Search) {
+.controller('resourceController', function ($scope, Podcasts, UserResources, $rootScope, $window, Search, $state) {
 
     $scope.myModel = {};
     $scope.search = function() {
