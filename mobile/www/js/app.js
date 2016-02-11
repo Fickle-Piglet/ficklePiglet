@@ -81,15 +81,7 @@ enki.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider){
         controller: "AuthController"
     //   }
     // }
-  })
-  .state('tab.dislike', {
-    url: '/dislike',
-    views: {
-      'tab-dislike': {
-        templateUrl: "templates/dislike.html",
-        controller: "userController"
-      }
-    }
+  
   });
   
   $urlRouterProvider.otherwise('/login');
