@@ -18,6 +18,7 @@ angular.module('enki.user',[])
 
   User.getDislike($window.localStorage.getItem('com.fickle')).then(function(data){
     $scope.dislikedResources = data;
+    console.log("dislke", data);
   });
 
   $scope.logout = function() {
