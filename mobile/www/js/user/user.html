@@ -3,14 +3,15 @@
 <div class="bar bar-header bar-royal" >
   <button class="button icon ion-log-out button-clear logout_button" ng-click="logout()">Logout </button>
   <h1 class="title">Profile</h1>
+ <button class="button button-icon icon ion-ios-minus-outline" ng-click="data.showDelete = !data.showDelete; data.showReorder = false" ng-model="shouldShowDelete"></button>
   </div>
   <br><br>
 <ion-toggle ng-model="shouldShowDelete">
   Edit
 </ion-toggle>
-<ion-list show-delete="shouldShowDelete">
 <h4>Likes</h4>
-  <ion-item collection-repeat="item in likedResources">
+<ion-list show-delete="shouldShowDelete" class="list list-editing">
+  <ion-item ng-repeat="item in likedResources">
     <ion-delete-button ng-click="onItemDelete(item)" class="ion-minus-circled"></ion-delete-button>
     <div class="item item-avatar">
        <img src="{{item[1].thumbnail}}">
@@ -20,9 +21,9 @@
 
   </ion-item>
 </ion-list>
-<ion-list show-delete="shouldShowDelete">
+<ion-list show-delete="shouldShowDelete" class="list list-editing">
 <h4>Dislikes</h4>
-  <ion-item collection-repeat="item in dislikedResources">
+  <ion-item ng-repeat="item in dislikedResources">
     <ion-delete-button ng-click="onItemDelete(item)" class="ion-minus-circled"></ion-delete-button>
     <div class="item item-avatar">
        <img src="{{item[1].thumbnail}}">
@@ -34,17 +35,3 @@
 </ion-content>
 </ion-view>
 
-
-
-
-<!----------- END OF PLAYER STUFF -------->
-  <!-- <h2>Likes</h2>
-<ion-content>
-  <h2>Likes</h2>
-  <div class="list" collection-repeat="likes in likedResources">
-    <div class="item item-thumbnail-left" href="#">
-      <img src="{{ likes.thumbnail }}">
-      <h2> {{ likes.name }} </h2>
-      <a ng-href="{{likes.url}}"> {{ likes.url }} </a>
-    </div>
-  </div> -->
