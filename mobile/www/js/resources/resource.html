@@ -21,60 +21,27 @@
             </button>
         </div>
     </div>
-<div id="warning"> Please Search for a Podcast :)</div>
+<div id="warning" class="item item-button-center"> Please Search for a Podcast :)</div>
 <div class="list card" id="pod">
   <div class="item item-body">
     <img src="{{results[1]}}">
   
   <input id="urlLink" hidden="true" value="{{results[3]}}">
-      <!--<div id="trackOne"><img src="../../img/332.gif" id="loading"></div>-->
-    <!--<script src="../wavesurfer.min.js"></script>-->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <script>
         $("#like").on("click", function(){
             $("#like").css("color", "green")
         })
         $("#dislike").on("click", function(){
-            $("#like").css("color", "red")
+            $("#dislike").css("color", "red")
         })
-//      $(document).ready(function(){
-//          activate();
-//      })
-//      $("#forward").on("click", function(){
-//        wavesurfer.skipForward()
-//      })
-//      $("#rewind").on("click", function(){
-//        wavesurfer.skipBackward()
-//      })
-//      $("#play").on("click", function(){
-//        wavesurfer.play();
-//        $("#play").hide()
-//        $("#pause").show()
-//      })
-//      $("#pause").on("click", function(){
-//        wavesurfer.pause();
-//        $("#play").show()
-//        $("#pause").hide()
-//      })
-//      var wavesurfer = WaveSurfer.create({
-//        container: document.querySelector('#trackOne'),
-//        waveColor: 'grey',
-//        skipLength: 5,
-//        progressColor: 'black'
-//      });
-//      wavesurfer.on('ready', function () {
-//        wavesurfer.play();
-//        $("#rewind").show()
-//        $("#forward").show()
-//        $("#pause").show()
-//        $("#loading").hide()
-//      });
+
       var activate = function(){
         setTimeout(function(){
           var urlLINK = $("#urlLink").val();
-//          alert(urlLINK)
+
             $("#audioPlayer2").html("<audio controls src='"+urlLINK+"'></audio>")
-//          wavesurfer.load(urlLINK);
+
         }, 1000)
       }
       activate();
@@ -85,22 +52,7 @@
   <div>
     <h2>{{results[2]}}</h2>
     <p>On {{results[0]}}</p>
-      <!--<div id="audioPlayer2" style="margin-left: 10%">.</div>-->
-    <!-- <div class="item tabs tabs-secondary tabs-icon-left"> -->
 
-      <!--<a class="tab-item">-->
-        <!--<i class="icon ion-reply" id="rewind"></i>-->
-      <!--</a>-->
-      <!--<a class="tab-item">-->
-        <!--<i class="icon ion-play" id="play"></i>-->
-      <!--</a>-->
-      <!--<a class="tab-item">-->
-        <!--<i class="icon ion-pause" id="pause"></i>-->
-      <!--</a>-->
-      <!--<a class="tab-item">-->
-        <!--<i class="icon ion-forward" id="forward"></i>-->
-      <!--</a>-->
-    <!-- </div> -->
     <div class="item tabs tabs-secondary tabs-icon-left">
       <a class="tab-item">
         <i id="like" class="icon ion-thumbsup refresh" ng-click="likeResource(results[2],results[0]); select(results[2])"></i>
@@ -116,31 +68,9 @@
   </div>
 </div>
 
-<script id="my-modal.html" type="text/ng-template">
-    <ion-modal-view>
-        <ion-header-bar>
-            <h1 class="title">My Modal title</h1>
-        </ion-header-bar>
-        <ion-content>
-            <button class="button button-clear" data-clear-btn="true" ng-click="closeModal()">
-                Cancel
-            </button>
-            <div ng-repeat="resource in results">
-                <div class="item item-button-right">
-                    {{ resource.text }}
-                    <button ng-click="closeModal(); sendTags(resource)" class="button button-royal">
-                        <i class="icon ion-search"></i>
-                    </button>
-                </div>
-            </div>
-        </ion-content>
-    </ion-modal-view>
-</script>
 </ion-content>
 
 <div style="position: fixed; bottom: 3.5em; color:white !important">
-    <!--<div class="item">-->
-        <div id="audioPlayer2" style="margin-left: 25%">.</div>
-    <!--</div>-->
+    <div id="audioPlayer2" style="margin-left: 25%">.</div>
 </div>
 </ion-view>
