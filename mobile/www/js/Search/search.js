@@ -4,7 +4,6 @@ angular.module('enki.search',[])
   $scope.items = ['Science', 'Technology', 'Engineering', 'Math'];
     $scope.selected = [];
     $scope.tags = [];
-    // $scope.results = [];
     
     Podcasts.getTags().then(function addCheckedAndSave(data) {
       for (var i = 0; i < data.length; i ++) {
@@ -19,19 +18,8 @@ angular.module('enki.search',[])
           $scope.selected.push($scope.tags[i].name);  
         }
       }
-      // console.log($scope.selected);
       Podcasts.setTags($scope.selected);
       $state.go('tab.resource');
     };
 
-    // $scope.toggle = function (item, list) { 
-    //   var idx = list.indexOf(item);
-    //   if (idx > -1) list.splice(idx, 1);
-    //   else list.push(item.name);
-    // };
-
-    // $scope.exists = function (item, list) {
-    //   return list.indexOf(item) > -1;
-    // };
-  
 });

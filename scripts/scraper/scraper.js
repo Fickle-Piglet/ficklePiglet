@@ -1,4 +1,3 @@
-var noodle = require("noodlejs")
 var fs = require("fs")
 var http = require("http")
 var request = require("request")
@@ -54,8 +53,12 @@ module.exports = {
                         episodes: []
                     }
                 }, function(err, res, body){
-                    //if(err) console.log("ERROR: ",err)
-                    //res.end()
+                    if(err){
+                        console.log("ERROR: ",err)
+                    } else {
+                        res.send(200)
+                    }
+
                 })
             }
         }

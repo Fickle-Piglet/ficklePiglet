@@ -31,7 +31,6 @@ angular.module('enki.auth', [])
             // setting that information in local storage
             // should be refactored to use jwt at some point
             $window.localStorage.setItem('com.fickle', JSON.stringify(message[0]));
-            // $location.path('/search');
             $state.go('tab.searchElastic');            
           }
         })

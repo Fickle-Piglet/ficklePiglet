@@ -9,7 +9,6 @@ var jaccard = require("../scripts/jaccard.js");
 
 // var test = require("../server/controllers/userController");
 
-// app.use(express.static(path.join(__dirname, '/client')));
 
 app.listen(port, function(){
     console.log('Listening on port '+ port);

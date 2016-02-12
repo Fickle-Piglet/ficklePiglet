@@ -5,6 +5,7 @@ angular.module('enki.resource',[])
     $scope.myModel = {};
     $scope.search = function() {
         q = $scope.myModel.searchString;
+        //TODO(TESSA): change q
         if (q.length > 0) {
             $("#warning").hide();
             Search.searchPodcasts(q).then(function (data) {

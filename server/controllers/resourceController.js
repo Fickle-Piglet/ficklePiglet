@@ -17,14 +17,11 @@ module.exports = {
         })
     },
     insertEpisode : function(req, res){
-        //console.log(">>>>>>>>>>>>>>REQ", req.body)
         var pubDate = req.body.pubDate
         var title = req.body.title.replace(/'/g, "*");
         var link = req.body.link
         var resource = req.body.feed.title.replace(/'/g, "*")
         var feed = req.body.feed
-        // TODO: Modify CypherQuery for inserting episode as a node into db
-        //"MATCH (u:User {username:{username}}),(r:Resource {name:{ResourceName}}) MERGE (u)-[:HAS_LIKED]->(r)"
         console.log(">>>> $ $ $ $ $ Episode :"+title+", Resource:'"+resource+"' $ $ $ $ $ <<<<)")
         db.cypherQuery("MERGE (e:Episode {title:'"+title+"', link:'"+link+"', pubDate:'"+pubDate+"'})", function(err, res){
             if(err){
@@ -95,8 +92,6 @@ module.exports = {
                         });  
                 });
             }
-            //userPreferences.resource.isShow 
-            // This finds all of the tags for a particular show;
         }
     },
     getTags: function(req, res) {
@@ -128,20 +123,3 @@ module.exports = {
 
 
 };
-//Old RSS Stuff that used to be in getResource
-// // console.log(">>>>>SINGLE QUERY DATA",[query.data[int]])
-// // TODO: Request for rss feed api
-// request({
-//     method: "GET",
-//     url: "http://rss2json.com/api.json?rss_url=" + query.data[int].feedUrl
-// }, function(err, result, body){
-//     //console.log("RES:", res)
-//     //console.log(">>>>>>>Body", JSON.parse(body))
-//     query.data[int].feed = JSON.parse(body).feed
-//     query.data[int].episodes = JSON.parse(body).items
-//     //TODO: Need to review redirect parser. Code for redirect url moved to redirectURL.js
-
-//     res.send([query.data[int]])
-
-
-// })
