@@ -1,0 +1,50 @@
+#login {
+  padding-top: 80px;
+  background-color: #333333;
+}
+
+#loginView {
+  background-color: #333333;
+}
+
+#loginIcon {
+  padding: 125px 0 0 0;
+  /*text-decoration: none;*/
+  display: block;
+  margin: auto;
+  width:100%;
+  text-align: center;
+  width: 150px;
+  height: auto;
+}
+
+#loginName {
+  padding: 0px 0 0 0;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  width:100%;
+  text-align: center;
+  width: 150px;
+  height: auto;
+  color: #71BCBF
+}
+
+.login-search {
+  background-color: #e0eeee;
+}
+
+.login-button {
+  background-color: #71BCBF;
+  color: #e0eeee;
+}
+
+.register {
+  color: #71BCBF;
+  display: block;
+  padding: 75px 0 0 0;
+  text-decoration: none;
+  width:100%;
+  text-align:center;
+}
+
