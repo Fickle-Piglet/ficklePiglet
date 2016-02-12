@@ -9,8 +9,11 @@
 <!-- <ion-toggle ng-model="shouldShowDelete">
   Edit
 </ion-toggle> -->
-<h4>Likes</h4>
+
 <ion-list show-delete="data.showDelete" class="list list-editing">
+  <div class="item item-divider">
+    Likes
+  </div>
   <ion-item ng-repeat="item in likedResources">
     <ion-delete-button ng-click="onItemDelete(item)" class="ion-minus-circled"></ion-delete-button>
     <div class="item item-avatar">
@@ -21,8 +24,11 @@
 
   </ion-item>
 </ion-list>
+
 <ion-list show-delete="data.showDelete" class="list list-editing">
-<h4>Dislikes</h4>
+  <div class="item item-divider">
+    Dislikes
+  </div>
   <ion-item ng-repeat="data in dislikedResources">
     <ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(data)"></ion-delete-button>
     <div class="item item-avatar">
