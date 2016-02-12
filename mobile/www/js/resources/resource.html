@@ -21,7 +21,7 @@
             </button>
         </div>
     </div>
-<div id="warning"> Please Search for a Podcast :)</div>
+<div id="warning" class="item item-button-center"> Please Search for a Podcast :)</div>
 <div class="list card" id="pod">
   <div class="item item-body">
     <img src="{{results[1]}}">
@@ -35,7 +35,7 @@
             $("#like").css("color", "green")
         })
         $("#dislike").on("click", function(){
-            $("#like").css("color", "red")
+            $("#dislike").css("color", "red")
         })
 //      $(document).ready(function(){
 //          activate();
@@ -116,26 +116,6 @@
   </div>
 </div>
 
-<script id="my-modal.html" type="text/ng-template">
-    <ion-modal-view>
-        <ion-header-bar>
-            <h1 class="title">My Modal title</h1>
-        </ion-header-bar>
-        <ion-content>
-            <button class="button button-clear" data-clear-btn="true" ng-click="closeModal()">
-                Cancel
-            </button>
-            <div ng-repeat="resource in results">
-                <div class="item item-button-right">
-                    {{ resource.text }}
-                    <button ng-click="closeModal(); sendTags(resource)" class="button button-royal">
-                        <i class="icon ion-search"></i>
-                    </button>
-                </div>
-            </div>
-        </ion-content>
-    </ion-modal-view>
-</script>
 </ion-content>
 
 <div style="position: fixed; bottom: 3.5em; color:white !important">
