@@ -1,16 +1,16 @@
 <ion-view cache-view="false" view-title="Profile">
+<ion-nav-buttons side="right">
+  <button class="button button-icon icon ion-ios-minus-outline" ng-click="toggleDelete()">
+  </button>
+</ion-nav-buttons>
+<ion-nav-buttons side="left">
+  <button ng-click="logout()" class="button icon ion-log-out">
+    Logout
+  </button>  
+</ion-nav-buttons>
 <ion-content>
-<div class="bar bar-header bar-royal" >
-  <button class="button icon ion-log-out button-clear logout_button" ng-click="logout()">Logout </button>
-  <h1 class="title">Profile</h1>
- <button class="button button-icon icon ion-ios-minus-outline" ng-click="data.showDelete = !data.showDelete;"></button>
-  </div>
-  <br><br>
-<!-- <ion-toggle ng-model="shouldShowDelete">
-  Edit
-</ion-toggle> -->
 
-<ion-list show-delete="data.showDelete" class="list list-editing">
+<ion-list show-delete="isDeletingItems" class="list list-editing">
   <div class="item item-divider">
     Likes
   </div>
@@ -21,11 +21,10 @@
        <h2>{{item[1].name}}</h2>
        <h4>{{item[0].title}}</h4>
     </div>
-
   </ion-item>
 </ion-list>
 
-<ion-list show-delete="data.showDelete" class="list list-editing">
+<ion-list show-delete="isDeletingItems" class="list list-editing">
   <div class="item item-divider">
     Dislikes
   </div>

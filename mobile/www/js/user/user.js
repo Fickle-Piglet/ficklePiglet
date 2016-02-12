@@ -4,6 +4,7 @@ angular.module('enki.user',[])
   // console.log("ITEM: ", $window.localStorage.getItem('com.fickle'));
   $scope.likedResources = [];
   $scope.dislikedResources = [];
+  // $scope.showDelete = {boolean: "true"};
   var user = JSON.parse($window.localStorage.getItem('com.fickle'));
   var username = user.username;
 
@@ -20,6 +21,11 @@ angular.module('enki.user',[])
     $scope.dislikedResources = data;
     console.log("dislke", data);
   });
+
+  $scope.toggleDelete = function() {
+    $scope.isDeletingItems = !$scope.isDeletingItems;
+    $scope.editBtnText = ($scope.isDeletingItems ? 'Done' : 'Edit');
+  };
 
   $scope.logout = function() {
     $window.localStorage.setItem('com.fickle', null);
