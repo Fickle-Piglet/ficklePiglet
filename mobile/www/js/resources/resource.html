@@ -1,23 +1,23 @@
-<ion-view view-title="Enki">
-<ion-nav-bar class="bar-royal">
+<ion-view id="loginView" view-title="Enki">
+<ion-nav-bar class="res">
 </ion-nav-bar>
 <ion-content>
-<div class="bar bar-header item-input-inset">
+<div id="loginView" class="bar bar-header item-input-inset">
   <label class="item-input-wrapper">
     <i class="icon ion-ios-search placeholder-icon"></i>
     <input type="search" placeholder="Search" ng-model="myModel.searchString" ng-change="search()">
   </label>
-    <a ng-click="clearSearch()"><button class="button"> Clear </button></a>
+    <a ng-click="clearSearch()"><button class="button button-clear"> Clear </button></a>
   </div>
+<p id="warning" class="item item-button-center"> Please Search for a Podcast :)</p>
     <div ng-repeat="resource in results2">
         <div class="item item-button-right">
             {{ resource.text }}
-            <button ng-click="sendTags(resource)" class="button button-royal">
+            <button ng-click="sendTags(resource)" class="button sear">
                 <i class="icon ion-search"></i>
             </button>
         </div>
     </div>
-<div id="warning" class="item item-button-center"> Please Search for a Podcast :)</div>
 <div class="list card" id="pod">
   <div class="item item-body">
     <img style="display:block; margin:auto;" src="{{results[1]}}">
@@ -53,7 +53,7 @@
     <h2 style="text-align: center">{{results[2]}}</h2>
     <p style="text-align: center">On {{results[0]}}</p>
 
-    <div class="item tabs tabs-secondary tabs-icon-left">
+    <div class="item tabs tabs-secondary tabs-icon-left nicon">
       <a class="tab-item">
         <i id="like" class="icon ion-thumbsup" ng-click="likeResource(results[2],results[0]); select(results[2])"></i>
       </a>
