@@ -9,7 +9,6 @@ var jaccard = require("../scripts/jaccard.js");
 
 // var test = require("../server/controllers/userController");
 
-
 app.listen(port, function(){
     console.log('Listening on port '+ port);
 });
@@ -24,7 +23,7 @@ require('../server/config/routes.js')(app, express);
 //scraper.getAllPodcast("podcasts.txt")
 //setTimeout(function(){
         //scraper.readAllFiles();
-        //scraper.tester()
+        //scraper.addEpisode()
         //jaccard();
 //}, 1000)
 ////////////////////////////////////////////////////////////////

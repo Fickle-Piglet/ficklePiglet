@@ -151,6 +151,7 @@ angular.module('enki.resource',[])
         'username' : username,
         'ResourceName' : resource
       }
+      $("#dislike").css("color", "#7C7C7C")
       UserResources.dislikeResource(userpref)
       .then(function(message){
         if(message ===200){

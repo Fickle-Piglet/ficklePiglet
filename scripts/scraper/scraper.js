@@ -1,3 +1,6 @@
+
+/* This file is a webworker that crawls the iTunes API for podcast data and the rss2json API to convert rss feeds to json data */
+
 var fs = require("fs")
 var http = require("http")
 var request = require("request")
@@ -64,7 +67,8 @@ module.exports = {
         }
 
     },
-    tester: function(counter, max){
+    // Adds each episode from the allocation file and sends it to the insertEpisode function
+    addEpisode: function(counter, max){
         if(counter === max){
             return
         }
@@ -75,7 +79,7 @@ module.exports = {
             var item = JSON.parse(list[counter])
             insertEp.insertEpisodes(item.feedUrl)
             counter++
-            module.exports.tester(counter, list.length-1);
+            module.exports.addEpisode(counter, list.length-1);
         }, 180000)
     }
 
