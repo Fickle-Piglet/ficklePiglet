@@ -58,15 +58,6 @@ enki.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider){
       }  
     }
   })
-  .state('tab.searchElastic', {
-    url: "/searchElastic",
-    views: {
-      'tab-searchElastic': {
-        templateUrl: "js/searchElastic/elastic.html",
-        controller: 'elasticController'
-      }  
-    }
-  })
   .state('login', {
       cache: false,
       url: '/login',
