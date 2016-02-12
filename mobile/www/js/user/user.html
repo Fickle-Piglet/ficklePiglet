@@ -1,20 +1,20 @@
-<ion-view cache-view="false" view-title="Profile">
+<ion-view id="loginView" cache-view="false" view-title="Profile">
 <ion-nav-buttons side="right">
-  <button class="button button-icon icon ion-ios-minus-outline" ng-click="toggleDelete()">
+  <button class="button button-icon icon ion-ios-minus-outline res" ng-click="toggleDelete()">
   </button>
 </ion-nav-buttons>
 <ion-nav-buttons side="left">
-  <button ng-click="logout()" class="button icon ion-log-out">
+  <button ng-click="logout()" class="button icon ion-log-out res">
     Logout
   </button>  
 </ion-nav-buttons>
 <ion-content>
 
 <ion-list show-delete="isDeletingItems" class="list list-editing">
-  <div class="item item-divider">
+  <div id="loginView" class="item item-divider wh">
     Likes
   </div>
-  <ion-item ng-repeat="item in likedResources">
+  <ion-item id="likes" ng-repeat="item in likedResources">
     <ion-delete-button ng-click="onItemDelete(item)" class="ion-minus-circled"></ion-delete-button>
     <div class="item item-avatar">
        <img src="{{item[1].thumbnail}}">
@@ -25,7 +25,7 @@
 </ion-list>
 
 <ion-list show-delete="isDeletingItems" class="list list-editing">
-  <div class="item item-divider">
+  <div id="loginView" class="item item-divider wh">
     Dislikes
   </div>
   <ion-item ng-repeat="data in dislikedResources">
