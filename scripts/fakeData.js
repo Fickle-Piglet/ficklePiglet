@@ -1,6 +1,6 @@
 var db = require("../server/db/db.js")
 
-//SCRIPT TO ENTER create 50 USERS and have them like 50 random episodes
+/* This file contains two scripts to enter fake data into our database. */
 
 var names = [
     {firstname: "Laverne2", email:"test1@gmail.com", lastname:"lolzer", password:"coffee"},
@@ -55,6 +55,7 @@ var names = [
     {firstname:"Marlen",email:"test@gmail.com", lastname:"lolzer", password:"coffee"}
     ];
 
+/* This Function is used to add 50 Users into the database. It create likes for each of the random users to 50 random episodes */
 
 var add50Users = function(){
 
@@ -102,6 +103,8 @@ var add50Users = function(){
     }, 120000)
 }
 
+/* This Function is grabs 50 random users and creates 50 random dislikes per each of those users */
+
 var dislike50Stuff = function(){
     var episodes;
     var users;
@@ -110,17 +113,7 @@ var dislike50Stuff = function(){
         episodes = res.data;
         console.log(episodes)
     });
-    //for(var i=0; i<names.length; i++){
-    //    db.cypherQuery("Merge (n:User {firstname:{firstname},lastname:{lastname},username:{firstname},email:{email},password:{password}}) return n", names[i], function(err, users){
-    //        if(err){
-    //            console.log("ERROR: ", err)
-    //            //res.sendStatus(404);
-    //        } else{
-    //            //res.sendStatus(200);
-    //            console.log("success added user")
-    //        }
-    //    });
-    //}
+
     setTimeout(function(){
         db.cypherQuery("Match (u:User) return u", function(err, res){
             users = res.data;
@@ -154,8 +147,9 @@ var dislike50Stuff = function(){
     }, 120000)
 }
 
-
+/////////////// COMMENT OUT THIS SECTION WHEN YOU WANT TO ADD FAKE DATA TO THE DATABASE ////////////
 //add50Users()
 //dislike50Stuff()
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
