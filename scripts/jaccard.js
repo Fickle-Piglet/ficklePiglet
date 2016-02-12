@@ -63,10 +63,6 @@ db.cypherQuery("MATCH (u:User) return u.username", function(err, res){
           if (err) {console.log("Error: with ",argumentsArr[userPair][1]," ", err);}
           userTwoLikes = res.data;
           hash[argumentsArr[userPair][1]+"likes"] = res.data;
-          // console.log("typeof userTwoDislikes: ", typeof userTwoDislikes);
-          // console.log("typeof userTwolikes: ", typeof userTwoLikes);
-          // console.log("userOneLikes: ", userOneLikes.length);
-          // console.log("userTwoLikes: ", userTwoLikes.length);
           var union = _.union(userOneLikes, userTwoLikes, userOneDislikes, userTwoDislikes).length;
           var like = _.intersection(userOneLikes, userTwoLikes).length;
           var dislike = _.intersection(userOneDislikes, userTwoDislikes).length;
@@ -100,17 +96,12 @@ db.cypherQuery("MATCH (u:User) return u.username", function(err, res){
           if (err) {console.log("Error: with ",argumentsArr[userPair][0]," ", err);}
           userOneLikes = res.data;
           hash[argumentsArr[userPair][0]+"likes"] = res.data;
-          // console.log("typeof userTwoDislikes: ", typeof userTwoDislikes);
-          // console.log("typeof userTwolikes: ", typeof userTwoLikes);
-          // console.log("userOneLikes: ", userOneLikes.length);
-          // console.log("userTwoLikes: ", userTwoLikes.length);
           var union = _.union(userOneLikes, userTwoLikes, userOneDislikes, userTwoDislikes).length;
           var like = _.intersection(userOneLikes, userTwoLikes).length;
           var dislike = _.intersection(userOneDislikes, userTwoDislikes).length;
           var likedislike = _.intersection(userOneLikes, userTwoDislikes).length;
           var dislikelike = _.intersection(userOneDislikes, userTwoLikes).length;
-          var similarityIndex = (like + dislike - likedislike - dislikelike)/union; 
-          // console.log("DA ANSWER: ", similarityIndex);
+          var similarityIndex = (like + dislike - likedislike - dislikelike)/union;
 
 
           db.cypherQuery("MATCH (u1:User {username:'" + argumentsArr[userPair][0] + "'}), (u2:User {username:'" + argumentsArr[userPair][1] + "'}) MERGE (u1)-[:SIMILARITY {score: '" + similarityIndex + "'}]->(u2)", function(err, res){
@@ -149,17 +140,13 @@ db.cypherQuery("MATCH (u:User) return u.username", function(err, res){
               if (err) {console.log("Error: with ",argumentsArr[userPair][1]," ", err);}
               userTwoLikes = res.data;
               hash[argumentsArr[userPair][1]+"likes"] = res.data;
-              // console.log("typeof userTwolikes: ", typeof userTwoLikes);
-              // console.log("userOneLikes: ", userOneLikes.length);
-              // console.log("userTwoLikes: ", userTwoLikes.length);
+
               var union = _.union(userOneLikes, userTwoLikes, userOneDislikes, userTwoDislikes).length;
               var like = _.intersection(userOneLikes, userTwoLikes).length;
               var dislike = _.intersection(userOneDislikes, userTwoDislikes).length;
               var likedislike = _.intersection(userOneLikes, userTwoDislikes).length;
               var dislikelike = _.intersection(userOneDislikes, userTwoLikes).length;
-              var similarityIndex = (like + dislike - likedislike - dislikelike)/union; 
-              // console.log("DA ANSWER: ", similarityIndex);
-
+              var similarityIndex = (like + dislike - likedislike - dislikelike)/union;
 
               db.cypherQuery("MATCH (u1:User {username:'" + argumentsArr[userPair][0] + "'}), (u2:User {username:'" + argumentsArr[userPair][1] + "'}) MERGE (u1)-[:SIMILARITY {score: '" + similarityIndex + "'}]->(u2)", function(err, res){
                 if (err) { console.log (err); }
@@ -182,24 +169,6 @@ db.cypherQuery("MATCH (u:User) return u.username", function(err, res){
 //UNCOMMENT THIS TO RUN IS
 // compare();
 
-
-
-// if user one is notstored
-  // run async stuff for user one
-  // run function B
-// else if user one is stored
-  // just access the data from the hash
-  // run function B
-
-
-
-
-
-
-
-
-
-// compare('Laverne2','Lynell2');
 
 
 

@@ -34,7 +34,7 @@ angular.module('enki.services', [])
     var getTags = function () {
        return $http({
             method: 'GET',
-            url: 'http://52.36.85.255/tags',
+            url: 'http://52.36.85.255/tags'
           })
           .then(function (resp) {
             return resp.data;

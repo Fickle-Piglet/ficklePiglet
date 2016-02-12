@@ -54,7 +54,5 @@ angular.module('enki.user',[])
     .catch(function (error) {
       console.error(error);
     });
-    // $scope.likedResources.splice($scope.likedResources.indexOf(resource), 1);
-    // $scope.dislikedResources.splice($scope.dislikedResources.indexOf(resource), 1);
   };
 });

@@ -3,14 +3,11 @@ module.exports =  {
     getURL : function(redirectURL){
         console.log("here")
         request.get(redirectURL, function (err, lol, body) {
-            //console.log(lol.request.uri.href)
             console.log("ERROR", err)
             console.log("THIS ------- THIS: ",lol.request.uri.href)
-            //return lol.request.uri.href
         });
     },
     insertEpisodes : function(feedUrl){
-        //module.exports.getURL("http://www.podtrac.com/pts/redirect.mp3/media.devchat.tv/js-jabber/JSJ196TabrisJS.mp3?rss=true")
         request({
             method: "GET",
             url: "http://rss2json.com/api.json?rss_url=" + feedUrl
@@ -41,7 +38,6 @@ module.exports =  {
             }
         })
     }
-
 }
 
 

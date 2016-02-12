@@ -24,7 +24,6 @@ module.exports = {
             } else if (result.data.length!==0) {  
               res.send("existing");
             } else {
-              //Seems like a strange way to declare properties
               db.cypherQuery("create (n:User {firstname:{firstname},lastname:{lastname},username:{name},email:{email},password:{pword}}) return n", userInfo , function(err, result){
                     if(err) {
                       res.sendStatus(404).json(err);
