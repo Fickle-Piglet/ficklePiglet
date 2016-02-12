@@ -39,6 +39,10 @@ angular.module('enki.user',[])
     }, 300);
   };
 
+  $scope.toggleDelete = function() {
+    $scope.isDeletingItems = !$scope.isDeletingItems;
+    $scope.editBtnText = ($scope.isDeletingItems ? 'Done' : 'Edit');
+  };
 
   $scope.onItemDelete = function(resource) {
     console.log("Attempted to Delete");
