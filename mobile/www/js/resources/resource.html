@@ -1,5 +1,9 @@
 <ion-view view-title="Enki">
 <ion-nav-bar class="bar-royal">
+<ion-nav-buttons side="right">
+  <button class="button button-icon button-clear ion-navicon" ng-click="toggleSideMenu()">
+  </button>
+</ion-nav-buttons>
 </ion-nav-bar>
 <ion-content>
 <div class="bar bar-header item-input-inset">
@@ -82,7 +86,7 @@
     <h2>{{results[2]}}</h2>
     <p>On {{results[0]}}</p>
       <!--<div id="audioPlayer2" style="margin-left: 10%">.</div>-->
-    <div class="item tabs tabs-secondary tabs-icon-left">
+    <!-- <div class="item tabs tabs-secondary tabs-icon-left"> -->
 
       <!--<a class="tab-item">-->
         <!--<i class="icon ion-reply" id="rewind"></i>-->
@@ -96,7 +100,7 @@
       <!--<a class="tab-item">-->
         <!--<i class="icon ion-forward" id="forward"></i>-->
       <!--</a>-->
-    </div>
+    <!-- </div> -->
     <div class="item tabs tabs-secondary tabs-icon-left">
       <a class="tab-item">
         <i id="like" class="icon ion-thumbsup refresh" ng-click="likeResource(results[2],results[0]); select(results[2])"></i>

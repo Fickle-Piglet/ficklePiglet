@@ -1,6 +1,6 @@
 angular.module('enki.resource',[])
 
-.controller('resourceController', function ($scope, Podcasts, UserResources, $rootScope, $window, Search, $state) {
+.controller('resourceController', function ($scope, Podcasts, UserResources, $rootScope, $window, Search, $state, $ionicSideMenuDelegate) {
 
     $scope.myModel = {};
     $scope.search = function() {
@@ -20,6 +20,14 @@ angular.module('enki.resource',[])
         $scope.results2 = [];
         $scope.myModel.searchString = ""
     };
+
+    $scope.toggleSideMenu = function() {
+  if ($ionicSideMenuDelegate.isOpen()) {
+    $ionicSideMenuDelegate.toggleLeft(false); // close
+  } else {
+    $ionicSideMenuDelegate.toggleLeft(); // open
+  }
+};
 
     $scope.sendTags = function(selected) {
         $scope.clearSearch();
