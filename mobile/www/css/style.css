@@ -38,7 +38,9 @@
   background-color: #71BCBF;
   color: #e0eeee;
 }
-
+.back {
+  background-color: #333333;
+}
 .register {
   color: #71BCBF;
   display: block;
@@ -48,3 +50,36 @@
   text-align:center;
 }
 
+.res {
+  color: #e0eeee;
+  background-color: #71BCBF;
+}
+
+.sear {
+  background-color: #71BCBF;
+}
+
+.tab {
+   color: #71BCBF;
+}
+
+#warning {
+  color: white;
+  background-color: #333333;
+}
+
+.wh {
+  color: white;
+}
+
+.custom-icon {
+  color: #71BCBF;
+}
+.user {
+  color: #e0eeee;
+  background-color: #71BCBF;
+}
+
+.nicon {
+  background: #71BCBF;
+}
