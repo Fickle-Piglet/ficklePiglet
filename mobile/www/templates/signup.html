@@ -1,5 +1,5 @@
-<ion-view view-title="Registration" name="login-view">
-<ion-nav-bar class="bar-royal">
+<ion-view id="loginView" view-title="Registration" name="login-view">
+<ion-nav-bar class="res">
 <ion-nav-back-button class="button-icon icon ion-chevron-left">
       </ion-nav-back-button>
 </ion-nav-bar>
@@ -16,28 +16,28 @@
 
       <div class="list list-inset">
         <label class="item item-input item-stacked-label">
-          <span class="input-label">First Name</span>
-          <input type="text" ng-model='user.firstname' placeholder="Joey">
+          <!-- <span class="input-label">First Name</span> -->
+          <input type="text" ng-model='user.firstname' placeholder="First Name">
         </label>
         <label class="item item-input item-stacked-label">
-          <span class="input-label">Last Name</span>
-          <input type="text" ng-model='user.lastname' placeholder="Doe">
+          <!-- <span class="input-label">Last Name</span> -->
+          <input type="text" ng-model='user.lastname' placeholder="Last Name">
         </label>
         <label class="item item-input item-stacked-label">
-          <span class="input-label">Email</span>
-          <input type="text" ng-model='user.email' placeholder="Doe">
+          <!-- <span class="input-label">Email</span> -->
+          <input type="text" ng-model='user.email' placeholder="Email">
         </label>
         <label class="item item-input item-stacked-label">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model='user.name' placeholder="420buhlazeit">
+<!--           <span class="input-label">Username</span> -->
+          <input type="text" ng-model='user.name' placeholder="Username">
         </label>
         <label class="item item-input item-stacked-label">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model='user.pword' placeholder="tacotown">
+          <!-- <span class="input-label">Password</span> -->
+          <input type="password" ng-model='user.pword' placeholder="Password">
         </label>   
       </div>
       <div class="padding">
-          <button ng-click="signup(user)" class="button button-block button-royal">
+          <button ng-click="signup(user)" class="button button-block res">
            Sign Up
           </button>
       </div> 
