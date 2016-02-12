@@ -31,6 +31,10 @@
         $("#dislike").on("click", function(){
             $("#dislike").css("color", "red")
         })
+        $("#next").on("click", function(){
+            $("#dislike").css("color", "#7C7C7C")
+            $("#like").css("color", "#7C7C7C")
+        })
 
       var activate = function(){
         setTimeout(function(){
@@ -57,7 +61,7 @@
         <i id="dislike" class="icon ion-thumbsdown refresh" ng-click="dislikeResource(results[2]); select(results[2]); next()"></i>
       </a>
       <a class="tab-item">
-        <i class="icon ion-skip-forward refresh" ng-click="next()"></i>
+        <i id="next" class="icon ion-skip-forward refresh" ng-click="next()"></i>
       </a>
     </div>
   </div>
