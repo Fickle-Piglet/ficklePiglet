@@ -1,8 +1,6 @@
-<ion-view view-title="Login" name="login-view">
-<!-- <ion-nav-bar class="bar-royal">
-</ion-nav-bar> -->
+<ion-view id="loginView" view-title="Login" name="login-view">
   <ion-content class="padding">
-      <div class="list list-inset">
+      <div id="login" class="list list-inset">
           <label class="item item-input item-floating-label">
               <input type="text"  placeholder="Username" ng-model="user.username">
           </label>
@@ -12,6 +10,27 @@
       </div>
       <button class="button button-block button-royal" ng-click="signin()">Login</button>
 
-      <p class="button button-block button-royal" ng-click="register()">Register</p>
+      <a class="register" ng-click="register()"> Register </a>
+      <!-- <p class="button button-block button-royal" ng-click="register()">Register</p> -->
+  </ion-content>
+</ion-view>
+
+<!-- <ion-view  view-title="Login" name="login-view">
+<! <ion-nav-bar class="bar-royal">
+</ion-nav-bar> -->
+  <ion-content class="padding">
+      <div id="login" class="list list-inset">
+          <label class="item item-input item-floating-label login-search">
+            <!-- <span class="input-label">Username</span> -->
+              <input type="text"  placeholder="Username" ng-model="user.username">
+          </label>
+          <label class="item item-input item-floating-label login-search">
+            <!-- <span class="input-label">Password</span> -->
+              <input type="password" placeholder="Password" ng-model="user.password">
+          </label>
+      </div>
+      <button class="button button-block login-button" ng-click="signin()">Log In</button>
+
+      <a class="register" ng-click="register()"> Register </a>
   </ion-content>
 </ion-view>

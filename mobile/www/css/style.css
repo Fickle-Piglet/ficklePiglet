@@ -1,0 +1,26 @@
+#login {
+  padding-top: 250px;
+  background-color: gray;
+}
+
+#loginView {
+  background-color: gray;
+}
+
+.login-search {
+  background-color: white;
+}
+
+.login-button {
+  background-color: #D7FFF1;
+}
+
+.register {
+  color: white;
+  display: block;
+  padding: 150px 0 0 0;
+  text-decoration: none;
+  width:100%;
+  text-align:center;
+}
+
