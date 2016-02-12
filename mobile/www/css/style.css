@@ -1,10 +1,10 @@
 #login {
   padding-top: 250px;
-  background-color: gray;
+  /*background-color: gray;*/
 }
 
 #loginView {
-  background-color: gray;
+  /*background-color: gray;*/
 }
 
 .login-search {
@@ -12,11 +12,12 @@
 }
 
 .login-button {
-  background-color: #D7FFF1;
+  background-color: #71BCBF;
+  color: lightgray;
 }
 
 .register {
-  color: white;
+  color: #71BCBF;
   display: block;
   padding: 150px 0 0 0;
   text-decoration: none;
